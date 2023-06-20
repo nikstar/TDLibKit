@@ -14,7 +14,7 @@ import Foundation
 public struct Stickers: Codable, Equatable, Hashable {
 
     /// List of stickers
-    public let stickers: [Sticker]
+    public var stickers: [Sticker]
 
 
     public init(stickers: [Sticker]) {

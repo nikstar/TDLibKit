@@ -14,7 +14,7 @@ import Foundation
 public struct MessageStatistics: Codable, Equatable, Hashable {
 
     /// A graph containing number of message views and shares
-    public let messageInteractionGraph: StatisticalGraph
+    public var messageInteractionGraph: StatisticalGraph
 
 
     public init(messageInteractionGraph: StatisticalGraph) {

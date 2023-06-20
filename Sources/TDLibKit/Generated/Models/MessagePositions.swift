@@ -14,10 +14,10 @@ import Foundation
 public struct MessagePositions: Codable, Equatable, Hashable {
 
     /// List of message positions
-    public let positions: [MessagePosition]
+    public var positions: [MessagePosition]
 
     /// Total number of messages found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

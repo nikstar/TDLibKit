@@ -63,7 +63,7 @@ public enum LanguagePackStringValue: Codable, Equatable, Hashable {
 public struct LanguagePackStringValueOrdinary: Codable, Equatable, Hashable {
 
     /// String value
-    public let value: String
+    public var value: String
 
 
     public init(value: String) {
@@ -75,22 +75,22 @@ public struct LanguagePackStringValueOrdinary: Codable, Equatable, Hashable {
 public struct LanguagePackStringValuePluralized: Codable, Equatable, Hashable {
 
     /// Value for few objects
-    public let fewValue: String
+    public var fewValue: String
 
     /// Value for many objects
-    public let manyValue: String
+    public var manyValue: String
 
     /// Value for one object
-    public let oneValue: String
+    public var oneValue: String
 
     /// Default value
-    public let otherValue: String
+    public var otherValue: String
 
     /// Value for two objects
-    public let twoValue: String
+    public var twoValue: String
 
     /// Value for zero objects
-    public let zeroValue: String
+    public var zeroValue: String
 
 
     public init(

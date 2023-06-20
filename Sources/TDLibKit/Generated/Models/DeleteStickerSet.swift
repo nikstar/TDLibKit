@@ -14,7 +14,7 @@ import Foundation
 public struct DeleteStickerSet: Codable, Equatable, Hashable {
 
     /// Sticker set name
-    public let name: String?
+    public var name: String?
 
 
     public init(name: String?) {

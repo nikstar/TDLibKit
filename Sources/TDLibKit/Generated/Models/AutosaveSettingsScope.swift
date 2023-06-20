@@ -69,7 +69,7 @@ public enum AutosaveSettingsScope: Codable, Equatable, Hashable {
 public struct AutosaveSettingsScopeChat: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(chatId: Int64) {

@@ -167,7 +167,7 @@ public enum ChatAction: Codable, Equatable, Hashable {
 public struct ChatActionUploadingVideo: Codable, Equatable, Hashable {
 
     /// Upload progress, as a percentage
-    public let progress: Int
+    public var progress: Int
 
 
     public init(progress: Int) {
@@ -179,7 +179,7 @@ public struct ChatActionUploadingVideo: Codable, Equatable, Hashable {
 public struct ChatActionUploadingVoiceNote: Codable, Equatable, Hashable {
 
     /// Upload progress, as a percentage
-    public let progress: Int
+    public var progress: Int
 
 
     public init(progress: Int) {
@@ -191,7 +191,7 @@ public struct ChatActionUploadingVoiceNote: Codable, Equatable, Hashable {
 public struct ChatActionUploadingPhoto: Codable, Equatable, Hashable {
 
     /// Upload progress, as a percentage
-    public let progress: Int
+    public var progress: Int
 
 
     public init(progress: Int) {
@@ -203,7 +203,7 @@ public struct ChatActionUploadingPhoto: Codable, Equatable, Hashable {
 public struct ChatActionUploadingDocument: Codable, Equatable, Hashable {
 
     /// Upload progress, as a percentage
-    public let progress: Int
+    public var progress: Int
 
 
     public init(progress: Int) {
@@ -215,7 +215,7 @@ public struct ChatActionUploadingDocument: Codable, Equatable, Hashable {
 public struct ChatActionUploadingVideoNote: Codable, Equatable, Hashable {
 
     /// Upload progress, as a percentage
-    public let progress: Int
+    public var progress: Int
 
 
     public init(progress: Int) {
@@ -227,7 +227,7 @@ public struct ChatActionUploadingVideoNote: Codable, Equatable, Hashable {
 public struct ChatActionWatchingAnimations: Codable, Equatable, Hashable {
 
     /// The animated emoji
-    public let emoji: String
+    public var emoji: String
 
 
     public init(emoji: String) {

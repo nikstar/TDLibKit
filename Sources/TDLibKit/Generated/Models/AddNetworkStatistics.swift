@@ -14,7 +14,7 @@ import Foundation
 public struct AddNetworkStatistics: Codable, Equatable, Hashable {
 
     /// The network statistics entry with the data to be added to statistics
-    public let entry: NetworkStatisticsEntry?
+    public var entry: NetworkStatisticsEntry?
 
 
     public init(entry: NetworkStatisticsEntry?) {

@@ -55,10 +55,10 @@ public enum InputInvoice: Codable, Equatable, Hashable {
 public struct InputInvoiceMessage: Codable, Equatable, Hashable {
 
     /// Chat identifier of the message
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -74,7 +74,7 @@ public struct InputInvoiceMessage: Codable, Equatable, Hashable {
 public struct InputInvoiceName: Codable, Equatable, Hashable {
 
     /// Name of the invoice
-    public let name: String
+    public var name: String
 
 
     public init(name: String) {

@@ -14,19 +14,19 @@ import Foundation
 public struct File: Codable, Equatable, Hashable, Identifiable {
 
     /// Approximate file size in bytes in case the exact file size is unknown. Can be used to show download/upload progress
-    public let expectedSize: Int64
+    public var expectedSize: Int64
 
     /// Unique file identifier
     public let id: Int
 
     /// Information about the local copy of the file
-    public let local: LocalFile
+    public var local: LocalFile
 
     /// Information about the remote copy of the file
-    public let remote: RemoteFile
+    public var remote: RemoteFile
 
     /// File size, in bytes; 0 if unknown
-    public let size: Int64
+    public var size: Int64
 
 
     public init(

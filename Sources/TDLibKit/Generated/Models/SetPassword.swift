@@ -14,19 +14,19 @@ import Foundation
 public struct SetPassword: Codable, Equatable, Hashable {
 
     /// New password hint; may be empty
-    public let newHint: String?
+    public var newHint: String?
 
     /// New 2-step verification password of the user; may be empty to remove the password
-    public let newPassword: String?
+    public var newPassword: String?
 
     /// New recovery email address; may be empty
-    public let newRecoveryEmailAddress: String?
+    public var newRecoveryEmailAddress: String?
 
     /// Previous 2-step verification password of the user
-    public let oldPassword: String?
+    public var oldPassword: String?
 
     /// Pass true to change also the recovery email address
-    public let setRecoveryEmailAddress: Bool?
+    public var setRecoveryEmailAddress: Bool?
 
 
     public init(

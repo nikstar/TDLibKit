@@ -71,7 +71,7 @@ public enum CanTransferOwnershipResult: Codable, Equatable, Hashable {
 public struct CanTransferOwnershipResultPasswordTooFresh: Codable, Equatable, Hashable {
 
     /// Time left before the session can be used to transfer ownership of a chat, in seconds
-    public let retryAfter: Int
+    public var retryAfter: Int
 
 
     public init(retryAfter: Int) {
@@ -83,7 +83,7 @@ public struct CanTransferOwnershipResultPasswordTooFresh: Codable, Equatable, Ha
 public struct CanTransferOwnershipResultSessionTooFresh: Codable, Equatable, Hashable {
 
     /// Time left before the session can be used to transfer ownership of a chat, in seconds
-    public let retryAfter: Int
+    public var retryAfter: Int
 
 
     public init(retryAfter: Int) {

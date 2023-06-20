@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatMessageAutoDeleteTime: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New time value, in seconds; unless the chat is secret, it must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
-    public let messageAutoDeleteTime: Int?
+    public var messageAutoDeleteTime: Int?
 
 
     public init(

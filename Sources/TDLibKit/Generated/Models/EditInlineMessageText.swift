@@ -14,13 +14,13 @@ import Foundation
 public struct EditInlineMessageText: Codable, Equatable, Hashable {
 
     /// Inline message identifier
-    public let inlineMessageId: String?
+    public var inlineMessageId: String?
 
     /// New text content of the message. Must be of type inputMessageText
-    public let inputMessageContent: InputMessageContent?
+    public var inputMessageContent: InputMessageContent?
 
     /// The new message reply markup; pass null if none
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SendPassportAuthorizationForm: Codable, Equatable, Hashable {
 
     /// Authorization form identifier
-    public let authorizationFormId: Int?
+    public var authorizationFormId: Int?
 
     /// Types of Telegram Passport elements chosen by user to complete the authorization form
-    public let types: [PassportElementType]?
+    public var types: [PassportElementType]?
 
 
     public init(

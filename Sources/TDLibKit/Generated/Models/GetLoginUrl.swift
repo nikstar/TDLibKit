@@ -14,16 +14,16 @@ import Foundation
 public struct GetLoginUrl: Codable, Equatable, Hashable {
 
     /// Pass true to allow the bot to send messages to the current user
-    public let allowWriteAccess: Bool?
+    public var allowWriteAccess: Bool?
 
     /// Button identifier
-    public let buttonId: Int64?
+    public var buttonId: Int64?
 
     /// Chat identifier of the message with the button
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message identifier of the message with the button
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

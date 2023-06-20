@@ -14,7 +14,7 @@ import Foundation
 public struct Seconds: Codable, Equatable, Hashable {
 
     /// Number of seconds
-    public let seconds: Double
+    public var seconds: Double
 
 
     public init(seconds: Double) {

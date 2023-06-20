@@ -14,19 +14,19 @@ import Foundation
 public struct EditInlineMessageLiveLocation: Codable, Equatable, Hashable {
 
     /// The new direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
-    public let heading: Int?
+    public var heading: Int?
 
     /// Inline message identifier
-    public let inlineMessageId: String?
+    public var inlineMessageId: String?
 
     /// New location content of the message; pass null to stop sharing the live location
-    public let location: Location?
+    public var location: Location?
 
     /// The new maximum distance for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled
-    public let proximityAlertRadius: Int?
+    public var proximityAlertRadius: Int?
 
     /// The new message reply markup; pass null if none
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

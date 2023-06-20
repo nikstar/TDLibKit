@@ -14,10 +14,10 @@ import Foundation
 public struct RtmpUrl: Codable, Equatable, Hashable {
 
     /// Stream key
-    public let streamKey: String
+    public var streamKey: String
 
     /// The URL
-    public let url: String
+    public var url: String
 
 
     public init(

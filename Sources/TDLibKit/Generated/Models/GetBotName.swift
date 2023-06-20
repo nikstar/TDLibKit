@@ -14,10 +14,10 @@ import Foundation
 public struct GetBotName: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// A two-letter ISO 639-1 language code or an empty string
-    public let languageCode: String?
+    public var languageCode: String?
 
 
     public init(

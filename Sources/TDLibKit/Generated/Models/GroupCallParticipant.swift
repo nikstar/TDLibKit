@@ -14,58 +14,58 @@ import Foundation
 public struct GroupCallParticipant: Codable, Equatable, Hashable {
 
     /// User's audio channel synchronization source identifier
-    public let audioSourceId: Int
+    public var audioSourceId: Int
 
     /// The participant user's bio or the participant chat's description
-    public let bio: String
+    public var bio: String
 
     /// True, if the current user can mute the participant for all other group call participants
-    public let canBeMutedForAllUsers: Bool
+    public var canBeMutedForAllUsers: Bool
 
     /// True, if the current user can mute the participant only for self
-    public let canBeMutedForCurrentUser: Bool
+    public var canBeMutedForCurrentUser: Bool
 
     /// True, if the current user can allow the participant to unmute themselves or unmute the participant (if the participant is the current user)
-    public let canBeUnmutedForAllUsers: Bool
+    public var canBeUnmutedForAllUsers: Bool
 
     /// True, if the current user can unmute the participant for self
-    public let canBeUnmutedForCurrentUser: Bool
+    public var canBeUnmutedForCurrentUser: Bool
 
     /// True, if the participant is muted for all users, but can unmute themselves
-    public let canUnmuteSelf: Bool
+    public var canUnmuteSelf: Bool
 
     /// True, if the participant is the current user
-    public let isCurrentUser: Bool
+    public var isCurrentUser: Bool
 
     /// True, if the participant hand is raised
-    public let isHandRaised: Bool
+    public var isHandRaised: Bool
 
     /// True, if the participant is muted for all users
-    public let isMutedForAllUsers: Bool
+    public var isMutedForAllUsers: Bool
 
     /// True, if the participant is muted for the current user
-    public let isMutedForCurrentUser: Bool
+    public var isMutedForCurrentUser: Bool
 
     /// True, if the participant is speaking as set by setGroupCallParticipantIsSpeaking
-    public let isSpeaking: Bool
+    public var isSpeaking: Bool
 
     /// User's order in the group call participant list. Orders must be compared lexicographically. The bigger is order, the higher is user in the list. If order is empty, the user must be removed from the participant list
-    public let order: String
+    public var order: String
 
     /// Identifier of the group call participant
-    public let participantId: MessageSender
+    public var participantId: MessageSender
 
     /// User's screen sharing audio channel synchronization source identifier
-    public let screenSharingAudioSourceId: Int
+    public var screenSharingAudioSourceId: Int
 
     /// Information about user's screen sharing video channel; may be null if there is no active screen sharing video
-    public let screenSharingVideoInfo: GroupCallParticipantVideoInfo?
+    public var screenSharingVideoInfo: GroupCallParticipantVideoInfo?
 
     /// Information about user's video channel; may be null if there is no active video
-    public let videoInfo: GroupCallParticipantVideoInfo?
+    public var videoInfo: GroupCallParticipantVideoInfo?
 
     /// Participant's volume level; 1-20000 in hundreds of percents
-    public let volumeLevel: Int
+    public var volumeLevel: Int
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct GetRecentlyOpenedChats: Codable, Equatable, Hashable {
 
     /// The maximum number of chats to be returned
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(limit: Int?) {

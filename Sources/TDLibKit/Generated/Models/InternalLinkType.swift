@@ -391,13 +391,13 @@ public indirect enum InternalLinkType: Codable, Equatable, Hashable {
 public struct InternalLinkTypeAttachmentMenuBot: Codable, Equatable, Hashable {
 
     /// Username of the bot
-    public let botUsername: String
+    public var botUsername: String
 
     /// Target chat to be opened
-    public let targetChat: TargetChat
+    public var targetChat: TargetChat
 
     /// URL to be passed to openWebApp
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -415,7 +415,7 @@ public struct InternalLinkTypeAttachmentMenuBot: Codable, Equatable, Hashable {
 public struct InternalLinkTypeAuthenticationCode: Codable, Equatable, Hashable {
 
     /// The authentication code
-    public let code: String
+    public var code: String
 
 
     public init(code: String) {
@@ -427,7 +427,7 @@ public struct InternalLinkTypeAuthenticationCode: Codable, Equatable, Hashable {
 public struct InternalLinkTypeBackground: Codable, Equatable, Hashable {
 
     /// Name of the background
-    public let backgroundName: String
+    public var backgroundName: String
 
 
     public init(backgroundName: String) {
@@ -439,10 +439,10 @@ public struct InternalLinkTypeBackground: Codable, Equatable, Hashable {
 public struct InternalLinkTypeBotAddToChannel: Codable, Equatable, Hashable {
 
     /// Expected administrator rights for the bot
-    public let administratorRights: ChatAdministratorRights
+    public var administratorRights: ChatAdministratorRights
 
     /// Username of the bot
-    public let botUsername: String
+    public var botUsername: String
 
 
     public init(
@@ -458,13 +458,13 @@ public struct InternalLinkTypeBotAddToChannel: Codable, Equatable, Hashable {
 public struct InternalLinkTypeBotStart: Codable, Equatable, Hashable {
 
     /// True, if sendBotStartMessage must be called automatically without showing the START button
-    public let autostart: Bool
+    public var autostart: Bool
 
     /// Username of the bot
-    public let botUsername: String
+    public var botUsername: String
 
     /// The parameter to be passed to sendBotStartMessage
-    public let startParameter: String
+    public var startParameter: String
 
 
     public init(
@@ -482,13 +482,13 @@ public struct InternalLinkTypeBotStart: Codable, Equatable, Hashable {
 public struct InternalLinkTypeBotStartInGroup: Codable, Equatable, Hashable {
 
     /// Expected administrator rights for the bot; may be null
-    public let administratorRights: ChatAdministratorRights?
+    public var administratorRights: ChatAdministratorRights?
 
     /// Username of the bot
-    public let botUsername: String
+    public var botUsername: String
 
     /// The parameter to be passed to sendBotStartMessage
-    public let startParameter: String
+    public var startParameter: String
 
 
     public init(
@@ -506,7 +506,7 @@ public struct InternalLinkTypeBotStartInGroup: Codable, Equatable, Hashable {
 public struct InternalLinkTypeChatFolderInvite: Codable, Equatable, Hashable {
 
     /// Internal representation of the invite link
-    public let inviteLink: String
+    public var inviteLink: String
 
 
     public init(inviteLink: String) {
@@ -518,7 +518,7 @@ public struct InternalLinkTypeChatFolderInvite: Codable, Equatable, Hashable {
 public struct InternalLinkTypeChatInvite: Codable, Equatable, Hashable {
 
     /// Internal representation of the invite link
-    public let inviteLink: String
+    public var inviteLink: String
 
 
     public init(inviteLink: String) {
@@ -530,10 +530,10 @@ public struct InternalLinkTypeChatInvite: Codable, Equatable, Hashable {
 public struct InternalLinkTypeGame: Codable, Equatable, Hashable {
 
     /// Username of the bot that owns the game
-    public let botUsername: String
+    public var botUsername: String
 
     /// Short name of the game
-    public let gameShortName: String
+    public var gameShortName: String
 
 
     public init(
@@ -549,10 +549,10 @@ public struct InternalLinkTypeGame: Codable, Equatable, Hashable {
 public struct InternalLinkTypeInstantView: Codable, Equatable, Hashable {
 
     /// An URL to open if getWebPageInstantView fails
-    public let fallbackUrl: String
+    public var fallbackUrl: String
 
     /// URL to be passed to getWebPageInstantView
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -568,7 +568,7 @@ public struct InternalLinkTypeInstantView: Codable, Equatable, Hashable {
 public struct InternalLinkTypeInvoice: Codable, Equatable, Hashable {
 
     /// Name of the invoice
-    public let invoiceName: String
+    public var invoiceName: String
 
 
     public init(invoiceName: String) {
@@ -580,7 +580,7 @@ public struct InternalLinkTypeInvoice: Codable, Equatable, Hashable {
 public struct InternalLinkTypeLanguagePack: Codable, Equatable, Hashable {
 
     /// Language pack identifier
-    public let languagePackId: String
+    public var languagePackId: String
 
 
     public init(languagePackId: String) {
@@ -592,7 +592,7 @@ public struct InternalLinkTypeLanguagePack: Codable, Equatable, Hashable {
 public struct InternalLinkTypeMessage: Codable, Equatable, Hashable {
 
     /// URL to be passed to getMessageLinkInfo
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {
@@ -604,10 +604,10 @@ public struct InternalLinkTypeMessage: Codable, Equatable, Hashable {
 public struct InternalLinkTypeMessageDraft: Codable, Equatable, Hashable {
 
     /// True, if the first line of the text contains a link. If true, the input field needs to be focused and the text after the link must be selected
-    public let containsLink: Bool
+    public var containsLink: Bool
 
     /// Message draft text
-    public let text: FormattedText
+    public var text: FormattedText
 
 
     public init(
@@ -623,19 +623,19 @@ public struct InternalLinkTypeMessageDraft: Codable, Equatable, Hashable {
 public struct InternalLinkTypePassportDataRequest: Codable, Equatable, Hashable {
 
     /// User identifier of the service's bot
-    public let botUserId: Int64
+    public var botUserId: Int64
 
     /// An HTTP URL to open once the request is finished, canceled, or failed with the parameters tg_passport=success, tg_passport=cancel, or tg_passport=error&error=... respectively.//-If empty, then onActivityResult method must be used to return response on Android, or the link tgbot{bot_user_id}://passport/success or tgbot{bot_user_id}://passport/cancel must be opened otherwise
-    public let callbackUrl: String
+    public var callbackUrl: String
 
     /// Unique request identifier provided by the service
-    public let nonce: String
+    public var nonce: String
 
     /// Service's public key
-    public let publicKey: String
+    public var publicKey: String
 
     /// Telegram Passport element types requested by the service
-    public let scope: String
+    public var scope: String
 
 
     public init(
@@ -657,10 +657,10 @@ public struct InternalLinkTypePassportDataRequest: Codable, Equatable, Hashable 
 public struct InternalLinkTypePhoneNumberConfirmation: Codable, Equatable, Hashable {
 
     /// Hash value from the link
-    public let hash: String
+    public var hash: String
 
     /// Phone number value from the link
-    public let phoneNumber: String
+    public var phoneNumber: String
 
 
     public init(
@@ -676,7 +676,7 @@ public struct InternalLinkTypePhoneNumberConfirmation: Codable, Equatable, Hasha
 public struct InternalLinkTypePremiumFeatures: Codable, Equatable, Hashable {
 
     /// Referrer specified in the link
-    public let referrer: String
+    public var referrer: String
 
 
     public init(referrer: String) {
@@ -688,13 +688,13 @@ public struct InternalLinkTypePremiumFeatures: Codable, Equatable, Hashable {
 public struct InternalLinkTypeProxy: Codable, Equatable, Hashable {
 
     /// Proxy server port
-    public let port: Int
+    public var port: Int
 
     /// Proxy server IP address
-    public let server: String
+    public var server: String
 
     /// Type of the proxy
-    public let type: ProxyType
+    public var type: ProxyType
 
 
     public init(
@@ -712,7 +712,7 @@ public struct InternalLinkTypeProxy: Codable, Equatable, Hashable {
 public struct InternalLinkTypePublicChat: Codable, Equatable, Hashable {
 
     /// Username of the chat
-    public let chatUsername: String
+    public var chatUsername: String
 
 
     public init(chatUsername: String) {
@@ -724,10 +724,10 @@ public struct InternalLinkTypePublicChat: Codable, Equatable, Hashable {
 public struct InternalLinkTypeStickerSet: Codable, Equatable, Hashable {
 
     /// True, if the sticker set is expected to contain custom emoji
-    public let expectCustomEmoji: Bool
+    public var expectCustomEmoji: Bool
 
     /// Name of the sticker set
-    public let stickerSetName: String
+    public var stickerSetName: String
 
 
     public init(
@@ -743,7 +743,7 @@ public struct InternalLinkTypeStickerSet: Codable, Equatable, Hashable {
 public struct InternalLinkTypeTheme: Codable, Equatable, Hashable {
 
     /// Name of the theme
-    public let themeName: String
+    public var themeName: String
 
 
     public init(themeName: String) {
@@ -755,7 +755,7 @@ public struct InternalLinkTypeTheme: Codable, Equatable, Hashable {
 public struct InternalLinkTypeUnknownDeepLink: Codable, Equatable, Hashable {
 
     /// Link to be passed to getDeepLinkInfo
-    public let link: String
+    public var link: String
 
 
     public init(link: String) {
@@ -767,7 +767,7 @@ public struct InternalLinkTypeUnknownDeepLink: Codable, Equatable, Hashable {
 public struct InternalLinkTypeUserPhoneNumber: Codable, Equatable, Hashable {
 
     /// Phone number of the user
-    public let phoneNumber: String
+    public var phoneNumber: String
 
 
     public init(phoneNumber: String) {
@@ -779,7 +779,7 @@ public struct InternalLinkTypeUserPhoneNumber: Codable, Equatable, Hashable {
 public struct InternalLinkTypeUserToken: Codable, Equatable, Hashable {
 
     /// The token
-    public let token: String
+    public var token: String
 
 
     public init(token: String) {
@@ -791,13 +791,13 @@ public struct InternalLinkTypeUserToken: Codable, Equatable, Hashable {
 public struct InternalLinkTypeVideoChat: Codable, Equatable, Hashable {
 
     /// Username of the chat with the video chat
-    public let chatUsername: String
+    public var chatUsername: String
 
     /// If non-empty, invite hash to be used to join the video chat without being muted by administrators
-    public let inviteHash: String
+    public var inviteHash: String
 
     /// True, if the video chat is expected to be a live stream in a channel or a broadcast group
-    public let isLiveStream: Bool
+    public var isLiveStream: Bool
 
 
     public init(
@@ -815,13 +815,13 @@ public struct InternalLinkTypeVideoChat: Codable, Equatable, Hashable {
 public struct InternalLinkTypeWebApp: Codable, Equatable, Hashable {
 
     /// Username of the bot that owns the Web App
-    public let botUsername: String
+    public var botUsername: String
 
     /// Start parameter to be passed to getWebAppLinkUrl
-    public let startParameter: String
+    public var startParameter: String
 
     /// Short name of the Web App
-    public let webAppShortName: String
+    public var webAppShortName: String
 
 
     public init(

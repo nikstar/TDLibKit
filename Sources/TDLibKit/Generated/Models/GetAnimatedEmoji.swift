@@ -14,7 +14,7 @@ import Foundation
 public struct GetAnimatedEmoji: Codable, Equatable, Hashable {
 
     /// The emoji
-    public let emoji: String?
+    public var emoji: String?
 
 
     public init(emoji: String?) {

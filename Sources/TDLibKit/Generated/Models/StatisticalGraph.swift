@@ -65,10 +65,10 @@ public enum StatisticalGraph: Codable, Equatable, Hashable {
 public struct StatisticalGraphData: Codable, Equatable, Hashable {
 
     /// Graph data in JSON format
-    public let jsonData: String
+    public var jsonData: String
 
     /// If non-empty, a token which can be used to receive a zoomed in graph
-    public let zoomToken: String
+    public var zoomToken: String
 
 
     public init(
@@ -84,7 +84,7 @@ public struct StatisticalGraphData: Codable, Equatable, Hashable {
 public struct StatisticalGraphAsync: Codable, Equatable, Hashable {
 
     /// The token to use for data loading
-    public let token: String
+    public var token: String
 
 
     public init(token: String) {
@@ -96,7 +96,7 @@ public struct StatisticalGraphAsync: Codable, Equatable, Hashable {
 public struct StatisticalGraphError: Codable, Equatable, Hashable {
 
     /// The error message
-    public let errorMessage: String
+    public var errorMessage: String
 
 
     public init(errorMessage: String) {

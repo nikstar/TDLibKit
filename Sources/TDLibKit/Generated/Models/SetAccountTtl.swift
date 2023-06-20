@@ -14,7 +14,7 @@ import Foundation
 public struct SetAccountTtl: Codable, Equatable, Hashable {
 
     /// New account TTL
-    public let ttl: AccountTtl?
+    public var ttl: AccountTtl?
 
 
     public init(ttl: AccountTtl?) {

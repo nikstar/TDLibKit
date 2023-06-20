@@ -14,13 +14,13 @@ import Foundation
 public struct AnimatedChatPhoto: Codable, Equatable, Hashable {
 
     /// Information about the animation file
-    public let file: File
+    public var file: File
 
     /// Animation width and height
-    public let length: Int
+    public var length: Int
 
     /// Timestamp of the frame, used as a static chat photo
-    public let mainFrameTimestamp: Double
+    public var mainFrameTimestamp: Double
 
 
     public init(

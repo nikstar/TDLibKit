@@ -14,10 +14,10 @@ import Foundation
 public struct EditChatFolder: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
     /// The edited chat folder
-    public let folder: ChatFolder?
+    public var folder: ChatFolder?
 
 
     public init(

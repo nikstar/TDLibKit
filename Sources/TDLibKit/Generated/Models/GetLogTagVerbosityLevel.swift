@@ -14,7 +14,7 @@ import Foundation
 public struct GetLogTagVerbosityLevel: Codable, Equatable, Hashable {
 
     /// Logging tag to change verbosity level
-    public let tag: String?
+    public var tag: String?
 
 
     public init(tag: String?) {

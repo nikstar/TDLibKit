@@ -14,10 +14,10 @@ import Foundation
 public struct GetBlockedMessageSenders: Codable, Equatable, Hashable {
 
     /// The maximum number of users and chats to return; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Number of users and chats to skip in the result; must be non-negative
-    public let offset: Int?
+    public var offset: Int?
 
 
     public init(

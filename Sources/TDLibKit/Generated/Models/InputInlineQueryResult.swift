@@ -158,34 +158,34 @@ public struct InputInlineQueryResultAnimation: Codable, Equatable, Hashable, Ide
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAnimation, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// MIME type of the video thumbnail. If non-empty, must be one of "image/jpeg", "image/gif" and "video/mp4"
-    public let thumbnailMimeType: String
+    public var thumbnailMimeType: String
 
     /// URL of the result thumbnail (JPEG, GIF, or MPEG4), if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Title of the query result
-    public let title: String
+    public var title: String
 
     /// Duration of the video, in seconds
-    public let videoDuration: Int
+    public var videoDuration: Int
 
     /// Height of the video
-    public let videoHeight: Int
+    public var videoHeight: Int
 
     /// MIME type of the video file. Must be one of "image/gif" and "video/mp4"
-    public let videoMimeType: String
+    public var videoMimeType: String
 
     /// The URL of the video file (file size must not exceed 1MB)
-    public let videoUrl: String
+    public var videoUrl: String
 
     /// Width of the video
-    public let videoWidth: Int
+    public var videoWidth: Int
 
 
     public init(
@@ -218,34 +218,34 @@ public struct InputInlineQueryResultAnimation: Codable, Equatable, Hashable, Ide
 /// Represents a link to an article or web page
 public struct InputInlineQueryResultArticle: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// True, if the URL must be not shown
-    public let hideUrl: Bool
+    public var hideUrl: Bool
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Thumbnail height, if known
-    public let thumbnailHeight: Int
+    public var thumbnailHeight: Int
 
     /// URL of the result thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Thumbnail width, if known
-    public let thumbnailWidth: Int
+    public var thumbnailWidth: Int
 
     /// Title of the result
-    public let title: String
+    public var title: String
 
     /// URL of the result, if it exists
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -277,25 +277,25 @@ public struct InputInlineQueryResultArticle: Codable, Equatable, Hashable, Ident
 public struct InputInlineQueryResultAudio: Codable, Equatable, Hashable, Identifiable {
 
     /// Audio file duration, in seconds
-    public let audioDuration: Int
+    public var audioDuration: Int
 
     /// The URL of the audio file
-    public let audioUrl: String
+    public var audioUrl: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageAudio, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// Performer of the audio file
-    public let performer: String
+    public var performer: String
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Title of the audio file
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -321,25 +321,25 @@ public struct InputInlineQueryResultAudio: Codable, Equatable, Hashable, Identif
 public struct InputInlineQueryResultContact: Codable, Equatable, Hashable, Identifiable {
 
     /// User contact
-    public let contact: Contact
+    public var contact: Contact
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Thumbnail height, if known
-    public let thumbnailHeight: Int
+    public var thumbnailHeight: Int
 
     /// URL of the result thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Thumbnail width, if known
-    public let thumbnailWidth: Int
+    public var thumbnailWidth: Int
 
 
     public init(
@@ -364,34 +364,34 @@ public struct InputInlineQueryResultContact: Codable, Equatable, Hashable, Ident
 /// Represents a link to a file
 public struct InputInlineQueryResultDocument: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// URL of the file
-    public let documentUrl: String
+    public var documentUrl: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageDocument, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// MIME type of the file content; only "application/pdf" and "application/zip" are currently allowed
-    public let mimeType: String
+    public var mimeType: String
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Height of the thumbnail
-    public let thumbnailHeight: Int
+    public var thumbnailHeight: Int
 
     /// The URL of the file thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Width of the thumbnail
-    public let thumbnailWidth: Int
+    public var thumbnailWidth: Int
 
     /// Title of the resulting file
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -423,13 +423,13 @@ public struct InputInlineQueryResultDocument: Codable, Equatable, Hashable, Iden
 public struct InputInlineQueryResultGame: Codable, Equatable, Hashable, Identifiable {
 
     /// Short name of the game
-    public let gameShortName: String
+    public var gameShortName: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(
@@ -450,28 +450,28 @@ public struct InputInlineQueryResultLocation: Codable, Equatable, Hashable, Iden
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// Amount of time relative to the message sent time until the location can be updated, in seconds
-    public let livePeriod: Int
+    public var livePeriod: Int
 
     /// Location result
-    public let location: Location
+    public var location: Location
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Thumbnail height, if known
-    public let thumbnailHeight: Int
+    public var thumbnailHeight: Int
 
     /// URL of the result thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Thumbnail width, if known
-    public let thumbnailWidth: Int
+    public var thumbnailWidth: Int
 
     /// Title of the result
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -500,31 +500,31 @@ public struct InputInlineQueryResultLocation: Codable, Equatable, Hashable, Iden
 /// Represents link to a JPEG image
 public struct InputInlineQueryResultPhoto: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessagePhoto, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// Height of the photo
-    public let photoHeight: Int
+    public var photoHeight: Int
 
     /// The URL of the JPEG photo (photo size must not exceed 5MB)
-    public let photoUrl: String
+    public var photoUrl: String
 
     /// Width of the photo
-    public let photoWidth: Int
+    public var photoWidth: Int
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// URL of the photo thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Title of the result, if known
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -557,22 +557,22 @@ public struct InputInlineQueryResultSticker: Codable, Equatable, Hashable, Ident
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageSticker, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Height of the sticker
-    public let stickerHeight: Int
+    public var stickerHeight: Int
 
     /// The URL of the WEBP, TGS, or WEBM sticker (sticker file size must not exceed 5MB)
-    public let stickerUrl: String
+    public var stickerUrl: String
 
     /// Width of the sticker
-    public let stickerWidth: Int
+    public var stickerWidth: Int
 
     /// URL of the sticker thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
 
     public init(
@@ -601,22 +601,22 @@ public struct InputInlineQueryResultVenue: Codable, Equatable, Hashable, Identif
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Thumbnail height, if known
-    public let thumbnailHeight: Int
+    public var thumbnailHeight: Int
 
     /// URL of the result thumbnail, if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Thumbnail width, if known
-    public let thumbnailWidth: Int
+    public var thumbnailWidth: Int
 
     /// Venue result
-    public let venue: Venue
+    public var venue: Venue
 
 
     public init(
@@ -641,37 +641,37 @@ public struct InputInlineQueryResultVenue: Codable, Equatable, Hashable, Identif
 /// Represents a link to a page containing an embedded video player or a video file
 public struct InputInlineQueryResultVideo: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVideo, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// MIME type of the content of the video URL, only "text/html" or "video/mp4" are currently supported
-    public let mimeType: String
+    public var mimeType: String
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// The URL of the video thumbnail (JPEG), if it exists
-    public let thumbnailUrl: String
+    public var thumbnailUrl: String
 
     /// Title of the result
-    public let title: String
+    public var title: String
 
     /// Video duration, in seconds
-    public let videoDuration: Int
+    public var videoDuration: Int
 
     /// Height of the video
-    public let videoHeight: Int
+    public var videoHeight: Int
 
     /// URL of the embedded video player or video file
-    public let videoUrl: String
+    public var videoUrl: String
 
     /// Width of the video
-    public let videoWidth: Int
+    public var videoWidth: Int
 
 
     public init(
@@ -708,19 +708,19 @@ public struct InputInlineQueryResultVoiceNote: Codable, Equatable, Hashable, Ide
     public let id: String
 
     /// The content of the message to be sent. Must be one of the following types: inputMessageText, inputMessageVoiceNote, inputMessageInvoice, inputMessageLocation, inputMessageVenue or inputMessageContact
-    public let inputMessageContent: InputMessageContent
+    public var inputMessageContent: InputMessageContent
 
     /// The message reply markup; pass null if none. Must be of type replyMarkupInlineKeyboard or null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Title of the voice note
-    public let title: String
+    public var title: String
 
     /// Duration of the voice note, in seconds
-    public let voiceNoteDuration: Int
+    public var voiceNoteDuration: Int
 
     /// The URL of the voice note file
-    public let voiceNoteUrl: String
+    public var voiceNoteUrl: String
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SetCustomEmojiStickerSetThumbnail: Codable, Equatable, Hashable {
 
     /// Identifier of the custom emoji from the sticker set, which will be set as sticker set thumbnail; pass 0 to remove the sticker set thumbnail
-    public let customEmojiId: TdInt64?
+    public var customEmojiId: TdInt64?
 
     /// Sticker set name
-    public let name: String?
+    public var name: String?
 
 
     public init(

@@ -14,46 +14,46 @@ import Foundation
 public struct ChatFolder: Codable, Equatable, Hashable {
 
     /// True, if archived chats need to be excluded
-    public let excludeArchived: Bool
+    public var excludeArchived: Bool
 
     /// True, if muted chats need to be excluded
-    public let excludeMuted: Bool
+    public var excludeMuted: Bool
 
     /// True, if read chats need to be excluded
-    public let excludeRead: Bool
+    public var excludeRead: Bool
 
     /// The chat identifiers of always excluded chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") always excluded non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
-    public let excludedChatIds: [Int64]
+    public var excludedChatIds: [Int64]
 
     /// The chosen icon for the chat folder; may be null. If null, use getChatFolderDefaultIconName to get default icon name for the folder
-    public let icon: ChatFolderIcon?
+    public var icon: ChatFolderIcon?
 
     /// True, if bots need to be included
-    public let includeBots: Bool
+    public var includeBots: Bool
 
     /// True, if channels need to be included
-    public let includeChannels: Bool
+    public var includeChannels: Bool
 
     /// True, if contacts need to be included
-    public let includeContacts: Bool
+    public var includeContacts: Bool
 
     /// True, if basic groups and supergroups need to be included
-    public let includeGroups: Bool
+    public var includeGroups: Bool
 
     /// True, if non-contact users need to be included
-    public let includeNonContacts: Bool
+    public var includeNonContacts: Bool
 
     /// The chat identifiers of always included chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
-    public let includedChatIds: [Int64]
+    public var includedChatIds: [Int64]
 
     /// True, if at least one link has been created for the folder
-    public let isShareable: Bool
+    public var isShareable: Bool
 
     /// The chat identifiers of pinned chats in the folder. There can be up to getOption("chat_folder_chosen_chat_count_max") pinned and always included non-secret chats and the same number of secret chats, but the limit can be increased with Telegram Premium
-    public let pinnedChatIds: [Int64]
+    public var pinnedChatIds: [Int64]
 
     /// The title of the folder; 1-12 characters without line feeds
-    public let title: String
+    public var title: String
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SetUserPersonalProfilePhoto: Codable, Equatable, Hashable {
 
     /// Profile photo to set; pass null to delete the photo; inputChatPhotoPrevious isn't supported in this function
-    public let photo: InputChatPhoto?
+    public var photo: InputChatPhoto?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

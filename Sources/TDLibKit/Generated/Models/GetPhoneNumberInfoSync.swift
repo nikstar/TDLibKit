@@ -14,10 +14,10 @@ import Foundation
 public struct GetPhoneNumberInfoSync: Codable, Equatable, Hashable {
 
     /// A two-letter ISO 639-1 language code for country information localization
-    public let languageCode: String?
+    public var languageCode: String?
 
     /// The phone number prefix
-    public let phoneNumberPrefix: String?
+    public var phoneNumberPrefix: String?
 
 
     public init(

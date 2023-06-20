@@ -14,13 +14,13 @@ import Foundation
 public struct SearchCallMessages: Codable, Equatable, Hashable {
 
     /// The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-    public let limit: Int?
+    public var limit: Int?
 
     /// Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-    public let offset: String?
+    public var offset: String?
 
     /// Pass true to search only for messages with missed/declined calls
-    public let onlyMissed: Bool?
+    public var onlyMissed: Bool?
 
 
     public init(

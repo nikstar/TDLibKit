@@ -14,13 +14,13 @@ import Foundation
 public struct StorageStatistics: Codable, Equatable, Hashable {
 
     /// Statistics split by chats
-    public let byChat: [StorageStatisticsByChat]
+    public var byChat: [StorageStatisticsByChat]
 
     /// Total number of files
-    public let count: Int
+    public var count: Int
 
     /// Total size of files, in bytes
-    public let size: Int64
+    public var size: Int64
 
 
     public init(

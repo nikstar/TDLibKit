@@ -14,10 +14,10 @@ import Foundation
 public struct ReorderInstalledStickerSets: Codable, Equatable, Hashable {
 
     /// Identifiers of installed sticker sets in the new correct order
-    public let stickerSetIds: [TdInt64]?
+    public var stickerSetIds: [TdInt64]?
 
     /// Type of the sticker sets to reorder
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(

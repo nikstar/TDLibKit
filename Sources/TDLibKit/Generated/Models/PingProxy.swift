@@ -14,7 +14,7 @@ import Foundation
 public struct PingProxy: Codable, Equatable, Hashable {
 
     /// Proxy identifier. Use 0 to ping a Telegram server without a proxy
-    public let proxyId: Int?
+    public var proxyId: Int?
 
 
     public init(proxyId: Int?) {

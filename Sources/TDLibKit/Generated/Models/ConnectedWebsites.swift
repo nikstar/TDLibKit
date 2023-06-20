@@ -14,7 +14,7 @@ import Foundation
 public struct ConnectedWebsites: Codable, Equatable, Hashable {
 
     /// List of connected websites
-    public let websites: [ConnectedWebsite]
+    public var websites: [ConnectedWebsite]
 
 
     public init(websites: [ConnectedWebsite]) {

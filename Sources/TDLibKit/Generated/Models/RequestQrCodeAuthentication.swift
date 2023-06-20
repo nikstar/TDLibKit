@@ -14,7 +14,7 @@ import Foundation
 public struct RequestQrCodeAuthentication: Codable, Equatable, Hashable {
 
     /// List of user identifiers of other users currently using the application
-    public let otherUserIds: [Int64]?
+    public var otherUserIds: [Int64]?
 
 
     public init(otherUserIds: [Int64]?) {

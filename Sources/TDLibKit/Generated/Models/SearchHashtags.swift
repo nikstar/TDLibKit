@@ -14,10 +14,10 @@ import Foundation
 public struct SearchHashtags: Codable, Equatable, Hashable {
 
     /// The maximum number of hashtags to be returned
-    public let limit: Int?
+    public var limit: Int?
 
     /// Hashtag prefix to search for
-    public let prefix: String?
+    public var prefix: String?
 
 
     public init(

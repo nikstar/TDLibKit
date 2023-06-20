@@ -14,22 +14,22 @@ import Foundation
 public struct Background: Codable, Equatable, Hashable, Identifiable {
 
     /// Document with the background; may be null. Null only for filled backgrounds
-    public let document: Document?
+    public var document: Document?
 
     /// Unique background identifier
     public let id: TdInt64
 
     /// True, if the background is dark and is recommended to be used with dark theme
-    public let isDark: Bool
+    public var isDark: Bool
 
     /// True, if this is one of default backgrounds
-    public let isDefault: Bool
+    public var isDefault: Bool
 
     /// Unique background name
-    public let name: String
+    public var name: String
 
     /// Type of the background
-    public let type: BackgroundType
+    public var type: BackgroundType
 
 
     public init(

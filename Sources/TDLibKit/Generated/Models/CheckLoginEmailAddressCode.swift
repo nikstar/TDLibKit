@@ -14,7 +14,7 @@ import Foundation
 public struct CheckLoginEmailAddressCode: Codable, Equatable, Hashable {
 
     /// Email address authentication to check
-    public let code: EmailAddressAuthentication?
+    public var code: EmailAddressAuthentication?
 
 
     public init(code: EmailAddressAuthentication?) {

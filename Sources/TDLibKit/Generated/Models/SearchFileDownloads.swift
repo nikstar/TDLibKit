@@ -14,19 +14,19 @@ import Foundation
 public struct SearchFileDownloads: Codable, Equatable, Hashable {
 
     /// The maximum number of files to be returned
-    public let limit: Int?
+    public var limit: Int?
 
     /// Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-    public let offset: String?
+    public var offset: String?
 
     /// Pass true to search only for active downloads, including paused
-    public let onlyActive: Bool?
+    public var onlyActive: Bool?
 
     /// Pass true to search only for completed downloads
-    public let onlyCompleted: Bool?
+    public var onlyCompleted: Bool?
 
     /// Query to search for; may be empty to return all downloaded files
-    public let query: String?
+    public var query: String?
 
 
     public init(

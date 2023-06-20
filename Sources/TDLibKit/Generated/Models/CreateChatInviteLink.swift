@@ -14,19 +14,19 @@ import Foundation
 public struct CreateChatInviteLink: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true if users joining the chat via the link need to be approved by chat administrators. In this case, member_limit must be 0
-    public let createsJoinRequest: Bool?
+    public var createsJoinRequest: Bool?
 
     /// Point in time (Unix timestamp) when the link will expire; pass 0 if never
-    public let expirationDate: Int?
+    public var expirationDate: Int?
 
     /// The maximum number of chat members that can join the chat via the link simultaneously; 0-99999; pass 0 if not limited
-    public let memberLimit: Int?
+    public var memberLimit: Int?
 
     /// Invite link name; 0-32 characters
-    public let name: String?
+    public var name: String?
 
 
     public init(

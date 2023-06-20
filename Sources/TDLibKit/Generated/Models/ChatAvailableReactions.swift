@@ -53,7 +53,7 @@ public enum ChatAvailableReactions: Codable, Equatable, Hashable {
 public struct ChatAvailableReactionsSome: Codable, Equatable, Hashable {
 
     /// The list of reactions
-    public let reactions: [ReactionType]
+    public var reactions: [ReactionType]
 
 
     public init(reactions: [ReactionType]) {

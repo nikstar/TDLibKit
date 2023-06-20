@@ -14,22 +14,22 @@ import Foundation
 public struct IdentityDocument: Codable, Equatable, Hashable {
 
     /// Document expiry date; may be null if not applicable
-    public let expiryDate: Date?
+    public var expiryDate: Date?
 
     /// Front side of the document
-    public let frontSide: DatedFile
+    public var frontSide: DatedFile
 
     /// Document number; 1-24 characters
-    public let number: String
+    public var number: String
 
     /// Reverse side of the document; only for driver license and identity card; may be null
-    public let reverseSide: DatedFile?
+    public var reverseSide: DatedFile?
 
     /// Selfie with the document; may be null
-    public let selfie: DatedFile?
+    public var selfie: DatedFile?
 
     /// List of files containing a certified English translation of the document
-    public let translation: [DatedFile]
+    public var translation: [DatedFile]
 
 
     public init(

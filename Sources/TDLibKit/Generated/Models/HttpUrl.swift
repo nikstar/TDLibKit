@@ -14,7 +14,7 @@ import Foundation
 public struct HttpUrl: Codable, Equatable, Hashable {
 
     /// The URL
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {

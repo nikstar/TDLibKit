@@ -14,7 +14,7 @@ import Foundation
 public struct LocalizationTargetInfo: Codable, Equatable, Hashable {
 
     /// List of available language packs for this application
-    public let languagePacks: [LanguagePackInfo]
+    public var languagePacks: [LanguagePackInfo]
 
 
     public init(languagePacks: [LanguagePackInfo]) {

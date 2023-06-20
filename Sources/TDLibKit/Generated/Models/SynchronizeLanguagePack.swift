@@ -14,7 +14,7 @@ import Foundation
 public struct SynchronizeLanguagePack: Codable, Equatable, Hashable {
 
     /// Language pack identifier
-    public let languagePackId: String?
+    public var languagePackId: String?
 
 
     public init(languagePackId: String?) {

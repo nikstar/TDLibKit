@@ -14,7 +14,7 @@ import Foundation
 public struct SearchUserByToken: Codable, Equatable, Hashable {
 
     /// Token to search for
-    public let token: String?
+    public var token: String?
 
 
     public init(token: String?) {

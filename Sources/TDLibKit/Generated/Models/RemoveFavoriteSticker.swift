@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveFavoriteSticker: Codable, Equatable, Hashable {
 
     /// Sticker file to delete from the list
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(sticker: InputFile?) {

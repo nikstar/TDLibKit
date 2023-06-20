@@ -14,10 +14,10 @@ import Foundation
 public struct ResendMessages: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to send messages
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifiers of the messages to resend. Message identifiers must be in a strictly increasing order
-    public let messageIds: [Int64]?
+    public var messageIds: [Int64]?
 
 
     public init(

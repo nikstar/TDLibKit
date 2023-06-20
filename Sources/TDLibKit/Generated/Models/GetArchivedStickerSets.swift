@@ -14,13 +14,13 @@ import Foundation
 public struct GetArchivedStickerSets: Codable, Equatable, Hashable {
 
     /// The maximum number of sticker sets to return; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Identifier of the sticker set from which to return the result
-    public let offsetStickerSetId: TdInt64?
+    public var offsetStickerSetId: TdInt64?
 
     /// Type of the sticker sets to return
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(

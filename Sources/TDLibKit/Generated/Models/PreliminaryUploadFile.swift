@@ -14,13 +14,13 @@ import Foundation
 public struct PreliminaryUploadFile: Codable, Equatable, Hashable {
 
     /// File to upload
-    public let file: InputFile?
+    public var file: InputFile?
 
     /// File type; pass null if unknown
-    public let fileType: FileType?
+    public var fileType: FileType?
 
     /// Priority of the upload (1-32). The higher the priority, the earlier the file will be uploaded. If the priorities of two files are equal, then the first one for which preliminaryUploadFile was called will be uploaded first
-    public let priority: Int?
+    public var priority: Int?
 
 
     public init(

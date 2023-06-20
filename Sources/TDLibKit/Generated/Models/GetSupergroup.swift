@@ -14,7 +14,7 @@ import Foundation
 public struct GetSupergroup: Codable, Equatable, Hashable {
 
     /// Supergroup or channel identifier
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(supergroupId: Int64?) {

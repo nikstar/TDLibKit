@@ -14,13 +14,13 @@ import Foundation
 public struct GetCallbackQueryMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the callback query
-    public let callbackQueryId: TdInt64?
+    public var callbackQueryId: TdInt64?
 
     /// Identifier of the chat the message belongs to
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message identifier
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

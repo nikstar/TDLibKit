@@ -14,7 +14,7 @@ import Foundation
 public struct GetFileExtension: Codable, Equatable, Hashable {
 
     /// The MIME type of the file
-    public let mimeType: String?
+    public var mimeType: String?
 
 
     public init(mimeType: String?) {

@@ -14,10 +14,10 @@ import Foundation
 public struct ReorderChatFolders: Codable, Equatable, Hashable {
 
     /// Identifiers of chat folders in the new correct order
-    public let chatFolderIds: [Int]?
+    public var chatFolderIds: [Int]?
 
     /// Position of the main chat list among chat folders, 0-based. Can be non-zero only for Premium users
-    public let mainChatListPosition: Int?
+    public var mainChatListPosition: Int?
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct TestCallBytes: Codable, Equatable, Hashable {
 
     /// Bytes to return
-    public let x: Data?
+    public var x: Data?
 
 
     public init(x: Data?) {

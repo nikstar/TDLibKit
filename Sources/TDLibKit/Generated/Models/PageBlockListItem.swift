@@ -14,10 +14,10 @@ import Foundation
 public struct PageBlockListItem: Codable, Equatable, Hashable {
 
     /// Item label
-    public let label: String
+    public var label: String
 
     /// Item blocks
-    public let pageBlocks: [PageBlock]
+    public var pageBlocks: [PageBlock]
 
 
     public init(

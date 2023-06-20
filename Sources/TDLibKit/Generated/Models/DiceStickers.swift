@@ -55,7 +55,7 @@ public enum DiceStickers: Codable, Equatable, Hashable {
 public struct DiceStickersRegular: Codable, Equatable, Hashable {
 
     /// The animated sticker with the dice animation
-    public let sticker: Sticker
+    public var sticker: Sticker
 
 
     public init(sticker: Sticker) {
@@ -67,19 +67,19 @@ public struct DiceStickersRegular: Codable, Equatable, Hashable {
 public struct DiceStickersSlotMachine: Codable, Equatable, Hashable {
 
     /// The animated sticker with the slot machine background. The background animation must start playing after all reel animations finish
-    public let background: Sticker
+    public var background: Sticker
 
     /// The animated sticker with the center reel
-    public let centerReel: Sticker
+    public var centerReel: Sticker
 
     /// The animated sticker with the left reel
-    public let leftReel: Sticker
+    public var leftReel: Sticker
 
     /// The animated sticker with the lever animation. The lever animation must play once in the initial dice state
-    public let lever: Sticker
+    public var lever: Sticker
 
     /// The animated sticker with the right reel
-    public let rightReel: Sticker
+    public var rightReel: Sticker
 
 
     public init(

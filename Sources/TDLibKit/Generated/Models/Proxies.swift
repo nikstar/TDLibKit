@@ -14,7 +14,7 @@ import Foundation
 public struct Proxies: Codable, Equatable, Hashable {
 
     /// List of proxy servers
-    public let proxies: [Proxy]
+    public var proxies: [Proxy]
 
 
     public init(proxies: [Proxy]) {

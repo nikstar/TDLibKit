@@ -14,7 +14,7 @@ import Foundation
 public struct AddFavoriteSticker: Codable, Equatable, Hashable {
 
     /// Sticker file to add
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(sticker: InputFile?) {

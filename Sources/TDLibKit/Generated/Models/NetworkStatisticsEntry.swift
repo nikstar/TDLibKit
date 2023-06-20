@@ -55,16 +55,16 @@ public enum NetworkStatisticsEntry: Codable, Equatable, Hashable {
 public struct NetworkStatisticsEntryFile: Codable, Equatable, Hashable {
 
     /// Type of the file the data is part of; pass null if the data isn't related to files
-    public let fileType: FileType?
+    public var fileType: FileType?
 
     /// Type of the network the data was sent through. Call setNetworkType to maintain the actual network type
-    public let networkType: NetworkType
+    public var networkType: NetworkType
 
     /// Total number of bytes received
-    public let receivedBytes: Int64
+    public var receivedBytes: Int64
 
     /// Total number of bytes sent
-    public let sentBytes: Int64
+    public var sentBytes: Int64
 
 
     public init(
@@ -84,16 +84,16 @@ public struct NetworkStatisticsEntryFile: Codable, Equatable, Hashable {
 public struct NetworkStatisticsEntryCall: Codable, Equatable, Hashable {
 
     /// Total call duration, in seconds
-    public let duration: Double
+    public var duration: Double
 
     /// Type of the network the data was sent through. Call setNetworkType to maintain the actual network type
-    public let networkType: NetworkType
+    public var networkType: NetworkType
 
     /// Total number of bytes received
-    public let receivedBytes: Int64
+    public var receivedBytes: Int64
 
     /// Total number of bytes sent
-    public let sentBytes: Int64
+    public var sentBytes: Int64
 
 
     public init(

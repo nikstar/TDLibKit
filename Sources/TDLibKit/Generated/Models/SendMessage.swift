@@ -14,22 +14,22 @@ import Foundation
 public struct SendMessage: Codable, Equatable, Hashable {
 
     /// Target chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The content of the message to be sent
-    public let inputMessageContent: InputMessageContent?
+    public var inputMessageContent: InputMessageContent?
 
     /// If not 0, a message thread identifier in which the message will be sent
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// Options to be used to send the message; pass null to use default options
-    public let options: MessageSendOptions?
+    public var options: MessageSendOptions?
 
     /// Markup for replying to the message; pass null if none; for bots only
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// Identifier of the replied message; 0 if none
-    public let replyToMessageId: Int64?
+    public var replyToMessageId: Int64?
 
 
     public init(

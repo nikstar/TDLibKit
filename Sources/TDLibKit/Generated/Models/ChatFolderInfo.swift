@@ -14,16 +14,16 @@ import Foundation
 public struct ChatFolderInfo: Codable, Equatable, Hashable, Identifiable {
 
     /// True, if the chat folder has invite links created by the current user
-    public let hasMyInviteLinks: Bool
+    public var hasMyInviteLinks: Bool
 
     /// The chosen or default icon for the chat folder
-    public let icon: ChatFolderIcon
+    public var icon: ChatFolderIcon
 
     /// Unique chat folder identifier
     public let id: Int
 
     /// The title of the folder; 1-12 characters without line feeds
-    public let title: String
+    public var title: String
 
 
     public init(

@@ -14,16 +14,16 @@ import Foundation
 public struct OrderInfo: Codable, Equatable, Hashable {
 
     /// Email address of the user
-    public let emailAddress: String
+    public var emailAddress: String
 
     /// Name of the user
-    public let name: String
+    public var name: String
 
     /// Phone number of the user
-    public let phoneNumber: String
+    public var phoneNumber: String
 
     /// Shipping address for this order; may be null
-    public let shippingAddress: Address?
+    public var shippingAddress: Address?
 
 
     public init(

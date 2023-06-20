@@ -55,10 +55,10 @@ public enum LoginUrlInfo: Codable, Equatable, Hashable {
 public struct LoginUrlInfoOpen: Codable, Equatable, Hashable {
 
     /// True, if there is no need to show an ordinary open URL confirmation
-    public let skipConfirmation: Bool
+    public var skipConfirmation: Bool
 
     /// The URL to open
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -74,16 +74,16 @@ public struct LoginUrlInfoOpen: Codable, Equatable, Hashable {
 public struct LoginUrlInfoRequestConfirmation: Codable, Equatable, Hashable {
 
     /// User identifier of a bot linked with the website
-    public let botUserId: Int64
+    public var botUserId: Int64
 
     /// A domain of the URL
-    public let domain: String
+    public var domain: String
 
     /// True, if the user must be asked for the permission to the bot to send them messages
-    public let requestWriteAccess: Bool
+    public var requestWriteAccess: Bool
 
     /// An HTTP URL to be opened
-    public let url: String
+    public var url: String
 
 
     public init(

@@ -14,16 +14,16 @@ import Foundation
 public struct BlockMessageSenderFromReplies: Codable, Equatable, Hashable {
 
     /// Pass true to delete all messages from the same sender
-    public let deleteAllMessages: Bool?
+    public var deleteAllMessages: Bool?
 
     /// Pass true to delete the message
-    public let deleteMessage: Bool?
+    public var deleteMessage: Bool?
 
     /// The identifier of an incoming message in the Replies chat
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Pass true to report the sender to the Telegram moderators
-    public let reportSpam: Bool?
+    public var reportSpam: Bool?
 
 
     public init(

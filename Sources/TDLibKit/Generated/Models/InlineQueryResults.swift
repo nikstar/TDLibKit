@@ -14,16 +14,16 @@ import Foundation
 public struct InlineQueryResults: Codable, Equatable, Hashable {
 
     /// Button to be shown above inline query results; may be null
-    public let button: InlineQueryResultsButton?
+    public var button: InlineQueryResultsButton?
 
     /// Unique identifier of the inline query
-    public let inlineQueryId: TdInt64
+    public var inlineQueryId: TdInt64
 
     /// The offset for the next request. If empty, there are no more results
-    public let nextOffset: String
+    public var nextOffset: String
 
     /// Results of the query
-    public let results: [InlineQueryResult]
+    public var results: [InlineQueryResult]
 
 
     public init(

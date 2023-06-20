@@ -14,64 +14,64 @@ import Foundation
 public struct User: Codable, Equatable, Hashable, Identifiable {
 
     /// True, if the user added the current bot to attachment menu; only available to bots
-    public let addedToAttachmentMenu: Bool
+    public var addedToAttachmentMenu: Bool
 
     /// Emoji status to be shown instead of the default Telegram Premium badge; may be null. For Telegram Premium users only
-    public let emojiStatus: EmojiStatus?
+    public var emojiStatus: EmojiStatus?
 
     /// First name of the user
-    public let firstName: String
+    public var firstName: String
 
     /// If false, the user is inaccessible, and the only information known about the user is inside this class. Identifier of the user can't be passed to any method
-    public let haveAccess: Bool
+    public var haveAccess: Bool
 
     /// User identifier
     public let id: Int64
 
     /// The user is a contact of the current user
-    public let isContact: Bool
+    public var isContact: Bool
 
     /// True, if many users reported this user as a fake account
-    public let isFake: Bool
+    public var isFake: Bool
 
     /// The user is a contact of the current user and the current user is a contact of the user
-    public let isMutualContact: Bool
+    public var isMutualContact: Bool
 
     /// True, if the user is a Telegram Premium user
-    public let isPremium: Bool
+    public var isPremium: Bool
 
     /// True, if many users reported this user as a scam
-    public let isScam: Bool
+    public var isScam: Bool
 
     /// True, if the user is Telegram support account
-    public let isSupport: Bool
+    public var isSupport: Bool
 
     /// True, if the user is verified
-    public let isVerified: Bool
+    public var isVerified: Bool
 
     /// IETF language tag of the user's language; only available to bots
-    public let languageCode: String
+    public var languageCode: String
 
     /// Last name of the user
-    public let lastName: String
+    public var lastName: String
 
     /// Phone number of the user
-    public let phoneNumber: String
+    public var phoneNumber: String
 
     /// Profile photo of the user; may be null
-    public let profilePhoto: ProfilePhoto?
+    public var profilePhoto: ProfilePhoto?
 
     /// If non-empty, it contains a human-readable description of the reason why access to this user must be restricted
-    public let restrictionReason: String
+    public var restrictionReason: String
 
     /// Current online status of the user
-    public let status: UserStatus
+    public var status: UserStatus
 
     /// Type of the user
-    public let type: UserType
+    public var type: UserType
 
     /// Usernames of the user; may be null
-    public let usernames: Usernames?
+    public var usernames: Usernames?
 
 
     public init(

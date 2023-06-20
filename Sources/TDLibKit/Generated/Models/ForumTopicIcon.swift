@@ -14,10 +14,10 @@ import Foundation
 public struct ForumTopicIcon: Codable, Equatable, Hashable {
 
     /// Color of the topic icon in RGB format
-    public let color: Int
+    public var color: Int
 
     /// Unique identifier of the custom emoji shown on the topic icon; 0 if none
-    public let customEmojiId: TdInt64
+    public var customEmojiId: TdInt64
 
 
     public init(

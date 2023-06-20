@@ -14,13 +14,13 @@ import Foundation
 public struct EditMessageReplyMarkup: Codable, Equatable, Hashable {
 
     /// The chat the message belongs to
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// The new message reply markup; pass null if none
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

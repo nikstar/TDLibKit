@@ -14,19 +14,19 @@ import Foundation
 public struct PollOption: Codable, Equatable, Hashable {
 
     /// True, if the option is being chosen by a pending setPollAnswer request
-    public let isBeingChosen: Bool
+    public var isBeingChosen: Bool
 
     /// True, if the option was chosen by the user
-    public let isChosen: Bool
+    public var isChosen: Bool
 
     /// Option text; 1-100 characters
-    public let text: String
+    public var text: String
 
     /// The percentage of votes for this option; 0-100
-    public let votePercentage: Int
+    public var votePercentage: Int
 
     /// Number of voters for this option, available only for closed or voted polls
-    public let voterCount: Int
+    public var voterCount: Int
 
 
     public init(

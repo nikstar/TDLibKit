@@ -14,7 +14,7 @@ import Foundation
 public struct TerminateSession: Codable, Equatable, Hashable {
 
     /// Session identifier
-    public let sessionId: TdInt64?
+    public var sessionId: TdInt64?
 
 
     public init(sessionId: TdInt64?) {

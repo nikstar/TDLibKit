@@ -17,10 +17,10 @@ public struct ShippingOption: Codable, Equatable, Hashable, Identifiable {
     public let id: String
 
     /// A list of objects used to calculate the total shipping costs
-    public let priceParts: [LabeledPricePart]
+    public var priceParts: [LabeledPricePart]
 
     /// Option title
-    public let title: String
+    public var title: String
 
 
     public init(

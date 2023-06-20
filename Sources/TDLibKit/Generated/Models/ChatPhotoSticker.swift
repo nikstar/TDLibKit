@@ -14,10 +14,10 @@ import Foundation
 public struct ChatPhotoSticker: Codable, Equatable, Hashable {
 
     /// The fill to be used as background for the sticker; rotation angle in backgroundFillGradient isn't supported
-    public let backgroundFill: BackgroundFill
+    public var backgroundFill: BackgroundFill
 
     /// Type of the sticker
-    public let type: ChatPhotoStickerType
+    public var type: ChatPhotoStickerType
 
 
     public init(

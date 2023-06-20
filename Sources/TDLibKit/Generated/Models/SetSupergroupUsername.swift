@@ -14,10 +14,10 @@ import Foundation
 public struct SetSupergroupUsername: Codable, Equatable, Hashable {
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
     /// New value of the username. Use an empty string to remove the username. The username can't be completely removed if there is another active or disabled username
-    public let username: String?
+    public var username: String?
 
 
     public init(

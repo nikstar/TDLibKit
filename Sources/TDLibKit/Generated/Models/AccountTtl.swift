@@ -14,7 +14,7 @@ import Foundation
 public struct AccountTtl: Codable, Equatable, Hashable {
 
     /// Number of days of inactivity before the account will be flagged for deletion; 30-366 days
-    public let days: Int
+    public var days: Int
 
 
     public init(days: Int) {

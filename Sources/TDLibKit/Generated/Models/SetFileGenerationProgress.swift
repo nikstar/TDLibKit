@@ -14,13 +14,13 @@ import Foundation
 public struct SetFileGenerationProgress: Codable, Equatable, Hashable {
 
     /// Expected size of the generated file, in bytes; 0 if unknown
-    public let expectedSize: Int64?
+    public var expectedSize: Int64?
 
     /// The identifier of the generation process
-    public let generationId: TdInt64?
+    public var generationId: TdInt64?
 
     /// The number of bytes already generated
-    public let localPrefixSize: Int64?
+    public var localPrefixSize: Int64?
 
 
     public init(

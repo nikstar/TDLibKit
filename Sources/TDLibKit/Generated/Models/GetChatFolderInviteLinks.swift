@@ -14,7 +14,7 @@ import Foundation
 public struct GetChatFolderInviteLinks: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
 
     public init(chatFolderId: Int?) {

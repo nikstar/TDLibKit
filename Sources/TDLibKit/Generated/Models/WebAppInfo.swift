@@ -14,10 +14,10 @@ import Foundation
 public struct WebAppInfo: Codable, Equatable, Hashable {
 
     /// Unique identifier for the Web App launch
-    public let launchId: TdInt64
+    public var launchId: TdInt64
 
     /// A Web App URL to open in a web view
-    public let url: String
+    public var url: String
 
 
     public init(

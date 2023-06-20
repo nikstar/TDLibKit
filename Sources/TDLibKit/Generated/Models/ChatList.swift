@@ -61,7 +61,7 @@ public enum ChatList: Codable, Equatable, Hashable {
 public struct ChatListFolder: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int
+    public var chatFolderId: Int
 
 
     public init(chatFolderId: Int) {

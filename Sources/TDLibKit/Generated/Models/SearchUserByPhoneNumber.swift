@@ -14,7 +14,7 @@ import Foundation
 public struct SearchUserByPhoneNumber: Codable, Equatable, Hashable {
 
     /// Phone number to search for
-    public let phoneNumber: String?
+    public var phoneNumber: String?
 
 
     public init(phoneNumber: String?) {

@@ -14,10 +14,10 @@ import Foundation
 public struct GetBackgroundUrl: Codable, Equatable, Hashable {
 
     /// Background name
-    public let name: String?
+    public var name: String?
 
     /// Background type
-    public let type: BackgroundType?
+    public var type: BackgroundType?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleGeneralForumTopicIsHidden: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to hide and close the General topic; pass false to unhide it
-    public let isHidden: Bool?
+    public var isHidden: Bool?
 
 
     public init(

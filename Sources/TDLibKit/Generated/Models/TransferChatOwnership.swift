@@ -14,13 +14,13 @@ import Foundation
 public struct TransferChatOwnership: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The 2-step verification password of the current user
-    public let password: String?
+    public var password: String?
 
     /// Identifier of the user to which transfer the ownership. The ownership can't be transferred to a bot or to a deleted user
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

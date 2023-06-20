@@ -14,10 +14,10 @@ import Foundation
 public struct SetCustomLanguagePackString: Codable, Equatable, Hashable {
 
     /// Identifier of a previously added custom local language pack in the current localization target
-    public let languagePackId: String?
+    public var languagePackId: String?
 
     /// New language pack string
-    public let newString: LanguagePackString?
+    public var newString: LanguagePackString?
 
 
     public init(

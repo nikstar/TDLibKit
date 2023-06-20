@@ -14,7 +14,7 @@ import Foundation
 public struct CreateInvoiceLink: Codable, Equatable, Hashable {
 
     /// Information about the invoice of the type inputMessageInvoice
-    public let invoice: InputMessageContent?
+    public var invoice: InputMessageContent?
 
 
     public init(invoice: InputMessageContent?) {

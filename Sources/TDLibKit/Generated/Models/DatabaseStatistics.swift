@@ -14,7 +14,7 @@ import Foundation
 public struct DatabaseStatistics: Codable, Equatable, Hashable {
 
     /// Database statistics in an unspecified human-readable format
-    public let statistics: String
+    public var statistics: String
 
 
     public init(statistics: String) {

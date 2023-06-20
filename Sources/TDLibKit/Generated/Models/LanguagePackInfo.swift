@@ -14,43 +14,43 @@ import Foundation
 public struct LanguagePackInfo: Codable, Equatable, Hashable, Identifiable {
 
     /// Identifier of a base language pack; may be empty. If a string is missed in the language pack, then it must be fetched from base language pack. Unsupported in custom language packs
-    public let baseLanguagePackId: String
+    public var baseLanguagePackId: String
 
     /// Unique language pack identifier
     public let id: String
 
     /// True, if the language pack is a beta language pack
-    public let isBeta: Bool
+    public var isBeta: Bool
 
     /// True, if the language pack is installed by the current user
-    public let isInstalled: Bool
+    public var isInstalled: Bool
 
     /// True, if the language pack is official
-    public let isOfficial: Bool
+    public var isOfficial: Bool
 
     /// True, if the language pack strings are RTL
-    public let isRtl: Bool
+    public var isRtl: Bool
 
     /// Total number of non-deleted strings from the language pack available locally
-    public let localStringCount: Int
+    public var localStringCount: Int
 
     /// Language name
-    public let name: String
+    public var name: String
 
     /// Name of the language in that language
-    public let nativeName: String
+    public var nativeName: String
 
     /// A language code to be used to apply plural forms. See https://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html for more information
-    public let pluralCode: String
+    public var pluralCode: String
 
     /// Total number of non-deleted strings from the language pack
-    public let totalStringCount: Int
+    public var totalStringCount: Int
 
     /// Total number of translated strings from the language pack
-    public let translatedStringCount: Int
+    public var translatedStringCount: Int
 
     /// Link to language translation interface; empty for custom local language packs
-    public let translationUrl: String
+    public var translationUrl: String
 
 
     public init(

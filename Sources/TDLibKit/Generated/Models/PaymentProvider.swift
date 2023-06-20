@@ -65,7 +65,7 @@ public enum PaymentProvider: Codable, Equatable, Hashable {
 public struct PaymentProviderSmartGlocal: Codable, Equatable, Hashable {
 
     /// Public payment token
-    public let publicToken: String
+    public var publicToken: String
 
 
     public init(publicToken: String) {
@@ -77,16 +77,16 @@ public struct PaymentProviderSmartGlocal: Codable, Equatable, Hashable {
 public struct PaymentProviderStripe: Codable, Equatable, Hashable {
 
     /// True, if the cardholder name must be provided
-    public let needCardholderName: Bool
+    public var needCardholderName: Bool
 
     /// True, if the user country must be provided
-    public let needCountry: Bool
+    public var needCountry: Bool
 
     /// True, if the user ZIP/postal code must be provided
-    public let needPostalCode: Bool
+    public var needPostalCode: Bool
 
     /// Stripe API publishable key
-    public let publishableKey: String
+    public var publishableKey: String
 
 
     public init(
@@ -106,7 +106,7 @@ public struct PaymentProviderStripe: Codable, Equatable, Hashable {
 public struct PaymentProviderOther: Codable, Equatable, Hashable {
 
     /// Payment form URL
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {

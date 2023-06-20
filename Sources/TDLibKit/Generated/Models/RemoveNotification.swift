@@ -14,10 +14,10 @@ import Foundation
 public struct RemoveNotification: Codable, Equatable, Hashable {
 
     /// Identifier of notification group to which the notification belongs
-    public let notificationGroupId: Int?
+    public var notificationGroupId: Int?
 
     /// Identifier of removed notification
-    public let notificationId: Int?
+    public var notificationId: Int?
 
 
     public init(

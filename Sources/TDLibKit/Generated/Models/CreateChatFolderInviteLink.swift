@@ -14,13 +14,13 @@ import Foundation
 public struct CreateChatFolderInviteLink: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
     /// Identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link creation
-    public let chatIds: [Int64]?
+    public var chatIds: [Int64]?
 
     /// Name of the link; 0-32 characters
-    public let name: String?
+    public var name: String?
 
 
     public init(

@@ -14,19 +14,19 @@ import Foundation
 public struct GetMessageThreadHistory: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message starting from which history must be fetched; use 0 to get results from the last message
-    public let fromMessageId: Int64?
+    public var fromMessageId: Int64?
 
     /// The maximum number of messages to be returned; must be positive and can't be greater than 100. If the offset is negative, the limit must be greater than or equal to -offset.//-For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-    public let limit: Int?
+    public var limit: Int?
 
     /// Message identifier, which thread history needs to be returned
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Specify 0 to get results from exactly the from_message_id or a negative offset up to 99 to get additionally some newer messages
-    public let offset: Int?
+    public var offset: Int?
 
 
     public init(

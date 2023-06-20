@@ -14,13 +14,13 @@ import Foundation
 public struct ProcessChatJoinRequests: Codable, Equatable, Hashable {
 
     /// Pass true to approve all requests; pass false to decline them
-    public let approve: Bool?
+    public var approve: Bool?
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Invite link for which to process join requests. If empty, all join requests will be processed. Requires administrator privileges and can_invite_users right in the chat for own links and owner privileges for other links
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(

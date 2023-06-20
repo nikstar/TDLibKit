@@ -14,22 +14,22 @@ import Foundation
 public struct PhoneNumberAuthenticationSettings: Codable, Equatable, Hashable {
 
     /// Pass true if the authentication code may be sent via a flash call to the specified phone number
-    public let allowFlashCall: Bool
+    public var allowFlashCall: Bool
 
     /// Pass true if the authentication code may be sent via a missed call to the specified phone number
-    public let allowMissedCall: Bool
+    public var allowMissedCall: Bool
 
     /// For official applications only. True, if the application can use Android SMS Retriever API (requires Google Play Services >= 10.2) to automatically receive the authentication code from the SMS. See https://developers.google.com/identity/sms-retriever/ for more details
-    public let allowSmsRetrieverApi: Bool
+    public var allowSmsRetrieverApi: Bool
 
     /// List of up to 20 authentication tokens, recently received in updateOption("authentication_token") in previously logged out sessions
-    public let authenticationTokens: [String]
+    public var authenticationTokens: [String]
 
     /// For official Android and iOS applications only; pass null otherwise. Settings for Firebase Authentication
-    public let firebaseAuthenticationSettings: FirebaseAuthenticationSettings?
+    public var firebaseAuthenticationSettings: FirebaseAuthenticationSettings?
 
     /// Pass true if the authenticated phone number is used on the current device
-    public let isCurrentPhoneNumber: Bool
+    public var isCurrentPhoneNumber: Bool
 
 
     public init(

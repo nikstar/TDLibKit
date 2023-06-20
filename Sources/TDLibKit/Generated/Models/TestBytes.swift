@@ -14,7 +14,7 @@ import Foundation
 public struct TestBytes: Codable, Equatable, Hashable {
 
     /// Bytes
-    public let value: Data
+    public var value: Data
 
 
     public init(value: Data) {

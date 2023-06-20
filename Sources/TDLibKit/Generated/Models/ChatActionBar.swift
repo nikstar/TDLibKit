@@ -97,7 +97,7 @@ public enum ChatActionBar: Codable, Equatable, Hashable {
 public struct ChatActionBarReportSpam: Codable, Equatable, Hashable {
 
     /// If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings
-    public let canUnarchive: Bool
+    public var canUnarchive: Bool
 
 
     public init(canUnarchive: Bool) {
@@ -109,10 +109,10 @@ public struct ChatActionBarReportSpam: Codable, Equatable, Hashable {
 public struct ChatActionBarReportAddBlock: Codable, Equatable, Hashable {
 
     /// If true, the chat was automatically archived and can be moved back to the main chat list using addChatToList simultaneously with setting chat notification settings to default using setChatNotificationSettings
-    public let canUnarchive: Bool
+    public var canUnarchive: Bool
 
     /// If non-negative, the current user was found by the peer through searchChatsNearby and this is the distance between the users
-    public let distance: Int
+    public var distance: Int
 
 
     public init(
@@ -128,13 +128,13 @@ public struct ChatActionBarReportAddBlock: Codable, Equatable, Hashable {
 public struct ChatActionBarJoinRequest: Codable, Equatable, Hashable {
 
     /// True, if the join request was sent to a channel chat
-    public let isChannel: Bool
+    public var isChannel: Bool
 
     /// Point in time (Unix timestamp) when the join request was sent
-    public let requestDate: Int
+    public var requestDate: Int
 
     /// Title of the chat to which the join request was sent
-    public let title: String
+    public var title: String
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleDownloadIsPaused: Codable, Equatable, Hashable {
 
     /// Identifier of the downloaded file
-    public let fileId: Int?
+    public var fileId: Int?
 
     /// Pass true if the download is paused
-    public let isPaused: Bool?
+    public var isPaused: Bool?
 
 
     public init(

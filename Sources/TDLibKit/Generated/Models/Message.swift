@@ -14,121 +14,121 @@ import Foundation
 public struct Message: Codable, Equatable, Hashable, Identifiable {
 
     /// For channel posts and anonymous group messages, optional author signature
-    public let authorSignature: String
+    public var authorSignature: String
 
     /// Time left before the message will be automatically deleted by message_auto_delete_time setting of the chat, in seconds; 0 if never. TDLib will send updateDeleteMessages or updateMessageContent once the time expires
-    public let autoDeleteIn: Double
+    public var autoDeleteIn: Double
 
     /// True, if the message can be deleted for all users
-    public let canBeDeletedForAllUsers: Bool
+    public var canBeDeletedForAllUsers: Bool
 
     /// True, if the message can be deleted only for the current user while other users will continue to see it
-    public let canBeDeletedOnlyForSelf: Bool
+    public var canBeDeletedOnlyForSelf: Bool
 
     /// True, if the message can be edited. For live location and poll messages this fields shows whether editMessageLiveLocation or stopPoll can be used with this message by the application
-    public let canBeEdited: Bool
+    public var canBeEdited: Bool
 
     /// True, if the message can be forwarded
-    public let canBeForwarded: Bool
+    public var canBeForwarded: Bool
 
     /// True, if content of the message can be saved locally or copied
-    public let canBeSaved: Bool
+    public var canBeSaved: Bool
 
     /// True, if the list of added reactions is available through getMessageAddedReactions
-    public let canGetAddedReactions: Bool
+    public var canGetAddedReactions: Bool
 
     /// True, if media timestamp links can be generated for media timestamp entities in the message text, caption or web page description through getMessageLink
-    public let canGetMediaTimestampLinks: Bool
+    public var canGetMediaTimestampLinks: Bool
 
     /// True, if information about the message thread is available through getMessageThread and getMessageThreadHistory
-    public let canGetMessageThread: Bool
+    public var canGetMessageThread: Bool
 
     /// True, if the message statistics are available through getMessageStatistics
-    public let canGetStatistics: Bool
+    public var canGetStatistics: Bool
 
     /// True, if chat members already viewed the message can be received through getMessageViewers
-    public let canGetViewers: Bool
+    public var canGetViewers: Bool
 
     /// True, if reactions on the message can be reported through reportMessageReactions
-    public let canReportReactions: Bool
+    public var canReportReactions: Bool
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// True, if the message contains an unread mention for the current user
-    public let containsUnreadMention: Bool
+    public var containsUnreadMention: Bool
 
     /// Content of the message
-    public let content: MessageContent
+    public var content: MessageContent
 
     /// Point in time (Unix timestamp) when the message was sent
-    public let date: Int
+    public var date: Int
 
     /// Point in time (Unix timestamp) when the message was last edited
-    public let editDate: Int
+    public var editDate: Int
 
     /// Information about the initial message sender; may be null
-    public let forwardInfo: MessageForwardInfo?
+    public var forwardInfo: MessageForwardInfo?
 
     /// True, if media timestamp entities refers to a media in this message as opposed to a media in the replied message
-    public let hasTimestampedMedia: Bool
+    public var hasTimestampedMedia: Bool
 
     /// Message identifier; unique for the chat to which the message belongs
     public let id: Int64
 
     /// Information about interactions with the message; may be null
-    public let interactionInfo: MessageInteractionInfo?
+    public var interactionInfo: MessageInteractionInfo?
 
     /// True, if the message is a channel post. All messages to channels are channel posts, all other messages are not channel posts
-    public let isChannelPost: Bool
+    public var isChannelPost: Bool
 
     /// True, if the message is outgoing
-    public let isOutgoing: Bool
+    public var isOutgoing: Bool
 
     /// True, if the message is pinned
-    public let isPinned: Bool
+    public var isPinned: Bool
 
     /// True, if the message is a forum topic message
-    public let isTopicMessage: Bool
+    public var isTopicMessage: Bool
 
     /// Unique identifier of an album this message belongs to. Only audios, documents, photos and videos can be grouped together in albums
-    public let mediaAlbumId: TdInt64
+    public var mediaAlbumId: TdInt64
 
     /// If non-zero, the identifier of the message thread the message belongs to; unique within the chat to which the message belongs
-    public let messageThreadId: Int64
+    public var messageThreadId: Int64
 
     /// If non-zero, the identifier of the chat to which the replied message belongs; Currently, only messages in the Replies chat can have different reply_in_chat_id and chat_id
-    public let replyInChatId: Int64
+    public var replyInChatId: Int64
 
     /// Reply markup for the message; may be null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
     /// If non-zero, the identifier of the message this message is replying to; can be the identifier of a deleted message
-    public let replyToMessageId: Int64
+    public var replyToMessageId: Int64
 
     /// If non-empty, contains a human-readable description of the reason why access to this message must be restricted
-    public let restrictionReason: String
+    public var restrictionReason: String
 
     /// The scheduling state of the message; may be null
-    public let schedulingState: MessageSchedulingState?
+    public var schedulingState: MessageSchedulingState?
 
     /// Time left before the message self-destruct timer expires, in seconds. If the self-destruct timer isn't started yet, equals to the value of the self_destruct_time field
-    public let selfDestructIn: Double
+    public var selfDestructIn: Double
 
     /// The message's self-destruct time, in seconds; 0 if none. TDLib will send updateDeleteMessages or updateMessageContent once the time expires
-    public let selfDestructTime: Int
+    public var selfDestructTime: Int
 
     /// Identifier of the sender of the message
-    public let senderId: MessageSender
+    public var senderId: MessageSender
 
     /// The sending state of the message; may be null
-    public let sendingState: MessageSendingState?
+    public var sendingState: MessageSendingState?
 
     /// Information about unread reactions added to the message
-    public let unreadReactions: [UnreadReaction]
+    public var unreadReactions: [UnreadReaction]
 
     /// If non-zero, the user identifier of the bot through which this message was sent
-    public let viaBotUserId: Int64
+    public var viaBotUserId: Int64
 
 
     public init(

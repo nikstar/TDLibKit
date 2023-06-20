@@ -14,13 +14,13 @@ import Foundation
 public struct ReadFilePart: Codable, Equatable, Hashable {
 
     /// Number of bytes to read. An error will be returned if there are not enough bytes available in the file from the specified position. Pass 0 to read all available data from the specified position
-    public let count: Int64?
+    public var count: Int64?
 
     /// Identifier of the file. The file must be located in the TDLib file cache
-    public let fileId: Int?
+    public var fileId: Int?
 
     /// The offset from which to read the file
-    public let offset: Int64?
+    public var offset: Int64?
 
 
     public init(

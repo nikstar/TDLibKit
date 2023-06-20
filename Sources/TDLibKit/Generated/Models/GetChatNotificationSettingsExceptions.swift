@@ -14,10 +14,10 @@ import Foundation
 public struct GetChatNotificationSettingsExceptions: Codable, Equatable, Hashable {
 
     /// Pass true to include in the response chats with only non-default sound
-    public let compareSound: Bool?
+    public var compareSound: Bool?
 
     /// If specified, only chats from the scope will be returned; pass null to return chats from all scopes
-    public let scope: NotificationSettingsScope?
+    public var scope: NotificationSettingsScope?
 
 
     public init(

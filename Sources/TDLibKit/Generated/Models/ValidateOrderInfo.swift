@@ -14,13 +14,13 @@ import Foundation
 public struct ValidateOrderInfo: Codable, Equatable, Hashable {
 
     /// Pass true to save the order information
-    public let allowSave: Bool?
+    public var allowSave: Bool?
 
     /// The invoice
-    public let inputInvoice: InputInvoice?
+    public var inputInvoice: InputInvoice?
 
     /// The order information, provided by the user; pass null if empty
-    public let orderInfo: OrderInfo?
+    public var orderInfo: OrderInfo?
 
 
     public init(

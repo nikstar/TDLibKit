@@ -14,25 +14,25 @@ import Foundation
 public struct VideoNote: Codable, Equatable, Hashable {
 
     /// Duration of the video, in seconds; as defined by the sender
-    public let duration: Int
+    public var duration: Int
 
     /// Video width and height; as defined by the sender
-    public let length: Int
+    public var length: Int
 
     /// Video minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// Result of speech recognition in the video note; may be null
-    public let speechRecognitionResult: SpeechRecognitionResult?
+    public var speechRecognitionResult: SpeechRecognitionResult?
 
     /// Video thumbnail in JPEG format; as defined by the sender; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// File containing the video
-    public let video: File
+    public var video: File
 
     /// A waveform representation of the video note's audio in 5-bit format; may be empty if unknown
-    public let waveform: Data
+    public var waveform: Data
 
 
     public init(

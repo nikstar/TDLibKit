@@ -14,19 +14,19 @@ import Foundation
 public struct ShareChatWithBot: Codable, Equatable, Hashable {
 
     /// Identifier of the button
-    public let buttonId: Int?
+    public var buttonId: Int?
 
     /// Identifier of the chat with the bot
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message with the button
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Pass true to check that the chat can be shared by the button instead of actually sharing it. Doesn't check bot_is_member and bot_administrator_rights restrictions.//-If the bot must be a member, then all chats from getGroupsInCommon and all chats, where the user can add the bot, are suitable. In the latter case the bot will be automatically added to the chat.//-If the bot must be an administrator, then all chats, where the bot already has requested rights or can be added to administrators by the user, are suitable. In the latter case the bot will be automatically granted requested rights
-    public let onlyCheck: Bool?
+    public var onlyCheck: Bool?
 
     /// Identifier of the shared chat
-    public let sharedChatId: Int64?
+    public var sharedChatId: Int64?
 
 
     public init(

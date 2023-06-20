@@ -14,13 +14,13 @@ import Foundation
 public struct AddChatMember: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The number of earlier messages from the chat to be forwarded to the new member; up to 100. Ignored for supergroups and channels, or if the added user is a bot
-    public let forwardLimit: Int?
+    public var forwardLimit: Int?
 
     /// Identifier of the user
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

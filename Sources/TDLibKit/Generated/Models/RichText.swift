@@ -205,7 +205,7 @@ public indirect enum RichText: Codable, Equatable, Hashable {
 public struct RichTextPlain: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: String
+    public var text: String
 
 
     public init(text: String) {
@@ -217,7 +217,7 @@ public struct RichTextPlain: Codable, Equatable, Hashable {
 public struct RichTextBold: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -229,7 +229,7 @@ public struct RichTextBold: Codable, Equatable, Hashable {
 public struct RichTextItalic: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -241,7 +241,7 @@ public struct RichTextItalic: Codable, Equatable, Hashable {
 public struct RichTextUnderline: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -253,7 +253,7 @@ public struct RichTextUnderline: Codable, Equatable, Hashable {
 public struct RichTextStrikethrough: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -265,7 +265,7 @@ public struct RichTextStrikethrough: Codable, Equatable, Hashable {
 public struct RichTextFixed: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -277,13 +277,13 @@ public struct RichTextFixed: Codable, Equatable, Hashable {
 public struct RichTextUrl: Codable, Equatable, Hashable {
 
     /// True, if the URL has cached instant view server-side
-    public let isCached: Bool
+    public var isCached: Bool
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
     /// URL
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -301,10 +301,10 @@ public struct RichTextUrl: Codable, Equatable, Hashable {
 public struct RichTextEmailAddress: Codable, Equatable, Hashable {
 
     /// Email address
-    public let emailAddress: String
+    public var emailAddress: String
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(
@@ -320,7 +320,7 @@ public struct RichTextEmailAddress: Codable, Equatable, Hashable {
 public struct RichTextSubscript: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -332,7 +332,7 @@ public struct RichTextSubscript: Codable, Equatable, Hashable {
 public struct RichTextSuperscript: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -344,7 +344,7 @@ public struct RichTextSuperscript: Codable, Equatable, Hashable {
 public struct RichTextMarked: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -356,10 +356,10 @@ public struct RichTextMarked: Codable, Equatable, Hashable {
 public struct RichTextPhoneNumber: Codable, Equatable, Hashable {
 
     /// Phone number
-    public let phoneNumber: String
+    public var phoneNumber: String
 
     /// Text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(
@@ -375,13 +375,13 @@ public struct RichTextPhoneNumber: Codable, Equatable, Hashable {
 public struct RichTextIcon: Codable, Equatable, Hashable {
 
     /// The image represented as a document. The image can be in GIF, JPEG or PNG format
-    public let document: Document
+    public var document: Document
 
     /// Height of a bounding box in which the image must be shown; 0 if unknown
-    public let height: Int
+    public var height: Int
 
     /// Width of a bounding box in which the image must be shown; 0 if unknown
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -399,13 +399,13 @@ public struct RichTextIcon: Codable, Equatable, Hashable {
 public struct RichTextReference: Codable, Equatable, Hashable {
 
     /// The name of a richTextAnchor object, which is the first element of the target richTexts object
-    public let anchorName: String
+    public var anchorName: String
 
     /// The text
-    public let text: RichText
+    public var text: RichText
 
     /// An HTTP URL, opening the reference
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -423,7 +423,7 @@ public struct RichTextReference: Codable, Equatable, Hashable {
 public struct RichTextAnchor: Codable, Equatable, Hashable {
 
     /// Anchor name
-    public let name: String
+    public var name: String
 
 
     public init(name: String) {
@@ -435,13 +435,13 @@ public struct RichTextAnchor: Codable, Equatable, Hashable {
 public struct RichTextAnchorLink: Codable, Equatable, Hashable {
 
     /// The anchor name. If the name is empty, the link must bring back to top
-    public let anchorName: String
+    public var anchorName: String
 
     /// The link text
-    public let text: RichText
+    public var text: RichText
 
     /// An HTTP URL, opening the anchor
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -459,7 +459,7 @@ public struct RichTextAnchorLink: Codable, Equatable, Hashable {
 public struct RichTexts: Codable, Equatable, Hashable {
 
     /// Texts
-    public let texts: [RichText]
+    public var texts: [RichText]
 
 
     public init(texts: [RichText]) {

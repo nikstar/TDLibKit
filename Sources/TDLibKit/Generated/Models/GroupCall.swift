@@ -14,67 +14,67 @@ import Foundation
 public struct GroupCall: Codable, Equatable, Hashable, Identifiable {
 
     /// True, if the current user can manage the group call
-    public let canBeManaged: Bool
+    public var canBeManaged: Bool
 
     /// True, if the current user can broadcast video or share screen
-    public let canEnableVideo: Bool
+    public var canEnableVideo: Bool
 
     /// True, if the current user can enable or disable mute_new_participants setting
-    public let canToggleMuteNewParticipants: Bool
+    public var canToggleMuteNewParticipants: Bool
 
     /// Call duration, in seconds; for ended calls only
-    public let duration: Int
+    public var duration: Int
 
     /// True, if the group call is scheduled and the current user will receive a notification when the group call will start
-    public let enabledStartNotification: Bool
+    public var enabledStartNotification: Bool
 
     /// True, if group call participants, which are muted, aren't returned in participant list
-    public let hasHiddenListeners: Bool
+    public var hasHiddenListeners: Bool
 
     /// Group call identifier
     public let id: Int
 
     /// True, if the call is active
-    public let isActive: Bool
+    public var isActive: Bool
 
     /// True, if the call is joined
-    public let isJoined: Bool
+    public var isJoined: Bool
 
     /// True, if the current user's video is enabled
-    public let isMyVideoEnabled: Bool
+    public var isMyVideoEnabled: Bool
 
     /// True, if the current user's video is paused
-    public let isMyVideoPaused: Bool
+    public var isMyVideoPaused: Bool
 
     /// True, if the chat is an RTMP stream instead of an ordinary video chat
-    public let isRtmpStream: Bool
+    public var isRtmpStream: Bool
 
     /// True, if a video file is being recorded for the call
-    public let isVideoRecorded: Bool
+    public var isVideoRecorded: Bool
 
     /// True, if all group call participants are loaded
-    public let loadedAllParticipants: Bool
+    public var loadedAllParticipants: Bool
 
     /// True, if only group call administrators can unmute new participants
-    public let muteNewParticipants: Bool
+    public var muteNewParticipants: Bool
 
     /// True, if user was kicked from the call because of network loss and the call needs to be rejoined
-    public let needRejoin: Bool
+    public var needRejoin: Bool
 
     /// Number of participants in the group call
-    public let participantCount: Int
+    public var participantCount: Int
 
     /// At most 3 recently speaking users in the group call
-    public let recentSpeakers: [GroupCallRecentSpeaker]
+    public var recentSpeakers: [GroupCallRecentSpeaker]
 
     /// Duration of the ongoing group call recording, in seconds; 0 if none. An updateGroupCall update is not triggered when value of this field changes, but the same recording goes on
-    public let recordDuration: Int
+    public var recordDuration: Int
 
     /// Point in time (Unix timestamp) when the group call is supposed to be started by an administrator; 0 if it is already active or was ended
-    public let scheduledStartDate: Int
+    public var scheduledStartDate: Int
 
     /// Group call title
-    public let title: String
+    public var title: String
 
 
     public init(

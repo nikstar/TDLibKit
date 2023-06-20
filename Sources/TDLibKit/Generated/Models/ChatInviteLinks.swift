@@ -14,10 +14,10 @@ import Foundation
 public struct ChatInviteLinks: Codable, Equatable, Hashable {
 
     /// List of invite links
-    public let inviteLinks: [ChatInviteLink]
+    public var inviteLinks: [ChatInviteLink]
 
     /// Approximate total number of chat invite links found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

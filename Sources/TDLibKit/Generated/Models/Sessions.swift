@@ -14,10 +14,10 @@ import Foundation
 public struct Sessions: Codable, Equatable, Hashable {
 
     /// Number of days of inactivity before sessions will automatically be terminated; 1-366 days
-    public let inactiveSessionTtlDays: Int
+    public var inactiveSessionTtlDays: Int
 
     /// List of sessions
-    public let sessions: [Session]
+    public var sessions: [Session]
 
 
     public init(

@@ -14,19 +14,19 @@ import Foundation
 public struct NotificationGroup: Codable, Equatable, Hashable, Identifiable {
 
     /// Identifier of a chat to which all notifications in the group belong
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Unique persistent auto-incremented from 1 identifier of the notification group
     public let id: Int
 
     /// The list of active notifications
-    public let notifications: [Notification]
+    public var notifications: [Notification]
 
     /// Total number of active notifications in the group
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// Type of the group
-    public let type: NotificationGroupType
+    public var type: NotificationGroupType
 
 
     public init(

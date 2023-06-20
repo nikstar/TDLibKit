@@ -14,7 +14,7 @@ import Foundation
 public struct AddSavedNotificationSound: Codable, Equatable, Hashable {
 
     /// Notification sound file to add
-    public let sound: InputFile?
+    public var sound: InputFile?
 
 
     public init(sound: InputFile?) {

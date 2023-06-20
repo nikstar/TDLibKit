@@ -14,13 +14,13 @@ import Foundation
 public struct ChatAdministrator: Codable, Equatable, Hashable {
 
     /// Custom title of the administrator
-    public let customTitle: String
+    public var customTitle: String
 
     /// True, if the user is the owner of the chat
-    public let isOwner: Bool
+    public var isOwner: Bool
 
     /// User identifier of the administrator
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

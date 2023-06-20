@@ -14,7 +14,7 @@ import Foundation
 public struct SearchStickerSet: Codable, Equatable, Hashable {
 
     /// Name of the sticker set
-    public let name: String?
+    public var name: String?
 
 
     public init(name: String?) {

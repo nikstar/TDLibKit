@@ -14,7 +14,7 @@ import Foundation
 public struct Count: Codable, Equatable, Hashable {
 
     /// Count
-    public let count: Int
+    public var count: Int
 
 
     public init(count: Int) {

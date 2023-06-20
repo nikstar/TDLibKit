@@ -14,7 +14,7 @@ import Foundation
 public struct Text: Codable, Equatable, Hashable {
 
     /// Text
-    public let text: String
+    public var text: String
 
 
     public init(text: String) {

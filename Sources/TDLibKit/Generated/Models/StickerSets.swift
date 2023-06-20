@@ -14,10 +14,10 @@ import Foundation
 public struct StickerSets: Codable, Equatable, Hashable {
 
     /// List of sticker sets
-    public let sets: [StickerSetInfo]
+    public var sets: [StickerSetInfo]
 
     /// Approximate total number of sticker sets found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

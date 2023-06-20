@@ -14,66 +14,66 @@ import Foundation
 public struct WebPage: Codable, Equatable, Hashable {
 
     /// Preview of the content as an animation, if available; may be null
-    public let animation: Animation?
+    public var animation: Animation?
 
     /// Preview of the content as an audio file, if available; may be null
-    public let audio: Audio?
+    public var audio: Audio?
 
     /// Author of the content
-    public let author: String
+    public var author: String
 
-    public let description: FormattedText
+    public var description: FormattedText
 
     /// URL to display
-    public let displayUrl: String
+    public var displayUrl: String
 
     /// Preview of the content as a document, if available; may be null
-    public let document: Document?
+    public var document: Document?
 
     /// Duration of the content, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// Height of the embedded preview
-    public let embedHeight: Int
+    public var embedHeight: Int
 
     /// MIME type of the embedded preview, (e.g., text/html or video/mp4)
-    public let embedType: String
+    public var embedType: String
 
     /// URL to show in the embedded preview
-    public let embedUrl: String
+    public var embedUrl: String
 
     /// Width of the embedded preview
-    public let embedWidth: Int
+    public var embedWidth: Int
 
     /// Version of web page instant view (currently, can be 1 or 2); 0 if none
-    public let instantViewVersion: Int
+    public var instantViewVersion: Int
 
     /// Image representing the content; may be null
-    public let photo: Photo?
+    public var photo: Photo?
 
     /// Short name of the site (e.g., Google Docs, App Store)
-    public let siteName: String
+    public var siteName: String
 
     /// Preview of the content as a sticker for small WEBP files, if available; may be null
-    public let sticker: Sticker?
+    public var sticker: Sticker?
 
     /// Title of the content
-    public let title: String
+    public var title: String
 
     /// Type of the web page. Can be: article, photo, audio, video, document, profile, app, or something else
-    public let type: String
+    public var type: String
 
     /// Original URL of the link
-    public let url: String
+    public var url: String
 
     /// Preview of the content as a video, if available; may be null
-    public let video: Video?
+    public var video: Video?
 
     /// Preview of the content as a video note, if available; may be null
-    public let videoNote: VideoNote?
+    public var videoNote: VideoNote?
 
     /// Preview of the content as a voice note, if available; may be null
-    public let voiceNote: VoiceNote?
+    public var voiceNote: VoiceNote?
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct AnswerShippingQuery: Codable, Equatable, Hashable {
 
     /// An error message, empty on success
-    public let errorMessage: String?
+    public var errorMessage: String?
 
     /// Available shipping options
-    public let shippingOptions: [ShippingOption]?
+    public var shippingOptions: [ShippingOption]?
 
     /// Identifier of the shipping query
-    public let shippingQueryId: TdInt64?
+    public var shippingQueryId: TdInt64?
 
 
     public init(

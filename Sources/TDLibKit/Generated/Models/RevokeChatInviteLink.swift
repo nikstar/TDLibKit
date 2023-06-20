@@ -14,10 +14,10 @@ import Foundation
 public struct RevokeChatInviteLink: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Invite link to be revoked
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(

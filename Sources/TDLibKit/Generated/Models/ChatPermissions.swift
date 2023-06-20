@@ -14,46 +14,46 @@ import Foundation
 public struct ChatPermissions: Codable, Equatable, Hashable {
 
     /// True, if the user may add a web page preview to their messages
-    public let canAddWebPagePreviews: Bool
+    public var canAddWebPagePreviews: Bool
 
     /// True, if the user can change the chat title, photo, and other settings
-    public let canChangeInfo: Bool
+    public var canChangeInfo: Bool
 
     /// True, if the user can invite new users to the chat
-    public let canInviteUsers: Bool
+    public var canInviteUsers: Bool
 
     /// True, if the user can manage topics
-    public let canManageTopics: Bool
+    public var canManageTopics: Bool
 
     /// True, if the user can pin messages
-    public let canPinMessages: Bool
+    public var canPinMessages: Bool
 
     /// True, if the user can send music files
-    public let canSendAudios: Bool
+    public var canSendAudios: Bool
 
     /// True, if the user can send text messages, contacts, invoices, locations, and venues
-    public let canSendBasicMessages: Bool
+    public var canSendBasicMessages: Bool
 
     /// True, if the user can send documents
-    public let canSendDocuments: Bool
+    public var canSendDocuments: Bool
 
     /// True, if the user can send animations, games, stickers, and dice and use inline bots
-    public let canSendOtherMessages: Bool
+    public var canSendOtherMessages: Bool
 
     /// True, if the user can send audio photos
-    public let canSendPhotos: Bool
+    public var canSendPhotos: Bool
 
     /// True, if the user can send polls
-    public let canSendPolls: Bool
+    public var canSendPolls: Bool
 
     /// True, if the user can send video notes
-    public let canSendVideoNotes: Bool
+    public var canSendVideoNotes: Bool
 
     /// True, if the user can send audio videos
-    public let canSendVideos: Bool
+    public var canSendVideos: Bool
 
     /// True, if the user can send voice notes
-    public let canSendVoiceNotes: Bool
+    public var canSendVoiceNotes: Bool
 
 
     public init(

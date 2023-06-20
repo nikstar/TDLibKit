@@ -14,31 +14,31 @@ import Foundation
 public struct ForumTopicInfo: Codable, Equatable, Hashable {
 
     /// Date the topic was created
-    public let creationDate: Int
+    public var creationDate: Int
 
     /// Identifier of the creator of the topic
-    public let creatorId: MessageSender
+    public var creatorId: MessageSender
 
     /// Icon of the topic
-    public let icon: ForumTopicIcon
+    public var icon: ForumTopicIcon
 
     /// True, if the topic is closed
-    public let isClosed: Bool
+    public var isClosed: Bool
 
     /// True, if the topic is the General topic list
-    public let isGeneral: Bool
+    public var isGeneral: Bool
 
     /// True, if the topic is hidden above the topic list and closed; for General topic only
-    public let isHidden: Bool
+    public var isHidden: Bool
 
     /// True, if the topic was created by the current user
-    public let isOutgoing: Bool
+    public var isOutgoing: Bool
 
     /// Message thread identifier of the topic
-    public let messageThreadId: Int64
+    public var messageThreadId: Int64
 
     /// Name of the topic
-    public let name: String
+    public var name: String
 
 
     public init(

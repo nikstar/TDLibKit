@@ -14,10 +14,10 @@ import Foundation
 public struct CreateTemporaryPassword: Codable, Equatable, Hashable {
 
     /// The 2-step verification password of the current user
-    public let password: String?
+    public var password: String?
 
     /// Time during which the temporary password will be valid, in seconds; must be between 60 and 86400
-    public let validFor: Int?
+    public var validFor: Int?
 
 
     public init(

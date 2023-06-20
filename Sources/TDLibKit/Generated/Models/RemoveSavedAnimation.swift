@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveSavedAnimation: Codable, Equatable, Hashable {
 
     /// Animation file to be removed
-    public let animation: InputFile?
+    public var animation: InputFile?
 
 
     public init(animation: InputFile?) {

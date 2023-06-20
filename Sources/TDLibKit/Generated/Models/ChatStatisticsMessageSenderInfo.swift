@@ -14,13 +14,13 @@ import Foundation
 public struct ChatStatisticsMessageSenderInfo: Codable, Equatable, Hashable {
 
     /// Average number of characters in sent messages; 0 if unknown
-    public let averageCharacterCount: Int
+    public var averageCharacterCount: Int
 
     /// Number of sent messages
-    public let sentMessageCount: Int
+    public var sentMessageCount: Int
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

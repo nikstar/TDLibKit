@@ -14,10 +14,10 @@ import Foundation
 public struct LabeledPricePart: Codable, Equatable, Hashable {
 
     /// Currency amount in the smallest units of the currency
-    public let amount: Int64
+    public var amount: Int64
 
     /// Label for this portion of the product price
-    public let label: String
+    public var label: String
 
 
     public init(

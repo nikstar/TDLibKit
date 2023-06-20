@@ -14,7 +14,7 @@ import Foundation
 public struct GetBankCardInfo: Codable, Equatable, Hashable {
 
     /// The bank card number
-    public let bankCardNumber: String?
+    public var bankCardNumber: String?
 
 
     public init(bankCardNumber: String?) {

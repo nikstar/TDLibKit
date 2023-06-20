@@ -14,13 +14,13 @@ import Foundation
 public struct SendChatAction: Codable, Equatable, Hashable {
 
     /// The action description; pass null to cancel the currently active action
-    public let action: ChatAction?
+    public var action: ChatAction?
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// If not 0, a message thread identifier in which the action was performed
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

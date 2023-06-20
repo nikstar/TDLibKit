@@ -14,7 +14,7 @@ import Foundation
 public struct GetPreferredCountryLanguage: Codable, Equatable, Hashable {
 
     /// A two-letter ISO 3166-1 alpha-2 country code
-    public let countryCode: String?
+    public var countryCode: String?
 
 
     public init(countryCode: String?) {

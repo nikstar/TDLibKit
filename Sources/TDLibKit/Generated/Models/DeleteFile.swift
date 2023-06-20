@@ -14,7 +14,7 @@ import Foundation
 public struct DeleteFile: Codable, Equatable, Hashable {
 
     /// Identifier of the file to delete
-    public let fileId: Int?
+    public var fileId: Int?
 
 
     public init(fileId: Int?) {

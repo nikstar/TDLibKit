@@ -14,10 +14,10 @@ import Foundation
 public struct AnswerPreCheckoutQuery: Codable, Equatable, Hashable {
 
     /// An error message, empty on success
-    public let errorMessage: String?
+    public var errorMessage: String?
 
     /// Identifier of the pre-checkout query
-    public let preCheckoutQueryId: TdInt64?
+    public var preCheckoutQueryId: TdInt64?
 
 
     public init(

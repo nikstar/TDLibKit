@@ -14,13 +14,13 @@ import Foundation
 public struct RemoveAllFilesFromDownloads: Codable, Equatable, Hashable {
 
     /// Pass true to delete the file from the TDLib file cache
-    public let deleteFromCache: Bool?
+    public var deleteFromCache: Bool?
 
     /// Pass true to remove only active downloads, including paused
-    public let onlyActive: Bool?
+    public var onlyActive: Bool?
 
     /// Pass true to remove only completed downloads
-    public let onlyCompleted: Bool?
+    public var onlyCompleted: Bool?
 
 
     public init(

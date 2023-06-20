@@ -14,10 +14,10 @@ import Foundation
 public struct GetChatMember: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Member identifier
-    public let memberId: MessageSender?
+    public var memberId: MessageSender?
 
 
     public init(

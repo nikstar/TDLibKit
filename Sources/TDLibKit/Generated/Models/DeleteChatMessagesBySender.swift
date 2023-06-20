@@ -14,10 +14,10 @@ import Foundation
 public struct DeleteChatMessagesBySender: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the sender of messages to delete
-    public let senderId: MessageSender?
+    public var senderId: MessageSender?
 
 
     public init(

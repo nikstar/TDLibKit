@@ -14,13 +14,13 @@ import Foundation
 public struct EncryptedCredentials: Codable, Equatable, Hashable {
 
     /// The encrypted credentials
-    public let data: Data
+    public var data: Data
 
     /// The decrypted data hash
-    public let hash: Data
+    public var hash: Data
 
     /// Secret for data decryption, encrypted with the service's public key
-    public let secret: Data
+    public var secret: Data
 
 
     public init(

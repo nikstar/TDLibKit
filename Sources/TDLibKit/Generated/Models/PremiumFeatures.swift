@@ -14,13 +14,13 @@ import Foundation
 public struct PremiumFeatures: Codable, Equatable, Hashable {
 
     /// The list of available features
-    public let features: [PremiumFeature]
+    public var features: [PremiumFeature]
 
     /// The list of limits, increased for Premium users
-    public let limits: [PremiumLimit]
+    public var limits: [PremiumLimit]
 
     /// An internal link to be opened to pay for Telegram Premium if store payment isn't possible; may be null if direct payment isn't available
-    public let paymentLink: InternalLinkType?
+    public var paymentLink: InternalLinkType?
 
 
     public init(

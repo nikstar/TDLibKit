@@ -14,7 +14,7 @@ import Foundation
 public struct TestSquareInt: Codable, Equatable, Hashable {
 
     /// Number to square
-    public let x: Int?
+    public var x: Int?
 
 
     public init(x: Int?) {

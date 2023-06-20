@@ -14,7 +14,7 @@ import Foundation
 public struct GetFileMimeType: Codable, Equatable, Hashable {
 
     /// The name of the file or path to the file
-    public let fileName: String?
+    public var fileName: String?
 
 
     public init(fileName: String?) {

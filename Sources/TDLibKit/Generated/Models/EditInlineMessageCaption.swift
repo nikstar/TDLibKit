@@ -14,13 +14,13 @@ import Foundation
 public struct EditInlineMessageCaption: Codable, Equatable, Hashable {
 
     /// New message content caption; pass null to remove caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// Inline message identifier
-    public let inlineMessageId: String?
+    public var inlineMessageId: String?
 
     /// The new message reply markup; pass null if none
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

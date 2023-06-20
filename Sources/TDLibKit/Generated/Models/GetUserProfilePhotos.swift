@@ -14,13 +14,13 @@ import Foundation
 public struct GetUserProfilePhotos: Codable, Equatable, Hashable {
 
     /// The maximum number of photos to be returned; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// The number of photos to skip; must be non-negative
-    public let offset: Int?
+    public var offset: Int?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct GetNetworkStatistics: Codable, Equatable, Hashable {
 
     /// Pass true to get statistics only for the current library launch
-    public let onlyCurrent: Bool?
+    public var onlyCurrent: Bool?
 
 
     public init(onlyCurrent: Bool?) {

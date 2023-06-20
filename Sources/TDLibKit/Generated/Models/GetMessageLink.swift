@@ -14,19 +14,19 @@ import Foundation
 public struct GetMessageLink: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the message belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to create a link for the whole media album
-    public let forAlbum: Bool?
+    public var forAlbum: Bool?
 
     /// Pass true to create a link to the message as a channel post comment, in a message thread, or a forum topic
-    public let inMessageThread: Bool?
+    public var inMessageThread: Bool?
 
     /// If not 0, timestamp from which the video/audio/video note/voice note playing must start, in seconds. The media can be in the message content or in its web page preview
-    public let mediaTimestamp: Int?
+    public var mediaTimestamp: Int?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

@@ -14,9 +14,9 @@ import Foundation
 public struct BotCommand: Codable, Equatable, Hashable {
 
     /// Text of the bot command
-    public let command: String
+    public var command: String
 
-    public let description: String
+    public var description: String
 
 
     public init(

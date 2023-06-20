@@ -61,13 +61,13 @@ public enum LogStream: Codable, Equatable, Hashable {
 public struct LogStreamFile: Codable, Equatable, Hashable {
 
     /// The maximum size of the file to where the internal TDLib log is written before the file will automatically be rotated, in bytes
-    public let maxFileSize: Int64
+    public var maxFileSize: Int64
 
     /// Path to the file to where the internal TDLib log will be written
-    public let path: String
+    public var path: String
 
     /// Pass true to additionally redirect stderr to the log file. Ignored on Windows
-    public let redirectStderr: Bool
+    public var redirectStderr: Bool
 
 
     public init(

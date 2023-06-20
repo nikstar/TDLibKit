@@ -14,19 +14,19 @@ import Foundation
 public struct CallProtocol: Codable, Equatable, Hashable {
 
     /// List of supported tgcalls versions
-    public let libraryVersions: [String]
+    public var libraryVersions: [String]
 
     /// The maximum supported API layer; use 65
-    public let maxLayer: Int
+    public var maxLayer: Int
 
     /// The minimum supported API layer; use 65
-    public let minLayer: Int
+    public var minLayer: Int
 
     /// True, if UDP peer-to-peer connections are supported
-    public let udpP2p: Bool
+    public var udpP2p: Bool
 
     /// True, if connection through UDP reflectors is supported
-    public let udpReflector: Bool
+    public var udpReflector: Bool
 
 
     public init(

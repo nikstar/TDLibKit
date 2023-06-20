@@ -14,10 +14,10 @@ import Foundation
 public struct SendCallDebugInformation: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int?
+    public var callId: Int?
 
     /// Debug information in application-specific format
-    public let debugInformation: String?
+    public var debugInformation: String?
 
 
     public init(

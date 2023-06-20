@@ -14,13 +14,13 @@ import Foundation
 public struct SendWebAppData: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Text of the keyboardButtonTypeWebApp button, which opened the Web App
-    public let buttonText: String?
+    public var buttonText: String?
 
     /// The data
-    public let data: String?
+    public var data: String?
 
 
     public init(

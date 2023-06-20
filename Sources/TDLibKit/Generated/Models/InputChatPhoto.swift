@@ -75,7 +75,7 @@ public enum InputChatPhoto: Codable, Equatable, Hashable {
 public struct InputChatPhotoPrevious: Codable, Equatable, Hashable {
 
     /// Identifier of the current user's profile photo to reuse
-    public let chatPhotoId: TdInt64
+    public var chatPhotoId: TdInt64
 
 
     public init(chatPhotoId: TdInt64) {
@@ -87,7 +87,7 @@ public struct InputChatPhotoPrevious: Codable, Equatable, Hashable {
 public struct InputChatPhotoStatic: Codable, Equatable, Hashable {
 
     /// Photo to be set as profile photo. Only inputFileLocal and inputFileGenerated are allowed
-    public let photo: InputFile
+    public var photo: InputFile
 
 
     public init(photo: InputFile) {
@@ -99,10 +99,10 @@ public struct InputChatPhotoStatic: Codable, Equatable, Hashable {
 public struct InputChatPhotoAnimation: Codable, Equatable, Hashable {
 
     /// Animation to be set as profile photo. Only inputFileLocal and inputFileGenerated are allowed
-    public let animation: InputFile
+    public var animation: InputFile
 
     /// Timestamp of the frame, which will be used as static chat photo
-    public let mainFrameTimestamp: Double
+    public var mainFrameTimestamp: Double
 
 
     public init(
@@ -118,7 +118,7 @@ public struct InputChatPhotoAnimation: Codable, Equatable, Hashable {
 public struct InputChatPhotoSticker: Codable, Equatable, Hashable {
 
     /// Information about the sticker
-    public let sticker: ChatPhotoSticker
+    public var sticker: ChatPhotoSticker
 
 
     public init(sticker: ChatPhotoSticker) {

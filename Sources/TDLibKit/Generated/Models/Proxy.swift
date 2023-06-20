@@ -17,19 +17,19 @@ public struct Proxy: Codable, Equatable, Hashable, Identifiable {
     public let id: Int
 
     /// True, if the proxy is enabled now
-    public let isEnabled: Bool
+    public var isEnabled: Bool
 
     /// Point in time (Unix timestamp) when the proxy was last used; 0 if never
-    public let lastUsedDate: Int
+    public var lastUsedDate: Int
 
     /// Proxy server port
-    public let port: Int
+    public var port: Int
 
     /// Proxy server IP address
-    public let server: String
+    public var server: String
 
     /// Type of the proxy
-    public let type: ProxyType
+    public var type: ProxyType
 
 
     public init(

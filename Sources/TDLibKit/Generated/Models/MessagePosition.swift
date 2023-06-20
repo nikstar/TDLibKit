@@ -14,13 +14,13 @@ import Foundation
 public struct MessagePosition: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the message was sent
-    public let date: Int
+    public var date: Int
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// 0-based message position in the full list of suitable messages
-    public let position: Int
+    public var position: Int
 
 
     public init(

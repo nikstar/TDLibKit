@@ -14,7 +14,7 @@ import Foundation
 public struct CloseWebApp: Codable, Equatable, Hashable {
 
     /// Identifier of Web App launch, received from openWebApp
-    public let webAppLaunchId: TdInt64?
+    public var webAppLaunchId: TdInt64?
 
 
     public init(webAppLaunchId: TdInt64?) {

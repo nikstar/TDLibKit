@@ -14,7 +14,7 @@ import Foundation
 public struct CustomRequestResult: Codable, Equatable, Hashable {
 
     /// A JSON-serialized result
-    public let result: String
+    public var result: String
 
 
     public init(result: String) {

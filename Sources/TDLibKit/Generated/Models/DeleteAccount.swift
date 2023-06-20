@@ -14,10 +14,10 @@ import Foundation
 public struct DeleteAccount: Codable, Equatable, Hashable {
 
     /// The 2-step verification password of the current user. If not specified, account deletion can be canceled within one week
-    public let password: String?
+    public var password: String?
 
     /// The reason why the account was deleted; optional
-    public let reason: String?
+    public var reason: String?
 
 
     public init(

@@ -53,7 +53,7 @@ public enum TextParseMode: Codable, Equatable, Hashable {
 public struct TextParseModeMarkdown: Codable, Equatable, Hashable {
 
     /// Version of the parser: 0 or 1 - Telegram Bot API "Markdown" parse mode, 2 - Telegram Bot API "MarkdownV2" parse mode
-    public let version: Int
+    public var version: Int
 
 
     public init(version: Int) {

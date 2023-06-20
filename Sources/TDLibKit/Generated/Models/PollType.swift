@@ -55,7 +55,7 @@ public enum PollType: Codable, Equatable, Hashable {
 public struct PollTypeRegular: Codable, Equatable, Hashable {
 
     /// True, if multiple answer options can be chosen simultaneously
-    public let allowMultipleAnswers: Bool
+    public var allowMultipleAnswers: Bool
 
 
     public init(allowMultipleAnswers: Bool) {
@@ -67,10 +67,10 @@ public struct PollTypeRegular: Codable, Equatable, Hashable {
 public struct PollTypeQuiz: Codable, Equatable, Hashable {
 
     /// 0-based identifier of the correct answer option; -1 for a yet unanswered poll
-    public let correctOptionId: Int
+    public var correctOptionId: Int
 
     /// Text that is shown when the user chooses an incorrect answer or taps on the lamp icon; 0-200 characters with at most 2 line feeds; empty for a yet unanswered poll
-    public let explanation: FormattedText
+    public var explanation: FormattedText
 
 
     public init(

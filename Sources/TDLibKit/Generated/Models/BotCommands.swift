@@ -14,10 +14,10 @@ import Foundation
 public struct BotCommands: Codable, Equatable, Hashable {
 
     /// Bot's user identifier
-    public let botUserId: Int64
+    public var botUserId: Int64
 
     /// List of bot commands
-    public let commands: [BotCommand]
+    public var commands: [BotCommand]
 
 
     public init(

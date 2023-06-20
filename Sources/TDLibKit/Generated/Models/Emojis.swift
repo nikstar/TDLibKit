@@ -14,7 +14,7 @@ import Foundation
 public struct Emojis: Codable, Equatable, Hashable {
 
     /// List of emojis
-    public let emojis: [String]
+    public var emojis: [String]
 
 
     public init(emojis: [String]) {

@@ -14,13 +14,13 @@ import Foundation
 public struct DownloadedFileCounts: Codable, Equatable, Hashable {
 
     /// Number of active file downloads found, including paused
-    public let activeCount: Int
+    public var activeCount: Int
 
     /// Number of completed file downloads found
-    public let completedCount: Int
+    public var completedCount: Int
 
     /// Number of paused file downloads found
-    public let pausedCount: Int
+    public var pausedCount: Int
 
 
     public init(

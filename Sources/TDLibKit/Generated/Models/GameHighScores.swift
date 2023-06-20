@@ -14,7 +14,7 @@ import Foundation
 public struct GameHighScores: Codable, Equatable, Hashable {
 
     /// A list of game high scores
-    public let scores: [GameHighScore]
+    public var scores: [GameHighScore]
 
 
     public init(scores: [GameHighScore]) {

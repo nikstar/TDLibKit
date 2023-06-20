@@ -14,10 +14,10 @@ import Foundation
 public struct LoadChats: Codable, Equatable, Hashable {
 
     /// The chat list in which to load chats; pass null to load chats from the main chat list
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
     /// The maximum number of chats to be loaded. For optimal performance, the number of loaded chats is chosen by TDLib and can be smaller than the specified limit, even if the end of the list is not reached
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(

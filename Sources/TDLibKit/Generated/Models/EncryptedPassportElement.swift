@@ -14,31 +14,31 @@ import Foundation
 public struct EncryptedPassportElement: Codable, Equatable, Hashable {
 
     /// Encrypted JSON-encoded data about the user
-    public let data: Data
+    public var data: Data
 
     /// List of attached files
-    public let files: [DatedFile]
+    public var files: [DatedFile]
 
     /// The front side of an identity document
-    public let frontSide: DatedFile
+    public var frontSide: DatedFile
 
     /// Hash of the entire element
-    public let hash: String
+    public var hash: String
 
     /// The reverse side of an identity document; may be null
-    public let reverseSide: DatedFile?
+    public var reverseSide: DatedFile?
 
     /// Selfie with the document; may be null
-    public let selfie: DatedFile?
+    public var selfie: DatedFile?
 
     /// List of files containing a certified English translation of the document
-    public let translation: [DatedFile]
+    public var translation: [DatedFile]
 
     /// Type of Telegram Passport element
-    public let type: PassportElementType
+    public var type: PassportElementType
 
     /// Unencrypted data, phone number or email address
-    public let value: String
+    public var value: String
 
 
     public init(

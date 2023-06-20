@@ -14,7 +14,7 @@ import Foundation
 public struct SetDefaultGroupAdministratorRights: Codable, Equatable, Hashable {
 
     /// Default administrator rights for adding the bot to basic group and supergroup chats; may be null
-    public let defaultGroupAdministratorRights: ChatAdministratorRights?
+    public var defaultGroupAdministratorRights: ChatAdministratorRights?
 
 
     public init(defaultGroupAdministratorRights: ChatAdministratorRights?) {

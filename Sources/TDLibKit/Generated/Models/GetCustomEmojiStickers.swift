@@ -14,7 +14,7 @@ import Foundation
 public struct GetCustomEmojiStickers: Codable, Equatable, Hashable {
 
     /// Identifiers of custom emoji stickers. At most 200 custom emoji stickers can be received simultaneously
-    public let customEmojiIds: [TdInt64]?
+    public var customEmojiIds: [TdInt64]?
 
 
     public init(customEmojiIds: [TdInt64]?) {

@@ -14,19 +14,19 @@ import Foundation
 public struct Document: Codable, Equatable, Hashable {
 
     /// File containing the document
-    public let document: File
+    public var document: File
 
     /// Original name of the file; as defined by the sender
-    public let fileName: String
+    public var fileName: String
 
     /// MIME type of the file; as defined by the sender
-    public let mimeType: String
+    public var mimeType: String
 
     /// Document minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// Document thumbnail in JPEG or PNG format (PNG will be used only for background patterns); as defined by the sender; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
 
     public init(

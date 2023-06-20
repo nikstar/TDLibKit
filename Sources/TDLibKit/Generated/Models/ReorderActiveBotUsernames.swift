@@ -14,10 +14,10 @@ import Foundation
 public struct ReorderActiveBotUsernames: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// The new order of active usernames. All currently active usernames must be specified
-    public let usernames: [String]?
+    public var usernames: [String]?
 
 
     public init(

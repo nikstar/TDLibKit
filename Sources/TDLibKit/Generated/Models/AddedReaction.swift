@@ -14,13 +14,13 @@ import Foundation
 public struct AddedReaction: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the reaction was added
-    public let date: Int
+    public var date: Int
 
     /// Identifier of the chat member, applied the reaction
-    public let senderId: MessageSender
+    public var senderId: MessageSender
 
     /// Type of the reaction
-    public let type: ReactionType
+    public var type: ReactionType
 
 
     public init(

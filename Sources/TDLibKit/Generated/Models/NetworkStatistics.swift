@@ -14,10 +14,10 @@ import Foundation
 public struct NetworkStatistics: Codable, Equatable, Hashable {
 
     /// Network statistics entries
-    public let entries: [NetworkStatisticsEntry]
+    public var entries: [NetworkStatisticsEntry]
 
     /// Point in time (Unix timestamp) from which the statistics are collected
-    public let sinceDate: Int
+    public var sinceDate: Int
 
 
     public init(

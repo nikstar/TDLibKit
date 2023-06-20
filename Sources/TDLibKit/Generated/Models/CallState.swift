@@ -91,10 +91,10 @@ public enum CallState: Codable, Equatable, Hashable {
 public struct CallStatePending: Codable, Equatable, Hashable {
 
     /// True, if the call has already been created by the server
-    public let isCreated: Bool
+    public var isCreated: Bool
 
     /// True, if the call has already been received by the other party
-    public let isReceived: Bool
+    public var isReceived: Bool
 
 
     public init(
@@ -110,22 +110,22 @@ public struct CallStatePending: Codable, Equatable, Hashable {
 public struct CallStateReady: Codable, Equatable, Hashable {
 
     /// True, if peer-to-peer connection is allowed by users privacy settings
-    public let allowP2p: Bool
+    public var allowP2p: Bool
 
     /// A JSON-encoded call config
-    public let config: String
+    public var config: String
 
     /// Encryption key emojis fingerprint
-    public let emojis: [String]
+    public var emojis: [String]
 
     /// Call encryption key
-    public let encryptionKey: Data
+    public var encryptionKey: Data
 
     /// Call protocols supported by the peer
-    public let `protocol`: CallProtocol
+    public var `protocol`: CallProtocol
 
     /// List of available call servers
-    public let servers: [CallServer]
+    public var servers: [CallServer]
 
 
     public init(
@@ -149,16 +149,16 @@ public struct CallStateReady: Codable, Equatable, Hashable {
 public struct CallStateDiscarded: Codable, Equatable, Hashable {
 
     /// True, if the call debug information must be sent to the server
-    public let needDebugInformation: Bool
+    public var needDebugInformation: Bool
 
     /// True, if the call log must be sent to the server
-    public let needLog: Bool
+    public var needLog: Bool
 
     /// True, if the call rating must be sent to the server
-    public let needRating: Bool
+    public var needRating: Bool
 
     /// The reason, why the call has ended
-    public let reason: CallDiscardReason
+    public var reason: CallDiscardReason
 
 
     public init(
@@ -178,7 +178,7 @@ public struct CallStateDiscarded: Codable, Equatable, Hashable {
 public struct CallStateError: Codable, Equatable, Hashable {
 
     /// Error. An error with the code 4005000 will be returned if an outgoing call is missed because of an expired timeout
-    public let error: Error
+    public var error: Error
 
 
     public init(error: Error) {

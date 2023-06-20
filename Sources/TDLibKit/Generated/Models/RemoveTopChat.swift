@@ -14,10 +14,10 @@ import Foundation
 public struct RemoveTopChat: Codable, Equatable, Hashable {
 
     /// Category of frequently used chats
-    public let category: TopChatCategory?
+    public var category: TopChatCategory?
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
 
     public init(

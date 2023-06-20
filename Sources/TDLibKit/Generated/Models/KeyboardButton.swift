@@ -14,10 +14,10 @@ import Foundation
 public struct KeyboardButton: Codable, Equatable, Hashable {
 
     /// Text of the button
-    public let text: String
+    public var text: String
 
     /// Type of the button
-    public let type: KeyboardButtonType
+    public var type: KeyboardButtonType
 
 
     public init(

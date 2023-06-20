@@ -14,7 +14,7 @@ import Foundation
 public struct ViewTrendingStickerSets: Codable, Equatable, Hashable {
 
     /// Identifiers of viewed trending sticker sets
-    public let stickerSetIds: [TdInt64]?
+    public var stickerSetIds: [TdInt64]?
 
 
     public init(stickerSetIds: [TdInt64]?) {

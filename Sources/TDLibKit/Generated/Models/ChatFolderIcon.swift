@@ -14,7 +14,7 @@ import Foundation
 public struct ChatFolderIcon: Codable, Equatable, Hashable {
 
     /// The chosen icon name for short folder representation; one of "All", "Unread", "Unmuted", "Bots", "Channels", "Groups", "Private", "Custom", "Setup", "Cat", "Crown",//-"Favorite", "Flower", "Game", "Home", "Love", "Mask", "Party", "Sport", "Study", "Trade", "Travel", "Work", "Airplane", "Book", "Light", "Like", "Money", "Note", "Palette"
-    public let name: String
+    public var name: String
 
 
     public init(name: String) {

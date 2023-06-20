@@ -14,10 +14,10 @@ import Foundation
 public struct ReadAllMessageThreadReactions: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message thread identifier in which reactions are marked as read
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

@@ -14,19 +14,19 @@ import Foundation
 public struct ShareUserWithBot: Codable, Equatable, Hashable {
 
     /// Identifier of the button
-    public let buttonId: Int?
+    public var buttonId: Int?
 
     /// Identifier of the chat with the bot
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message with the button
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Pass true to check that the user can be shared by the button instead of actually sharing them
-    public let onlyCheck: Bool?
+    public var onlyCheck: Bool?
 
     /// Identifier of the shared user
-    public let sharedUserId: Int64?
+    public var sharedUserId: Int64?
 
 
     public init(

@@ -69,25 +69,25 @@ public enum UserType: Codable, Equatable, Hashable {
 public struct UserTypeBot: Codable, Equatable, Hashable {
 
     /// True, if the bot can be added to attachment menu
-    public let canBeAddedToAttachmentMenu: Bool
+    public var canBeAddedToAttachmentMenu: Bool
 
     /// True, if the bot is owned by the current user and can be edited using the methods toggleBotUsernameIsActive, reorderBotActiveUsernames, setBotProfilePhoto, setBotName, setBotInfoDescription, and setBotInfoShortDescription
-    public let canBeEdited: Bool
+    public var canBeEdited: Bool
 
     /// True, if the bot can be invited to basic group and supergroup chats
-    public let canJoinGroups: Bool
+    public var canJoinGroups: Bool
 
     /// True, if the bot can read all messages in basic group or supergroup chats and not just those addressed to the bot. In private and channel chats a bot can always read all messages
-    public let canReadAllGroupMessages: Bool
+    public var canReadAllGroupMessages: Bool
 
     /// Placeholder for inline queries (displayed on the application input field)
-    public let inlineQueryPlaceholder: String
+    public var inlineQueryPlaceholder: String
 
     /// True, if the bot supports inline queries
-    public let isInline: Bool
+    public var isInline: Bool
 
     /// True, if the location of the user is expected to be sent with every inline query to this bot
-    public let needLocation: Bool
+    public var needLocation: Bool
 
 
     public init(

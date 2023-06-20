@@ -14,10 +14,10 @@ import Foundation
 public struct DeleteForumTopic: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message thread identifier of the forum topic
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

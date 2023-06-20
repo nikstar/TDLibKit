@@ -14,7 +14,7 @@ import Foundation
 public struct EmojiStatus: Codable, Equatable, Hashable {
 
     /// Identifier of the custom emoji in stickerFormatTgs format
-    public let customEmojiId: TdInt64
+    public var customEmojiId: TdInt64
 
 
     public init(customEmojiId: TdInt64) {

@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupJoinToSendMessages: Codable, Equatable, Hashable {
 
     /// New value of join_to_send_messages
-    public let joinToSendMessages: Bool?
+    public var joinToSendMessages: Bool?
 
     /// Identifier of the supergroup
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

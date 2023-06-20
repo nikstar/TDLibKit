@@ -14,13 +14,13 @@ import Foundation
 public struct GetGameHighScores: Codable, Equatable, Hashable {
 
     /// The chat that contains the message with the game
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

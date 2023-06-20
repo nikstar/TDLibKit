@@ -14,58 +14,58 @@ import Foundation
 public struct Session: Codable, Equatable, Hashable, Identifiable {
 
     /// Telegram API identifier, as provided by the application
-    public let apiId: Int
+    public var apiId: Int
 
     /// Name of the application, as provided by the application
-    public let applicationName: String
+    public var applicationName: String
 
     /// The version of the application, as provided by the application
-    public let applicationVersion: String
+    public var applicationVersion: String
 
     /// True, if incoming calls can be accepted by the session
-    public let canAcceptCalls: Bool
+    public var canAcceptCalls: Bool
 
     /// True, if incoming secret chats can be accepted by the session
-    public let canAcceptSecretChats: Bool
+    public var canAcceptSecretChats: Bool
 
     /// A two-letter country code for the country from which the session was created, based on the IP address
-    public let country: String
+    public var country: String
 
     /// Model of the device the application has been run or is running on, as provided by the application
-    public let deviceModel: String
+    public var deviceModel: String
 
     /// Session identifier
     public let id: TdInt64
 
     /// IP address from which the session was created, in human-readable format
-    public let ip: String
+    public var ip: String
 
     /// True, if this session is the current session
-    public let isCurrent: Bool
+    public var isCurrent: Bool
 
     /// True, if the application is an official application or uses the api_id of an official application
-    public let isOfficialApplication: Bool
+    public var isOfficialApplication: Bool
 
     /// True, if a 2-step verification password is needed to complete authorization of the session
-    public let isPasswordPending: Bool
+    public var isPasswordPending: Bool
 
     /// Point in time (Unix timestamp) when the session was last used
-    public let lastActiveDate: Int
+    public var lastActiveDate: Int
 
     /// Point in time (Unix timestamp) when the user has logged in
-    public let logInDate: Int
+    public var logInDate: Int
 
     /// Operating system the application has been run or is running on, as provided by the application
-    public let platform: String
+    public var platform: String
 
     /// Region code from which the session was created, based on the IP address
-    public let region: String
+    public var region: String
 
     /// Version of the operating system the application has been run or is running on, as provided by the application
-    public let systemVersion: String
+    public var systemVersion: String
 
     /// Session type based on the system and application version, which can be used to display a corresponding icon
-    public let type: SessionType
+    public var type: SessionType
 
 
     public init(

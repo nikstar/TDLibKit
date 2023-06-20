@@ -14,10 +14,10 @@ import Foundation
 public struct SearchChatsOnServer: Codable, Equatable, Hashable {
 
     /// The maximum number of chats to be returned
-    public let limit: Int?
+    public var limit: Int?
 
     /// Query to search for
-    public let query: String?
+    public var query: String?
 
 
     public init(

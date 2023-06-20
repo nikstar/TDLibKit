@@ -14,10 +14,10 @@ import Foundation
 public struct SetStickerMaskPosition: Codable, Equatable, Hashable {
 
     /// Position where the mask is placed; pass null to remove mask position
-    public let maskPosition: MaskPosition?
+    public var maskPosition: MaskPosition?
 
     /// Sticker
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(

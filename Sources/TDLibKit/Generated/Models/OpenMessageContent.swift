@@ -14,10 +14,10 @@ import Foundation
 public struct OpenMessageContent: Codable, Equatable, Hashable {
 
     /// Chat identifier of the message
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message with the opened content
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

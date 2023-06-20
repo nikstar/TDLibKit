@@ -14,24 +14,24 @@ import Foundation
 public struct Game: Codable, Equatable, Hashable, Identifiable {
 
     /// Game animation; may be null
-    public let animation: Animation?
+    public var animation: Animation?
 
-    public let description: String
+    public var description: String
 
     /// Unique game identifier
     public let id: TdInt64
 
     /// Game photo
-    public let photo: Photo
+    public var photo: Photo
 
     /// Game short name
-    public let shortName: String
+    public var shortName: String
 
     /// Game text, usually containing scoreboards for a game
-    public let text: FormattedText
+    public var text: FormattedText
 
     /// Game title
-    public let title: String
+    public var title: String
 
 
     public init(

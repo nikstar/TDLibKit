@@ -14,7 +14,7 @@ import Foundation
 public struct GetPushReceiverId: Codable, Equatable, Hashable {
 
     /// JSON-encoded push notification payload
-    public let payload: String?
+    public var payload: String?
 
 
     public init(payload: String?) {

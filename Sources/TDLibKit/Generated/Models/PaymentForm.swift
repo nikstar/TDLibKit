@@ -14,43 +14,43 @@ import Foundation
 public struct PaymentForm: Codable, Equatable, Hashable, Identifiable {
 
     /// The list of additional payment options
-    public let additionalPaymentOptions: [PaymentOption]
+    public var additionalPaymentOptions: [PaymentOption]
 
     /// True, if the user can choose to save credentials
-    public let canSaveCredentials: Bool
+    public var canSaveCredentials: Bool
 
     /// The payment form identifier
     public let id: TdInt64
 
     /// Full information about the invoice
-    public let invoice: Invoice
+    public var invoice: Invoice
 
     /// True, if the user will be able to save credentials, if sets up a 2-step verification password
-    public let needPassword: Bool
+    public var needPassword: Bool
 
     /// Information about the payment provider
-    public let paymentProvider: PaymentProvider
+    public var paymentProvider: PaymentProvider
 
     /// User identifier of the payment provider bot
-    public let paymentProviderUserId: Int64
+    public var paymentProviderUserId: Int64
 
     /// Product description
-    public let productDescription: FormattedText
+    public var productDescription: FormattedText
 
     /// Product photo; may be null
-    public let productPhoto: Photo?
+    public var productPhoto: Photo?
 
     /// Product title
-    public let productTitle: String
+    public var productTitle: String
 
     /// The list of saved payment credentials
-    public let savedCredentials: [SavedCredentials]
+    public var savedCredentials: [SavedCredentials]
 
     /// Saved server-side order information; may be null
-    public let savedOrderInfo: OrderInfo?
+    public var savedOrderInfo: OrderInfo?
 
     /// User identifier of the seller bot
-    public let sellerBotUserId: Int64
+    public var sellerBotUserId: Int64
 
 
     public init(

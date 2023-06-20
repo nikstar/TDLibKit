@@ -14,13 +14,13 @@ import Foundation
 public struct PassportElementError: Codable, Equatable, Hashable {
 
     /// Error message
-    public let message: String
+    public var message: String
 
     /// Error source
-    public let source: PassportElementErrorSource
+    public var source: PassportElementErrorSource
 
     /// Type of the Telegram Passport element which has the error
-    public let type: PassportElementType
+    public var type: PassportElementType
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct CanPurchasePremium: Codable, Equatable, Hashable {
 
     /// Transaction purpose
-    public let purpose: StorePaymentPurpose?
+    public var purpose: StorePaymentPurpose?
 
 
     public init(purpose: StorePaymentPurpose?) {

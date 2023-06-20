@@ -14,10 +14,10 @@ import Foundation
 public struct AddRecentSticker: Codable, Equatable, Hashable {
 
     /// Pass true to add the sticker to the list of stickers recently attached to photo or video files; pass false to add the sticker to the list of recently sent stickers
-    public let isAttached: Bool?
+    public var isAttached: Bool?
 
     /// Sticker file to add
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(

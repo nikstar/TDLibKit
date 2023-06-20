@@ -14,7 +14,7 @@ import Foundation
 public struct SetLoginEmailAddress: Codable, Equatable, Hashable {
 
     /// New login email address
-    public let newLoginEmailAddress: String?
+    public var newLoginEmailAddress: String?
 
 
     public init(newLoginEmailAddress: String?) {

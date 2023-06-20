@@ -14,19 +14,19 @@ import Foundation
 public struct CountryInfo: Codable, Equatable, Hashable {
 
     /// List of country calling codes
-    public let callingCodes: [String]
+    public var callingCodes: [String]
 
     /// A two-letter ISO 3166-1 alpha-2 country code
-    public let countryCode: String
+    public var countryCode: String
 
     /// English name of the country
-    public let englishName: String
+    public var englishName: String
 
     /// True, if the country must be hidden from the list of all countries
-    public let isHidden: Bool
+    public var isHidden: Bool
 
     /// Native name of the country
-    public let name: String
+    public var name: String
 
 
     public init(

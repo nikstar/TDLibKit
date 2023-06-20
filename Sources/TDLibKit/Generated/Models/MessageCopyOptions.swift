@@ -14,13 +14,13 @@ import Foundation
 public struct MessageCopyOptions: Codable, Equatable, Hashable {
 
     /// New message caption; pass null to copy message without caption. Ignored if replace_caption is false
-    public let newCaption: FormattedText?
+    public var newCaption: FormattedText?
 
     /// True, if media caption of the message copy needs to be replaced. Ignored if send_copy is false
-    public let replaceCaption: Bool
+    public var replaceCaption: Bool
 
     /// True, if content of the message needs to be copied without reference to the original sender. Always true if the message is forwarded to a secret chat or is local
-    public let sendCopy: Bool
+    public var sendCopy: Bool
 
 
     public init(

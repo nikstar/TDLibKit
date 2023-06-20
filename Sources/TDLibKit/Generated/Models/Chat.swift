@@ -14,103 +14,103 @@ import Foundation
 public struct Chat: Codable, Equatable, Hashable, Identifiable {
 
     /// Information about actions which must be possible to do through the chat action bar; may be null
-    public let actionBar: ChatActionBar?
+    public var actionBar: ChatActionBar?
 
     /// Types of reaction, available in the chat
-    public let availableReactions: ChatAvailableReactions
+    public var availableReactions: ChatAvailableReactions
 
     /// Background set for the chat; may be null if none
-    public let background: ChatBackground?
+    public var background: ChatBackground?
 
     /// True, if the chat messages can be deleted for all users
-    public let canBeDeletedForAllUsers: Bool
+    public var canBeDeletedForAllUsers: Bool
 
     /// True, if the chat messages can be deleted only for the current user while other users will continue to see the messages
-    public let canBeDeletedOnlyForSelf: Bool
+    public var canBeDeletedOnlyForSelf: Bool
 
     /// True, if the chat can be reported to Telegram moderators through reportChat or reportChatPhoto
-    public let canBeReported: Bool
+    public var canBeReported: Bool
 
     /// Application-specific data associated with the chat. (For example, the chat scroll position or local chat notification settings can be stored here.) Persistent if the message database is used
-    public let clientData: String
+    public var clientData: String
 
     /// Default value of the disable_notification parameter, used when a message is sent to the chat
-    public let defaultDisableNotification: Bool
+    public var defaultDisableNotification: Bool
 
     /// A draft of a message in the chat; may be null
-    public let draftMessage: DraftMessage?
+    public var draftMessage: DraftMessage?
 
     /// True, if chat content can't be saved locally, forwarded, or copied
-    public let hasProtectedContent: Bool
+    public var hasProtectedContent: Bool
 
     /// True, if the chat has scheduled messages
-    public let hasScheduledMessages: Bool
+    public var hasScheduledMessages: Bool
 
     /// Chat unique identifier
     public let id: Int64
 
     /// True, if the chat is blocked by the current user and private messages from the chat can't be received
-    public let isBlocked: Bool
+    public var isBlocked: Bool
 
     /// True, if the chat is marked as unread
-    public let isMarkedAsUnread: Bool
+    public var isMarkedAsUnread: Bool
 
     /// True, if translation of all messages in the chat must be suggested to the user
-    public let isTranslatable: Bool
+    public var isTranslatable: Bool
 
     /// Last message in the chat; may be null
-    public let lastMessage: Message?
+    public var lastMessage: Message?
 
     /// Identifier of the last read incoming message
-    public let lastReadInboxMessageId: Int64
+    public var lastReadInboxMessageId: Int64
 
     /// Identifier of the last read outgoing message
-    public let lastReadOutboxMessageId: Int64
+    public var lastReadOutboxMessageId: Int64
 
     /// Current message auto-delete or self-destruct timer setting for the chat, in seconds; 0 if disabled. Self-destruct timer in secret chats starts after the message or its content is viewed. Auto-delete timer in other chats starts from the send date
-    public let messageAutoDeleteTime: Int
+    public var messageAutoDeleteTime: Int
 
     /// Identifier of a user or chat that is selected to send messages in the chat; may be null if the user can't change message sender
-    public let messageSenderId: MessageSender?
+    public var messageSenderId: MessageSender?
 
     /// Notification settings for the chat
-    public let notificationSettings: ChatNotificationSettings
+    public var notificationSettings: ChatNotificationSettings
 
     /// Information about pending join requests; may be null
-    public let pendingJoinRequests: ChatJoinRequestsInfo?
+    public var pendingJoinRequests: ChatJoinRequestsInfo?
 
     /// Actions that non-administrator chat members are allowed to take in the chat
-    public let permissions: ChatPermissions
+    public var permissions: ChatPermissions
 
     /// Chat photo; may be null
-    public let photo: ChatPhotoInfo?
+    public var photo: ChatPhotoInfo?
 
     /// Positions of the chat in chat lists
-    public let positions: [ChatPosition]
+    public var positions: [ChatPosition]
 
     /// Identifier of the message from which reply markup needs to be used; 0 if there is no default custom reply markup in the chat
-    public let replyMarkupMessageId: Int64
+    public var replyMarkupMessageId: Int64
 
     /// If non-empty, name of a theme, set for the chat
-    public let themeName: String
+    public var themeName: String
 
     /// Chat title
-    public let title: String
+    public var title: String
 
     /// Type of the chat
-    public let type: ChatType
+    public var type: ChatType
 
     /// Number of unread messages in the chat
-    public let unreadCount: Int
+    public var unreadCount: Int
 
     /// Number of unread messages with a mention/reply in the chat
-    public let unreadMentionCount: Int
+    public var unreadMentionCount: Int
 
     /// Number of messages with unread reactions in the chat
-    public let unreadReactionCount: Int
+    public var unreadReactionCount: Int
 
     /// Information about video chat of the chat
-    public let videoChat: VideoChat
+    public var videoChat: VideoChat
 
 
     public init(

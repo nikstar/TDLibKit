@@ -14,7 +14,7 @@ import Foundation
 public struct GetUserPrivacySettingRules: Codable, Equatable, Hashable {
 
     /// The privacy setting
-    public let setting: UserPrivacySetting?
+    public var setting: UserPrivacySetting?
 
 
     public init(setting: UserPrivacySetting?) {

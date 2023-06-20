@@ -14,13 +14,13 @@ import Foundation
 public struct DeleteChatHistory: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to remove the chat from all chat lists
-    public let removeFromChatList: Bool?
+    public var removeFromChatList: Bool?
 
     /// Pass true to delete chat history for all users
-    public let revoke: Bool?
+    public var revoke: Bool?
 
 
     public init(

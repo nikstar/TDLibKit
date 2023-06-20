@@ -14,13 +14,13 @@ import Foundation
 public struct UserSupportInfo: Codable, Equatable, Hashable {
 
     /// Information author
-    public let author: String
+    public var author: String
 
     /// Information change date
-    public let date: Int
+    public var date: Int
 
     /// Information message
-    public let message: FormattedText
+    public var message: FormattedText
 
 
     public init(

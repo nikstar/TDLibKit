@@ -14,10 +14,10 @@ import Foundation
 public struct ParseTextEntities: Codable, Equatable, Hashable {
 
     /// Text parse mode
-    public let parseMode: TextParseMode?
+    public var parseMode: TextParseMode?
 
     /// The text to parse
-    public let text: String?
+    public var text: String?
 
 
     public init(

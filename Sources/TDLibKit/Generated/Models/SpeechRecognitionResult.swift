@@ -65,7 +65,7 @@ public enum SpeechRecognitionResult: Codable, Equatable, Hashable {
 public struct SpeechRecognitionResultPending: Codable, Equatable, Hashable {
 
     /// Partially recognized text
-    public let partialText: String
+    public var partialText: String
 
 
     public init(partialText: String) {
@@ -77,7 +77,7 @@ public struct SpeechRecognitionResultPending: Codable, Equatable, Hashable {
 public struct SpeechRecognitionResultText: Codable, Equatable, Hashable {
 
     /// Recognized text
-    public let text: String
+    public var text: String
 
 
     public init(text: String) {
@@ -89,7 +89,7 @@ public struct SpeechRecognitionResultText: Codable, Equatable, Hashable {
 public struct SpeechRecognitionResultError: Codable, Equatable, Hashable {
 
     /// Recognition error
-    public let error: Error
+    public var error: Error
 
 
     public init(error: Error) {

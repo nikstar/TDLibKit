@@ -14,22 +14,22 @@ import Foundation
 public struct Venue: Codable, Equatable, Hashable, Identifiable {
 
     /// Venue address; as defined by the sender
-    public let address: String
+    public var address: String
 
     /// Identifier of the venue in the provider database; as defined by the sender
     public let id: String
 
     /// Venue location; as defined by the sender
-    public let location: Location
+    public var location: Location
 
     /// Provider of the venue database; as defined by the sender. Currently, only "foursquare" and "gplaces" (Google Places) need to be supported
-    public let provider: String
+    public var provider: String
 
     /// Venue name; as defined by the sender
-    public let title: String
+    public var title: String
 
     /// Type of the venue in the provider database; as defined by the sender
-    public let type: String
+    public var type: String
 
 
     public init(

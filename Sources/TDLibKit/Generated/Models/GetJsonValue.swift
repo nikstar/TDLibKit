@@ -14,7 +14,7 @@ import Foundation
 public struct GetJsonValue: Codable, Equatable, Hashable {
 
     /// The JSON-serialized string
-    public let json: String?
+    public var json: String?
 
 
     public init(json: String?) {

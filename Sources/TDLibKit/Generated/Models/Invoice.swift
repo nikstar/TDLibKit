@@ -14,43 +14,43 @@ import Foundation
 public struct Invoice: Codable, Equatable, Hashable {
 
     /// ISO 4217 currency code
-    public let currency: String
+    public var currency: String
 
     /// True, if the total price depends on the shipping method
-    public let isFlexible: Bool
+    public var isFlexible: Bool
 
     /// True, if the payment is a test payment
-    public let isTest: Bool
+    public var isTest: Bool
 
     /// The maximum allowed amount of tip in the smallest units of the currency
-    public let maxTipAmount: Int64
+    public var maxTipAmount: Int64
 
     /// True, if the user's email address is needed for payment
-    public let needEmailAddress: Bool
+    public var needEmailAddress: Bool
 
     /// True, if the user's name is needed for payment
-    public let needName: Bool
+    public var needName: Bool
 
     /// True, if the user's phone number is needed for payment
-    public let needPhoneNumber: Bool
+    public var needPhoneNumber: Bool
 
     /// True, if the user's shipping address is needed for payment
-    public let needShippingAddress: Bool
+    public var needShippingAddress: Bool
 
     /// A list of objects used to calculate the total price of the product
-    public let priceParts: [LabeledPricePart]
+    public var priceParts: [LabeledPricePart]
 
     /// An HTTP URL with terms of service for recurring payments. If non-empty, the invoice payment will result in recurring payments and the user must accept the terms of service before allowed to pay
-    public let recurringPaymentTermsOfServiceUrl: String
+    public var recurringPaymentTermsOfServiceUrl: String
 
     /// True, if the user's email address will be sent to the provider
-    public let sendEmailAddressToProvider: Bool
+    public var sendEmailAddressToProvider: Bool
 
     /// True, if the user's phone number will be sent to the provider
-    public let sendPhoneNumberToProvider: Bool
+    public var sendPhoneNumberToProvider: Bool
 
     /// Suggested amounts of tip in the smallest units of the currency
-    public let suggestedTipAmounts: [Int64]
+    public var suggestedTipAmounts: [Int64]
 
 
     public init(

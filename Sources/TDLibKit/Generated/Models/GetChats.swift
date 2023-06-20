@@ -14,10 +14,10 @@ import Foundation
 public struct GetChats: Codable, Equatable, Hashable {
 
     /// The chat list in which to return chats; pass null to get chats from the main chat list
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
     /// The maximum number of chats to be returned
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(

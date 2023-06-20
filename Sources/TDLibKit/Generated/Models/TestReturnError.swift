@@ -14,7 +14,7 @@ import Foundation
 public struct TestReturnError: Codable, Equatable, Hashable {
 
     /// The error to be returned
-    public let error: Error?
+    public var error: Error?
 
 
     public init(error: Error?) {

@@ -14,16 +14,16 @@ import Foundation
 public struct ChatMember: Codable, Equatable, Hashable {
 
     /// Identifier of a user that invited/promoted/banned this member in the chat; 0 if unknown
-    public let inviterUserId: Int64
+    public var inviterUserId: Int64
 
     /// Point in time (Unix timestamp) when the user joined/was promoted/was banned in the chat
-    public let joinedChatDate: Int
+    public var joinedChatDate: Int
 
     /// Identifier of the chat member. Currently, other chats can be only Left or Banned. Only supergroups and channels can have other chats as Left or Banned members and these chats must be supergroups or channels
-    public let memberId: MessageSender
+    public var memberId: MessageSender
 
     /// Status of the member in the chat
-    public let status: ChatMemberStatus
+    public var status: ChatMemberStatus
 
 
     public init(

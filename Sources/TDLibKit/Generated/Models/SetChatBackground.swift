@@ -14,16 +14,16 @@ import Foundation
 public struct SetChatBackground: Codable, Equatable, Hashable {
 
     /// The input background to use; pass null to create a new filled background or to remove the current background
-    public let background: InputBackground?
+    public var background: InputBackground?
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Dimming of the background in dark themes, as a percentage; 0-100
-    public let darkThemeDimming: Int?
+    public var darkThemeDimming: Int?
 
     /// Background type; pass null to remove the current background
-    public let type: BackgroundType?
+    public var type: BackgroundType?
 
 
     public init(

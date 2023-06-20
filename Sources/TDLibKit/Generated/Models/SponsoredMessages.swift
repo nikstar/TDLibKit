@@ -14,10 +14,10 @@ import Foundation
 public struct SponsoredMessages: Codable, Equatable, Hashable {
 
     /// List of sponsored messages
-    public let messages: [SponsoredMessage]
+    public var messages: [SponsoredMessage]
 
     /// The minimum number of messages between shown sponsored messages, or 0 if only one sponsored message must be shown after all ordinary messages
-    public let messagesBetween: Int
+    public var messagesBetween: Int
 
 
     public init(

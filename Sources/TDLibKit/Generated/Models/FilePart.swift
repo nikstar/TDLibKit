@@ -14,7 +14,7 @@ import Foundation
 public struct FilePart: Codable, Equatable, Hashable {
 
     /// File bytes
-    public let data: Data
+    public var data: Data
 
 
     public init(data: Data) {

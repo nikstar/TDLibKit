@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveRecentHashtag: Codable, Equatable, Hashable {
 
     /// Hashtag to delete
-    public let hashtag: String?
+    public var hashtag: String?
 
 
     public init(hashtag: String?) {

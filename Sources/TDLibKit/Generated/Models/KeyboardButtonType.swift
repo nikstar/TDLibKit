@@ -99,10 +99,10 @@ public enum KeyboardButtonType: Codable, Equatable, Hashable {
 public struct KeyboardButtonTypeRequestPoll: Codable, Equatable, Hashable {
 
     /// If true, only polls in quiz mode must be allowed to create
-    public let forceQuiz: Bool
+    public var forceQuiz: Bool
 
     /// If true, only regular polls must be allowed to create
-    public let forceRegular: Bool
+    public var forceRegular: Bool
 
 
     public init(
@@ -121,16 +121,16 @@ public struct KeyboardButtonTypeRequestUser: Codable, Equatable, Hashable, Ident
     public let id: Int
 
     /// True, if the shared user must or must not be a bot
-    public let restrictUserIsBot: Bool
+    public var restrictUserIsBot: Bool
 
     /// True, if the shared user must or must not be a Telegram Premium user
-    public let restrictUserIsPremium: Bool
+    public var restrictUserIsPremium: Bool
 
     /// True, if the shared user must be a bot; otherwise, the shared user must no be a bot. Ignored if restrict_user_is_bot is false
-    public let userIsBot: Bool
+    public var userIsBot: Bool
 
     /// True, if the shared user must be a Telegram Premium user; otherwise, the shared user must no be a Telegram Premium user. Ignored if restrict_user_is_premium is false
-    public let userIsPremium: Bool
+    public var userIsPremium: Bool
 
 
     public init(
@@ -152,34 +152,34 @@ public struct KeyboardButtonTypeRequestUser: Codable, Equatable, Hashable, Ident
 public struct KeyboardButtonTypeRequestChat: Codable, Equatable, Hashable, Identifiable {
 
     /// Expected bot administrator rights in the chat; may be null if they aren't restricted
-    public let botAdministratorRights: ChatAdministratorRights?
+    public var botAdministratorRights: ChatAdministratorRights?
 
     /// True, if the bot must be a member of the chat; for basic group and supergroup chats only
-    public let botIsMember: Bool
+    public var botIsMember: Bool
 
     /// True, if the chat must have a username; otherwise, the chat must not have a username. Ignored if restrict_chat_has_username is false
-    public let chatHasUsername: Bool
+    public var chatHasUsername: Bool
 
     /// True, if the chat must be a channel; otherwise, a basic group or a supergroup chat is shared
-    public let chatIsChannel: Bool
+    public var chatIsChannel: Bool
 
     /// True, if the chat must be created by the current user
-    public let chatIsCreated: Bool
+    public var chatIsCreated: Bool
 
     /// True, if the chat must be a forum supergroup; otherwise, the chat must not be a forum supergroup. Ignored if restrict_chat_is_forum is false
-    public let chatIsForum: Bool
+    public var chatIsForum: Bool
 
     /// Unique button identifier
     public let id: Int
 
     /// True, if the chat must or must not have a username
-    public let restrictChatHasUsername: Bool
+    public var restrictChatHasUsername: Bool
 
     /// True, if the chat must or must not be a forum supergroup
-    public let restrictChatIsForum: Bool
+    public var restrictChatIsForum: Bool
 
     /// Expected user administrator rights in the chat; may be null if they aren't restricted
-    public let userAdministratorRights: ChatAdministratorRights?
+    public var userAdministratorRights: ChatAdministratorRights?
 
 
     public init(
@@ -211,7 +211,7 @@ public struct KeyboardButtonTypeRequestChat: Codable, Equatable, Hashable, Ident
 public struct KeyboardButtonTypeWebApp: Codable, Equatable, Hashable {
 
     /// An HTTP URL to pass to getWebAppUrl
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {

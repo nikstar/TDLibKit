@@ -14,7 +14,7 @@ import Foundation
 public struct ReadChatList: Codable, Equatable, Hashable {
 
     /// Chat list in which to mark all chats as read
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
 
     public init(chatList: ChatList?) {

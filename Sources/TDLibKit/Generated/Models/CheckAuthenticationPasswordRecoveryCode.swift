@@ -14,7 +14,7 @@ import Foundation
 public struct CheckAuthenticationPasswordRecoveryCode: Codable, Equatable, Hashable {
 
     /// Recovery code to check
-    public let recoveryCode: String?
+    public var recoveryCode: String?
 
 
     public init(recoveryCode: String?) {

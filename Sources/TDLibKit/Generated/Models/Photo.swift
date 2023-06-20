@@ -14,13 +14,13 @@ import Foundation
 public struct Photo: Codable, Equatable, Hashable {
 
     /// True, if stickers were added to the photo. The list of corresponding sticker sets can be received using getAttachedStickerSets
-    public let hasStickers: Bool
+    public var hasStickers: Bool
 
     /// Photo minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// Available variants of the photo, in different sizes
-    public let sizes: [PhotoSize]
+    public var sizes: [PhotoSize]
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct SetGroupCallParticipantIsSpeaking: Codable, Equatable, Hashable {
 
     /// Group call participant's synchronization audio source identifier, or 0 for the current user
-    public let audioSource: Int?
+    public var audioSource: Int?
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Pass true if the user is speaking
-    public let isSpeaking: Bool?
+    public var isSpeaking: Bool?
 
 
     public init(

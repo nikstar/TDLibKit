@@ -14,13 +14,13 @@ import Foundation
 public struct FoundWebApp: Codable, Equatable, Hashable {
 
     /// True, if the user must be asked for the permission to the bot to send them messages
-    public let requestWriteAccess: Bool
+    public var requestWriteAccess: Bool
 
     /// True, if there is no need to show an ordinary open URL confirmation before opening the Web App. The field must be ignored and confirmation must be shown anyway if the Web App link was hidden
-    public let skipConfirmation: Bool
+    public var skipConfirmation: Bool
 
     /// The Web App
-    public let webApp: WebApp
+    public var webApp: WebApp
 
 
     public init(

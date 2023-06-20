@@ -14,7 +14,7 @@ import Foundation
 public struct DeleteProfilePhoto: Codable, Equatable, Hashable {
 
     /// Identifier of the profile photo to delete
-    public let profilePhotoId: TdInt64?
+    public var profilePhotoId: TdInt64?
 
 
     public init(profilePhotoId: TdInt64?) {

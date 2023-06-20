@@ -14,13 +14,13 @@ import Foundation
 public struct SendPhoneNumberConfirmationCode: Codable, Equatable, Hashable {
 
     /// Hash value from the link
-    public let hash: String?
+    public var hash: String?
 
     /// Phone number value from the link
-    public let phoneNumber: String?
+    public var phoneNumber: String?
 
     /// Settings for the authentication of the user's phone number; pass null to use default settings
-    public let settings: PhoneNumberAuthenticationSettings?
+    public var settings: PhoneNumberAuthenticationSettings?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SetEmojiStatus: Codable, Equatable, Hashable {
 
     /// Duration of the status, in seconds; pass 0 to keep the status active until it will be changed manually
-    public let duration: Int?
+    public var duration: Int?
 
     /// New emoji status; pass null to switch to the default badge
-    public let emojiStatus: EmojiStatus?
+    public var emojiStatus: EmojiStatus?
 
 
     public init(

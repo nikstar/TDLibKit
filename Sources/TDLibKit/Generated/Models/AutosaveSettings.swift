@@ -14,16 +14,16 @@ import Foundation
 public struct AutosaveSettings: Codable, Equatable, Hashable {
 
     /// Default autosave settings for channel chats
-    public let channelSettings: ScopeAutosaveSettings
+    public var channelSettings: ScopeAutosaveSettings
 
     /// Autosave settings for specific chats
-    public let exceptions: [AutosaveSettingsException]
+    public var exceptions: [AutosaveSettingsException]
 
     /// Default autosave settings for basic group and supergroup chats
-    public let groupSettings: ScopeAutosaveSettings
+    public var groupSettings: ScopeAutosaveSettings
 
     /// Default autosave settings for private chats
-    public let privateChatSettings: ScopeAutosaveSettings
+    public var privateChatSettings: ScopeAutosaveSettings
 
 
     public init(

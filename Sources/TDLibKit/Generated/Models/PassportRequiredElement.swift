@@ -14,7 +14,7 @@ import Foundation
 public struct PassportRequiredElement: Codable, Equatable, Hashable {
 
     /// List of Telegram Passport elements any of which is enough to provide
-    public let suitableElements: [PassportSuitableElement]
+    public var suitableElements: [PassportSuitableElement]
 
 
     public init(suitableElements: [PassportSuitableElement]) {

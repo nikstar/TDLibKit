@@ -14,19 +14,19 @@ import Foundation
 public struct EditForumTopic: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to edit the icon of the topic. Icon of the General topic can't be edited
-    public let editIconCustomEmoji: Bool?
+    public var editIconCustomEmoji: Bool?
 
     /// Identifier of the new custom emoji for topic icon; pass 0 to remove the custom emoji. Ignored if edit_icon_custom_emoji is false. Telegram Premium users can use any custom emoji, other users can use only a custom emoji returned by getForumTopicDefaultIcons
-    public let iconCustomEmojiId: TdInt64?
+    public var iconCustomEmojiId: TdInt64?
 
     /// Message thread identifier of the forum topic
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// New name of the topic; 0-128 characters. If empty, the previous topic name is kept
-    public let name: String?
+    public var name: String?
 
 
     public init(

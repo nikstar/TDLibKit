@@ -14,13 +14,13 @@ import Foundation
 public struct Minithumbnail: Codable, Equatable, Hashable {
 
     /// The thumbnail in JPEG format
-    public let data: Data
+    public var data: Data
 
     /// Thumbnail height, usually doesn't exceed 40
-    public let height: Int
+    public var height: Int
 
     /// Thumbnail width, usually doesn't exceed 40
-    public let width: Int
+    public var width: Int
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct DeletePassportElement: Codable, Equatable, Hashable {
 
     /// Element type
-    public let type: PassportElementType?
+    public var type: PassportElementType?
 
 
     public init(type: PassportElementType?) {

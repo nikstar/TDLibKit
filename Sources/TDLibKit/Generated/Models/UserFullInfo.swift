@@ -14,46 +14,46 @@ import Foundation
 public struct UserFullInfo: Codable, Equatable, Hashable {
 
     /// A short user bio; may be null for bots
-    public let bio: FormattedText?
+    public var bio: FormattedText?
 
     /// For bots, information about the bot; may be null
-    public let botInfo: BotInfo?
+    public var botInfo: BotInfo?
 
     /// True, if the user can be called
-    public let canBeCalled: Bool
+    public var canBeCalled: Bool
 
     /// Number of group chats where both the other user and the current user are a member; 0 for the current user
-    public let groupInCommonCount: Int
+    public var groupInCommonCount: Int
 
     /// True, if the user can't be called due to their privacy settings
-    public let hasPrivateCalls: Bool
+    public var hasPrivateCalls: Bool
 
     /// True, if the user can't be linked in forwarded messages due to their privacy settings
-    public let hasPrivateForwards: Bool
+    public var hasPrivateForwards: Bool
 
     /// True, if voice and video notes can't be sent or forwarded to the user
-    public let hasRestrictedVoiceAndVideoNoteMessages: Bool
+    public var hasRestrictedVoiceAndVideoNoteMessages: Bool
 
     /// True, if the user is blocked by the current user
-    public let isBlocked: Bool
+    public var isBlocked: Bool
 
     /// True, if the current user needs to explicitly allow to share their phone number with the user when the method addContact is used
-    public let needPhoneNumberPrivacyException: Bool
+    public var needPhoneNumberPrivacyException: Bool
 
     /// User profile photo set by the current user for the contact; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.//-If non-null, then it is the same photo as in user.profile_photo and chat.photo. This photo isn't returned in the list of user photos
-    public let personalPhoto: ChatPhoto?
+    public var personalPhoto: ChatPhoto?
 
     /// User profile photo; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.//-If non-null and personal_photo is null, then it is the same photo as in user.profile_photo and chat.photo
-    public let photo: ChatPhoto?
+    public var photo: ChatPhoto?
 
     /// The list of available options for gifting Telegram Premium to the user
-    public let premiumGiftOptions: [PremiumPaymentOption]
+    public var premiumGiftOptions: [PremiumPaymentOption]
 
     /// User profile photo visible if the main photo is hidden by privacy settings; may be null. If null and user.profile_photo is null, then the photo is empty; otherwise, it is unknown.//-If non-null and both photo and personal_photo are null, then it is the same photo as in user.profile_photo and chat.photo. This photo isn't returned in the list of user photos
-    public let publicPhoto: ChatPhoto?
+    public var publicPhoto: ChatPhoto?
 
     /// True, if a video call can be created with the user
-    public let supportsVideoCalls: Bool
+    public var supportsVideoCalls: Bool
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct CleanFileName: Codable, Equatable, Hashable {
 
     /// File name or path to the file
-    public let fileName: String?
+    public var fileName: String?
 
 
     public init(fileName: String?) {

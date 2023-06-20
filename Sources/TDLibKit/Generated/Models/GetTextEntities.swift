@@ -14,7 +14,7 @@ import Foundation
 public struct GetTextEntities: Codable, Equatable, Hashable {
 
     /// The text in which to look for entities
-    public let text: String?
+    public var text: String?
 
 
     public init(text: String?) {

@@ -14,22 +14,22 @@ import Foundation
 public struct GetMapThumbnailFile: Codable, Equatable, Hashable {
 
     /// Identifier of a chat in which the thumbnail will be shown. Use 0 if unknown
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Map height in pixels before applying scale; 16-1024
-    public let height: Int?
+    public var height: Int?
 
     /// Location of the map center
-    public let location: Location?
+    public var location: Location?
 
     /// Map scale; 1-3
-    public let scale: Int?
+    public var scale: Int?
 
     /// Map width in pixels before applying scale; 16-1024
-    public let width: Int?
+    public var width: Int?
 
     /// Map zoom level; 13-20
-    public let zoom: Int?
+    public var zoom: Int?
 
 
     public init(

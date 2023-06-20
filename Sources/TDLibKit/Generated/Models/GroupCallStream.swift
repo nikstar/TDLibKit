@@ -14,13 +14,13 @@ import Foundation
 public struct GroupCallStream: Codable, Equatable, Hashable {
 
     /// Identifier of an audio/video channel
-    public let channelId: Int
+    public var channelId: Int
 
     /// Scale of segment durations in the stream. The duration is 1000/(2**scale) milliseconds
-    public let scale: Int
+    public var scale: Int
 
     /// Point in time when the stream currently ends; Unix timestamp in milliseconds
-    public let timeOffset: Int64
+    public var timeOffset: Int64
 
 
     public init(

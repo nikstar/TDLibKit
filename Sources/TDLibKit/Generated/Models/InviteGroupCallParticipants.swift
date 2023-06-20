@@ -14,10 +14,10 @@ import Foundation
 public struct InviteGroupCallParticipants: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// User identifiers. At most 10 users can be invited simultaneously
-    public let userIds: [Int64]?
+    public var userIds: [Int64]?
 
 
     public init(

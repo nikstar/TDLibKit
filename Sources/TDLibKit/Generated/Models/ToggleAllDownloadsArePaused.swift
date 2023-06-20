@@ -14,7 +14,7 @@ import Foundation
 public struct ToggleAllDownloadsArePaused: Codable, Equatable, Hashable {
 
     /// Pass true to pause all downloads; pass false to unpause them
-    public let arePaused: Bool?
+    public var arePaused: Bool?
 
 
     public init(arePaused: Bool?) {

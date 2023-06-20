@@ -14,7 +14,7 @@ import Foundation
 public struct EnableProxy: Codable, Equatable, Hashable {
 
     /// Proxy identifier
-    public let proxyId: Int?
+    public var proxyId: Int?
 
 
     public init(proxyId: Int?) {

@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveStickerFromSet: Codable, Equatable, Hashable {
 
     /// Sticker
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(sticker: InputFile?) {

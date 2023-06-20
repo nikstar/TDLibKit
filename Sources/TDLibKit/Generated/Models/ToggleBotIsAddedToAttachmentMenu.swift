@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleBotIsAddedToAttachmentMenu: Codable, Equatable, Hashable {
 
     /// Pass true if the current user allowed the bot to send them messages. Ignored if is_added is false
-    public let allowWriteAccess: Bool?
+    public var allowWriteAccess: Bool?
 
     /// Bot's user identifier
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Pass true to add the bot to attachment menu; pass false to remove the bot from attachment menu
-    public let isAdded: Bool?
+    public var isAdded: Bool?
 
 
     public init(

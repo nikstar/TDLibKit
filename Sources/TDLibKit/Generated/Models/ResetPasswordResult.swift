@@ -63,7 +63,7 @@ public enum ResetPasswordResult: Codable, Equatable, Hashable {
 public struct ResetPasswordResultPending: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) after which the password can be reset immediately using resetPassword
-    public let pendingResetDate: Int
+    public var pendingResetDate: Int
 
 
     public init(pendingResetDate: Int) {
@@ -75,7 +75,7 @@ public struct ResetPasswordResultPending: Codable, Equatable, Hashable {
 public struct ResetPasswordResultDeclined: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the password reset can be retried
-    public let retryDate: Int
+    public var retryDate: Int
 
 
     public init(retryDate: Int) {

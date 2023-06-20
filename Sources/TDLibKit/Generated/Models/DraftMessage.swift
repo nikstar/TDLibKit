@@ -14,13 +14,13 @@ import Foundation
 public struct DraftMessage: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the draft was created
-    public let date: Int
+    public var date: Int
 
     /// Content of the message draft; must be of the type inputMessageText
-    public let inputMessageText: InputMessageContent
+    public var inputMessageText: InputMessageContent
 
     /// Identifier of the replied message; 0 if none
-    public let replyToMessageId: Int64
+    public var replyToMessageId: Int64
 
 
     public init(

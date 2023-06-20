@@ -14,13 +14,13 @@ import Foundation
 public struct WriteGeneratedFilePart: Codable, Equatable, Hashable {
 
     /// The data to write
-    public let data: Data?
+    public var data: Data?
 
     /// The identifier of the generation process
-    public let generationId: TdInt64?
+    public var generationId: TdInt64?
 
     /// The offset from which to write the data to the file
-    public let offset: Int64?
+    public var offset: Int64?
 
 
     public init(

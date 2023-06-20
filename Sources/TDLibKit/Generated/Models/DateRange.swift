@@ -14,10 +14,10 @@ import Foundation
 public struct DateRange: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) at which the date range ends
-    public let endDate: Int
+    public var endDate: Int
 
     /// Point in time (Unix timestamp) at which the date range begins
-    public let startDate: Int
+    public var startDate: Int
 
 
     public init(

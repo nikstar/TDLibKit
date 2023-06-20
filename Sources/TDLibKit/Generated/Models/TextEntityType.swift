@@ -205,7 +205,7 @@ public enum TextEntityType: Codable, Equatable, Hashable {
 public struct TextEntityTypePreCode: Codable, Equatable, Hashable {
 
     /// Programming language of the code; as defined by the sender
-    public let language: String
+    public var language: String
 
 
     public init(language: String) {
@@ -217,7 +217,7 @@ public struct TextEntityTypePreCode: Codable, Equatable, Hashable {
 public struct TextEntityTypeTextUrl: Codable, Equatable, Hashable {
 
     /// HTTP or tg:// URL to be opened when the link is clicked
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {
@@ -229,7 +229,7 @@ public struct TextEntityTypeTextUrl: Codable, Equatable, Hashable {
 public struct TextEntityTypeMentionName: Codable, Equatable, Hashable {
 
     /// Identifier of the mentioned user
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(userId: Int64) {
@@ -241,7 +241,7 @@ public struct TextEntityTypeMentionName: Codable, Equatable, Hashable {
 public struct TextEntityTypeCustomEmoji: Codable, Equatable, Hashable {
 
     /// Unique identifier of the custom emoji
-    public let customEmojiId: TdInt64
+    public var customEmojiId: TdInt64
 
 
     public init(customEmojiId: TdInt64) {
@@ -253,7 +253,7 @@ public struct TextEntityTypeCustomEmoji: Codable, Equatable, Hashable {
 public struct TextEntityTypeMediaTimestamp: Codable, Equatable, Hashable {
 
     /// Timestamp from which a video/audio/video note/voice note playing must start, in seconds. The media can be in the content or the web page preview of the current message, or in the same places in the replied message
-    public let mediaTimestamp: Int
+    public var mediaTimestamp: Int
 
 
     public init(mediaTimestamp: Int) {

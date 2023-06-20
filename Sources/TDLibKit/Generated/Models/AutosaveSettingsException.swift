@@ -14,10 +14,10 @@ import Foundation
 public struct AutosaveSettingsException: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Autosave settings for the chat
-    public let settings: ScopeAutosaveSettings
+    public var settings: ScopeAutosaveSettings
 
 
     public init(

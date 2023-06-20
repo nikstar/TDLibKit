@@ -14,13 +14,13 @@ import Foundation
 public struct SetPollAnswer: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the poll belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message containing the poll
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// 0-based identifiers of answer options, chosen by the user. User can choose more than 1 answer option only is the poll allows multiple answers
-    public let optionIds: [Int]?
+    public var optionIds: [Int]?
 
 
     public init(

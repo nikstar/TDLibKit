@@ -14,13 +14,13 @@ import Foundation
 public struct SetStickerSetThumbnail: Codable, Equatable, Hashable {
 
     /// Sticker set name
-    public let name: String?
+    public var name: String?
 
     /// Thumbnail to set in PNG, TGS, or WEBM format; pass null to remove the sticker set thumbnail. Thumbnail format must match the format of stickers in the set
-    public let thumbnail: InputFile?
+    public var thumbnail: InputFile?
 
     /// Sticker set owner
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

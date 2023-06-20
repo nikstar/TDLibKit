@@ -121,7 +121,7 @@ public enum InlineKeyboardButtonType: Codable, Equatable, Hashable {
 public struct InlineKeyboardButtonTypeUrl: Codable, Equatable, Hashable {
 
     /// HTTP or tg:// URL to open
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {
@@ -133,13 +133,13 @@ public struct InlineKeyboardButtonTypeUrl: Codable, Equatable, Hashable {
 public struct InlineKeyboardButtonTypeLoginUrl: Codable, Equatable, Hashable, Identifiable {
 
     /// If non-empty, new text of the button in forwarded messages
-    public let forwardText: String
+    public var forwardText: String
 
     /// Unique button identifier
     public let id: Int64
 
     /// An HTTP URL to pass to getLoginUrlInfo
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -157,7 +157,7 @@ public struct InlineKeyboardButtonTypeLoginUrl: Codable, Equatable, Hashable, Id
 public struct InlineKeyboardButtonTypeWebApp: Codable, Equatable, Hashable {
 
     /// An HTTP URL to pass to openWebApp
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {
@@ -169,7 +169,7 @@ public struct InlineKeyboardButtonTypeWebApp: Codable, Equatable, Hashable {
 public struct InlineKeyboardButtonTypeCallback: Codable, Equatable, Hashable {
 
     /// Data to be sent to the bot via a callback query
-    public let data: Data
+    public var data: Data
 
 
     public init(data: Data) {
@@ -181,7 +181,7 @@ public struct InlineKeyboardButtonTypeCallback: Codable, Equatable, Hashable {
 public struct InlineKeyboardButtonTypeCallbackWithPassword: Codable, Equatable, Hashable {
 
     /// Data to be sent to the bot via a callback query
-    public let data: Data
+    public var data: Data
 
 
     public init(data: Data) {
@@ -193,10 +193,10 @@ public struct InlineKeyboardButtonTypeCallbackWithPassword: Codable, Equatable, 
 public struct InlineKeyboardButtonTypeSwitchInline: Codable, Equatable, Hashable {
 
     /// Inline query to be sent to the bot
-    public let query: String
+    public var query: String
 
     /// Target chat from which to send the inline query
-    public let targetChat: TargetChat
+    public var targetChat: TargetChat
 
 
     public init(
@@ -212,7 +212,7 @@ public struct InlineKeyboardButtonTypeSwitchInline: Codable, Equatable, Hashable
 public struct InlineKeyboardButtonTypeUser: Codable, Equatable, Hashable {
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(userId: Int64) {

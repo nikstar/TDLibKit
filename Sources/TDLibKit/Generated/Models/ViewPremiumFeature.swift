@@ -14,7 +14,7 @@ import Foundation
 public struct ViewPremiumFeature: Codable, Equatable, Hashable {
 
     /// The viewed premium feature
-    public let feature: PremiumFeature?
+    public var feature: PremiumFeature?
 
 
     public init(feature: PremiumFeature?) {

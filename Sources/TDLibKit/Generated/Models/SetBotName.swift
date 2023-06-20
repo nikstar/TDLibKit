@@ -14,13 +14,13 @@ import Foundation
 public struct SetBotName: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// A two-letter ISO 639-1 language code. If empty, the name will be shown to all users for whose languages there is no dedicated name
-    public let languageCode: String?
+    public var languageCode: String?
 
     /// New bot's name on the specified language; 0-64 characters; must be non-empty if language code is empty
-    public let name: String?
+    public var name: String?
 
 
     public init(

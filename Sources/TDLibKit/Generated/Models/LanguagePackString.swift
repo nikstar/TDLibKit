@@ -14,10 +14,10 @@ import Foundation
 public struct LanguagePackString: Codable, Equatable, Hashable {
 
     /// String key
-    public let key: String
+    public var key: String
 
     /// String value; pass null if the string needs to be taken from the built-in English language pack
-    public let value: LanguagePackStringValue?
+    public var value: LanguagePackStringValue?
 
 
     public init(

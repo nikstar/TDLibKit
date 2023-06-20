@@ -14,10 +14,10 @@ import Foundation
 public struct ReadAllMessageThreadMentions: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message thread identifier in which mentions are marked as read
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

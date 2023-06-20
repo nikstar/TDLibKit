@@ -14,19 +14,19 @@ import Foundation
 public struct FileDownload: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the file was added to the download list
-    public let addDate: Int
+    public var addDate: Int
 
     /// Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed
-    public let completeDate: Int
+    public var completeDate: Int
 
     /// File identifier
-    public let fileId: Int
+    public var fileId: Int
 
     /// True, if downloading of the file is paused
-    public let isPaused: Bool
+    public var isPaused: Bool
 
     /// The message with the file
-    public let message: Message
+    public var message: Message
 
 
     public init(

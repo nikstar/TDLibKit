@@ -14,7 +14,7 @@ import Foundation
 public struct AddRecentlyFoundChat: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to add
-    public let chatId: Int64?
+    public var chatId: Int64?
 
 
     public init(chatId: Int64?) {

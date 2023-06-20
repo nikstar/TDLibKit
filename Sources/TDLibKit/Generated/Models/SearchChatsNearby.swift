@@ -14,7 +14,7 @@ import Foundation
 public struct SearchChatsNearby: Codable, Equatable, Hashable {
 
     /// Current user location
-    public let location: Location?
+    public var location: Location?
 
 
     public init(location: Location?) {

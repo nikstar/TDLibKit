@@ -14,7 +14,7 @@ import Foundation
 public struct HideSuggestedAction: Codable, Equatable, Hashable {
 
     /// Suggested action to hide
-    public let action: SuggestedAction?
+    public var action: SuggestedAction?
 
 
     public init(action: SuggestedAction?) {

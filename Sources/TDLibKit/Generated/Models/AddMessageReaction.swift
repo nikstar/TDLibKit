@@ -14,19 +14,19 @@ import Foundation
 public struct AddMessageReaction: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the message belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true if the reaction is added with a big animation
-    public let isBig: Bool?
+    public var isBig: Bool?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Type of the reaction to add
-    public let reactionType: ReactionType?
+    public var reactionType: ReactionType?
 
     /// Pass true if the reaction needs to be added to recent reactions
-    public let updateRecentReactions: Bool?
+    public var updateRecentReactions: Bool?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct MessageLink: Codable, Equatable, Hashable {
 
     /// True, if the link will work for non-members of the chat
-    public let isPublic: Bool
+    public var isPublic: Bool
 
     /// The link
-    public let link: String
+    public var link: String
 
 
     public init(

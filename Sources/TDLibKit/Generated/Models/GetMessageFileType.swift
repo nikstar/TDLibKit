@@ -14,7 +14,7 @@ import Foundation
 public struct GetMessageFileType: Codable, Equatable, Hashable {
 
     /// Beginning of the message file; up to 100 first lines
-    public let messageFileHead: String?
+    public var messageFileHead: String?
 
 
     public init(messageFileHead: String?) {

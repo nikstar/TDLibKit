@@ -14,7 +14,7 @@ import Foundation
 public struct ChatFolderInviteLinks: Codable, Equatable, Hashable {
 
     /// List of the invite links
-    public let inviteLinks: [ChatFolderInviteLink]
+    public var inviteLinks: [ChatFolderInviteLink]
 
 
     public init(inviteLinks: [ChatFolderInviteLink]) {

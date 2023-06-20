@@ -14,10 +14,10 @@ import Foundation
 public struct SearchContacts: Codable, Equatable, Hashable {
 
     /// The maximum number of users to be returned
-    public let limit: Int?
+    public var limit: Int?
 
     /// Query to search for; may be empty to return all contacts
-    public let query: String?
+    public var query: String?
 
 
     public init(

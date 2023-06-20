@@ -14,16 +14,16 @@ import Foundation
 public struct AssignGooglePlayTransaction: Codable, Equatable, Hashable {
 
     /// Application package name
-    public let packageName: String?
+    public var packageName: String?
 
     /// Google Play purchase token
-    public let purchaseToken: String?
+    public var purchaseToken: String?
 
     /// Transaction purpose
-    public let purpose: StorePaymentPurpose?
+    public var purpose: StorePaymentPurpose?
 
     /// Identifier of the purchased store product
-    public let storeProductId: String?
+    public var storeProductId: String?
 
 
     public init(

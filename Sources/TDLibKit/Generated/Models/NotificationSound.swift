@@ -14,22 +14,22 @@ import Foundation
 public struct NotificationSound: Codable, Equatable, Hashable, Identifiable {
 
     /// Arbitrary data, defined while the sound was uploaded
-    public let data: String
+    public var data: String
 
     /// Point in time (Unix timestamp) when the sound was created
-    public let date: Int
+    public var date: Int
 
     /// Duration of the sound, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// Unique identifier of the notification sound
     public let id: TdInt64
 
     /// File containing the sound
-    public let sound: File
+    public var sound: File
 
     /// Title of the notification sound
-    public let title: String
+    public var title: String
 
 
     public init(

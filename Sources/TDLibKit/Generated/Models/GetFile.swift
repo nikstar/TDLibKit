@@ -14,7 +14,7 @@ import Foundation
 public struct GetFile: Codable, Equatable, Hashable {
 
     /// Identifier of the file to get
-    public let fileId: Int?
+    public var fileId: Int?
 
 
     public init(fileId: Int?) {

@@ -14,10 +14,10 @@ import Foundation
 public struct SetName: Codable, Equatable, Hashable {
 
     /// The new value of the first name for the current user; 1-64 characters
-    public let firstName: String?
+    public var firstName: String?
 
     /// The new value of the optional last name for the current user; 0-64 characters
-    public let lastName: String?
+    public var lastName: String?
 
 
     public init(

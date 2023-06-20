@@ -471,10 +471,10 @@ public enum ChatEventAction: Codable, Equatable, Hashable {
 public struct ChatEventMessageEdited: Codable, Equatable, Hashable {
 
     /// The message after it was edited
-    public let newMessage: Message
+    public var newMessage: Message
 
     /// The original message before the edit
-    public let oldMessage: Message
+    public var oldMessage: Message
 
 
     public init(
@@ -490,10 +490,10 @@ public struct ChatEventMessageEdited: Codable, Equatable, Hashable {
 public struct ChatEventMessageDeleted: Codable, Equatable, Hashable {
 
     /// True, if the message deletion can be reported via reportSupergroupAntiSpamFalsePositive
-    public let canReportAntiSpamFalsePositive: Bool
+    public var canReportAntiSpamFalsePositive: Bool
 
     /// Deleted message
-    public let message: Message
+    public var message: Message
 
 
     public init(
@@ -509,7 +509,7 @@ public struct ChatEventMessageDeleted: Codable, Equatable, Hashable {
 public struct ChatEventMessagePinned: Codable, Equatable, Hashable {
 
     /// Pinned message
-    public let message: Message
+    public var message: Message
 
 
     public init(message: Message) {
@@ -521,7 +521,7 @@ public struct ChatEventMessagePinned: Codable, Equatable, Hashable {
 public struct ChatEventMessageUnpinned: Codable, Equatable, Hashable {
 
     /// Unpinned message
-    public let message: Message
+    public var message: Message
 
 
     public init(message: Message) {
@@ -533,7 +533,7 @@ public struct ChatEventMessageUnpinned: Codable, Equatable, Hashable {
 public struct ChatEventPollStopped: Codable, Equatable, Hashable {
 
     /// The message with the poll
-    public let message: Message
+    public var message: Message
 
 
     public init(message: Message) {
@@ -545,10 +545,10 @@ public struct ChatEventPollStopped: Codable, Equatable, Hashable {
 public struct ChatEventMemberJoinedByInviteLink: Codable, Equatable, Hashable {
 
     /// Invite link used to join the chat
-    public let inviteLink: ChatInviteLink
+    public var inviteLink: ChatInviteLink
 
     /// True, if the user has joined the chat using an invite link for a chat folder
-    public let viaChatFolderInviteLink: Bool
+    public var viaChatFolderInviteLink: Bool
 
 
     public init(
@@ -564,10 +564,10 @@ public struct ChatEventMemberJoinedByInviteLink: Codable, Equatable, Hashable {
 public struct ChatEventMemberJoinedByRequest: Codable, Equatable, Hashable {
 
     /// User identifier of the chat administrator, approved user join request
-    public let approverUserId: Int64
+    public var approverUserId: Int64
 
     /// Invite link used to join the chat; may be null
-    public let inviteLink: ChatInviteLink?
+    public var inviteLink: ChatInviteLink?
 
 
     public init(
@@ -583,10 +583,10 @@ public struct ChatEventMemberJoinedByRequest: Codable, Equatable, Hashable {
 public struct ChatEventMemberInvited: Codable, Equatable, Hashable {
 
     /// New member status
-    public let status: ChatMemberStatus
+    public var status: ChatMemberStatus
 
     /// New member user identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(
@@ -602,13 +602,13 @@ public struct ChatEventMemberInvited: Codable, Equatable, Hashable {
 public struct ChatEventMemberPromoted: Codable, Equatable, Hashable {
 
     /// New status of the chat member
-    public let newStatus: ChatMemberStatus
+    public var newStatus: ChatMemberStatus
 
     /// Previous status of the chat member
-    public let oldStatus: ChatMemberStatus
+    public var oldStatus: ChatMemberStatus
 
     /// Affected chat member user identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(
@@ -626,13 +626,13 @@ public struct ChatEventMemberPromoted: Codable, Equatable, Hashable {
 public struct ChatEventMemberRestricted: Codable, Equatable, Hashable {
 
     /// Affected chat member identifier
-    public let memberId: MessageSender
+    public var memberId: MessageSender
 
     /// New status of the chat member
-    public let newStatus: ChatMemberStatus
+    public var newStatus: ChatMemberStatus
 
     /// Previous status of the chat member
-    public let oldStatus: ChatMemberStatus
+    public var oldStatus: ChatMemberStatus
 
 
     public init(
@@ -650,10 +650,10 @@ public struct ChatEventMemberRestricted: Codable, Equatable, Hashable {
 public struct ChatEventAvailableReactionsChanged: Codable, Equatable, Hashable {
 
     /// New chat available reactions
-    public let newAvailableReactions: ChatAvailableReactions
+    public var newAvailableReactions: ChatAvailableReactions
 
     /// Previous chat available reactions
-    public let oldAvailableReactions: ChatAvailableReactions
+    public var oldAvailableReactions: ChatAvailableReactions
 
 
     public init(
@@ -669,10 +669,10 @@ public struct ChatEventAvailableReactionsChanged: Codable, Equatable, Hashable {
 public struct ChatEventDescriptionChanged: Codable, Equatable, Hashable {
 
     /// New chat description
-    public let newDescription: String
+    public var newDescription: String
 
     /// Previous chat description
-    public let oldDescription: String
+    public var oldDescription: String
 
 
     public init(
@@ -688,10 +688,10 @@ public struct ChatEventDescriptionChanged: Codable, Equatable, Hashable {
 public struct ChatEventLinkedChatChanged: Codable, Equatable, Hashable {
 
     /// New supergroup linked chat identifier
-    public let newLinkedChatId: Int64
+    public var newLinkedChatId: Int64
 
     /// Previous supergroup linked chat identifier
-    public let oldLinkedChatId: Int64
+    public var oldLinkedChatId: Int64
 
 
     public init(
@@ -707,10 +707,10 @@ public struct ChatEventLinkedChatChanged: Codable, Equatable, Hashable {
 public struct ChatEventLocationChanged: Codable, Equatable, Hashable {
 
     /// New location; may be null
-    public let newLocation: ChatLocation?
+    public var newLocation: ChatLocation?
 
     /// Previous location; may be null
-    public let oldLocation: ChatLocation?
+    public var oldLocation: ChatLocation?
 
 
     public init(
@@ -726,10 +726,10 @@ public struct ChatEventLocationChanged: Codable, Equatable, Hashable {
 public struct ChatEventMessageAutoDeleteTimeChanged: Codable, Equatable, Hashable {
 
     /// New value of message_auto_delete_time
-    public let newMessageAutoDeleteTime: Int
+    public var newMessageAutoDeleteTime: Int
 
     /// Previous value of message_auto_delete_time
-    public let oldMessageAutoDeleteTime: Int
+    public var oldMessageAutoDeleteTime: Int
 
 
     public init(
@@ -745,10 +745,10 @@ public struct ChatEventMessageAutoDeleteTimeChanged: Codable, Equatable, Hashabl
 public struct ChatEventPermissionsChanged: Codable, Equatable, Hashable {
 
     /// New chat permissions
-    public let newPermissions: ChatPermissions
+    public var newPermissions: ChatPermissions
 
     /// Previous chat permissions
-    public let oldPermissions: ChatPermissions
+    public var oldPermissions: ChatPermissions
 
 
     public init(
@@ -764,10 +764,10 @@ public struct ChatEventPermissionsChanged: Codable, Equatable, Hashable {
 public struct ChatEventPhotoChanged: Codable, Equatable, Hashable {
 
     /// New chat photo value; may be null
-    public let newPhoto: ChatPhoto?
+    public var newPhoto: ChatPhoto?
 
     /// Previous chat photo value; may be null
-    public let oldPhoto: ChatPhoto?
+    public var oldPhoto: ChatPhoto?
 
 
     public init(
@@ -783,10 +783,10 @@ public struct ChatEventPhotoChanged: Codable, Equatable, Hashable {
 public struct ChatEventSlowModeDelayChanged: Codable, Equatable, Hashable {
 
     /// New value of slow_mode_delay, in seconds
-    public let newSlowModeDelay: Int
+    public var newSlowModeDelay: Int
 
     /// Previous value of slow_mode_delay, in seconds
-    public let oldSlowModeDelay: Int
+    public var oldSlowModeDelay: Int
 
 
     public init(
@@ -802,10 +802,10 @@ public struct ChatEventSlowModeDelayChanged: Codable, Equatable, Hashable {
 public struct ChatEventStickerSetChanged: Codable, Equatable, Hashable {
 
     /// New identifier of the chat sticker set; 0 if none
-    public let newStickerSetId: TdInt64
+    public var newStickerSetId: TdInt64
 
     /// Previous identifier of the chat sticker set; 0 if none
-    public let oldStickerSetId: TdInt64
+    public var oldStickerSetId: TdInt64
 
 
     public init(
@@ -821,10 +821,10 @@ public struct ChatEventStickerSetChanged: Codable, Equatable, Hashable {
 public struct ChatEventTitleChanged: Codable, Equatable, Hashable {
 
     /// New chat title
-    public let newTitle: String
+    public var newTitle: String
 
     /// Previous chat title
-    public let oldTitle: String
+    public var oldTitle: String
 
 
     public init(
@@ -840,10 +840,10 @@ public struct ChatEventTitleChanged: Codable, Equatable, Hashable {
 public struct ChatEventUsernameChanged: Codable, Equatable, Hashable {
 
     /// New chat username
-    public let newUsername: String
+    public var newUsername: String
 
     /// Previous chat username
-    public let oldUsername: String
+    public var oldUsername: String
 
 
     public init(
@@ -859,10 +859,10 @@ public struct ChatEventUsernameChanged: Codable, Equatable, Hashable {
 public struct ChatEventActiveUsernamesChanged: Codable, Equatable, Hashable {
 
     /// New list of active usernames
-    public let newUsernames: [String]
+    public var newUsernames: [String]
 
     /// Previous list of active usernames
-    public let oldUsernames: [String]
+    public var oldUsernames: [String]
 
 
     public init(
@@ -878,7 +878,7 @@ public struct ChatEventActiveUsernamesChanged: Codable, Equatable, Hashable {
 public struct ChatEventHasProtectedContentToggled: Codable, Equatable, Hashable {
 
     /// New value of has_protected_content
-    public let hasProtectedContent: Bool
+    public var hasProtectedContent: Bool
 
 
     public init(hasProtectedContent: Bool) {
@@ -890,7 +890,7 @@ public struct ChatEventHasProtectedContentToggled: Codable, Equatable, Hashable 
 public struct ChatEventInvitesToggled: Codable, Equatable, Hashable {
 
     /// New value of can_invite_users permission
-    public let canInviteUsers: Bool
+    public var canInviteUsers: Bool
 
 
     public init(canInviteUsers: Bool) {
@@ -902,7 +902,7 @@ public struct ChatEventInvitesToggled: Codable, Equatable, Hashable {
 public struct ChatEventIsAllHistoryAvailableToggled: Codable, Equatable, Hashable {
 
     /// New value of is_all_history_available
-    public let isAllHistoryAvailable: Bool
+    public var isAllHistoryAvailable: Bool
 
 
     public init(isAllHistoryAvailable: Bool) {
@@ -914,7 +914,7 @@ public struct ChatEventIsAllHistoryAvailableToggled: Codable, Equatable, Hashabl
 public struct ChatEventHasAggressiveAntiSpamEnabledToggled: Codable, Equatable, Hashable {
 
     /// New value of has_aggressive_anti_spam_enabled
-    public let hasAggressiveAntiSpamEnabled: Bool
+    public var hasAggressiveAntiSpamEnabled: Bool
 
 
     public init(hasAggressiveAntiSpamEnabled: Bool) {
@@ -926,7 +926,7 @@ public struct ChatEventHasAggressiveAntiSpamEnabledToggled: Codable, Equatable, 
 public struct ChatEventSignMessagesToggled: Codable, Equatable, Hashable {
 
     /// New value of sign_messages
-    public let signMessages: Bool
+    public var signMessages: Bool
 
 
     public init(signMessages: Bool) {
@@ -938,10 +938,10 @@ public struct ChatEventSignMessagesToggled: Codable, Equatable, Hashable {
 public struct ChatEventInviteLinkEdited: Codable, Equatable, Hashable {
 
     /// New information about the invite link
-    public let newInviteLink: ChatInviteLink
+    public var newInviteLink: ChatInviteLink
 
     /// Previous information about the invite link
-    public let oldInviteLink: ChatInviteLink
+    public var oldInviteLink: ChatInviteLink
 
 
     public init(
@@ -957,7 +957,7 @@ public struct ChatEventInviteLinkEdited: Codable, Equatable, Hashable {
 public struct ChatEventInviteLinkRevoked: Codable, Equatable, Hashable {
 
     /// The invite link
-    public let inviteLink: ChatInviteLink
+    public var inviteLink: ChatInviteLink
 
 
     public init(inviteLink: ChatInviteLink) {
@@ -969,7 +969,7 @@ public struct ChatEventInviteLinkRevoked: Codable, Equatable, Hashable {
 public struct ChatEventInviteLinkDeleted: Codable, Equatable, Hashable {
 
     /// The invite link
-    public let inviteLink: ChatInviteLink
+    public var inviteLink: ChatInviteLink
 
 
     public init(inviteLink: ChatInviteLink) {
@@ -981,7 +981,7 @@ public struct ChatEventInviteLinkDeleted: Codable, Equatable, Hashable {
 public struct ChatEventVideoChatCreated: Codable, Equatable, Hashable {
 
     /// Identifier of the video chat. The video chat can be received through the method getGroupCall
-    public let groupCallId: Int
+    public var groupCallId: Int
 
 
     public init(groupCallId: Int) {
@@ -993,7 +993,7 @@ public struct ChatEventVideoChatCreated: Codable, Equatable, Hashable {
 public struct ChatEventVideoChatEnded: Codable, Equatable, Hashable {
 
     /// Identifier of the video chat. The video chat can be received through the method getGroupCall
-    public let groupCallId: Int
+    public var groupCallId: Int
 
 
     public init(groupCallId: Int) {
@@ -1005,7 +1005,7 @@ public struct ChatEventVideoChatEnded: Codable, Equatable, Hashable {
 public struct ChatEventVideoChatMuteNewParticipantsToggled: Codable, Equatable, Hashable {
 
     /// New value of the mute_new_participants setting
-    public let muteNewParticipants: Bool
+    public var muteNewParticipants: Bool
 
 
     public init(muteNewParticipants: Bool) {
@@ -1017,10 +1017,10 @@ public struct ChatEventVideoChatMuteNewParticipantsToggled: Codable, Equatable, 
 public struct ChatEventVideoChatParticipantIsMutedToggled: Codable, Equatable, Hashable {
 
     /// New value of is_muted
-    public let isMuted: Bool
+    public var isMuted: Bool
 
     /// Identifier of the affected group call participant
-    public let participantId: MessageSender
+    public var participantId: MessageSender
 
 
     public init(
@@ -1036,10 +1036,10 @@ public struct ChatEventVideoChatParticipantIsMutedToggled: Codable, Equatable, H
 public struct ChatEventVideoChatParticipantVolumeLevelChanged: Codable, Equatable, Hashable {
 
     /// Identifier of the affected group call participant
-    public let participantId: MessageSender
+    public var participantId: MessageSender
 
     /// New value of volume_level; 1-20000 in hundreds of percents
-    public let volumeLevel: Int
+    public var volumeLevel: Int
 
 
     public init(
@@ -1055,7 +1055,7 @@ public struct ChatEventVideoChatParticipantVolumeLevelChanged: Codable, Equatabl
 public struct ChatEventIsForumToggled: Codable, Equatable, Hashable {
 
     /// New value of is_forum
-    public let isForum: Bool
+    public var isForum: Bool
 
 
     public init(isForum: Bool) {
@@ -1067,7 +1067,7 @@ public struct ChatEventIsForumToggled: Codable, Equatable, Hashable {
 public struct ChatEventForumTopicCreated: Codable, Equatable, Hashable {
 
     /// Information about the topic
-    public let topicInfo: ForumTopicInfo
+    public var topicInfo: ForumTopicInfo
 
 
     public init(topicInfo: ForumTopicInfo) {
@@ -1079,10 +1079,10 @@ public struct ChatEventForumTopicCreated: Codable, Equatable, Hashable {
 public struct ChatEventForumTopicEdited: Codable, Equatable, Hashable {
 
     /// New information about the topic
-    public let newTopicInfo: ForumTopicInfo
+    public var newTopicInfo: ForumTopicInfo
 
     /// Old information about the topic
-    public let oldTopicInfo: ForumTopicInfo
+    public var oldTopicInfo: ForumTopicInfo
 
 
     public init(
@@ -1098,7 +1098,7 @@ public struct ChatEventForumTopicEdited: Codable, Equatable, Hashable {
 public struct ChatEventForumTopicToggleIsClosed: Codable, Equatable, Hashable {
 
     /// New information about the topic
-    public let topicInfo: ForumTopicInfo
+    public var topicInfo: ForumTopicInfo
 
 
     public init(topicInfo: ForumTopicInfo) {
@@ -1110,7 +1110,7 @@ public struct ChatEventForumTopicToggleIsClosed: Codable, Equatable, Hashable {
 public struct ChatEventForumTopicToggleIsHidden: Codable, Equatable, Hashable {
 
     /// New information about the topic
-    public let topicInfo: ForumTopicInfo
+    public var topicInfo: ForumTopicInfo
 
 
     public init(topicInfo: ForumTopicInfo) {
@@ -1122,7 +1122,7 @@ public struct ChatEventForumTopicToggleIsHidden: Codable, Equatable, Hashable {
 public struct ChatEventForumTopicDeleted: Codable, Equatable, Hashable {
 
     /// Information about the topic
-    public let topicInfo: ForumTopicInfo
+    public var topicInfo: ForumTopicInfo
 
 
     public init(topicInfo: ForumTopicInfo) {
@@ -1134,10 +1134,10 @@ public struct ChatEventForumTopicDeleted: Codable, Equatable, Hashable {
 public struct ChatEventForumTopicPinned: Codable, Equatable, Hashable {
 
     /// Information about the new pinned topic; may be null
-    public let newTopicInfo: ForumTopicInfo?
+    public var newTopicInfo: ForumTopicInfo?
 
     /// Information about the old pinned topic; may be null
-    public let oldTopicInfo: ForumTopicInfo?
+    public var oldTopicInfo: ForumTopicInfo?
 
 
     public init(

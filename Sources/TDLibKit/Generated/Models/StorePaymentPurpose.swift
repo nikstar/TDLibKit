@@ -55,10 +55,10 @@ public enum StorePaymentPurpose: Codable, Equatable, Hashable {
 public struct StorePaymentPurposePremiumSubscription: Codable, Equatable, Hashable {
 
     /// Pass true if this is a restore of a Telegram Premium purchase; only for App Store
-    public let isRestore: Bool
+    public var isRestore: Bool
 
     /// Pass true if this is an upgrade from a monthly subscription to early subscription; only for App Store
-    public let isUpgrade: Bool
+    public var isUpgrade: Bool
 
 
     public init(
@@ -74,13 +74,13 @@ public struct StorePaymentPurposePremiumSubscription: Codable, Equatable, Hashab
 public struct StorePaymentPurposeGiftedPremium: Codable, Equatable, Hashable {
 
     /// Paid amount, in the smallest units of the currency
-    public let amount: Int64
+    public var amount: Int64
 
     /// ISO 4217 currency code of the payment currency
-    public let currency: String
+    public var currency: String
 
     /// Identifier of the user for which Premium was gifted
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

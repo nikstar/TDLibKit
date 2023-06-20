@@ -14,13 +14,13 @@ import Foundation
 public struct CallbackQueryAnswer: Codable, Equatable, Hashable {
 
     /// True, if an alert must be shown to the user instead of a toast notification
-    public let showAlert: Bool
+    public var showAlert: Bool
 
     /// Text of the answer
-    public let text: String
+    public var text: String
 
     /// URL to be opened
-    public let url: String
+    public var url: String
 
 
     public init(

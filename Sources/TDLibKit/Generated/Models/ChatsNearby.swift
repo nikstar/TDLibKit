@@ -14,10 +14,10 @@ import Foundation
 public struct ChatsNearby: Codable, Equatable, Hashable {
 
     /// List of location-based supergroups nearby
-    public let supergroupsNearby: [ChatNearby]
+    public var supergroupsNearby: [ChatNearby]
 
     /// List of users nearby
-    public let usersNearby: [ChatNearby]
+    public var usersNearby: [ChatNearby]
 
 
     public init(

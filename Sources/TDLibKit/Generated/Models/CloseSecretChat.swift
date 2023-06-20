@@ -14,7 +14,7 @@ import Foundation
 public struct CloseSecretChat: Codable, Equatable, Hashable {
 
     /// Secret chat identifier
-    public let secretChatId: Int?
+    public var secretChatId: Int?
 
 
     public init(secretChatId: Int?) {

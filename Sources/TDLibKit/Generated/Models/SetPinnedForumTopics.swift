@@ -14,10 +14,10 @@ import Foundation
 public struct SetPinnedForumTopics: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The new list of pinned forum topics
-    public let messageThreadIds: [Int64]?
+    public var messageThreadIds: [Int64]?
 
 
     public init(

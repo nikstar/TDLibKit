@@ -14,7 +14,7 @@ import Foundation
 public struct SetLocation: Codable, Equatable, Hashable {
 
     /// The new location of the user
-    public let location: Location?
+    public var location: Location?
 
 
     public init(location: Location?) {

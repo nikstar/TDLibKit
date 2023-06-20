@@ -14,7 +14,7 @@ import Foundation
 public struct SendAuthenticationFirebaseSms: Codable, Equatable, Hashable {
 
     /// SafetyNet Attestation API token for the Android application, or secret from push notification for the iOS application
-    public let token: String?
+    public var token: String?
 
 
     public init(token: String?) {

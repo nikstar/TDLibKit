@@ -97,7 +97,7 @@ public enum BotCommandScope: Codable, Equatable, Hashable {
 public struct BotCommandScopeChat: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(chatId: Int64) {
@@ -109,7 +109,7 @@ public struct BotCommandScopeChat: Codable, Equatable, Hashable {
 public struct BotCommandScopeChatAdministrators: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(chatId: Int64) {
@@ -121,10 +121,10 @@ public struct BotCommandScopeChatAdministrators: Codable, Equatable, Hashable {
 public struct BotCommandScopeChatMember: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct RateSpeechRecognition: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the message belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true if the speech recognition is good
-    public let isGood: Bool?
+    public var isGood: Bool?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

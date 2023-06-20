@@ -14,7 +14,7 @@ import Foundation
 public struct Countries: Codable, Equatable, Hashable {
 
     /// The list of countries
-    public let countries: [CountryInfo]
+    public var countries: [CountryInfo]
 
 
     public init(countries: [CountryInfo]) {

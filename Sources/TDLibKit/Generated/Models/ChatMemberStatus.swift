@@ -91,13 +91,13 @@ public enum ChatMemberStatus: Codable, Equatable, Hashable {
 public struct ChatMemberStatusCreator: Codable, Equatable, Hashable {
 
     /// A custom title of the owner; 0-16 characters without emojis; applicable to supergroups only
-    public let customTitle: String
+    public var customTitle: String
 
     /// True, if the creator isn't shown in the chat member list and sends messages anonymously; applicable to supergroups only
-    public let isAnonymous: Bool
+    public var isAnonymous: Bool
 
     /// True, if the user is a member of the chat
-    public let isMember: Bool
+    public var isMember: Bool
 
 
     public init(
@@ -115,13 +115,13 @@ public struct ChatMemberStatusCreator: Codable, Equatable, Hashable {
 public struct ChatMemberStatusAdministrator: Codable, Equatable, Hashable {
 
     /// True, if the current user can edit the administrator privileges for the called user
-    public let canBeEdited: Bool
+    public var canBeEdited: Bool
 
     /// A custom title of the administrator; 0-16 characters without emojis; applicable to supergroups only
-    public let customTitle: String
+    public var customTitle: String
 
     /// Rights of the administrator
-    public let rights: ChatAdministratorRights
+    public var rights: ChatAdministratorRights
 
 
     public init(
@@ -139,13 +139,13 @@ public struct ChatMemberStatusAdministrator: Codable, Equatable, Hashable {
 public struct ChatMemberStatusRestricted: Codable, Equatable, Hashable {
 
     /// True, if the user is a member of the chat
-    public let isMember: Bool
+    public var isMember: Bool
 
     /// User permissions in the chat
-    public let permissions: ChatPermissions
+    public var permissions: ChatPermissions
 
     /// Point in time (Unix timestamp) when restrictions will be lifted from the user; 0 if never. If the user is restricted for more than 366 days or for less than 30 seconds from the current time, the user is considered to be restricted forever
-    public let restrictedUntilDate: Int
+    public var restrictedUntilDate: Int
 
 
     public init(
@@ -163,7 +163,7 @@ public struct ChatMemberStatusRestricted: Codable, Equatable, Hashable {
 public struct ChatMemberStatusBanned: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Always 0 in basic groups
-    public let bannedUntilDate: Int
+    public var bannedUntilDate: Int
 
 
     public init(bannedUntilDate: Int) {

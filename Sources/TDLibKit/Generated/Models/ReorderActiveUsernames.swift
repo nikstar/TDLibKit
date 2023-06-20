@@ -14,7 +14,7 @@ import Foundation
 public struct ReorderActiveUsernames: Codable, Equatable, Hashable {
 
     /// The new order of active usernames. All currently active usernames must be specified
-    public let usernames: [String]?
+    public var usernames: [String]?
 
 
     public init(usernames: [String]?) {

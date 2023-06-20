@@ -14,7 +14,7 @@ import Foundation
 public struct SearchPublicChats: Codable, Equatable, Hashable {
 
     /// Query to search for
-    public let query: String?
+    public var query: String?
 
 
     public init(query: String?) {

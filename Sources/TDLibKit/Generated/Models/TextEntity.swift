@@ -14,13 +14,13 @@ import Foundation
 public struct TextEntity: Codable, Equatable, Hashable {
 
     /// Length of the entity, in UTF-16 code units
-    public let length: Int
+    public var length: Int
 
     /// Offset of the entity, in UTF-16 code units
-    public let offset: Int
+    public var offset: Int
 
     /// Type of the entity
-    public let type: TextEntityType
+    public var type: TextEntityType
 
 
     public init(

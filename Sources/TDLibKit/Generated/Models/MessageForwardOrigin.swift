@@ -85,7 +85,7 @@ public enum MessageForwardOrigin: Codable, Equatable, Hashable {
 public struct MessageForwardOriginUser: Codable, Equatable, Hashable {
 
     /// Identifier of the user that originally sent the message
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
 
     public init(senderUserId: Int64) {
@@ -97,10 +97,10 @@ public struct MessageForwardOriginUser: Codable, Equatable, Hashable {
 public struct MessageForwardOriginChat: Codable, Equatable, Hashable {
 
     /// For messages originally sent by an anonymous chat administrator, original message author signature
-    public let authorSignature: String
+    public var authorSignature: String
 
     /// Identifier of the chat that originally sent the message
-    public let senderChatId: Int64
+    public var senderChatId: Int64
 
 
     public init(
@@ -116,7 +116,7 @@ public struct MessageForwardOriginChat: Codable, Equatable, Hashable {
 public struct MessageForwardOriginHiddenUser: Codable, Equatable, Hashable {
 
     /// Name of the sender
-    public let senderName: String
+    public var senderName: String
 
 
     public init(senderName: String) {
@@ -128,13 +128,13 @@ public struct MessageForwardOriginHiddenUser: Codable, Equatable, Hashable {
 public struct MessageForwardOriginChannel: Codable, Equatable, Hashable {
 
     /// Original post author signature
-    public let authorSignature: String
+    public var authorSignature: String
 
     /// Identifier of the chat from which the message was originally forwarded
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier of the original message
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -152,7 +152,7 @@ public struct MessageForwardOriginChannel: Codable, Equatable, Hashable {
 public struct MessageForwardOriginMessageImport: Codable, Equatable, Hashable {
 
     /// Name of the sender
-    public let senderName: String
+    public var senderName: String
 
 
     public init(senderName: String) {

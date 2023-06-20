@@ -14,7 +14,7 @@ import Foundation
 public struct GetEmojiCategories: Codable, Equatable, Hashable {
 
     /// Type of emoji categories to return; pass null to get default emoji categories
-    public let type: EmojiCategoryType?
+    public var type: EmojiCategoryType?
 
 
     public init(type: EmojiCategoryType?) {

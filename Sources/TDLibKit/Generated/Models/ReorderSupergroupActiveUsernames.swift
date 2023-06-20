@@ -14,10 +14,10 @@ import Foundation
 public struct ReorderSupergroupActiveUsernames: Codable, Equatable, Hashable {
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
     /// The new order of active usernames. All currently active usernames must be specified
-    public let usernames: [String]?
+    public var usernames: [String]?
 
 
     public init(

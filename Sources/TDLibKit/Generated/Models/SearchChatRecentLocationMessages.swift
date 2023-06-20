@@ -14,10 +14,10 @@ import Foundation
 public struct SearchChatRecentLocationMessages: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum number of messages to be returned
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(

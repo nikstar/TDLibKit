@@ -14,34 +14,34 @@ import Foundation
 public struct EmojiReaction: Codable, Equatable, Hashable {
 
     /// Activate animation for the reaction
-    public let activateAnimation: Sticker
+    public var activateAnimation: Sticker
 
     /// Appear animation for the reaction
-    public let appearAnimation: Sticker
+    public var appearAnimation: Sticker
 
     /// Around animation for the reaction; may be null
-    public let aroundAnimation: Sticker?
+    public var aroundAnimation: Sticker?
 
     /// Center animation for the reaction; may be null
-    public let centerAnimation: Sticker?
+    public var centerAnimation: Sticker?
 
     /// Effect animation for the reaction
-    public let effectAnimation: Sticker
+    public var effectAnimation: Sticker
 
     /// Text representation of the reaction
-    public let emoji: String
+    public var emoji: String
 
     /// True, if the reaction can be added to new messages and enabled in chats
-    public let isActive: Bool
+    public var isActive: Bool
 
     /// Select animation for the reaction
-    public let selectAnimation: Sticker
+    public var selectAnimation: Sticker
 
     /// Static icon for the reaction
-    public let staticIcon: Sticker
+    public var staticIcon: Sticker
 
     /// Reaction title
-    public let title: String
+    public var title: String
 
 
     public init(

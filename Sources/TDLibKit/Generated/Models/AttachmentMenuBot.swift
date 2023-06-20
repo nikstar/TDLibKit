@@ -14,55 +14,55 @@ import Foundation
 public struct AttachmentMenuBot: Codable, Equatable, Hashable {
 
     /// Attachment menu icon for the bot in TGS format for the official Android app; may be null
-    public let androidIcon: File?
+    public var androidIcon: File?
 
     /// User identifier of the bot added to attachment menu
-    public let botUserId: Int64
+    public var botUserId: Int64
 
     /// Default attachment menu icon for the bot in SVG format; may be null
-    public let defaultIcon: File?
+    public var defaultIcon: File?
 
     /// Color to highlight selected icon of the bot if appropriate; may be null
-    public let iconColor: AttachmentMenuBotColor?
+    public var iconColor: AttachmentMenuBotColor?
 
     /// Attachment menu icon for the bot in TGS format for the official iOS app; may be null
-    public let iosAnimatedIcon: File?
+    public var iosAnimatedIcon: File?
 
     /// Attachment menu icon for the bot in SVG format for the official iOS app; may be null
-    public let iosStaticIcon: File?
+    public var iosStaticIcon: File?
 
     /// Attachment menu icon for the bot in TGS format for the official native macOS app; may be null
-    public let macosIcon: File?
+    public var macosIcon: File?
 
     /// Name for the bot in attachment menu
-    public let name: String
+    public var name: String
 
     /// Color to highlight selected name of the bot if appropriate; may be null
-    public let nameColor: AttachmentMenuBotColor?
+    public var nameColor: AttachmentMenuBotColor?
 
     /// True, if the user must be asked for the permission to the bot to send them messages
-    public let requestWriteAccess: Bool
+    public var requestWriteAccess: Bool
 
     /// True, if the bot supports opening from attachment menu in private chats with other bots
-    public let supportsBotChats: Bool
+    public var supportsBotChats: Bool
 
     /// True, if the bot supports opening from attachment menu in channel chats
-    public let supportsChannelChats: Bool
+    public var supportsChannelChats: Bool
 
     /// True, if the bot supports opening from attachment menu in basic group and supergroup chats
-    public let supportsGroupChats: Bool
+    public var supportsGroupChats: Bool
 
     /// True, if the bot supports opening from attachment menu in the chat with the bot
-    public let supportsSelfChat: Bool
+    public var supportsSelfChat: Bool
 
     /// True, if the bot supports "settings_button_pressed" event
-    public let supportsSettings: Bool
+    public var supportsSettings: Bool
 
     /// True, if the bot supports opening from attachment menu in private chats with ordinary users
-    public let supportsUserChats: Bool
+    public var supportsUserChats: Bool
 
     /// Default placeholder for opened Web Apps in SVG format; may be null
-    public let webAppPlaceholder: File?
+    public var webAppPlaceholder: File?
 
 
     public init(

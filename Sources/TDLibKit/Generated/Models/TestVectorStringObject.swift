@@ -14,7 +14,7 @@ import Foundation
 public struct TestVectorStringObject: Codable, Equatable, Hashable {
 
     /// Vector of objects
-    public let value: [TestString]
+    public var value: [TestString]
 
 
     public init(value: [TestString]) {

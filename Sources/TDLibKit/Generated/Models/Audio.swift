@@ -14,31 +14,31 @@ import Foundation
 public struct Audio: Codable, Equatable, Hashable {
 
     /// The minithumbnail of the album cover; may be null
-    public let albumCoverMinithumbnail: Minithumbnail?
+    public var albumCoverMinithumbnail: Minithumbnail?
 
     /// The thumbnail of the album cover in JPEG format; as defined by the sender. The full size thumbnail is supposed to be extracted from the downloaded audio file; may be null
-    public let albumCoverThumbnail: Thumbnail?
+    public var albumCoverThumbnail: Thumbnail?
 
     /// File containing the audio
-    public let audio: File
+    public var audio: File
 
     /// Duration of the audio, in seconds; as defined by the sender
-    public let duration: Int
+    public var duration: Int
 
     /// Album cover variants to use if the downloaded audio file contains no album cover. Provided thumbnail dimensions are approximate
-    public let externalAlbumCovers: [Thumbnail]
+    public var externalAlbumCovers: [Thumbnail]
 
     /// Original name of the file; as defined by the sender
-    public let fileName: String
+    public var fileName: String
 
     /// The MIME type of the file; as defined by the sender
-    public let mimeType: String
+    public var mimeType: String
 
     /// Performer of the audio; as defined by the sender
-    public let performer: String
+    public var performer: String
 
     /// Title of the audio; as defined by the sender
-    public let title: String
+    public var title: String
 
 
     public init(

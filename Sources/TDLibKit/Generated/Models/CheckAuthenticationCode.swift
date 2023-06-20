@@ -14,7 +14,7 @@ import Foundation
 public struct CheckAuthenticationCode: Codable, Equatable, Hashable {
 
     /// Authentication code to check
-    public let code: String?
+    public var code: String?
 
 
     public init(code: String?) {

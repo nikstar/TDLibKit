@@ -14,10 +14,10 @@ import Foundation
 public struct SetOption: Codable, Equatable, Hashable {
 
     /// The name of the option
-    public let name: String?
+    public var name: String?
 
     /// The new value of the option; pass null to reset option value to a default value
-    public let value: OptionValue?
+    public var value: OptionValue?
 
 
     public init(

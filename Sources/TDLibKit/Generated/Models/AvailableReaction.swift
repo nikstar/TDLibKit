@@ -14,10 +14,10 @@ import Foundation
 public struct AvailableReaction: Codable, Equatable, Hashable {
 
     /// True, if Telegram Premium is needed to send the reaction
-    public let needsPremium: Bool
+    public var needsPremium: Bool
 
     /// Type of the reaction
-    public let type: ReactionType
+    public var type: ReactionType
 
 
     public init(

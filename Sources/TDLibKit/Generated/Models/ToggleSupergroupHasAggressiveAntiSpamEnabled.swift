@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupHasAggressiveAntiSpamEnabled: Codable, Equatable, Hashable {
 
     /// The new value of has_aggressive_anti_spam_enabled
-    public let hasAggressiveAntiSpamEnabled: Bool?
+    public var hasAggressiveAntiSpamEnabled: Bool?
 
     /// The identifier of the supergroup, which isn't a broadcast group
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct Hashtags: Codable, Equatable, Hashable {
 
     /// A list of hashtags
-    public let hashtags: [String]
+    public var hashtags: [String]
 
 
     public init(hashtags: [String]) {

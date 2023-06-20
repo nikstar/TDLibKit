@@ -99,7 +99,7 @@ public struct InputFileRemote: Codable, Equatable, Hashable, Identifiable {
 public struct InputFileLocal: Codable, Equatable, Hashable {
 
     /// Local path to the file
-    public let path: String
+    public var path: String
 
 
     public init(path: String) {
@@ -111,13 +111,13 @@ public struct InputFileLocal: Codable, Equatable, Hashable {
 public struct InputFileGenerated: Codable, Equatable, Hashable {
 
     /// String specifying the conversion applied to the original file; must be persistent across application restarts. Conversions beginning with '#' are reserved for internal TDLib usage
-    public let conversion: String
+    public var conversion: String
 
     /// Expected size of the generated file, in bytes; 0 if unknown
-    public let expectedSize: Int64
+    public var expectedSize: Int64
 
     /// Local path to a file from which the file is generated; may be empty if there is no such file
-    public let originalPath: String
+    public var originalPath: String
 
 
     public init(

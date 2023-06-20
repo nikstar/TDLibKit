@@ -13,10 +13,10 @@ import Foundation
 /// Describes a recommended chat folder
 public struct RecommendedChatFolder: Codable, Equatable, Hashable {
 
-    public let description: String
+    public var description: String
 
     /// The chat folder
-    public let folder: ChatFolder
+    public var folder: ChatFolder
 
 
     public init(

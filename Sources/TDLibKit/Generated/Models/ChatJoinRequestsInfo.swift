@@ -14,10 +14,10 @@ import Foundation
 public struct ChatJoinRequestsInfo: Codable, Equatable, Hashable {
 
     /// Total number of pending join requests
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// Identifiers of at most 3 users sent the newest pending join requests
-    public let userIds: [Int64]
+    public var userIds: [Int64]
 
 
     public init(

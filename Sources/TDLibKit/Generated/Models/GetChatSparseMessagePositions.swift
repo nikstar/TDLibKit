@@ -14,16 +14,16 @@ import Foundation
 public struct GetChatSparseMessagePositions: Codable, Equatable, Hashable {
 
     /// Identifier of the chat in which to return information about message positions
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
-    public let filter: SearchMessagesFilter?
+    public var filter: SearchMessagesFilter?
 
     /// The message identifier from which to return information about message positions
-    public let fromMessageId: Int64?
+    public var fromMessageId: Int64?
 
     /// The expected number of message positions to be returned; 50-2000. A smaller number of positions can be returned, if there are not enough appropriate messages
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(

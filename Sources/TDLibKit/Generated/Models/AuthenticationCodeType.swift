@@ -115,7 +115,7 @@ public enum AuthenticationCodeType: Codable, Equatable, Hashable {
 public struct AuthenticationCodeTypeTelegramMessage: Codable, Equatable, Hashable {
 
     /// Length of the code
-    public let length: Int
+    public var length: Int
 
 
     public init(length: Int) {
@@ -127,7 +127,7 @@ public struct AuthenticationCodeTypeTelegramMessage: Codable, Equatable, Hashabl
 public struct AuthenticationCodeTypeSms: Codable, Equatable, Hashable {
 
     /// Length of the code
-    public let length: Int
+    public var length: Int
 
 
     public init(length: Int) {
@@ -139,7 +139,7 @@ public struct AuthenticationCodeTypeSms: Codable, Equatable, Hashable {
 public struct AuthenticationCodeTypeCall: Codable, Equatable, Hashable {
 
     /// Length of the code
-    public let length: Int
+    public var length: Int
 
 
     public init(length: Int) {
@@ -151,7 +151,7 @@ public struct AuthenticationCodeTypeCall: Codable, Equatable, Hashable {
 public struct AuthenticationCodeTypeFlashCall: Codable, Equatable, Hashable {
 
     /// Pattern of the phone number from which the call will be made
-    public let pattern: String
+    public var pattern: String
 
 
     public init(pattern: String) {
@@ -163,10 +163,10 @@ public struct AuthenticationCodeTypeFlashCall: Codable, Equatable, Hashable {
 public struct AuthenticationCodeTypeMissedCall: Codable, Equatable, Hashable {
 
     /// Number of digits in the code, excluding the prefix
-    public let length: Int
+    public var length: Int
 
     /// Prefix of the phone number from which the call will be made
-    public let phoneNumberPrefix: String
+    public var phoneNumberPrefix: String
 
 
     public init(
@@ -182,10 +182,10 @@ public struct AuthenticationCodeTypeMissedCall: Codable, Equatable, Hashable {
 public struct AuthenticationCodeTypeFragment: Codable, Equatable, Hashable {
 
     /// Length of the code
-    public let length: Int
+    public var length: Int
 
     /// URL to open to receive the code
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -201,10 +201,10 @@ public struct AuthenticationCodeTypeFragment: Codable, Equatable, Hashable {
 public struct AuthenticationCodeTypeFirebaseAndroid: Codable, Equatable, Hashable {
 
     /// Length of the code
-    public let length: Int
+    public var length: Int
 
     /// Nonce to pass to the SafetyNet Attestation API
-    public let nonce: Data
+    public var nonce: Data
 
 
     public init(
@@ -220,13 +220,13 @@ public struct AuthenticationCodeTypeFirebaseAndroid: Codable, Equatable, Hashabl
 public struct AuthenticationCodeTypeFirebaseIos: Codable, Equatable, Hashable {
 
     /// Length of the code
-    public let length: Int
+    public var length: Int
 
     /// Time after the next authentication method is supposed to be used if verification push notification isn't received, in seconds
-    public let pushTimeout: Int
+    public var pushTimeout: Int
 
     /// Receipt of successful application token validation to compare with receipt from push notification
-    public let receipt: String
+    public var receipt: String
 
 
     public init(

@@ -55,7 +55,7 @@ public enum VectorPathCommand: Codable, Equatable, Hashable {
 public struct VectorPathCommandLine: Codable, Equatable, Hashable {
 
     /// The end point of the straight line
-    public let endPoint: Point
+    public var endPoint: Point
 
 
     public init(endPoint: Point) {
@@ -67,13 +67,13 @@ public struct VectorPathCommandLine: Codable, Equatable, Hashable {
 public struct VectorPathCommandCubicBezierCurve: Codable, Equatable, Hashable {
 
     /// The end control point of the curve
-    public let endControlPoint: Point
+    public var endControlPoint: Point
 
     /// The end point of the curve
-    public let endPoint: Point
+    public var endPoint: Point
 
     /// The start control point of the curve
-    public let startControlPoint: Point
+    public var startControlPoint: Point
 
 
     public init(

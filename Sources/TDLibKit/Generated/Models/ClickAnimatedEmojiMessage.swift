@@ -14,10 +14,10 @@ import Foundation
 public struct ClickAnimatedEmojiMessage: Codable, Equatable, Hashable {
 
     /// Chat identifier of the message
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the clicked message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

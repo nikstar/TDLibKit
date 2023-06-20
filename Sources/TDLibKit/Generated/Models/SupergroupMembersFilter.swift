@@ -109,7 +109,7 @@ public enum SupergroupMembersFilter: Codable, Equatable, Hashable {
 public struct SupergroupMembersFilterContacts: Codable, Equatable, Hashable {
 
     /// Query to search for
-    public let query: String
+    public var query: String
 
 
     public init(query: String) {
@@ -121,7 +121,7 @@ public struct SupergroupMembersFilterContacts: Codable, Equatable, Hashable {
 public struct SupergroupMembersFilterSearch: Codable, Equatable, Hashable {
 
     /// Query to search for
-    public let query: String
+    public var query: String
 
 
     public init(query: String) {
@@ -133,7 +133,7 @@ public struct SupergroupMembersFilterSearch: Codable, Equatable, Hashable {
 public struct SupergroupMembersFilterRestricted: Codable, Equatable, Hashable {
 
     /// Query to search for
-    public let query: String
+    public var query: String
 
 
     public init(query: String) {
@@ -145,7 +145,7 @@ public struct SupergroupMembersFilterRestricted: Codable, Equatable, Hashable {
 public struct SupergroupMembersFilterBanned: Codable, Equatable, Hashable {
 
     /// Query to search for
-    public let query: String
+    public var query: String
 
 
     public init(query: String) {
@@ -157,10 +157,10 @@ public struct SupergroupMembersFilterBanned: Codable, Equatable, Hashable {
 public struct SupergroupMembersFilterMention: Codable, Equatable, Hashable {
 
     /// If non-zero, the identifier of the current message thread
-    public let messageThreadId: Int64
+    public var messageThreadId: Int64
 
     /// Query to search for
-    public let query: String
+    public var query: String
 
 
     public init(

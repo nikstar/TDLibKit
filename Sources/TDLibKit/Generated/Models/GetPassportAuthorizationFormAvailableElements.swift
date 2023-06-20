@@ -14,10 +14,10 @@ import Foundation
 public struct GetPassportAuthorizationFormAvailableElements: Codable, Equatable, Hashable {
 
     /// Authorization form identifier
-    public let authorizationFormId: Int?
+    public var authorizationFormId: Int?
 
     /// The 2-step verification password of the current user
-    public let password: String?
+    public var password: String?
 
 
     public init(

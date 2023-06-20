@@ -14,19 +14,19 @@ import Foundation
 public struct AnswerCallbackQuery: Codable, Equatable, Hashable {
 
     /// Time during which the result of the query can be cached, in seconds
-    public let cacheTime: Int?
+    public var cacheTime: Int?
 
     /// Identifier of the callback query
-    public let callbackQueryId: TdInt64?
+    public var callbackQueryId: TdInt64?
 
     /// Pass true to show an alert to the user instead of a toast notification
-    public let showAlert: Bool?
+    public var showAlert: Bool?
 
     /// Text of the answer
-    public let text: String?
+    public var text: String?
 
     /// URL to be opened
-    public let url: String?
+    public var url: String?
 
 
     public init(

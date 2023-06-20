@@ -14,16 +14,16 @@ import Foundation
 public struct GetPassportAuthorizationForm: Codable, Equatable, Hashable {
 
     /// User identifier of the service's bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Unique request identifier provided by the service
-    public let nonce: String?
+    public var nonce: String?
 
     /// Service's public key
-    public let publicKey: String?
+    public var publicKey: String?
 
     /// Telegram Passport element types requested by the service
-    public let scope: String?
+    public var scope: String?
 
 
     public init(

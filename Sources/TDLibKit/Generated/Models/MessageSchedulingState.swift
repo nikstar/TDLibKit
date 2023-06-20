@@ -53,7 +53,7 @@ public enum MessageSchedulingState: Codable, Equatable, Hashable {
 public struct MessageSchedulingStateSendAtDate: Codable, Equatable, Hashable {
 
     /// Date the message will be sent. The date must be within 367 days in the future
-    public let sendDate: Int
+    public var sendDate: Int
 
 
     public init(sendDate: Int) {

@@ -14,10 +14,10 @@ import Foundation
 public struct RegisterDevice: Codable, Equatable, Hashable {
 
     /// Device token
-    public let deviceToken: DeviceToken?
+    public var deviceToken: DeviceToken?
 
     /// List of user identifiers of other users currently using the application
-    public let otherUserIds: [Int64]?
+    public var otherUserIds: [Int64]?
 
 
     public init(

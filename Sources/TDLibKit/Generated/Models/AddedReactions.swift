@@ -14,13 +14,13 @@ import Foundation
 public struct AddedReactions: Codable, Equatable, Hashable {
 
     /// The offset for the next request. If empty, there are no more results
-    public let nextOffset: String
+    public var nextOffset: String
 
     /// The list of added reactions
-    public let reactions: [AddedReaction]
+    public var reactions: [AddedReaction]
 
     /// The total number of found reactions
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

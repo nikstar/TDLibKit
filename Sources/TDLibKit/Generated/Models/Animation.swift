@@ -14,31 +14,31 @@ import Foundation
 public struct Animation: Codable, Equatable, Hashable {
 
     /// File containing the animation
-    public let animation: File
+    public var animation: File
 
     /// Duration of the animation, in seconds; as defined by the sender
-    public let duration: Int
+    public var duration: Int
 
     /// Original name of the file; as defined by the sender
-    public let fileName: String
+    public var fileName: String
 
     /// True, if stickers were added to the animation. The list of corresponding sticker set can be received using getAttachedStickerSets
-    public let hasStickers: Bool
+    public var hasStickers: Bool
 
     /// Height of the animation
-    public let height: Int
+    public var height: Int
 
     /// MIME type of the file, usually "image/gif" or "video/mp4"
-    public let mimeType: String
+    public var mimeType: String
 
     /// Animation minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// Animation thumbnail in JPEG or MPEG4 format; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// Width of the animation
-    public let width: Int
+    public var width: Int
 
 
     public init(

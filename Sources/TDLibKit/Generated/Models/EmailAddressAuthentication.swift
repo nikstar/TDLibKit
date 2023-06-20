@@ -65,7 +65,7 @@ public enum EmailAddressAuthentication: Codable, Equatable, Hashable {
 public struct EmailAddressAuthenticationCode: Codable, Equatable, Hashable {
 
     /// The code
-    public let code: String
+    public var code: String
 
 
     public init(code: String) {
@@ -77,7 +77,7 @@ public struct EmailAddressAuthenticationCode: Codable, Equatable, Hashable {
 public struct EmailAddressAuthenticationAppleId: Codable, Equatable, Hashable {
 
     /// The token
-    public let token: String
+    public var token: String
 
 
     public init(token: String) {
@@ -89,7 +89,7 @@ public struct EmailAddressAuthenticationAppleId: Codable, Equatable, Hashable {
 public struct EmailAddressAuthenticationGoogleId: Codable, Equatable, Hashable {
 
     /// The token
-    public let token: String
+    public var token: String
 
 
     public init(token: String) {

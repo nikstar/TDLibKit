@@ -14,13 +14,13 @@ import Foundation
 public struct GetTrendingStickerSets: Codable, Equatable, Hashable {
 
     /// The maximum number of sticker sets to be returned; up to 100. For optimal performance, the number of returned sticker sets is chosen by TDLib and can be smaller than the specified limit, even if the end of the list has not been reached
-    public let limit: Int?
+    public var limit: Int?
 
     /// The offset from which to return the sticker sets; must be non-negative
-    public let offset: Int?
+    public var offset: Int?
 
     /// Type of the sticker sets to return
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(

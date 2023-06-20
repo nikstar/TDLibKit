@@ -63,16 +63,16 @@ public enum TargetChat: Codable, Equatable, Hashable {
 public struct TargetChatChosen: Codable, Equatable, Hashable {
 
     /// True, if private chats with other bots are allowed
-    public let allowBotChats: Bool
+    public var allowBotChats: Bool
 
     /// True, if channel chats are allowed
-    public let allowChannelChats: Bool
+    public var allowChannelChats: Bool
 
     /// True, if basic group and supergroup chats are allowed
-    public let allowGroupChats: Bool
+    public var allowGroupChats: Bool
 
     /// True, if private chats with ordinary users are allowed
-    public let allowUserChats: Bool
+    public var allowUserChats: Bool
 
 
     public init(
@@ -92,7 +92,7 @@ public struct TargetChatChosen: Codable, Equatable, Hashable {
 public struct TargetChatInternalLink: Codable, Equatable, Hashable {
 
     /// An internal link pointing to the chat
-    public let link: InternalLinkType
+    public var link: InternalLinkType
 
 
     public init(link: InternalLinkType) {

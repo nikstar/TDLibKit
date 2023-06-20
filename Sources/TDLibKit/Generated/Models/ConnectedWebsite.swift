@@ -14,31 +14,31 @@ import Foundation
 public struct ConnectedWebsite: Codable, Equatable, Hashable, Identifiable {
 
     /// User identifier of a bot linked with the website
-    public let botUserId: Int64
+    public var botUserId: Int64
 
     /// The version of a browser used to log in
-    public let browser: String
+    public var browser: String
 
     /// The domain name of the website
-    public let domainName: String
+    public var domainName: String
 
     /// Website identifier
     public let id: TdInt64
 
     /// IP address from which the user was logged in, in human-readable format
-    public let ip: String
+    public var ip: String
 
     /// Point in time (Unix timestamp) when obtained authorization was last used
-    public let lastActiveDate: Int
+    public var lastActiveDate: Int
 
     /// Human-readable description of a country and a region from which the user was logged in, based on the IP address
-    public let location: String
+    public var location: String
 
     /// Point in time (Unix timestamp) when the user was logged in
-    public let logInDate: Int
+    public var logInDate: Int
 
     /// Operating system the browser is running on
-    public let platform: String
+    public var platform: String
 
 
     public init(

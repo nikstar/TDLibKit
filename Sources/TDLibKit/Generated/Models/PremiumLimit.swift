@@ -14,13 +14,13 @@ import Foundation
 public struct PremiumLimit: Codable, Equatable, Hashable {
 
     /// Default value of the limit
-    public let defaultValue: Int
+    public var defaultValue: Int
 
     /// Value of the limit for Premium users
-    public let premiumValue: Int
+    public var premiumValue: Int
 
     /// The type of the limit
-    public let type: PremiumLimitType
+    public var type: PremiumLimitType
 
 
     public init(

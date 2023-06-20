@@ -14,10 +14,10 @@ import Foundation
 public struct MessageSenders: Codable, Equatable, Hashable {
 
     /// List of message senders
-    public let senders: [MessageSender]
+    public var senders: [MessageSender]
 
     /// Approximate total number of messages senders found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

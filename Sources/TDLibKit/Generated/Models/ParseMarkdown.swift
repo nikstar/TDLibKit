@@ -14,7 +14,7 @@ import Foundation
 public struct ParseMarkdown: Codable, Equatable, Hashable {
 
     /// The text to parse. For example, "__italic__ ~~strikethrough~~ ||spoiler|| **bold** `code` ```pre``` __[italic__ text_url](telegram.org) __italic**bold italic__bold**"
-    public let text: FormattedText?
+    public var text: FormattedText?
 
 
     public init(text: FormattedText?) {

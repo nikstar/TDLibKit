@@ -93,7 +93,7 @@ public enum ChatMembersFilter: Codable, Equatable, Hashable {
 public struct ChatMembersFilterMention: Codable, Equatable, Hashable {
 
     /// If non-zero, the identifier of the current message thread
-    public let messageThreadId: Int64
+    public var messageThreadId: Int64
 
 
     public init(messageThreadId: Int64) {

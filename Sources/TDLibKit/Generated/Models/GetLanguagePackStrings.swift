@@ -14,10 +14,10 @@ import Foundation
 public struct GetLanguagePackStrings: Codable, Equatable, Hashable {
 
     /// Language pack keys of the strings to be returned; leave empty to request all available strings
-    public let keys: [String]?
+    public var keys: [String]?
 
     /// Language pack identifier of the strings to be returned
-    public let languagePackId: String?
+    public var languagePackId: String?
 
 
     public init(

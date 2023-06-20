@@ -14,7 +14,7 @@ import Foundation
 public struct DisableAllSupergroupUsernames: Codable, Equatable, Hashable {
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(supergroupId: Int64?) {

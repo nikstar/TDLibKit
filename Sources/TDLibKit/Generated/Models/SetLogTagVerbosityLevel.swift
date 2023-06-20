@@ -14,10 +14,10 @@ import Foundation
 public struct SetLogTagVerbosityLevel: Codable, Equatable, Hashable {
 
     /// New verbosity level; 1-1024
-    public let newVerbosityLevel: Int?
+    public var newVerbosityLevel: Int?
 
     /// Logging tag to change verbosity level
-    public let tag: String?
+    public var tag: String?
 
 
     public init(

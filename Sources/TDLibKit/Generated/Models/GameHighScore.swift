@@ -14,13 +14,13 @@ import Foundation
 public struct GameHighScore: Codable, Equatable, Hashable {
 
     /// Position in the high score table
-    public let position: Int
+    public var position: Int
 
     /// User score
-    public let score: Int
+    public var score: Int
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

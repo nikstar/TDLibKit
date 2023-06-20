@@ -14,7 +14,7 @@ import Foundation
 public struct ClearRecentStickers: Codable, Equatable, Hashable {
 
     /// Pass true to clear the list of stickers recently attached to photo or video files; pass false to clear the list of recently sent stickers
-    public let isAttached: Bool?
+    public var isAttached: Bool?
 
 
     public init(isAttached: Bool?) {

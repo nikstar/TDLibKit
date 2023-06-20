@@ -14,16 +14,16 @@ import Foundation
 public struct ReportChatPhoto: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the photo to report. Only full photos from chatPhoto can be reported
-    public let fileId: Int?
+    public var fileId: Int?
 
     /// The reason for reporting the chat photo
-    public let reason: ChatReportReason?
+    public var reason: ChatReportReason?
 
     /// Additional report details; 0-1024 characters
-    public let text: String?
+    public var text: String?
 
 
     public init(

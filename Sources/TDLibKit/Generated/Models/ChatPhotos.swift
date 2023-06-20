@@ -14,10 +14,10 @@ import Foundation
 public struct ChatPhotos: Codable, Equatable, Hashable {
 
     /// List of photos
-    public let photos: [ChatPhoto]
+    public var photos: [ChatPhoto]
 
     /// Total number of photos
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

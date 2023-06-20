@@ -14,18 +14,18 @@ import Foundation
 public struct WebApp: Codable, Equatable, Hashable {
 
     /// Web App animation; may be null
-    public let animation: Animation?
+    public var animation: Animation?
 
-    public let description: String
+    public var description: String
 
     /// Web App photo
-    public let photo: Photo
+    public var photo: Photo
 
     /// Web App short name
-    public let shortName: String
+    public var shortName: String
 
     /// Web App title
-    public let title: String
+    public var title: String
 
 
     public init(

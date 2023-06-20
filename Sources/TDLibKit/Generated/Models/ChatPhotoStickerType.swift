@@ -55,10 +55,10 @@ public enum ChatPhotoStickerType: Codable, Equatable, Hashable {
 public struct ChatPhotoStickerTypeRegularOrMask: Codable, Equatable, Hashable {
 
     /// Identifier of the sticker in the set
-    public let stickerId: TdInt64
+    public var stickerId: TdInt64
 
     /// Sticker set identifier
-    public let stickerSetId: TdInt64
+    public var stickerSetId: TdInt64
 
 
     public init(
@@ -74,7 +74,7 @@ public struct ChatPhotoStickerTypeRegularOrMask: Codable, Equatable, Hashable {
 public struct ChatPhotoStickerTypeCustomEmoji: Codable, Equatable, Hashable {
 
     /// Identifier of the custom emoji
-    public let customEmojiId: TdInt64
+    public var customEmojiId: TdInt64
 
 
     public init(customEmojiId: TdInt64) {

@@ -113,7 +113,7 @@ public enum PassportElementErrorSource: Codable, Equatable, Hashable {
 public struct PassportElementErrorSourceDataField: Codable, Equatable, Hashable {
 
     /// Field name
-    public let fieldName: String
+    public var fieldName: String
 
 
     public init(fieldName: String) {
@@ -125,7 +125,7 @@ public struct PassportElementErrorSourceDataField: Codable, Equatable, Hashable 
 public struct PassportElementErrorSourceTranslationFile: Codable, Equatable, Hashable {
 
     /// Index of a file with the error
-    public let fileIndex: Int
+    public var fileIndex: Int
 
 
     public init(fileIndex: Int) {
@@ -137,7 +137,7 @@ public struct PassportElementErrorSourceTranslationFile: Codable, Equatable, Has
 public struct PassportElementErrorSourceFile: Codable, Equatable, Hashable {
 
     /// Index of a file with the error
-    public let fileIndex: Int
+    public var fileIndex: Int
 
 
     public init(fileIndex: Int) {

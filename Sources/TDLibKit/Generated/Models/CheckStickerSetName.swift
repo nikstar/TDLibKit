@@ -14,7 +14,7 @@ import Foundation
 public struct CheckStickerSetName: Codable, Equatable, Hashable {
 
     /// Name to be checked
-    public let name: String?
+    public var name: String?
 
 
     public init(name: String?) {

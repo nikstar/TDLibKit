@@ -93,7 +93,7 @@ public enum JsonValue: Codable, Equatable, Hashable {
 public struct JsonValueBoolean: Codable, Equatable, Hashable {
 
     /// The value
-    public let value: Bool
+    public var value: Bool
 
 
     public init(value: Bool) {
@@ -105,7 +105,7 @@ public struct JsonValueBoolean: Codable, Equatable, Hashable {
 public struct JsonValueNumber: Codable, Equatable, Hashable {
 
     /// The value
-    public let value: Double
+    public var value: Double
 
 
     public init(value: Double) {
@@ -117,7 +117,7 @@ public struct JsonValueNumber: Codable, Equatable, Hashable {
 public struct JsonValueString: Codable, Equatable, Hashable {
 
     /// The value
-    public let value: String
+    public var value: String
 
 
     public init(value: String) {
@@ -129,7 +129,7 @@ public struct JsonValueString: Codable, Equatable, Hashable {
 public struct JsonValueArray: Codable, Equatable, Hashable {
 
     /// The list of array elements
-    public let values: [JsonValue]
+    public var values: [JsonValue]
 
 
     public init(values: [JsonValue]) {
@@ -141,7 +141,7 @@ public struct JsonValueArray: Codable, Equatable, Hashable {
 public struct JsonValueObject: Codable, Equatable, Hashable {
 
     /// The list of object members
-    public let members: [JsonObjectMember]
+    public var members: [JsonObjectMember]
 
 
     public init(members: [JsonObjectMember]) {

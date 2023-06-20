@@ -14,10 +14,10 @@ import Foundation
 public struct GetRemoteFile: Codable, Equatable, Hashable {
 
     /// File type; pass null if unknown
-    public let fileType: FileType?
+    public var fileType: FileType?
 
     /// Remote identifier of the file to get
-    public let remoteFileId: String?
+    public var remoteFileId: String?
 
 
     public init(

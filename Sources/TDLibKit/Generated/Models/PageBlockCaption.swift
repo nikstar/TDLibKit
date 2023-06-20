@@ -14,10 +14,10 @@ import Foundation
 public struct PageBlockCaption: Codable, Equatable, Hashable {
 
     /// Block credit (like HTML tag <cite>)
-    public let credit: RichText
+    public var credit: RichText
 
     /// Content of the caption
-    public let text: RichText
+    public var text: RichText
 
 
     public init(

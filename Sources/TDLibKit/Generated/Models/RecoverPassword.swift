@@ -14,13 +14,13 @@ import Foundation
 public struct RecoverPassword: Codable, Equatable, Hashable {
 
     /// New password hint; may be empty
-    public let newHint: String?
+    public var newHint: String?
 
     /// New 2-step verification password of the user; may be empty to remove the password
-    public let newPassword: String?
+    public var newPassword: String?
 
     /// Recovery code to check
-    public let recoveryCode: String?
+    public var recoveryCode: String?
 
 
     public init(

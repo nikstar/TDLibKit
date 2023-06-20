@@ -14,10 +14,10 @@ import Foundation
 public struct SendCallLog: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int?
+    public var callId: Int?
 
     /// Call log file. Only inputFileLocal and inputFileGenerated are supported
-    public let logFile: InputFile?
+    public var logFile: InputFile?
 
 
     public init(

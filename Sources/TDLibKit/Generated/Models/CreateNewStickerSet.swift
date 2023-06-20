@@ -14,28 +14,28 @@ import Foundation
 public struct CreateNewStickerSet: Codable, Equatable, Hashable {
 
     /// Sticker set name. Can contain only English letters, digits and underscores. Must end with *"_by_<bot username>"* (*<bot_username>* is case insensitive) for bots; 1-64 characters
-    public let name: String?
+    public var name: String?
 
     /// Pass true if stickers in the sticker set must be repainted; for custom emoji sticker sets only
-    public let needsRepainting: Bool?
+    public var needsRepainting: Bool?
 
     /// Source of the sticker set; may be empty if unknown
-    public let source: String?
+    public var source: String?
 
     /// Format of the stickers in the set
-    public let stickerFormat: StickerFormat?
+    public var stickerFormat: StickerFormat?
 
     /// Type of the stickers in the set
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
     /// List of stickers to be added to the set; must be non-empty. All stickers must have the same format. For TGS stickers, uploadStickerFile must be used before the sticker is shown
-    public let stickers: [InputSticker]?
+    public var stickers: [InputSticker]?
 
     /// Sticker set title; 1-64 characters
-    public let title: String?
+    public var title: String?
 
     /// Sticker set owner; ignored for regular users
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

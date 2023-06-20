@@ -14,25 +14,25 @@ import Foundation
 public struct OpenWebApp: Codable, Equatable, Hashable {
 
     /// Short name of the application; 0-64 English letters, digits, and underscores
-    public let applicationName: String?
+    public var applicationName: String?
 
     /// Identifier of the bot, providing the Web App
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Identifier of the chat in which the Web App is opened. The Web App can't be opened in secret chats
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// If not 0, a message thread identifier in which the message will be sent
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// Identifier of the replied message for the message sent by the Web App; 0 if none
-    public let replyToMessageId: Int64?
+    public var replyToMessageId: Int64?
 
     /// Preferred Web App theme; pass null to use the default theme
-    public let theme: ThemeParameters?
+    public var theme: ThemeParameters?
 
     /// The URL from an inlineKeyboardButtonTypeWebApp button, a botMenuButton button, or an internalLinkTypeAttachmentMenuBot link, or an empty string otherwise
-    public let url: String?
+    public var url: String?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct AssignAppStoreTransaction: Codable, Equatable, Hashable {
 
     /// Transaction purpose
-    public let purpose: StorePaymentPurpose?
+    public var purpose: StorePaymentPurpose?
 
     /// App Store receipt
-    public let receipt: Data?
+    public var receipt: Data?
 
 
     public init(

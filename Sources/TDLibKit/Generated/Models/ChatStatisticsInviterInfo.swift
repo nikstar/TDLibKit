@@ -14,10 +14,10 @@ import Foundation
 public struct ChatStatisticsInviterInfo: Codable, Equatable, Hashable {
 
     /// Number of new members invited by the user
-    public let addedMemberCount: Int
+    public var addedMemberCount: Int
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

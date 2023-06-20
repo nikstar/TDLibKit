@@ -14,7 +14,7 @@ import Foundation
 public struct GetMarkdownText: Codable, Equatable, Hashable {
 
     /// The text
-    public let text: FormattedText?
+    public var text: FormattedText?
 
 
     public init(text: FormattedText?) {

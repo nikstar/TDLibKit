@@ -14,7 +14,7 @@ import Foundation
 public struct GetAttachmentMenuBot: Codable, Equatable, Hashable {
 
     /// Bot's user identifier
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
 
     public init(botUserId: Int64?) {

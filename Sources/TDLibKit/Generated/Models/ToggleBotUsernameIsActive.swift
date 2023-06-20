@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleBotUsernameIsActive: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Pass true to activate the username; pass false to disable it
-    public let isActive: Bool?
+    public var isActive: Bool?
 
     /// The username to change
-    public let username: String?
+    public var username: String?
 
 
     public init(

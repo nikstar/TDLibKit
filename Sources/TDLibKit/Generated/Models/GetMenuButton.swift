@@ -14,7 +14,7 @@ import Foundation
 public struct GetMenuButton: Codable, Equatable, Hashable {
 
     /// Identifier of the user or 0 to get the default menu button
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(userId: Int64?) {

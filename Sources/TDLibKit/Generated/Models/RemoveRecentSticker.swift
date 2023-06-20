@@ -14,10 +14,10 @@ import Foundation
 public struct RemoveRecentSticker: Codable, Equatable, Hashable {
 
     /// Pass true to remove the sticker from the list of stickers recently attached to photo or video files; pass false to remove the sticker from the list of recently sent stickers
-    public let isAttached: Bool?
+    public var isAttached: Bool?
 
     /// Sticker file to delete
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(

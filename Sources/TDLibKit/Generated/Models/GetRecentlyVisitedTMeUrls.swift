@@ -14,7 +14,7 @@ import Foundation
 public struct GetRecentlyVisitedTMeUrls: Codable, Equatable, Hashable {
 
     /// Google Play referrer to identify the user
-    public let referrer: String?
+    public var referrer: String?
 
 
     public init(referrer: String?) {

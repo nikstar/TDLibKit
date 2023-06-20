@@ -14,10 +14,10 @@ import Foundation
 public struct SetRecoveryEmailAddress: Codable, Equatable, Hashable {
 
     /// New recovery email address
-    public let newRecoveryEmailAddress: String?
+    public var newRecoveryEmailAddress: String?
 
     /// The 2-step verification password of the current user
-    public let password: String?
+    public var password: String?
 
 
     public init(

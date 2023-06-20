@@ -14,13 +14,13 @@ import Foundation
 public struct AutoDownloadSettingsPresets: Codable, Equatable, Hashable {
 
     /// Preset with highest settings; supposed to be used by default when connected on Wi-Fi
-    public let high: AutoDownloadSettings
+    public var high: AutoDownloadSettings
 
     /// Preset with lowest settings; supposed to be used by default when roaming
-    public let low: AutoDownloadSettings
+    public var low: AutoDownloadSettings
 
     /// Preset with medium settings; supposed to be used by default when using mobile data
-    public let medium: AutoDownloadSettings
+    public var medium: AutoDownloadSettings
 
 
     public init(

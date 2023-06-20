@@ -14,7 +14,7 @@ import Foundation
 public struct GetPremiumFeatures: Codable, Equatable, Hashable {
 
     /// Source of the request; pass null if the method is called from some non-standard source
-    public let source: PremiumSource?
+    public var source: PremiumSource?
 
 
     public init(source: PremiumSource?) {
