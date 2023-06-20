@@ -14,13 +14,13 @@ import Foundation
 public struct InputThumbnail: Codable, Equatable, Hashable {
 
     /// Thumbnail height, usually shouldn't exceed 320. Use 0 if unknown
-    public let height: Int
+    public var height: Int
 
     /// Thumbnail file to send. Sending thumbnails by file_id is currently not supported
-    public let thumbnail: InputFile
+    public var thumbnail: InputFile
 
     /// Thumbnail width, usually shouldn't exceed 320. Use 0 if unknown
-    public let width: Int
+    public var width: Int
 
 
     public init(

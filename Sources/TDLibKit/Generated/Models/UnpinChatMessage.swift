@@ -14,10 +14,10 @@ import Foundation
 public struct UnpinChatMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the removed pinned message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

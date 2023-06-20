@@ -14,7 +14,7 @@ import Foundation
 public struct GetRecoveryEmailAddress: Codable, Equatable, Hashable {
 
     /// The 2-step verification password for the current user
-    public let password: String?
+    public var password: String?
 
 
     public init(password: String?) {

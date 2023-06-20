@@ -14,13 +14,13 @@ import Foundation
 public struct ReportMessageReactions: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message identifier
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Identifier of the sender, which added the reaction
-    public let senderId: MessageSender?
+    public var senderId: MessageSender?
 
 
     public init(

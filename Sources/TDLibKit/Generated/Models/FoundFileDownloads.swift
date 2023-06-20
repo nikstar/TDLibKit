@@ -14,13 +14,13 @@ import Foundation
 public struct FoundFileDownloads: Codable, Equatable, Hashable {
 
     /// The list of files
-    public let files: [FileDownload]
+    public var files: [FileDownload]
 
     /// The offset for the next request. If empty, there are no more results
-    public let nextOffset: String
+    public var nextOffset: String
 
     /// Total number of suitable files, ignoring offset
-    public let totalCounts: DownloadedFileCounts
+    public var totalCounts: DownloadedFileCounts
 
 
     public init(

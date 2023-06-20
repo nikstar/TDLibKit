@@ -14,7 +14,7 @@ import Foundation
 public struct DeleteLanguagePack: Codable, Equatable, Hashable {
 
     /// Identifier of the language pack to delete
-    public let languagePackId: String?
+    public var languagePackId: String?
 
 
     public init(languagePackId: String?) {

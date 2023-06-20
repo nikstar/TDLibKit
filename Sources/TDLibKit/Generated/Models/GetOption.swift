@@ -14,7 +14,7 @@ import Foundation
 public struct GetOption: Codable, Equatable, Hashable {
 
     /// The name of the option
-    public let name: String?
+    public var name: String?
 
 
     public init(name: String?) {

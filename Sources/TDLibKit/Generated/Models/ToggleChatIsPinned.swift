@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleChatIsPinned: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Chat list in which to change the pinned state of the chat
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
     /// Pass true to pin the chat; pass false to unpin it
-    public let isPinned: Bool?
+    public var isPinned: Bool?
 
 
     public init(

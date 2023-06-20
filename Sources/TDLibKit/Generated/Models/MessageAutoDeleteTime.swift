@@ -14,7 +14,7 @@ import Foundation
 public struct MessageAutoDeleteTime: Codable, Equatable, Hashable {
 
     /// Message auto-delete time, in seconds. If 0, then messages aren't deleted automatically
-    public let time: Int
+    public var time: Int
 
 
     public init(time: Int) {

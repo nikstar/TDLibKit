@@ -14,7 +14,7 @@ import Foundation
 public struct CheckAuthenticationBotToken: Codable, Equatable, Hashable {
 
     /// The bot token
-    public let token: String?
+    public var token: String?
 
 
     public init(token: String?) {

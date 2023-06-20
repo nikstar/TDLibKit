@@ -87,7 +87,7 @@ public enum UserStatus: Codable, Equatable, Hashable {
 public struct UserStatusOnline: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the user's online status will expire
-    public let expires: Int
+    public var expires: Int
 
 
     public init(expires: Int) {
@@ -99,7 +99,7 @@ public struct UserStatusOnline: Codable, Equatable, Hashable {
 public struct UserStatusOffline: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the user was last online
-    public let wasOnline: Int
+    public var wasOnline: Int
 
 
     public init(wasOnline: Int) {

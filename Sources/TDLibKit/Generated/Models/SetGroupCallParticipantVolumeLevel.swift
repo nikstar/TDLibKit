@@ -14,13 +14,13 @@ import Foundation
 public struct SetGroupCallParticipantVolumeLevel: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Participant identifier
-    public let participantId: MessageSender?
+    public var participantId: MessageSender?
 
     /// New participant's volume level; 1-20000 in hundreds of percents
-    public let volumeLevel: Int?
+    public var volumeLevel: Int?
 
 
     public init(

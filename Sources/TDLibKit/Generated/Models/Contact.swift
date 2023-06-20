@@ -14,19 +14,19 @@ import Foundation
 public struct Contact: Codable, Equatable, Hashable {
 
     /// First name of the user; 1-255 characters in length
-    public let firstName: String
+    public var firstName: String
 
     /// Last name of the user
-    public let lastName: String
+    public var lastName: String
 
     /// Phone number of the user
-    public let phoneNumber: String
+    public var phoneNumber: String
 
     /// Identifier of the user, if known; 0 otherwise
-    public let userId: Int64
+    public var userId: Int64
 
     /// Additional data about the user in a form of vCard; 0-2048 bytes in length
-    public let vcard: String
+    public var vcard: String
 
 
     public init(

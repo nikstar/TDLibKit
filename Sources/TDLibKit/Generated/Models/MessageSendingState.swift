@@ -55,7 +55,7 @@ public enum MessageSendingState: Codable, Equatable, Hashable {
 public struct MessageSendingStatePending: Codable, Equatable, Hashable {
 
     /// Non-persistent message sending identifier, specified by the application
-    public let sendingId: Int
+    public var sendingId: Int
 
 
     public init(sendingId: Int) {
@@ -67,19 +67,19 @@ public struct MessageSendingStatePending: Codable, Equatable, Hashable {
 public struct MessageSendingStateFailed: Codable, Equatable, Hashable {
 
     /// True, if the message can be re-sent
-    public let canRetry: Bool
+    public var canRetry: Bool
 
     /// An error code; 0 if unknown
-    public let errorCode: Int
+    public var errorCode: Int
 
     /// Error message
-    public let errorMessage: String
+    public var errorMessage: String
 
     /// True, if the message can be re-sent only on behalf of a different sender
-    public let needAnotherSender: Bool
+    public var needAnotherSender: Bool
 
     /// Time left before the message can be re-sent, in seconds. No update is sent when this field changes
-    public let retryAfter: Double
+    public var retryAfter: Double
 
 
     public init(

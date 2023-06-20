@@ -14,7 +14,7 @@ import Foundation
 public struct GetChatPinnedMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the chat the message belongs to
-    public let chatId: Int64?
+    public var chatId: Int64?
 
 
     public init(chatId: Int64?) {

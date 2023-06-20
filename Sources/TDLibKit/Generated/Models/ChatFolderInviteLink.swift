@@ -14,13 +14,13 @@ import Foundation
 public struct ChatFolderInviteLink: Codable, Equatable, Hashable {
 
     /// Identifiers of chats, included in the link
-    public let chatIds: [Int64]
+    public var chatIds: [Int64]
 
     /// The chat folder invite link
-    public let inviteLink: String
+    public var inviteLink: String
 
     /// Name of the link
-    public let name: String
+    public var name: String
 
 
     public init(

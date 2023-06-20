@@ -14,10 +14,10 @@ import Foundation
 public struct GroupCallVideoSourceGroup: Codable, Equatable, Hashable {
 
     /// The semantics of sources, one of "SIM" or "FID"
-    public let semantics: String
+    public var semantics: String
 
     /// The list of synchronization source identifiers
-    public let sourceIds: [Int]
+    public var sourceIds: [Int]
 
 
     public init(

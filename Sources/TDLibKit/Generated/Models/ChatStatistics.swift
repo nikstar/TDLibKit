@@ -55,52 +55,52 @@ public enum ChatStatistics: Codable, Equatable, Hashable {
 public struct ChatStatisticsSupergroup: Codable, Equatable, Hashable {
 
     /// A graph containing number of different actions in the chat
-    public let actionGraph: StatisticalGraph
+    public var actionGraph: StatisticalGraph
 
     /// A graph containing distribution of message views per hour
-    public let dayGraph: StatisticalGraph
+    public var dayGraph: StatisticalGraph
 
     /// A graph containing number of new member joins per source
-    public let joinBySourceGraph: StatisticalGraph
+    public var joinBySourceGraph: StatisticalGraph
 
     /// A graph containing number of members joined and left the chat
-    public let joinGraph: StatisticalGraph
+    public var joinGraph: StatisticalGraph
 
     /// A graph containing distribution of active users per language
-    public let languageGraph: StatisticalGraph
+    public var languageGraph: StatisticalGraph
 
     /// Number of members in the chat
-    public let memberCount: StatisticalValue
+    public var memberCount: StatisticalValue
 
     /// A graph containing number of members in the chat
-    public let memberCountGraph: StatisticalGraph
+    public var memberCountGraph: StatisticalGraph
 
     /// A graph containing distribution of sent messages by content type
-    public let messageContentGraph: StatisticalGraph
+    public var messageContentGraph: StatisticalGraph
 
     /// Number of messages sent to the chat
-    public let messageCount: StatisticalValue
+    public var messageCount: StatisticalValue
 
     /// A period to which the statistics applies
-    public let period: DateRange
+    public var period: DateRange
 
     /// Number of users who sent messages to the chat
-    public let senderCount: StatisticalValue
+    public var senderCount: StatisticalValue
 
     /// List of most active administrators in the last week
-    public let topAdministrators: [ChatStatisticsAdministratorActionsInfo]
+    public var topAdministrators: [ChatStatisticsAdministratorActionsInfo]
 
     /// List of most active inviters of new members in the last week
-    public let topInviters: [ChatStatisticsInviterInfo]
+    public var topInviters: [ChatStatisticsInviterInfo]
 
     /// List of users sent most messages in the last week
-    public let topSenders: [ChatStatisticsMessageSenderInfo]
+    public var topSenders: [ChatStatisticsMessageSenderInfo]
 
     /// Number of users who viewed messages in the chat
-    public let viewerCount: StatisticalValue
+    public var viewerCount: StatisticalValue
 
     /// A graph containing distribution of message views per day of week
-    public let weekGraph: StatisticalGraph
+    public var weekGraph: StatisticalGraph
 
 
     public init(
@@ -144,49 +144,49 @@ public struct ChatStatisticsSupergroup: Codable, Equatable, Hashable {
 public struct ChatStatisticsChannel: Codable, Equatable, Hashable {
 
     /// A percentage of users with enabled notifications for the chat
-    public let enabledNotificationsPercentage: Double
+    public var enabledNotificationsPercentage: Double
 
     /// A graph containing number of views of associated with the chat instant views
-    public let instantViewInteractionGraph: StatisticalGraph
+    public var instantViewInteractionGraph: StatisticalGraph
 
     /// A graph containing number of new member joins per source
-    public let joinBySourceGraph: StatisticalGraph
+    public var joinBySourceGraph: StatisticalGraph
 
     /// A graph containing number of members joined and left the chat
-    public let joinGraph: StatisticalGraph
+    public var joinGraph: StatisticalGraph
 
     /// A graph containing number of users viewed chat messages per language
-    public let languageGraph: StatisticalGraph
+    public var languageGraph: StatisticalGraph
 
     /// Mean number of times the recently sent messages was shared
-    public let meanShareCount: StatisticalValue
+    public var meanShareCount: StatisticalValue
 
     /// Mean number of times the recently sent messages was viewed
-    public let meanViewCount: StatisticalValue
+    public var meanViewCount: StatisticalValue
 
     /// Number of members in the chat
-    public let memberCount: StatisticalValue
+    public var memberCount: StatisticalValue
 
     /// A graph containing number of members in the chat
-    public let memberCountGraph: StatisticalGraph
+    public var memberCountGraph: StatisticalGraph
 
     /// A graph containing number of chat message views and shares
-    public let messageInteractionGraph: StatisticalGraph
+    public var messageInteractionGraph: StatisticalGraph
 
     /// A graph containing number of members muted and unmuted the chat
-    public let muteGraph: StatisticalGraph
+    public var muteGraph: StatisticalGraph
 
     /// A period to which the statistics applies
-    public let period: DateRange
+    public var period: DateRange
 
     /// Detailed statistics about number of views and shares of recently sent messages
-    public let recentMessageInteractions: [ChatStatisticsMessageInteractionInfo]
+    public var recentMessageInteractions: [ChatStatisticsMessageInteractionInfo]
 
     /// A graph containing number of message views in a given hour in the last two weeks
-    public let viewCountByHourGraph: StatisticalGraph
+    public var viewCountByHourGraph: StatisticalGraph
 
     /// A graph containing number of message views per source
-    public let viewCountBySourceGraph: StatisticalGraph
+    public var viewCountBySourceGraph: StatisticalGraph
 
 
     public init(

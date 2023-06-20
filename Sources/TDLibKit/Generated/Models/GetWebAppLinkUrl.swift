@@ -14,25 +14,25 @@ import Foundation
 public struct GetWebAppLinkUrl: Codable, Equatable, Hashable {
 
     /// Pass true if the current user allowed the bot to send them messages
-    public let allowWriteAccess: Bool?
+    public var allowWriteAccess: Bool?
 
     /// Short name of the application; 0-64 English letters, digits, and underscores
-    public let applicationName: String?
+    public var applicationName: String?
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Identifier of the chat in which the link was clicked; pass 0 if none
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Start parameter from internalLinkTypeWebApp
-    public let startParameter: String?
+    public var startParameter: String?
 
     /// Preferred Web App theme; pass null to use the default theme
-    public let theme: ThemeParameters?
+    public var theme: ThemeParameters?
 
     /// Short name of the Web App
-    public let webAppShortName: String?
+    public var webAppShortName: String?
 
 
     public init(

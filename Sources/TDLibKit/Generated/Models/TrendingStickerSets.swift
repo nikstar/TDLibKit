@@ -14,13 +14,13 @@ import Foundation
 public struct TrendingStickerSets: Codable, Equatable, Hashable {
 
     /// True, if the list contains sticker sets with premium stickers
-    public let isPremium: Bool
+    public var isPremium: Bool
 
     /// List of trending sticker sets
-    public let sets: [StickerSetInfo]
+    public var sets: [StickerSetInfo]
 
     /// Approximate total number of trending sticker sets
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

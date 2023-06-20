@@ -14,7 +14,7 @@ import Foundation
 public struct Updates: Codable, Equatable, Hashable {
 
     /// List of updates
-    public let updates: [Update]
+    public var updates: [Update]
 
 
     public init(updates: [Update]) {

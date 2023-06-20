@@ -14,10 +14,10 @@ import Foundation
 public struct SetPassportElementErrors: Codable, Equatable, Hashable {
 
     /// The errors
-    public let errors: [InputPassportElementError]?
+    public var errors: [InputPassportElementError]?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

@@ -53,10 +53,10 @@ public enum FirebaseAuthenticationSettings: Codable, Equatable, Hashable {
 public struct FirebaseAuthenticationSettingsIos: Codable, Equatable, Hashable {
 
     /// Device token from Apple Push Notification service
-    public let deviceToken: String
+    public var deviceToken: String
 
     /// True, if App Sandbox is enabled
-    public let isAppSandbox: Bool
+    public var isAppSandbox: Bool
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct GetTopChats: Codable, Equatable, Hashable {
 
     /// Category of chats to be returned
-    public let category: TopChatCategory?
+    public var category: TopChatCategory?
 
     /// The maximum number of chats to be returned; up to 30
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(

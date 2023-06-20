@@ -14,13 +14,13 @@ import Foundation
 public struct Usernames: Codable, Equatable, Hashable {
 
     /// List of active usernames; the first one must be shown as the primary username. The order of active usernames can be changed with reorderActiveUsernames, reorderBotActiveUsernames or reorderSupergroupActiveUsernames
-    public let activeUsernames: [String]
+    public var activeUsernames: [String]
 
     /// List of currently disabled usernames; the username can be activated with toggleUsernameIsActive, toggleBotUsernameIsActive, or toggleSupergroupUsernameIsActive
-    public let disabledUsernames: [String]
+    public var disabledUsernames: [String]
 
     /// The active username, which can be changed with setUsername or setSupergroupUsername
-    public let editableUsername: String
+    public var editableUsername: String
 
 
     public init(

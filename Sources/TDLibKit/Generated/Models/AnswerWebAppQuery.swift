@@ -14,10 +14,10 @@ import Foundation
 public struct AnswerWebAppQuery: Codable, Equatable, Hashable {
 
     /// The result of the query
-    public let result: InputInlineQueryResult?
+    public var result: InputInlineQueryResult?
 
     /// Identifier of the Web App query
-    public let webAppQueryId: String?
+    public var webAppQueryId: String?
 
 
     public init(

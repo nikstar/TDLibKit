@@ -14,7 +14,7 @@ import Foundation
 public struct GetBasicGroupFullInfo: Codable, Equatable, Hashable {
 
     /// Basic group identifier
-    public let basicGroupId: Int64?
+    public var basicGroupId: Int64?
 
 
     public init(basicGroupId: Int64?) {

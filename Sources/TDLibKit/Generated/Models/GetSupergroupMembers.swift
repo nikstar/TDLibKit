@@ -14,16 +14,16 @@ import Foundation
 public struct GetSupergroupMembers: Codable, Equatable, Hashable {
 
     /// The type of users to return; pass null to use supergroupMembersFilterRecent
-    public let filter: SupergroupMembersFilter?
+    public var filter: SupergroupMembersFilter?
 
     /// The maximum number of users be returned; up to 200
-    public let limit: Int?
+    public var limit: Int?
 
     /// Number of users to skip
-    public let offset: Int?
+    public var offset: Int?
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

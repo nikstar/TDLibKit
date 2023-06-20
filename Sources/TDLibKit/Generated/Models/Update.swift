@@ -1125,7 +1125,7 @@ public enum Update: Codable, Equatable, Hashable {
 public struct UpdateAuthorizationState: Codable, Equatable, Hashable {
 
     /// New authorization state
-    public let authorizationState: AuthorizationState
+    public var authorizationState: AuthorizationState
 
 
     public init(authorizationState: AuthorizationState) {
@@ -1137,7 +1137,7 @@ public struct UpdateAuthorizationState: Codable, Equatable, Hashable {
 public struct UpdateNewMessage: Codable, Equatable, Hashable {
 
     /// The new message
-    public let message: Message
+    public var message: Message
 
 
     public init(message: Message) {
@@ -1149,10 +1149,10 @@ public struct UpdateNewMessage: Codable, Equatable, Hashable {
 public struct UpdateMessageSendAcknowledged: Codable, Equatable, Hashable {
 
     /// The chat identifier of the sent message
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// A temporary message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -1168,10 +1168,10 @@ public struct UpdateMessageSendAcknowledged: Codable, Equatable, Hashable {
 public struct UpdateMessageSendSucceeded: Codable, Equatable, Hashable {
 
     /// The sent message. Usually only the message identifier, date, and content are changed, but almost all other fields can also change
-    public let message: Message
+    public var message: Message
 
     /// The previous temporary message identifier
-    public let oldMessageId: Int64
+    public var oldMessageId: Int64
 
 
     public init(
@@ -1187,16 +1187,16 @@ public struct UpdateMessageSendSucceeded: Codable, Equatable, Hashable {
 public struct UpdateMessageSendFailed: Codable, Equatable, Hashable {
 
     /// An error code
-    public let errorCode: Int
+    public var errorCode: Int
 
     /// Error message
-    public let errorMessage: String
+    public var errorMessage: String
 
     /// The failed to send message
-    public let message: Message
+    public var message: Message
 
     /// The previous temporary message identifier
-    public let oldMessageId: Int64
+    public var oldMessageId: Int64
 
 
     public init(
@@ -1216,13 +1216,13 @@ public struct UpdateMessageSendFailed: Codable, Equatable, Hashable {
 public struct UpdateMessageContent: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// New message content
-    public let newContent: MessageContent
+    public var newContent: MessageContent
 
 
     public init(
@@ -1240,16 +1240,16 @@ public struct UpdateMessageContent: Codable, Equatable, Hashable {
 public struct UpdateMessageEdited: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Point in time (Unix timestamp) when the message was edited
-    public let editDate: Int
+    public var editDate: Int
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// New message reply markup; may be null
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(
@@ -1269,13 +1269,13 @@ public struct UpdateMessageEdited: Codable, Equatable, Hashable {
 public struct UpdateMessageIsPinned: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// True, if the message is pinned
-    public let isPinned: Bool
+    public var isPinned: Bool
 
     /// The message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -1293,13 +1293,13 @@ public struct UpdateMessageIsPinned: Codable, Equatable, Hashable {
 public struct UpdateMessageInteractionInfo: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New information about interactions with the message; may be null
-    public let interactionInfo: MessageInteractionInfo?
+    public var interactionInfo: MessageInteractionInfo?
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -1317,10 +1317,10 @@ public struct UpdateMessageInteractionInfo: Codable, Equatable, Hashable {
 public struct UpdateMessageContentOpened: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -1336,13 +1336,13 @@ public struct UpdateMessageContentOpened: Codable, Equatable, Hashable {
 public struct UpdateMessageMentionRead: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// The new number of unread mention messages left in the chat
-    public let unreadMentionCount: Int
+    public var unreadMentionCount: Int
 
 
     public init(
@@ -1360,16 +1360,16 @@ public struct UpdateMessageMentionRead: Codable, Equatable, Hashable {
 public struct UpdateMessageUnreadReactions: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// The new number of messages with unread reactions left in the chat
-    public let unreadReactionCount: Int
+    public var unreadReactionCount: Int
 
     /// The new list of unread reactions
-    public let unreadReactions: [UnreadReaction]
+    public var unreadReactions: [UnreadReaction]
 
 
     public init(
@@ -1389,10 +1389,10 @@ public struct UpdateMessageUnreadReactions: Codable, Equatable, Hashable {
 public struct UpdateMessageLiveLocationViewed: Codable, Equatable, Hashable {
 
     /// Identifier of the chat with the live location message
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Identifier of the message with live location
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(
@@ -1408,7 +1408,7 @@ public struct UpdateMessageLiveLocationViewed: Codable, Equatable, Hashable {
 public struct UpdateNewChat: Codable, Equatable, Hashable {
 
     /// The chat
-    public let chat: Chat
+    public var chat: Chat
 
 
     public init(chat: Chat) {
@@ -1420,10 +1420,10 @@ public struct UpdateNewChat: Codable, Equatable, Hashable {
 public struct UpdateChatTitle: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new chat title
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -1439,10 +1439,10 @@ public struct UpdateChatTitle: Codable, Equatable, Hashable {
 public struct UpdateChatPhoto: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new chat photo; may be null
-    public let photo: ChatPhotoInfo?
+    public var photo: ChatPhotoInfo?
 
 
     public init(
@@ -1458,10 +1458,10 @@ public struct UpdateChatPhoto: Codable, Equatable, Hashable {
 public struct UpdateChatPermissions: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new chat permissions
-    public let permissions: ChatPermissions
+    public var permissions: ChatPermissions
 
 
     public init(
@@ -1477,13 +1477,13 @@ public struct UpdateChatPermissions: Codable, Equatable, Hashable {
 public struct UpdateChatLastMessage: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new last message in the chat; may be null
-    public let lastMessage: Message?
+    public var lastMessage: Message?
 
     /// The new chat positions in the chat lists
-    public let positions: [ChatPosition]
+    public var positions: [ChatPosition]
 
 
     public init(
@@ -1501,10 +1501,10 @@ public struct UpdateChatLastMessage: Codable, Equatable, Hashable {
 public struct UpdateChatPosition: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New chat position. If new order is 0, then the chat needs to be removed from the list
-    public let position: ChatPosition
+    public var position: ChatPosition
 
 
     public init(
@@ -1520,13 +1520,13 @@ public struct UpdateChatPosition: Codable, Equatable, Hashable {
 public struct UpdateChatReadInbox: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Identifier of the last read incoming message
-    public let lastReadInboxMessageId: Int64
+    public var lastReadInboxMessageId: Int64
 
     /// The number of unread messages left in the chat
-    public let unreadCount: Int
+    public var unreadCount: Int
 
 
     public init(
@@ -1544,10 +1544,10 @@ public struct UpdateChatReadInbox: Codable, Equatable, Hashable {
 public struct UpdateChatReadOutbox: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Identifier of last read outgoing message
-    public let lastReadOutboxMessageId: Int64
+    public var lastReadOutboxMessageId: Int64
 
 
     public init(
@@ -1563,10 +1563,10 @@ public struct UpdateChatReadOutbox: Codable, Equatable, Hashable {
 public struct UpdateChatActionBar: Codable, Equatable, Hashable {
 
     /// The new value of the action bar; may be null
-    public let actionBar: ChatActionBar?
+    public var actionBar: ChatActionBar?
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(
@@ -1582,10 +1582,10 @@ public struct UpdateChatActionBar: Codable, Equatable, Hashable {
 public struct UpdateChatAvailableReactions: Codable, Equatable, Hashable {
 
     /// The new reactions, available in the chat
-    public let availableReactions: ChatAvailableReactions
+    public var availableReactions: ChatAvailableReactions
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(
@@ -1601,13 +1601,13 @@ public struct UpdateChatAvailableReactions: Codable, Equatable, Hashable {
 public struct UpdateChatDraftMessage: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new draft message; may be null
-    public let draftMessage: DraftMessage?
+    public var draftMessage: DraftMessage?
 
     /// The new chat positions in the chat lists
-    public let positions: [ChatPosition]
+    public var positions: [ChatPosition]
 
 
     public init(
@@ -1625,10 +1625,10 @@ public struct UpdateChatDraftMessage: Codable, Equatable, Hashable {
 public struct UpdateChatMessageSender: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of message_sender_id; may be null if the user can't change message sender
-    public let messageSenderId: MessageSender?
+    public var messageSenderId: MessageSender?
 
 
     public init(
@@ -1644,10 +1644,10 @@ public struct UpdateChatMessageSender: Codable, Equatable, Hashable {
 public struct UpdateChatMessageAutoDeleteTime: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of message_auto_delete_time
-    public let messageAutoDeleteTime: Int
+    public var messageAutoDeleteTime: Int
 
 
     public init(
@@ -1663,10 +1663,10 @@ public struct UpdateChatMessageAutoDeleteTime: Codable, Equatable, Hashable {
 public struct UpdateChatNotificationSettings: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new notification settings
-    public let notificationSettings: ChatNotificationSettings
+    public var notificationSettings: ChatNotificationSettings
 
 
     public init(
@@ -1682,10 +1682,10 @@ public struct UpdateChatNotificationSettings: Codable, Equatable, Hashable {
 public struct UpdateChatPendingJoinRequests: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new data about pending join requests; may be null
-    public let pendingJoinRequests: ChatJoinRequestsInfo?
+    public var pendingJoinRequests: ChatJoinRequestsInfo?
 
 
     public init(
@@ -1701,10 +1701,10 @@ public struct UpdateChatPendingJoinRequests: Codable, Equatable, Hashable {
 public struct UpdateChatReplyMarkup: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Identifier of the message from which reply markup needs to be used; 0 if there is no default custom reply markup in the chat
-    public let replyMarkupMessageId: Int64
+    public var replyMarkupMessageId: Int64
 
 
     public init(
@@ -1720,10 +1720,10 @@ public struct UpdateChatReplyMarkup: Codable, Equatable, Hashable {
 public struct UpdateChatBackground: Codable, Equatable, Hashable {
 
     /// The new chat background; may be null if background was reset to default
-    public let background: ChatBackground?
+    public var background: ChatBackground?
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(
@@ -1739,10 +1739,10 @@ public struct UpdateChatBackground: Codable, Equatable, Hashable {
 public struct UpdateChatTheme: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new name of the chat theme; may be empty if theme was reset to default
-    public let themeName: String
+    public var themeName: String
 
 
     public init(
@@ -1758,10 +1758,10 @@ public struct UpdateChatTheme: Codable, Equatable, Hashable {
 public struct UpdateChatUnreadMentionCount: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The number of unread mention messages left in the chat
-    public let unreadMentionCount: Int
+    public var unreadMentionCount: Int
 
 
     public init(
@@ -1777,10 +1777,10 @@ public struct UpdateChatUnreadMentionCount: Codable, Equatable, Hashable {
 public struct UpdateChatUnreadReactionCount: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The number of messages with unread reactions left in the chat
-    public let unreadReactionCount: Int
+    public var unreadReactionCount: Int
 
 
     public init(
@@ -1796,10 +1796,10 @@ public struct UpdateChatUnreadReactionCount: Codable, Equatable, Hashable {
 public struct UpdateChatVideoChat: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of video_chat
-    public let videoChat: VideoChat
+    public var videoChat: VideoChat
 
 
     public init(
@@ -1815,10 +1815,10 @@ public struct UpdateChatVideoChat: Codable, Equatable, Hashable {
 public struct UpdateChatDefaultDisableNotification: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The new default_disable_notification value
-    public let defaultDisableNotification: Bool
+    public var defaultDisableNotification: Bool
 
 
     public init(
@@ -1834,10 +1834,10 @@ public struct UpdateChatDefaultDisableNotification: Codable, Equatable, Hashable
 public struct UpdateChatHasProtectedContent: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of has_protected_content
-    public let hasProtectedContent: Bool
+    public var hasProtectedContent: Bool
 
 
     public init(
@@ -1853,10 +1853,10 @@ public struct UpdateChatHasProtectedContent: Codable, Equatable, Hashable {
 public struct UpdateChatIsTranslatable: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of is_translatable
-    public let isTranslatable: Bool
+    public var isTranslatable: Bool
 
 
     public init(
@@ -1872,10 +1872,10 @@ public struct UpdateChatIsTranslatable: Codable, Equatable, Hashable {
 public struct UpdateChatIsMarkedAsUnread: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of is_marked_as_unread
-    public let isMarkedAsUnread: Bool
+    public var isMarkedAsUnread: Bool
 
 
     public init(
@@ -1891,10 +1891,10 @@ public struct UpdateChatIsMarkedAsUnread: Codable, Equatable, Hashable {
 public struct UpdateChatIsBlocked: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of is_blocked
-    public let isBlocked: Bool
+    public var isBlocked: Bool
 
 
     public init(
@@ -1910,10 +1910,10 @@ public struct UpdateChatIsBlocked: Codable, Equatable, Hashable {
 public struct UpdateChatHasScheduledMessages: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New value of has_scheduled_messages
-    public let hasScheduledMessages: Bool
+    public var hasScheduledMessages: Bool
 
 
     public init(
@@ -1929,10 +1929,10 @@ public struct UpdateChatHasScheduledMessages: Codable, Equatable, Hashable {
 public struct UpdateChatFolders: Codable, Equatable, Hashable {
 
     /// The new list of chat folders
-    public let chatFolders: [ChatFolderInfo]
+    public var chatFolders: [ChatFolderInfo]
 
     /// Position of the main chat list among chat folders, 0-based
-    public let mainChatListPosition: Int
+    public var mainChatListPosition: Int
 
 
     public init(
@@ -1948,10 +1948,10 @@ public struct UpdateChatFolders: Codable, Equatable, Hashable {
 public struct UpdateChatOnlineMemberCount: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New number of online members in the chat, or 0 if unknown
-    public let onlineMemberCount: Int
+    public var onlineMemberCount: Int
 
 
     public init(
@@ -1967,10 +1967,10 @@ public struct UpdateChatOnlineMemberCount: Codable, Equatable, Hashable {
 public struct UpdateForumTopicInfo: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// New information about the topic
-    public let info: ForumTopicInfo
+    public var info: ForumTopicInfo
 
 
     public init(
@@ -1986,10 +1986,10 @@ public struct UpdateForumTopicInfo: Codable, Equatable, Hashable {
 public struct UpdateScopeNotificationSettings: Codable, Equatable, Hashable {
 
     /// The new notification settings
-    public let notificationSettings: ScopeNotificationSettings
+    public var notificationSettings: ScopeNotificationSettings
 
     /// Types of chats for which notification settings were updated
-    public let scope: NotificationSettingsScope
+    public var scope: NotificationSettingsScope
 
 
     public init(
@@ -2005,10 +2005,10 @@ public struct UpdateScopeNotificationSettings: Codable, Equatable, Hashable {
 public struct UpdateNotification: Codable, Equatable, Hashable {
 
     /// Changed notification
-    public let notification: Notification
+    public var notification: Notification
 
     /// Unique notification group identifier
-    public let notificationGroupId: Int
+    public var notificationGroupId: Int
 
 
     public init(
@@ -2024,28 +2024,28 @@ public struct UpdateNotification: Codable, Equatable, Hashable {
 public struct UpdateNotificationGroup: Codable, Equatable, Hashable {
 
     /// List of added group notifications, sorted by notification ID
-    public let addedNotifications: [Notification]
+    public var addedNotifications: [Notification]
 
     /// Identifier of a chat to which all notifications in the group belong
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Unique notification group identifier
-    public let notificationGroupId: Int
+    public var notificationGroupId: Int
 
     /// Chat identifier, which notification settings must be applied to the added notifications
-    public let notificationSettingsChatId: Int64
+    public var notificationSettingsChatId: Int64
 
     /// Identifier of the notification sound to be played; 0 if sound is disabled
-    public let notificationSoundId: TdInt64
+    public var notificationSoundId: TdInt64
 
     /// Identifiers of removed group notifications, sorted by notification ID
-    public let removedNotificationIds: [Int]
+    public var removedNotificationIds: [Int]
 
     /// Total number of unread notifications in the group, can be bigger than number of active notifications
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// New type of the notification group
-    public let type: NotificationGroupType
+    public var type: NotificationGroupType
 
 
     public init(
@@ -2073,7 +2073,7 @@ public struct UpdateNotificationGroup: Codable, Equatable, Hashable {
 public struct UpdateActiveNotifications: Codable, Equatable, Hashable {
 
     /// Lists of active notification groups
-    public let groups: [NotificationGroup]
+    public var groups: [NotificationGroup]
 
 
     public init(groups: [NotificationGroup]) {
@@ -2085,10 +2085,10 @@ public struct UpdateActiveNotifications: Codable, Equatable, Hashable {
 public struct UpdateHavePendingNotifications: Codable, Equatable, Hashable {
 
     /// True, if there are some delayed notification updates, which will be sent soon
-    public let haveDelayedNotifications: Bool
+    public var haveDelayedNotifications: Bool
 
     /// True, if there can be some yet unreceived notifications, which are being fetched from the server
-    public let haveUnreceivedNotifications: Bool
+    public var haveUnreceivedNotifications: Bool
 
 
     public init(
@@ -2104,16 +2104,16 @@ public struct UpdateHavePendingNotifications: Codable, Equatable, Hashable {
 public struct UpdateDeleteMessages: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// True, if the messages are deleted only from the cache and can possibly be retrieved again in the future
-    public let fromCache: Bool
+    public var fromCache: Bool
 
     /// True, if the messages are permanently deleted by a user (as opposed to just becoming inaccessible)
-    public let isPermanent: Bool
+    public var isPermanent: Bool
 
     /// Identifiers of the deleted messages
-    public let messageIds: [Int64]
+    public var messageIds: [Int64]
 
 
     public init(
@@ -2133,16 +2133,16 @@ public struct UpdateDeleteMessages: Codable, Equatable, Hashable {
 public struct UpdateChatAction: Codable, Equatable, Hashable {
 
     /// The action
-    public let action: ChatAction
+    public var action: ChatAction
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// If not 0, a message thread identifier in which the action was performed
-    public let messageThreadId: Int64
+    public var messageThreadId: Int64
 
     /// Identifier of a message sender performing the action
-    public let senderId: MessageSender
+    public var senderId: MessageSender
 
 
     public init(
@@ -2162,10 +2162,10 @@ public struct UpdateChatAction: Codable, Equatable, Hashable {
 public struct UpdateUserStatus: Codable, Equatable, Hashable {
 
     /// New status of the user
-    public let status: UserStatus
+    public var status: UserStatus
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(
@@ -2181,7 +2181,7 @@ public struct UpdateUserStatus: Codable, Equatable, Hashable {
 public struct UpdateUser: Codable, Equatable, Hashable {
 
     /// New data about the user
-    public let user: User
+    public var user: User
 
 
     public init(user: User) {
@@ -2193,7 +2193,7 @@ public struct UpdateUser: Codable, Equatable, Hashable {
 public struct UpdateBasicGroup: Codable, Equatable, Hashable {
 
     /// New data about the group
-    public let basicGroup: BasicGroup
+    public var basicGroup: BasicGroup
 
 
     public init(basicGroup: BasicGroup) {
@@ -2205,7 +2205,7 @@ public struct UpdateBasicGroup: Codable, Equatable, Hashable {
 public struct UpdateSupergroup: Codable, Equatable, Hashable {
 
     /// New data about the supergroup
-    public let supergroup: Supergroup
+    public var supergroup: Supergroup
 
 
     public init(supergroup: Supergroup) {
@@ -2217,7 +2217,7 @@ public struct UpdateSupergroup: Codable, Equatable, Hashable {
 public struct UpdateSecretChat: Codable, Equatable, Hashable {
 
     /// New data about the secret chat
-    public let secretChat: SecretChat
+    public var secretChat: SecretChat
 
 
     public init(secretChat: SecretChat) {
@@ -2229,10 +2229,10 @@ public struct UpdateSecretChat: Codable, Equatable, Hashable {
 public struct UpdateUserFullInfo: Codable, Equatable, Hashable {
 
     /// New full information about the user
-    public let userFullInfo: UserFullInfo
+    public var userFullInfo: UserFullInfo
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(
@@ -2248,10 +2248,10 @@ public struct UpdateUserFullInfo: Codable, Equatable, Hashable {
 public struct UpdateBasicGroupFullInfo: Codable, Equatable, Hashable {
 
     /// New full information about the group
-    public let basicGroupFullInfo: BasicGroupFullInfo
+    public var basicGroupFullInfo: BasicGroupFullInfo
 
     /// Identifier of a basic group
-    public let basicGroupId: Int64
+    public var basicGroupId: Int64
 
 
     public init(
@@ -2267,10 +2267,10 @@ public struct UpdateBasicGroupFullInfo: Codable, Equatable, Hashable {
 public struct UpdateSupergroupFullInfo: Codable, Equatable, Hashable {
 
     /// New full information about the supergroup
-    public let supergroupFullInfo: SupergroupFullInfo
+    public var supergroupFullInfo: SupergroupFullInfo
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64
+    public var supergroupId: Int64
 
 
     public init(
@@ -2286,10 +2286,10 @@ public struct UpdateSupergroupFullInfo: Codable, Equatable, Hashable {
 public struct UpdateServiceNotification: Codable, Equatable, Hashable {
 
     /// Notification content
-    public let content: MessageContent
+    public var content: MessageContent
 
     /// Notification type. If type begins with "AUTH_KEY_DROP_", then two buttons "Cancel" and "Log out" must be shown under notification; if user presses the second, all local data must be destroyed using Destroy method
-    public let type: String
+    public var type: String
 
 
     public init(
@@ -2305,7 +2305,7 @@ public struct UpdateServiceNotification: Codable, Equatable, Hashable {
 public struct UpdateFile: Codable, Equatable, Hashable {
 
     /// New data about the file
-    public let file: File
+    public var file: File
 
 
     public init(file: File) {
@@ -2317,16 +2317,16 @@ public struct UpdateFile: Codable, Equatable, Hashable {
 public struct UpdateFileGenerationStart: Codable, Equatable, Hashable {
 
     /// String specifying the conversion applied to the original file. If conversion is "#url#" than original_path contains an HTTP/HTTPS URL of a file, which must be downloaded by the application
-    public let conversion: String
+    public var conversion: String
 
     /// The path to a file that must be created and where the new file is generated
-    public let destinationPath: String
+    public var destinationPath: String
 
     /// Unique identifier for the generation process
-    public let generationId: TdInt64
+    public var generationId: TdInt64
 
     /// The path to a file from which a new file is generated; may be empty
-    public let originalPath: String
+    public var originalPath: String
 
 
     public init(
@@ -2346,7 +2346,7 @@ public struct UpdateFileGenerationStart: Codable, Equatable, Hashable {
 public struct UpdateFileGenerationStop: Codable, Equatable, Hashable {
 
     /// Unique identifier for the generation process
-    public let generationId: TdInt64
+    public var generationId: TdInt64
 
 
     public init(generationId: TdInt64) {
@@ -2358,13 +2358,13 @@ public struct UpdateFileGenerationStop: Codable, Equatable, Hashable {
 public struct UpdateFileDownloads: Codable, Equatable, Hashable {
 
     /// Total downloaded size of files in the file download list, in bytes
-    public let downloadedSize: Int64
+    public var downloadedSize: Int64
 
     /// Total number of files in the file download list
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// Total size of files in the file download list, in bytes
-    public let totalSize: Int64
+    public var totalSize: Int64
 
 
     public init(
@@ -2382,10 +2382,10 @@ public struct UpdateFileDownloads: Codable, Equatable, Hashable {
 public struct UpdateFileAddedToDownloads: Codable, Equatable, Hashable {
 
     /// New number of being downloaded and recently downloaded files found
-    public let counts: DownloadedFileCounts
+    public var counts: DownloadedFileCounts
 
     /// The added file download
-    public let fileDownload: FileDownload
+    public var fileDownload: FileDownload
 
 
     public init(
@@ -2401,16 +2401,16 @@ public struct UpdateFileAddedToDownloads: Codable, Equatable, Hashable {
 public struct UpdateFileDownload: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the file downloading was completed; 0 if the file downloading isn't completed
-    public let completeDate: Int
+    public var completeDate: Int
 
     /// New number of being downloaded and recently downloaded files found
-    public let counts: DownloadedFileCounts
+    public var counts: DownloadedFileCounts
 
     /// File identifier
-    public let fileId: Int
+    public var fileId: Int
 
     /// True, if downloading of the file is paused
-    public let isPaused: Bool
+    public var isPaused: Bool
 
 
     public init(
@@ -2430,10 +2430,10 @@ public struct UpdateFileDownload: Codable, Equatable, Hashable {
 public struct UpdateFileRemovedFromDownloads: Codable, Equatable, Hashable {
 
     /// New number of being downloaded and recently downloaded files found
-    public let counts: DownloadedFileCounts
+    public var counts: DownloadedFileCounts
 
     /// File identifier
-    public let fileId: Int
+    public var fileId: Int
 
 
     public init(
@@ -2449,7 +2449,7 @@ public struct UpdateFileRemovedFromDownloads: Codable, Equatable, Hashable {
 public struct UpdateCall: Codable, Equatable, Hashable {
 
     /// New data about a call
-    public let call: Call
+    public var call: Call
 
 
     public init(call: Call) {
@@ -2461,7 +2461,7 @@ public struct UpdateCall: Codable, Equatable, Hashable {
 public struct UpdateGroupCall: Codable, Equatable, Hashable {
 
     /// New data about a group call
-    public let groupCall: GroupCall
+    public var groupCall: GroupCall
 
 
     public init(groupCall: GroupCall) {
@@ -2473,10 +2473,10 @@ public struct UpdateGroupCall: Codable, Equatable, Hashable {
 public struct UpdateGroupCallParticipant: Codable, Equatable, Hashable {
 
     /// Identifier of group call
-    public let groupCallId: Int
+    public var groupCallId: Int
 
     /// New data about a participant
-    public let participant: GroupCallParticipant
+    public var participant: GroupCallParticipant
 
 
     public init(
@@ -2492,10 +2492,10 @@ public struct UpdateGroupCallParticipant: Codable, Equatable, Hashable {
 public struct UpdateNewCallSignalingData: Codable, Equatable, Hashable {
 
     /// The call identifier
-    public let callId: Int
+    public var callId: Int
 
     /// The data
-    public let data: Data
+    public var data: Data
 
 
     public init(
@@ -2511,10 +2511,10 @@ public struct UpdateNewCallSignalingData: Codable, Equatable, Hashable {
 public struct UpdateUserPrivacySettingRules: Codable, Equatable, Hashable {
 
     /// New privacy rules
-    public let rules: UserPrivacySettingRules
+    public var rules: UserPrivacySettingRules
 
     /// The privacy setting
-    public let setting: UserPrivacySetting
+    public var setting: UserPrivacySetting
 
 
     public init(
@@ -2530,13 +2530,13 @@ public struct UpdateUserPrivacySettingRules: Codable, Equatable, Hashable {
 public struct UpdateUnreadMessageCount: Codable, Equatable, Hashable {
 
     /// The chat list with changed number of unread messages
-    public let chatList: ChatList
+    public var chatList: ChatList
 
     /// Total number of unread messages
-    public let unreadCount: Int
+    public var unreadCount: Int
 
     /// Total number of unread messages in unmuted chats
-    public let unreadUnmutedCount: Int
+    public var unreadUnmutedCount: Int
 
 
     public init(
@@ -2554,22 +2554,22 @@ public struct UpdateUnreadMessageCount: Codable, Equatable, Hashable {
 public struct UpdateUnreadChatCount: Codable, Equatable, Hashable {
 
     /// The chat list with changed number of unread messages
-    public let chatList: ChatList
+    public var chatList: ChatList
 
     /// Total number of chats marked as unread
-    public let markedAsUnreadCount: Int
+    public var markedAsUnreadCount: Int
 
     /// Total number of unmuted chats marked as unread
-    public let markedAsUnreadUnmutedCount: Int
+    public var markedAsUnreadUnmutedCount: Int
 
     /// Approximate total number of chats in the chat list
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// Total number of unread chats
-    public let unreadCount: Int
+    public var unreadCount: Int
 
     /// Total number of unread unmuted chats
-    public let unreadUnmutedCount: Int
+    public var unreadUnmutedCount: Int
 
 
     public init(
@@ -2593,10 +2593,10 @@ public struct UpdateUnreadChatCount: Codable, Equatable, Hashable {
 public struct UpdateOption: Codable, Equatable, Hashable {
 
     /// The option name
-    public let name: String
+    public var name: String
 
     /// The new option value
-    public let value: OptionValue
+    public var value: OptionValue
 
 
     public init(
@@ -2612,7 +2612,7 @@ public struct UpdateOption: Codable, Equatable, Hashable {
 public struct UpdateStickerSet: Codable, Equatable, Hashable {
 
     /// The sticker set
-    public let stickerSet: StickerSet
+    public var stickerSet: StickerSet
 
 
     public init(stickerSet: StickerSet) {
@@ -2624,10 +2624,10 @@ public struct UpdateStickerSet: Codable, Equatable, Hashable {
 public struct UpdateInstalledStickerSets: Codable, Equatable, Hashable {
 
     /// The new list of installed ordinary sticker sets
-    public let stickerSetIds: [TdInt64]
+    public var stickerSetIds: [TdInt64]
 
     /// Type of the affected stickers
-    public let stickerType: StickerType
+    public var stickerType: StickerType
 
 
     public init(
@@ -2643,10 +2643,10 @@ public struct UpdateInstalledStickerSets: Codable, Equatable, Hashable {
 public struct UpdateTrendingStickerSets: Codable, Equatable, Hashable {
 
     /// The prefix of the list of trending sticker sets with the newest trending sticker sets
-    public let stickerSets: TrendingStickerSets
+    public var stickerSets: TrendingStickerSets
 
     /// Type of the affected stickers
-    public let stickerType: StickerType
+    public var stickerType: StickerType
 
 
     public init(
@@ -2662,10 +2662,10 @@ public struct UpdateTrendingStickerSets: Codable, Equatable, Hashable {
 public struct UpdateRecentStickers: Codable, Equatable, Hashable {
 
     /// True, if the list of stickers attached to photo or video files was updated; otherwise, the list of sent stickers is updated
-    public let isAttached: Bool
+    public var isAttached: Bool
 
     /// The new list of file identifiers of recently used stickers
-    public let stickerIds: [Int]
+    public var stickerIds: [Int]
 
 
     public init(
@@ -2681,7 +2681,7 @@ public struct UpdateRecentStickers: Codable, Equatable, Hashable {
 public struct UpdateFavoriteStickers: Codable, Equatable, Hashable {
 
     /// The new list of file identifiers of favorite stickers
-    public let stickerIds: [Int]
+    public var stickerIds: [Int]
 
 
     public init(stickerIds: [Int]) {
@@ -2693,7 +2693,7 @@ public struct UpdateFavoriteStickers: Codable, Equatable, Hashable {
 public struct UpdateSavedAnimations: Codable, Equatable, Hashable {
 
     /// The new list of file identifiers of saved animations
-    public let animationIds: [Int]
+    public var animationIds: [Int]
 
 
     public init(animationIds: [Int]) {
@@ -2705,7 +2705,7 @@ public struct UpdateSavedAnimations: Codable, Equatable, Hashable {
 public struct UpdateSavedNotificationSounds: Codable, Equatable, Hashable {
 
     /// The new list of identifiers of saved notification sounds
-    public let notificationSoundIds: [TdInt64]
+    public var notificationSoundIds: [TdInt64]
 
 
     public init(notificationSoundIds: [TdInt64]) {
@@ -2717,10 +2717,10 @@ public struct UpdateSavedNotificationSounds: Codable, Equatable, Hashable {
 public struct UpdateSelectedBackground: Codable, Equatable, Hashable {
 
     /// The new selected background; may be null
-    public let background: Background?
+    public var background: Background?
 
     /// True, if background for dark theme has changed
-    public let forDarkTheme: Bool
+    public var forDarkTheme: Bool
 
 
     public init(
@@ -2736,7 +2736,7 @@ public struct UpdateSelectedBackground: Codable, Equatable, Hashable {
 public struct UpdateChatThemes: Codable, Equatable, Hashable {
 
     /// The new list of chat themes
-    public let chatThemes: [ChatTheme]
+    public var chatThemes: [ChatTheme]
 
 
     public init(chatThemes: [ChatTheme]) {
@@ -2748,13 +2748,13 @@ public struct UpdateChatThemes: Codable, Equatable, Hashable {
 public struct UpdateLanguagePackStrings: Codable, Equatable, Hashable {
 
     /// Identifier of the updated language pack
-    public let languagePackId: String
+    public var languagePackId: String
 
     /// Localization target to which the language pack belongs
-    public let localizationTarget: String
+    public var localizationTarget: String
 
     /// List of changed language pack strings; empty if all strings have changed
-    public let strings: [LanguagePackString]
+    public var strings: [LanguagePackString]
 
 
     public init(
@@ -2772,7 +2772,7 @@ public struct UpdateLanguagePackStrings: Codable, Equatable, Hashable {
 public struct UpdateConnectionState: Codable, Equatable, Hashable {
 
     /// The new connection state
-    public let state: ConnectionState
+    public var state: ConnectionState
 
 
     public init(state: ConnectionState) {
@@ -2784,10 +2784,10 @@ public struct UpdateConnectionState: Codable, Equatable, Hashable {
 public struct UpdateTermsOfService: Codable, Equatable, Hashable {
 
     /// The new terms of service
-    public let termsOfService: TermsOfService
+    public var termsOfService: TermsOfService
 
     /// Identifier of the terms of service
-    public let termsOfServiceId: String
+    public var termsOfServiceId: String
 
 
     public init(
@@ -2803,7 +2803,7 @@ public struct UpdateTermsOfService: Codable, Equatable, Hashable {
 public struct UpdateUsersNearby: Codable, Equatable, Hashable {
 
     /// The new list of users nearby
-    public let usersNearby: [ChatNearby]
+    public var usersNearby: [ChatNearby]
 
 
     public init(usersNearby: [ChatNearby]) {
@@ -2815,7 +2815,7 @@ public struct UpdateUsersNearby: Codable, Equatable, Hashable {
 public struct UpdateAttachmentMenuBots: Codable, Equatable, Hashable {
 
     /// The new list of bots added to attachment menu. The bots must not be shown on scheduled messages screen
-    public let bots: [AttachmentMenuBot]
+    public var bots: [AttachmentMenuBot]
 
 
     public init(bots: [AttachmentMenuBot]) {
@@ -2827,7 +2827,7 @@ public struct UpdateAttachmentMenuBots: Codable, Equatable, Hashable {
 public struct UpdateWebAppMessageSent: Codable, Equatable, Hashable {
 
     /// Identifier of Web App launch
-    public let webAppLaunchId: TdInt64
+    public var webAppLaunchId: TdInt64
 
 
     public init(webAppLaunchId: TdInt64) {
@@ -2839,7 +2839,7 @@ public struct UpdateWebAppMessageSent: Codable, Equatable, Hashable {
 public struct UpdateActiveEmojiReactions: Codable, Equatable, Hashable {
 
     /// The new list of active emoji reactions
-    public let emojis: [String]
+    public var emojis: [String]
 
 
     public init(emojis: [String]) {
@@ -2851,7 +2851,7 @@ public struct UpdateActiveEmojiReactions: Codable, Equatable, Hashable {
 public struct UpdateDefaultReactionType: Codable, Equatable, Hashable {
 
     /// The new type of the default reaction
-    public let reactionType: ReactionType
+    public var reactionType: ReactionType
 
 
     public init(reactionType: ReactionType) {
@@ -2863,7 +2863,7 @@ public struct UpdateDefaultReactionType: Codable, Equatable, Hashable {
 public struct UpdateDiceEmojis: Codable, Equatable, Hashable {
 
     /// The new list of supported dice emojis
-    public let emojis: [String]
+    public var emojis: [String]
 
 
     public init(emojis: [String]) {
@@ -2875,13 +2875,13 @@ public struct UpdateDiceEmojis: Codable, Equatable, Hashable {
 public struct UpdateAnimatedEmojiMessageClicked: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// The animated sticker to be played
-    public let sticker: Sticker
+    public var sticker: Sticker
 
 
     public init(
@@ -2899,10 +2899,10 @@ public struct UpdateAnimatedEmojiMessageClicked: Codable, Equatable, Hashable {
 public struct UpdateAnimationSearchParameters: Codable, Equatable, Hashable {
 
     /// The new list of emojis suggested for searching
-    public let emojis: [String]
+    public var emojis: [String]
 
     /// Name of the animation search provider
-    public let provider: String
+    public var provider: String
 
 
     public init(
@@ -2918,10 +2918,10 @@ public struct UpdateAnimationSearchParameters: Codable, Equatable, Hashable {
 public struct UpdateSuggestedActions: Codable, Equatable, Hashable {
 
     /// Added suggested actions
-    public let addedActions: [SuggestedAction]
+    public var addedActions: [SuggestedAction]
 
     /// Removed suggested actions
-    public let removedActions: [SuggestedAction]
+    public var removedActions: [SuggestedAction]
 
 
     public init(
@@ -2937,10 +2937,10 @@ public struct UpdateSuggestedActions: Codable, Equatable, Hashable {
 public struct UpdateAddChatMembersPrivacyForbidden: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Identifiers of users, which weren't added because of their privacy settings
-    public let userIds: [Int64]
+    public var userIds: [Int64]
 
 
     public init(
@@ -2956,10 +2956,10 @@ public struct UpdateAddChatMembersPrivacyForbidden: Codable, Equatable, Hashable
 public struct UpdateAutosaveSettings: Codable, Equatable, Hashable {
 
     /// Type of chats for which autosave settings were updated
-    public let scope: AutosaveSettingsScope
+    public var scope: AutosaveSettingsScope
 
     /// The new autosave settings; may be null if the settings are reset to default
-    public let settings: ScopeAutosaveSettings?
+    public var settings: ScopeAutosaveSettings?
 
 
     public init(
@@ -2975,22 +2975,22 @@ public struct UpdateAutosaveSettings: Codable, Equatable, Hashable {
 public struct UpdateNewInlineQuery: Codable, Equatable, Hashable, Identifiable {
 
     /// The type of the chat from which the query originated; may be null if unknown
-    public let chatType: ChatType?
+    public var chatType: ChatType?
 
     /// Unique query identifier
     public let id: TdInt64
 
     /// Offset of the first entry to return
-    public let offset: String
+    public var offset: String
 
     /// Text of the query
-    public let query: String
+    public var query: String
 
     /// Identifier of the user who sent the query
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
     /// User location; may be null
-    public let userLocation: Location?
+    public var userLocation: Location?
 
 
     public init(
@@ -3014,19 +3014,19 @@ public struct UpdateNewInlineQuery: Codable, Equatable, Hashable, Identifiable {
 public struct UpdateNewChosenInlineResult: Codable, Equatable, Hashable {
 
     /// Identifier of the sent inline message, if known
-    public let inlineMessageId: String
+    public var inlineMessageId: String
 
     /// Text of the query
-    public let query: String
+    public var query: String
 
     /// Identifier of the chosen result
-    public let resultId: String
+    public var resultId: String
 
     /// Identifier of the user who sent the query
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
     /// User location; may be null
-    public let userLocation: Location?
+    public var userLocation: Location?
 
 
     public init(
@@ -3048,22 +3048,22 @@ public struct UpdateNewChosenInlineResult: Codable, Equatable, Hashable {
 public struct UpdateNewCallbackQuery: Codable, Equatable, Hashable, Identifiable {
 
     /// Identifier of the chat where the query was sent
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Identifier that uniquely corresponds to the chat to which the message was sent
-    public let chatInstance: TdInt64
+    public var chatInstance: TdInt64
 
     /// Unique query identifier
     public let id: TdInt64
 
     /// Identifier of the message from which the query originated
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// Query payload
-    public let payload: CallbackQueryPayload
+    public var payload: CallbackQueryPayload
 
     /// Identifier of the user who sent the query
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
 
     public init(
@@ -3087,19 +3087,19 @@ public struct UpdateNewCallbackQuery: Codable, Equatable, Hashable, Identifiable
 public struct UpdateNewInlineCallbackQuery: Codable, Equatable, Hashable, Identifiable {
 
     /// An identifier uniquely corresponding to the chat a message was sent to
-    public let chatInstance: TdInt64
+    public var chatInstance: TdInt64
 
     /// Unique query identifier
     public let id: TdInt64
 
     /// Identifier of the inline message from which the query originated
-    public let inlineMessageId: String
+    public var inlineMessageId: String
 
     /// Query payload
-    public let payload: CallbackQueryPayload
+    public var payload: CallbackQueryPayload
 
     /// Identifier of the user who sent the query
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
 
     public init(
@@ -3124,13 +3124,13 @@ public struct UpdateNewShippingQuery: Codable, Equatable, Hashable, Identifiable
     public let id: TdInt64
 
     /// Invoice payload
-    public let invoicePayload: String
+    public var invoicePayload: String
 
     /// Identifier of the user who sent the query
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
     /// User shipping address
-    public let shippingAddress: Address
+    public var shippingAddress: Address
 
 
     public init(
@@ -3150,25 +3150,25 @@ public struct UpdateNewShippingQuery: Codable, Equatable, Hashable, Identifiable
 public struct UpdateNewPreCheckoutQuery: Codable, Equatable, Hashable, Identifiable {
 
     /// Currency for the product price
-    public let currency: String
+    public var currency: String
 
     /// Unique query identifier
     public let id: TdInt64
 
     /// Invoice payload
-    public let invoicePayload: Data
+    public var invoicePayload: Data
 
     /// Information about the order; may be null
-    public let orderInfo: OrderInfo?
+    public var orderInfo: OrderInfo?
 
     /// Identifier of the user who sent the query
-    public let senderUserId: Int64
+    public var senderUserId: Int64
 
     /// Identifier of a shipping option chosen by the user; may be empty if not applicable
-    public let shippingOptionId: String
+    public var shippingOptionId: String
 
     /// Total price for the product, in the smallest units of the currency
-    public let totalAmount: Int64
+    public var totalAmount: Int64
 
 
     public init(
@@ -3194,7 +3194,7 @@ public struct UpdateNewPreCheckoutQuery: Codable, Equatable, Hashable, Identifia
 public struct UpdateNewCustomEvent: Codable, Equatable, Hashable {
 
     /// A JSON-serialized event
-    public let event: String
+    public var event: String
 
 
     public init(event: String) {
@@ -3206,13 +3206,13 @@ public struct UpdateNewCustomEvent: Codable, Equatable, Hashable {
 public struct UpdateNewCustomQuery: Codable, Equatable, Hashable, Identifiable {
 
     /// JSON-serialized query data
-    public let data: String
+    public var data: String
 
     /// The query identifier
     public let id: TdInt64
 
     /// Query timeout
-    public let timeout: Int
+    public var timeout: Int
 
 
     public init(
@@ -3230,7 +3230,7 @@ public struct UpdateNewCustomQuery: Codable, Equatable, Hashable, Identifiable {
 public struct UpdatePoll: Codable, Equatable, Hashable {
 
     /// New data about the poll
-    public let poll: Poll
+    public var poll: Poll
 
 
     public init(poll: Poll) {
@@ -3242,13 +3242,13 @@ public struct UpdatePoll: Codable, Equatable, Hashable {
 public struct UpdatePollAnswer: Codable, Equatable, Hashable {
 
     /// 0-based identifiers of answer options, chosen by the user
-    public let optionIds: [Int]
+    public var optionIds: [Int]
 
     /// Unique poll identifier
-    public let pollId: TdInt64
+    public var pollId: TdInt64
 
     /// The user, who changed the answer to the poll
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(
@@ -3266,25 +3266,25 @@ public struct UpdatePollAnswer: Codable, Equatable, Hashable {
 public struct UpdateChatMember: Codable, Equatable, Hashable {
 
     /// Identifier of the user, changing the rights
-    public let actorUserId: Int64
+    public var actorUserId: Int64
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Point in time (Unix timestamp) when the user rights was changed
-    public let date: Int
+    public var date: Int
 
     /// If user has joined the chat using an invite link, the invite link; may be null
-    public let inviteLink: ChatInviteLink?
+    public var inviteLink: ChatInviteLink?
 
     /// New chat member
-    public let newChatMember: ChatMember
+    public var newChatMember: ChatMember
 
     /// Previous chat member
-    public let oldChatMember: ChatMember
+    public var oldChatMember: ChatMember
 
     /// True, if the user has joined the chat using an invite link for a chat folder
-    public let viaChatFolderInviteLink: Bool
+    public var viaChatFolderInviteLink: Bool
 
 
     public init(
@@ -3310,16 +3310,16 @@ public struct UpdateChatMember: Codable, Equatable, Hashable {
 public struct UpdateNewChatJoinRequest: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// The invite link, which was used to send join request; may be null
-    public let inviteLink: ChatInviteLink?
+    public var inviteLink: ChatInviteLink?
 
     /// Join request
-    public let request: ChatJoinRequest
+    public var request: ChatJoinRequest
 
     /// Chat identifier of the private chat with the user
-    public let userChatId: Int64
+    public var userChatId: Int64
 
 
     public init(

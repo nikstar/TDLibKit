@@ -14,13 +14,13 @@ import Foundation
 public struct ChatTheme: Codable, Equatable, Hashable {
 
     /// Theme settings for a dark chat theme
-    public let darkSettings: ThemeSettings
+    public var darkSettings: ThemeSettings
 
     /// Theme settings for a light chat theme
-    public let lightSettings: ThemeSettings
+    public var lightSettings: ThemeSettings
 
     /// Theme name
-    public let name: String
+    public var name: String
 
 
     public init(

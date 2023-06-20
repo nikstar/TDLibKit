@@ -14,13 +14,13 @@ import Foundation
 public struct ChatJoinRequest: Codable, Equatable, Hashable {
 
     /// A short bio of the user
-    public let bio: String
+    public var bio: String
 
     /// Point in time (Unix timestamp) when the user sent the join request
-    public let date: Int
+    public var date: Int
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

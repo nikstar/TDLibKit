@@ -73,10 +73,10 @@ public enum NotificationType: Codable, Equatable, Hashable {
 public struct NotificationTypeNewMessage: Codable, Equatable, Hashable {
 
     /// The message
-    public let message: Message
+    public var message: Message
 
     /// True, if message content must be displayed in notifications
-    public let showPreview: Bool
+    public var showPreview: Bool
 
 
     public init(
@@ -92,7 +92,7 @@ public struct NotificationTypeNewMessage: Codable, Equatable, Hashable {
 public struct NotificationTypeNewCall: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int
+    public var callId: Int
 
 
     public init(callId: Int) {
@@ -104,19 +104,19 @@ public struct NotificationTypeNewCall: Codable, Equatable, Hashable {
 public struct NotificationTypeNewPushMessage: Codable, Equatable, Hashable {
 
     /// Push message content
-    public let content: PushMessageContent
+    public var content: PushMessageContent
 
     /// True, if the message is outgoing
-    public let isOutgoing: Bool
+    public var isOutgoing: Bool
 
     /// The message identifier. The message will not be available in the chat history, but the ID can be used in viewMessages, or as reply_to_message_id
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// Identifier of the sender of the message. Corresponding user or chat may be inaccessible
-    public let senderId: MessageSender
+    public var senderId: MessageSender
 
     /// Name of the sender
-    public let senderName: String
+    public var senderName: String
 
 
     public init(

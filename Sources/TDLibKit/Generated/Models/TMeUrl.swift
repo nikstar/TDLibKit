@@ -14,10 +14,10 @@ import Foundation
 public struct TMeUrl: Codable, Equatable, Hashable {
 
     /// Type of the URL
-    public let type: TMeUrlType
+    public var type: TMeUrlType
 
     /// URL
-    public let url: String
+    public var url: String
 
 
     public init(

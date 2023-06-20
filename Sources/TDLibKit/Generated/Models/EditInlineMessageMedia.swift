@@ -14,13 +14,13 @@ import Foundation
 public struct EditInlineMessageMedia: Codable, Equatable, Hashable {
 
     /// Inline message identifier
-    public let inlineMessageId: String?
+    public var inlineMessageId: String?
 
     /// New content of the message. Must be one of the following types: inputMessageAnimation, inputMessageAudio, inputMessageDocument, inputMessagePhoto or inputMessageVideo
-    public let inputMessageContent: InputMessageContent?
+    public var inputMessageContent: InputMessageContent?
 
     /// The new message reply markup; pass null if none; for bots only
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

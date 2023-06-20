@@ -14,13 +14,13 @@ import Foundation
 public struct GetGroupsInCommon: Codable, Equatable, Hashable {
 
     /// The maximum number of chats to be returned; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Chat identifier starting from which to return chats; use 0 for the first request
-    public let offsetChatId: Int64?
+    public var offsetChatId: Int64?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

@@ -14,19 +14,19 @@ import Foundation
 public struct StorageStatisticsFast: Codable, Equatable, Hashable {
 
     /// Size of the database
-    public let databaseSize: Int64
+    public var databaseSize: Int64
 
     /// Approximate number of files
-    public let fileCount: Int
+    public var fileCount: Int
 
     /// Approximate total size of files, in bytes
-    public let filesSize: Int64
+    public var filesSize: Int64
 
     /// Size of the language pack database
-    public let languagePackDatabaseSize: Int64
+    public var languagePackDatabaseSize: Int64
 
     /// Size of the TDLib internal log
-    public let logSize: Int64
+    public var logSize: Int64
 
 
     public init(

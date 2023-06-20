@@ -14,10 +14,10 @@ import Foundation
 public struct PremiumFeaturePromotionAnimation: Codable, Equatable, Hashable {
 
     /// Promotion animation for the feature
-    public let animation: Animation
+    public var animation: Animation
 
     /// Premium feature
-    public let feature: PremiumFeature
+    public var feature: PremiumFeature
 
 
     public init(

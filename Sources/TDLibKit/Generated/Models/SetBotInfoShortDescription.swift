@@ -14,13 +14,13 @@ import Foundation
 public struct SetBotInfoShortDescription: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// A two-letter ISO 639-1 language code. If empty, the short description will be shown to all users for whose languages there is no dedicated description
-    public let languageCode: String?
+    public var languageCode: String?
 
     /// New bot's short description on the specified language
-    public let shortDescription: String?
+    public var shortDescription: String?
 
 
     public init(

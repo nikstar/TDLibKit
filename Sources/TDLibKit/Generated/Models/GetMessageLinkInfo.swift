@@ -14,7 +14,7 @@ import Foundation
 public struct GetMessageLinkInfo: Codable, Equatable, Hashable {
 
     /// The message link
-    public let url: String?
+    public var url: String?
 
 
     public init(url: String?) {

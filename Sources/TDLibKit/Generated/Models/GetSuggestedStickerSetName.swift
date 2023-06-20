@@ -14,7 +14,7 @@ import Foundation
 public struct GetSuggestedStickerSetName: Codable, Equatable, Hashable {
 
     /// Sticker set title; 1-64 characters
-    public let title: String?
+    public var title: String?
 
 
     public init(title: String?) {

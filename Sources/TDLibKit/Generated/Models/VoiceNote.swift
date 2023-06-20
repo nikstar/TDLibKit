@@ -14,19 +14,19 @@ import Foundation
 public struct VoiceNote: Codable, Equatable, Hashable {
 
     /// Duration of the voice note, in seconds; as defined by the sender
-    public let duration: Int
+    public var duration: Int
 
     /// MIME type of the file; as defined by the sender
-    public let mimeType: String
+    public var mimeType: String
 
     /// Result of speech recognition in the voice note; may be null
-    public let speechRecognitionResult: SpeechRecognitionResult?
+    public var speechRecognitionResult: SpeechRecognitionResult?
 
     /// File containing the voice note
-    public let voice: File
+    public var voice: File
 
     /// A waveform representation of the voice note in 5-bit format
-    public let waveform: Data
+    public var waveform: Data
 
 
     public init(

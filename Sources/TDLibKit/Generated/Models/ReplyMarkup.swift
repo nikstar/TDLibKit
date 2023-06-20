@@ -75,7 +75,7 @@ public enum ReplyMarkup: Codable, Equatable, Hashable {
 public struct ReplyMarkupRemoveKeyboard: Codable, Equatable, Hashable {
 
     /// True, if the keyboard is removed only for the mentioned users or the target user of a reply
-    public let isPersonal: Bool
+    public var isPersonal: Bool
 
 
     public init(isPersonal: Bool) {
@@ -87,10 +87,10 @@ public struct ReplyMarkupRemoveKeyboard: Codable, Equatable, Hashable {
 public struct ReplyMarkupForceReply: Codable, Equatable, Hashable {
 
     /// If non-empty, the placeholder to be shown in the input field when the reply is active; 0-64 characters
-    public let inputFieldPlaceholder: String
+    public var inputFieldPlaceholder: String
 
     /// True, if a forced reply must automatically be shown to the current user. For outgoing messages, specify true to show the forced reply only for the mentioned users and for the target user of a reply
-    public let isPersonal: Bool
+    public var isPersonal: Bool
 
 
     public init(
@@ -106,22 +106,22 @@ public struct ReplyMarkupForceReply: Codable, Equatable, Hashable {
 public struct ReplyMarkupShowKeyboard: Codable, Equatable, Hashable {
 
     /// If non-empty, the placeholder to be shown in the input field when the keyboard is active; 0-64 characters
-    public let inputFieldPlaceholder: String
+    public var inputFieldPlaceholder: String
 
     /// True, if the keyboard is supposed to always be shown when the ordinary keyboard is hidden
-    public let isPersistent: Bool
+    public var isPersistent: Bool
 
     /// True, if the keyboard must automatically be shown to the current user. For outgoing messages, specify true to show the keyboard only for the mentioned users and for the target user of a reply
-    public let isPersonal: Bool
+    public var isPersonal: Bool
 
     /// True, if the application needs to hide the keyboard after use
-    public let oneTime: Bool
+    public var oneTime: Bool
 
     /// True, if the application needs to resize the keyboard vertically
-    public let resizeKeyboard: Bool
+    public var resizeKeyboard: Bool
 
     /// A list of rows of bot keyboard buttons
-    public let rows: [[KeyboardButton]]
+    public var rows: [[KeyboardButton]]
 
 
     public init(
@@ -145,7 +145,7 @@ public struct ReplyMarkupShowKeyboard: Codable, Equatable, Hashable {
 public struct ReplyMarkupInlineKeyboard: Codable, Equatable, Hashable {
 
     /// A list of rows of inline keyboard buttons
-    public let rows: [[InlineKeyboardButton]]
+    public var rows: [[InlineKeyboardButton]]
 
 
     public init(rows: [[InlineKeyboardButton]]) {

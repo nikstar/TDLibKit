@@ -14,7 +14,7 @@ import Foundation
 public struct RecoveryEmailAddress: Codable, Equatable, Hashable {
 
     /// Recovery email address
-    public let recoveryEmailAddress: String
+    public var recoveryEmailAddress: String
 
 
     public init(recoveryEmailAddress: String) {

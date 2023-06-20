@@ -17,16 +17,16 @@ public struct BasicGroup: Codable, Equatable, Hashable, Identifiable {
     public let id: Int64
 
     /// True, if the group is active
-    public let isActive: Bool
+    public var isActive: Bool
 
     /// Number of members in the group
-    public let memberCount: Int
+    public var memberCount: Int
 
     /// Status of the current user in the group
-    public let status: ChatMemberStatus
+    public var status: ChatMemberStatus
 
     /// Identifier of the supergroup to which this group was upgraded; 0 if none
-    public let upgradedToSupergroupId: Int64
+    public var upgradedToSupergroupId: Int64
 
 
     public init(

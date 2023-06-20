@@ -14,7 +14,7 @@ import Foundation
 public struct GetEmojiReaction: Codable, Equatable, Hashable {
 
     /// Text representation of the reaction
-    public let emoji: String?
+    public var emoji: String?
 
 
     public init(emoji: String?) {

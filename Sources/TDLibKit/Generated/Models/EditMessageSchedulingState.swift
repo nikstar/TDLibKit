@@ -14,13 +14,13 @@ import Foundation
 public struct EditMessageSchedulingState: Codable, Equatable, Hashable {
 
     /// The chat the message belongs to
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// The new message scheduling state; pass null to send the message immediately
-    public let schedulingState: MessageSchedulingState?
+    public var schedulingState: MessageSchedulingState?
 
 
     public init(

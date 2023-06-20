@@ -14,25 +14,25 @@ import Foundation
 public struct ThemeParameters: Codable, Equatable, Hashable {
 
     /// A color of the background in the RGB24 format
-    public let backgroundColor: Int
+    public var backgroundColor: Int
 
     /// A color of the buttons in the RGB24 format
-    public let buttonColor: Int
+    public var buttonColor: Int
 
     /// A color of text on the buttons in the RGB24 format
-    public let buttonTextColor: Int
+    public var buttonTextColor: Int
 
     /// A color of hints in the RGB24 format
-    public let hintColor: Int
+    public var hintColor: Int
 
     /// A color of links in the RGB24 format
-    public let linkColor: Int
+    public var linkColor: Int
 
     /// A secondary color for the background in the RGB24 format
-    public let secondaryBackgroundColor: Int
+    public var secondaryBackgroundColor: Int
 
     /// A color of text in the RGB24 format
-    public let textColor: Int
+    public var textColor: Int
 
 
     public init(

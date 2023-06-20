@@ -14,13 +14,13 @@ import Foundation
 public struct SetChatDraftMessage: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New draft message; pass null to remove the draft
-    public let draftMessage: DraftMessage?
+    public var draftMessage: DraftMessage?
 
     /// If not 0, a message thread identifier in which the draft was changed
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct InlineQueryResultsButton: Codable, Equatable, Hashable {
 
     /// The text of the button
-    public let text: String
+    public var text: String
 
     /// Type of the button
-    public let type: InlineQueryResultsButtonType
+    public var type: InlineQueryResultsButtonType
 
 
     public init(

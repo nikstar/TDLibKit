@@ -14,7 +14,7 @@ import Foundation
 public struct ChatEvents: Codable, Equatable, Hashable {
 
     /// List of events
-    public let events: [ChatEvent]
+    public var events: [ChatEvent]
 
 
     public init(events: [ChatEvent]) {

@@ -14,7 +14,7 @@ import Foundation
 public struct CheckChatInviteLink: Codable, Equatable, Hashable {
 
     /// Invite link to be checked
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(inviteLink: String?) {

@@ -14,13 +14,13 @@ import Foundation
 public struct SearchEmojis: Codable, Equatable, Hashable {
 
     /// Pass true if only emojis, which exactly match the text, needs to be returned
-    public let exactMatch: Bool?
+    public var exactMatch: Bool?
 
     /// List of possible IETF language tags of the user's input language; may be empty if unknown
-    public let inputLanguageCodes: [String]?
+    public var inputLanguageCodes: [String]?
 
     /// Text to search for
-    public let text: String?
+    public var text: String?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SetStickerSetTitle: Codable, Equatable, Hashable {
 
     /// Sticker set name
-    public let name: String?
+    public var name: String?
 
     /// New sticker set title
-    public let title: String?
+    public var title: String?
 
 
     public init(

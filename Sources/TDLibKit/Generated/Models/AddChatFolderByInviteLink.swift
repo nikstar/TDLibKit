@@ -14,10 +14,10 @@ import Foundation
 public struct AddChatFolderByInviteLink: Codable, Equatable, Hashable {
 
     /// Identifiers of the chats added to the chat folder. The chats are automatically joined if they aren't joined yet
-    public let chatIds: [Int64]?
+    public var chatIds: [Int64]?
 
     /// Invite link for the chat folder
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(

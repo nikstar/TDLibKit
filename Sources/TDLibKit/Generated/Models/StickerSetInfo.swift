@@ -14,43 +14,43 @@ import Foundation
 public struct StickerSetInfo: Codable, Equatable, Hashable, Identifiable {
 
     /// Up to the first 5 stickers from the set, depending on the context. If the application needs more stickers the full sticker set needs to be requested
-    public let covers: [Sticker]
+    public var covers: [Sticker]
 
     /// Identifier of the sticker set
     public let id: TdInt64
 
     /// True, if the sticker set has been archived. A sticker set can't be installed and archived simultaneously
-    public let isArchived: Bool
+    public var isArchived: Bool
 
     /// True, if the sticker set has been installed by the current user
-    public let isInstalled: Bool
+    public var isInstalled: Bool
 
     /// True, if the sticker set is official
-    public let isOfficial: Bool
+    public var isOfficial: Bool
 
     /// True for already viewed trending sticker sets
-    public let isViewed: Bool
+    public var isViewed: Bool
 
     /// Name of the sticker set
-    public let name: String
+    public var name: String
 
     /// Total number of stickers in the set
-    public let size: Int
+    public var size: Int
 
     /// Format of the stickers in the set
-    public let stickerFormat: StickerFormat
+    public var stickerFormat: StickerFormat
 
     /// Type of the stickers in the set
-    public let stickerType: StickerType
+    public var stickerType: StickerType
 
     /// Sticker set thumbnail in WEBP, TGS, or WEBM format with width and height 100; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// Sticker set thumbnail's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner
-    public let thumbnailOutline: [ClosedVectorPath]
+    public var thumbnailOutline: [ClosedVectorPath]
 
     /// Title of the sticker set
-    public let title: String
+    public var title: String
 
 
     public init(

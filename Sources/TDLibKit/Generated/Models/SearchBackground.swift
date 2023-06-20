@@ -14,7 +14,7 @@ import Foundation
 public struct SearchBackground: Codable, Equatable, Hashable {
 
     /// The name of the background
-    public let name: String?
+    public var name: String?
 
 
     public init(name: String?) {

@@ -14,7 +14,7 @@ import Foundation
 public struct Backgrounds: Codable, Equatable, Hashable {
 
     /// A list of backgrounds
-    public let backgrounds: [Background]
+    public var backgrounds: [Background]
 
 
     public init(backgrounds: [Background]) {

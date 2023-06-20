@@ -14,7 +14,7 @@ import Foundation
 public struct GetWebPagePreview: Codable, Equatable, Hashable {
 
     /// Message text with formatting
-    public let text: FormattedText?
+    public var text: FormattedText?
 
 
     public init(text: FormattedText?) {

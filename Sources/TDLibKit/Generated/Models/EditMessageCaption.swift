@@ -14,16 +14,16 @@ import Foundation
 public struct EditMessageCaption: Codable, Equatable, Hashable {
 
     /// New message content caption; 0-getOption("message_caption_length_max") characters; pass null to remove caption
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// The chat the message belongs to
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// The new message reply markup; pass null if none; for bots only
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

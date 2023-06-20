@@ -14,7 +14,7 @@ import Foundation
 public struct TestCallString: Codable, Equatable, Hashable {
 
     /// String to return
-    public let x: String?
+    public var x: String?
 
 
     public init(x: String?) {

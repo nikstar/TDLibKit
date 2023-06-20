@@ -14,13 +14,13 @@ import Foundation
 public struct EmojiCategory: Codable, Equatable, Hashable {
 
     /// List of emojis in the category
-    public let emojis: [String]
+    public var emojis: [String]
 
     /// Custom emoji sticker, which represents icon of the category
-    public let icon: Sticker
+    public var icon: Sticker
 
     /// Name of the category
-    public let name: String
+    public var name: String
 
 
     public init(

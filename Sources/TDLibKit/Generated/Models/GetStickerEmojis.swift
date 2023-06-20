@@ -14,7 +14,7 @@ import Foundation
 public struct GetStickerEmojis: Codable, Equatable, Hashable {
 
     /// Sticker file identifier
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(sticker: InputFile?) {

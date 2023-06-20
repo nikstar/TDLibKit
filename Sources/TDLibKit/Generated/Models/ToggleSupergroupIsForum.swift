@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupIsForum: Codable, Equatable, Hashable {
 
     /// New value of is_forum
-    public let isForum: Bool?
+    public var isForum: Bool?
 
     /// Identifier of the supergroup
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

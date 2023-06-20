@@ -14,10 +14,10 @@ import Foundation
 public struct RegisterUser: Codable, Equatable, Hashable {
 
     /// The first name of the user; 1-64 characters
-    public let firstName: String?
+    public var firstName: String?
 
     /// The last name of the user; 0-64 characters
-    public let lastName: String?
+    public var lastName: String?
 
 
     public init(

@@ -14,22 +14,22 @@ import Foundation
 public struct SetGameScore: Codable, Equatable, Hashable {
 
     /// The chat to which the message with the game belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to edit the game message to include the current scoreboard
-    public let editMessage: Bool?
+    public var editMessage: Bool?
 
     /// Pass true to update the score even if it decreases. If the score is 0, the user will be deleted from the high score table
-    public let force: Bool?
+    public var force: Bool?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// The new score
-    public let score: Int?
+    public var score: Int?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

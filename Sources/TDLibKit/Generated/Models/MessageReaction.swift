@@ -14,16 +14,16 @@ import Foundation
 public struct MessageReaction: Codable, Equatable, Hashable {
 
     /// True, if the reaction is chosen by the current user
-    public let isChosen: Bool
+    public var isChosen: Bool
 
     /// Identifiers of at most 3 recent message senders, added the reaction; available in private, basic group and supergroup chats
-    public let recentSenderIds: [MessageSender]
+    public var recentSenderIds: [MessageSender]
 
     /// Number of times the reaction was added
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// Type of the reaction
-    public let type: ReactionType
+    public var type: ReactionType
 
 
     public init(

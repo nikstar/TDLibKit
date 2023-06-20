@@ -14,22 +14,22 @@ import Foundation
 public struct PageBlockTableCell: Codable, Equatable, Hashable {
 
     /// Horizontal cell content alignment
-    public let align: PageBlockHorizontalAlignment
+    public var align: PageBlockHorizontalAlignment
 
     /// The number of columns the cell spans
-    public let colspan: Int
+    public var colspan: Int
 
     /// True, if it is a header cell
-    public let isHeader: Bool
+    public var isHeader: Bool
 
     /// The number of rows the cell spans
-    public let rowspan: Int
+    public var rowspan: Int
 
     /// Cell text; may be null. If the text is null, then the cell must be invisible
-    public let text: RichText?
+    public var text: RichText?
 
     /// Vertical cell content alignment
-    public let valign: PageBlockVerticalAlignment
+    public var valign: PageBlockVerticalAlignment
 
 
     public init(

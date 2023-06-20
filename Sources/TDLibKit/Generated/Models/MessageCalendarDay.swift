@@ -14,10 +14,10 @@ import Foundation
 public struct MessageCalendarDay: Codable, Equatable, Hashable {
 
     /// First message sent on the day
-    public let message: Message
+    public var message: Message
 
     /// Total number of found messages sent on the day
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

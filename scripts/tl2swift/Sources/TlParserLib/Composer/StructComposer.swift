@@ -54,8 +54,9 @@ final class StructComposer: Composer {
             }
             let type = TypesHelper.getType(propertyInfo.type, optional: propertyInfo.optional)
             let propertyName = TypesHelper.maskSwiftKeyword(propertyInfo.name.underscoreToCamelCase())
+            let kind = propertyName == "id" ? "let" : "var"
             result = result
-                .addLine("public let \(propertyName): \(type)")
+                .addLine("public \(kind) \(propertyName): \(type)")
                 .addBlankLine()
         }
         return result

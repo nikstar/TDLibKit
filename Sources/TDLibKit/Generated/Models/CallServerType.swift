@@ -55,10 +55,10 @@ public enum CallServerType: Codable, Equatable, Hashable {
 public struct CallServerTypeTelegramReflector: Codable, Equatable, Hashable {
 
     /// True, if the server uses TCP instead of UDP
-    public let isTcp: Bool
+    public var isTcp: Bool
 
     /// A peer tag to be used with the reflector
-    public let peerTag: Data
+    public var peerTag: Data
 
 
     public init(
@@ -74,16 +74,16 @@ public struct CallServerTypeTelegramReflector: Codable, Equatable, Hashable {
 public struct CallServerTypeWebrtc: Codable, Equatable, Hashable {
 
     /// Authentication password
-    public let password: String
+    public var password: String
 
     /// True, if the server supports STUN
-    public let supportsStun: Bool
+    public var supportsStun: Bool
 
     /// True, if the server supports TURN
-    public let supportsTurn: Bool
+    public var supportsTurn: Bool
 
     /// Username to be used for authentication
-    public let username: String
+    public var username: String
 
 
     public init(

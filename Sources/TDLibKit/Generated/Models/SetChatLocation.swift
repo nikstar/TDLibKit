@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatLocation: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New location for the chat; must be valid and not null
-    public let location: ChatLocation?
+    public var location: ChatLocation?
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleGroupCallParticipantIsMuted: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Pass true to mute the user; pass false to unmute the them
-    public let isMuted: Bool?
+    public var isMuted: Bool?
 
     /// Participant identifier
-    public let participantId: MessageSender?
+    public var participantId: MessageSender?
 
 
     public init(

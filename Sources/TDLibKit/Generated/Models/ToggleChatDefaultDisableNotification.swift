@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleChatDefaultDisableNotification: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New value of default_disable_notification
-    public let defaultDisableNotification: Bool?
+    public var defaultDisableNotification: Bool?
 
 
     public init(

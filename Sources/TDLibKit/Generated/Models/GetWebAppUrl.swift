@@ -14,16 +14,16 @@ import Foundation
 public struct GetWebAppUrl: Codable, Equatable, Hashable {
 
     /// Short name of the application; 0-64 English letters, digits, and underscores
-    public let applicationName: String?
+    public var applicationName: String?
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Preferred Web App theme; pass null to use the default theme
-    public let theme: ThemeParameters?
+    public var theme: ThemeParameters?
 
     /// The URL from the keyboardButtonTypeWebApp or inlineQueryResultsButtonTypeWebApp button
-    public let url: String?
+    public var url: String?
 
 
     public init(

@@ -14,16 +14,16 @@ import Foundation
 public struct PassportSuitableElement: Codable, Equatable, Hashable {
 
     /// True, if personal details must include the user's name in the language of their country of residence
-    public let isNativeNameRequired: Bool
+    public var isNativeNameRequired: Bool
 
     /// True, if a selfie is required with the identity document
-    public let isSelfieRequired: Bool
+    public var isSelfieRequired: Bool
 
     /// True, if a certified English translation is required with the document
-    public let isTranslationRequired: Bool
+    public var isTranslationRequired: Bool
 
     /// Type of the element
-    public let type: PassportElementType
+    public var type: PassportElementType
 
 
     public init(

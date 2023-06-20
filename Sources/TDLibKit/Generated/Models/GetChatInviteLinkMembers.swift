@@ -14,16 +14,16 @@ import Foundation
 public struct GetChatInviteLinkMembers: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Invite link for which to return chat members
-    public let inviteLink: String?
+    public var inviteLink: String?
 
     /// The maximum number of chat members to return; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// A chat member from which to return next chat members; pass null to get results from the beginning
-    public let offsetMember: ChatInviteLinkMember?
+    public var offsetMember: ChatInviteLinkMember?
 
 
     public init(

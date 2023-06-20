@@ -14,7 +14,7 @@ import Foundation
 public struct ChatLists: Codable, Equatable, Hashable {
 
     /// List of chat lists
-    public let chatLists: [ChatList]
+    public var chatLists: [ChatList]
 
 
     public init(chatLists: [ChatList]) {

@@ -14,13 +14,13 @@ import Foundation
 public struct Location: Codable, Equatable, Hashable {
 
     /// The estimated horizontal accuracy of the location, in meters; as defined by the sender. 0 if unknown
-    public let horizontalAccuracy: Double
+    public var horizontalAccuracy: Double
 
     /// Latitude of the location in degrees; as defined by the sender
-    public let latitude: Double
+    public var latitude: Double
 
     /// Longitude of the location, in degrees; as defined by the sender
-    public let longitude: Double
+    public var longitude: Double
 
 
     public init(

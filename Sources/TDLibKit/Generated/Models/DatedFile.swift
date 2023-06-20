@@ -14,10 +14,10 @@ import Foundation
 public struct DatedFile: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the file was uploaded
-    public let date: Int
+    public var date: Int
 
     /// The file
-    public let file: File
+    public var file: File
 
 
     public init(

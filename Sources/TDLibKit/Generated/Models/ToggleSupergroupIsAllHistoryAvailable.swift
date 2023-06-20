@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupIsAllHistoryAvailable: Codable, Equatable, Hashable {
 
     /// The new value of is_all_history_available
-    public let isAllHistoryAvailable: Bool?
+    public var isAllHistoryAvailable: Bool?
 
     /// The identifier of the supergroup
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

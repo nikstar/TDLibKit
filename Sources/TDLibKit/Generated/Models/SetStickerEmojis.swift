@@ -14,10 +14,10 @@ import Foundation
 public struct SetStickerEmojis: Codable, Equatable, Hashable {
 
     /// New string with 1-20 emoji corresponding to the sticker
-    public let emojis: String?
+    public var emojis: String?
 
     /// Sticker
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(

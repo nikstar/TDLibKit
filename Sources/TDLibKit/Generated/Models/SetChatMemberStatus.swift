@@ -14,13 +14,13 @@ import Foundation
 public struct SetChatMemberStatus: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Member identifier. Chats can be only banned and unbanned in supergroups and channels
-    public let memberId: MessageSender?
+    public var memberId: MessageSender?
 
     /// The new status of the member in the chat
-    public let status: ChatMemberStatus?
+    public var status: ChatMemberStatus?
 
 
     public init(

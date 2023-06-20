@@ -14,7 +14,7 @@ import Foundation
 public struct PassportElements: Codable, Equatable, Hashable {
 
     /// Telegram Passport elements
-    public let elements: [PassportElement]
+    public var elements: [PassportElement]
 
 
     public init(elements: [PassportElement]) {

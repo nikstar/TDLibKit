@@ -14,16 +14,16 @@ import Foundation
 public struct ChatPosition: Codable, Equatable, Hashable {
 
     /// True, if the chat is pinned in the chat list
-    public let isPinned: Bool
+    public var isPinned: Bool
 
     /// The chat list
-    public let list: ChatList
+    public var list: ChatList
 
     /// A parameter used to determine order of the chat in the chat list. Chats must be sorted by the pair (order, chat.id) in descending order
-    public let order: TdInt64
+    public var order: TdInt64
 
     /// Source of the chat in the chat list; may be null
-    public let source: ChatSource?
+    public var source: ChatSource?
 
 
     public init(

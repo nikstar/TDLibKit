@@ -14,22 +14,22 @@ import Foundation
 public struct MessageThreadInfo: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the message thread belongs
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// A draft of a message in the message thread; may be null
-    public let draftMessage: DraftMessage?
+    public var draftMessage: DraftMessage?
 
     /// Message thread identifier, unique within the chat
-    public let messageThreadId: Int64
+    public var messageThreadId: Int64
 
     /// The messages from which the thread starts. The messages are returned in a reverse chronological order (i.e., in order of decreasing message_id)
-    public let messages: [Message]
+    public var messages: [Message]
 
     /// Information about the message thread; may be null for forum topic threads
-    public let replyInfo: MessageReplyInfo?
+    public var replyInfo: MessageReplyInfo?
 
     /// Approximate number of unread messages in the message thread
-    public let unreadMessageCount: Int
+    public var unreadMessageCount: Int
 
 
     public init(

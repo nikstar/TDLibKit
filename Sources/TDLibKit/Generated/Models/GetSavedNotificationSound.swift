@@ -14,7 +14,7 @@ import Foundation
 public struct GetSavedNotificationSound: Codable, Equatable, Hashable {
 
     /// Identifier of the notification sound
-    public let notificationSoundId: TdInt64?
+    public var notificationSoundId: TdInt64?
 
 
     public init(notificationSoundId: TdInt64?) {

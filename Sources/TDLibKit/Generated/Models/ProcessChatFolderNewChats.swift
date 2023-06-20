@@ -14,10 +14,10 @@ import Foundation
 public struct ProcessChatFolderNewChats: Codable, Equatable, Hashable {
 
     /// Identifiers of the new chats, which are added to the chat folder. The chats are automatically joined if they aren't joined yet
-    public let addedChatIds: [Int64]?
+    public var addedChatIds: [Int64]?
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
 
     public init(

@@ -14,43 +14,43 @@ import Foundation
 public struct ChatEventLogFilters: Codable, Equatable, Hashable {
 
     /// True, if forum-related actions need to be returned
-    public let forumChanges: Bool
+    public var forumChanges: Bool
 
     /// True, if changes in chat information need to be returned
-    public let infoChanges: Bool
+    public var infoChanges: Bool
 
     /// True, if changes to invite links need to be returned
-    public let inviteLinkChanges: Bool
+    public var inviteLinkChanges: Bool
 
     /// True, if invited member events need to be returned
-    public let memberInvites: Bool
+    public var memberInvites: Bool
 
     /// True, if members joining events need to be returned
-    public let memberJoins: Bool
+    public var memberJoins: Bool
 
     /// True, if members leaving events need to be returned
-    public let memberLeaves: Bool
+    public var memberLeaves: Bool
 
     /// True, if member promotion/demotion events need to be returned
-    public let memberPromotions: Bool
+    public var memberPromotions: Bool
 
     /// True, if member restricted/unrestricted/banned/unbanned events need to be returned
-    public let memberRestrictions: Bool
+    public var memberRestrictions: Bool
 
     /// True, if message deletions need to be returned
-    public let messageDeletions: Bool
+    public var messageDeletions: Bool
 
     /// True, if message edits need to be returned
-    public let messageEdits: Bool
+    public var messageEdits: Bool
 
     /// True, if pin/unpin events need to be returned
-    public let messagePins: Bool
+    public var messagePins: Bool
 
     /// True, if changes in chat settings need to be returned
-    public let settingChanges: Bool
+    public var settingChanges: Bool
 
     /// True, if video chat actions need to be returned
-    public let videoChatChanges: Bool
+    public var videoChatChanges: Bool
 
 
     public init(

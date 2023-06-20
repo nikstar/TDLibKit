@@ -14,10 +14,10 @@ import Foundation
 public struct SetScopeNotificationSettings: Codable, Equatable, Hashable {
 
     /// The new notification settings for the given scope
-    public let notificationSettings: ScopeNotificationSettings?
+    public var notificationSettings: ScopeNotificationSettings?
 
     /// Types of chats for which to change the notification settings
-    public let scope: NotificationSettingsScope?
+    public var scope: NotificationSettingsScope?
 
 
     public init(

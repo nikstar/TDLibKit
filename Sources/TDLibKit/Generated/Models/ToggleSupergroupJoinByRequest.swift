@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupJoinByRequest: Codable, Equatable, Hashable {
 
     /// New value of join_by_request
-    public let joinByRequest: Bool?
+    public var joinByRequest: Bool?
 
     /// Identifier of the channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

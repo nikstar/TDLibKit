@@ -14,7 +14,7 @@ import Foundation
 public struct FileDownloadedPrefixSize: Codable, Equatable, Hashable {
 
     /// The prefix size, in bytes
-    public let size: Int64
+    public var size: Int64
 
 
     public init(size: Int64) {

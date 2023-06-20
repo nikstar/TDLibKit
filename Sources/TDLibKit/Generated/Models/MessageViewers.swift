@@ -14,7 +14,7 @@ import Foundation
 public struct MessageViewers: Codable, Equatable, Hashable {
 
     /// List of message viewers
-    public let viewers: [MessageViewer]
+    public var viewers: [MessageViewer]
 
 
     public init(viewers: [MessageViewer]) {

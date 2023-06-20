@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleChatHasProtectedContent: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New value of has_protected_content
-    public let hasProtectedContent: Bool?
+    public var hasProtectedContent: Bool?
 
 
     public init(

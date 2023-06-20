@@ -53,10 +53,10 @@ public enum ChatSource: Codable, Equatable, Hashable {
 public struct ChatSourcePublicServiceAnnouncement: Codable, Equatable, Hashable {
 
     /// The text of the announcement
-    public let text: String
+    public var text: String
 
     /// The type of the announcement
-    public let type: String
+    public var type: String
 
 
     public init(

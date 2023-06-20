@@ -65,7 +65,7 @@ public enum CallbackQueryPayload: Codable, Equatable, Hashable {
 public struct CallbackQueryPayloadData: Codable, Equatable, Hashable {
 
     /// Data that was attached to the callback button
-    public let data: Data
+    public var data: Data
 
 
     public init(data: Data) {
@@ -77,10 +77,10 @@ public struct CallbackQueryPayloadData: Codable, Equatable, Hashable {
 public struct CallbackQueryPayloadDataWithPassword: Codable, Equatable, Hashable {
 
     /// Data that was attached to the callback button
-    public let data: Data
+    public var data: Data
 
     /// The 2-step verification password for the current user
-    public let password: String
+    public var password: String
 
 
     public init(
@@ -96,7 +96,7 @@ public struct CallbackQueryPayloadDataWithPassword: Codable, Equatable, Hashable
 public struct CallbackQueryPayloadGame: Codable, Equatable, Hashable {
 
     /// A short name of the game that was attached to the callback button
-    public let gameShortName: String
+    public var gameShortName: String
 
 
     public init(gameShortName: String) {

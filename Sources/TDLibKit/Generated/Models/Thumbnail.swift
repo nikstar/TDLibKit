@@ -14,16 +14,16 @@ import Foundation
 public struct Thumbnail: Codable, Equatable, Hashable {
 
     /// The thumbnail
-    public let file: File
+    public var file: File
 
     /// Thumbnail format
-    public let format: ThumbnailFormat
+    public var format: ThumbnailFormat
 
     /// Thumbnail height
-    public let height: Int
+    public var height: Int
 
     /// Thumbnail width
-    public let width: Int
+    public var width: Int
 
 
     public init(

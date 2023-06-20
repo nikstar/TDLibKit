@@ -14,7 +14,7 @@ import Foundation
 public struct SetNetworkType: Codable, Equatable, Hashable {
 
     /// The new network type; pass null to set network type to networkTypeOther
-    public let type: NetworkType?
+    public var type: NetworkType?
 
 
     public init(type: NetworkType?) {

@@ -14,7 +14,7 @@ import Foundation
 public struct ChatInviteLinkCounts: Codable, Equatable, Hashable {
 
     /// List of invite link counts
-    public let inviteLinkCounts: [ChatInviteLinkCount]
+    public var inviteLinkCounts: [ChatInviteLinkCount]
 
 
     public init(inviteLinkCounts: [ChatInviteLinkCount]) {

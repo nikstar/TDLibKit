@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleGroupCallScreenSharingIsPaused: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Pass true to pause screen sharing; pass false to unpause it
-    public let isPaused: Bool?
+    public var isPaused: Bool?
 
 
     public init(

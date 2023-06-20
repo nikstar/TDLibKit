@@ -14,22 +14,22 @@ import Foundation
 public struct GetChatInviteLinks: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// User identifier of a chat administrator. Must be an identifier of the current user for non-owner
-    public let creatorUserId: Int64?
+    public var creatorUserId: Int64?
 
     /// Pass true if revoked links needs to be returned instead of active or expired
-    public let isRevoked: Bool?
+    public var isRevoked: Bool?
 
     /// The maximum number of invite links to return; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Creation date of an invite link starting after which to return invite links; use 0 to get results from the beginning
-    public let offsetDate: Int?
+    public var offsetDate: Int?
 
     /// Invite link starting after which to return invite links; use empty string to get results from the beginning
-    public let offsetInviteLink: String?
+    public var offsetInviteLink: String?
 
 
     public init(

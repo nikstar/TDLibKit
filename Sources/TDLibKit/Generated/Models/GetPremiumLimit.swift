@@ -14,7 +14,7 @@ import Foundation
 public struct GetPremiumLimit: Codable, Equatable, Hashable {
 
     /// Type of the limit
-    public let limitType: PremiumLimitType?
+    public var limitType: PremiumLimitType?
 
 
     public init(limitType: PremiumLimitType?) {

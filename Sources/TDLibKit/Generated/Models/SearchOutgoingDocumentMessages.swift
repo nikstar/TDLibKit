@@ -14,10 +14,10 @@ import Foundation
 public struct SearchOutgoingDocumentMessages: Codable, Equatable, Hashable {
 
     /// The maximum number of messages to be returned; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Query to search for in document file name and message caption
-    public let query: String?
+    public var query: String?
 
 
     public init(

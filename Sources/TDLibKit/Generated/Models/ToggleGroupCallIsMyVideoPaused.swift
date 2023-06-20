@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleGroupCallIsMyVideoPaused: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Pass true if the current user's video is paused
-    public let isMyVideoPaused: Bool?
+    public var isMyVideoPaused: Bool?
 
 
     public init(

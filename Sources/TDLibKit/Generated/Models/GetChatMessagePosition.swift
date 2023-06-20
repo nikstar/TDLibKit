@@ -14,16 +14,16 @@ import Foundation
 public struct GetChatMessagePosition: Codable, Equatable, Hashable {
 
     /// Identifier of the chat in which to find message position
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Filter for message content; searchMessagesFilterEmpty, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, and searchMessagesFilterFailedToSend are unsupported in this function
-    public let filter: SearchMessagesFilter?
+    public var filter: SearchMessagesFilter?
 
     /// Message identifier
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// If not 0, only messages in the specified thread will be considered; supergroups only
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

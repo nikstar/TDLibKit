@@ -14,34 +14,34 @@ import Foundation
 public struct Video: Codable, Equatable, Hashable {
 
     /// Duration of the video, in seconds; as defined by the sender
-    public let duration: Int
+    public var duration: Int
 
     /// Original name of the file; as defined by the sender
-    public let fileName: String
+    public var fileName: String
 
     /// True, if stickers were added to the video. The list of corresponding sticker sets can be received using getAttachedStickerSets
-    public let hasStickers: Bool
+    public var hasStickers: Bool
 
     /// Video height; as defined by the sender
-    public let height: Int
+    public var height: Int
 
     /// MIME type of the file; as defined by the sender
-    public let mimeType: String
+    public var mimeType: String
 
     /// Video minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// True, if the video is supposed to be streamed
-    public let supportsStreaming: Bool
+    public var supportsStreaming: Bool
 
     /// Video thumbnail in JPEG or MPEG4 format; as defined by the sender; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// File containing the video
-    public let video: File
+    public var video: File
 
     /// Video width; as defined by the sender
-    public let width: Int
+    public var width: Int
 
 
     public init(

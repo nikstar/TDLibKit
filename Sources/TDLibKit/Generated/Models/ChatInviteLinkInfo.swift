@@ -14,33 +14,33 @@ import Foundation
 public struct ChatInviteLinkInfo: Codable, Equatable, Hashable {
 
     /// If non-zero, the amount of time for which read access to the chat will remain available, in seconds
-    public let accessibleFor: Int
+    public var accessibleFor: Int
 
     /// Chat identifier of the invite link; 0 if the user has no access to the chat before joining
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// True, if the link only creates join request
-    public let createsJoinRequest: Bool
+    public var createsJoinRequest: Bool
 
-    public let description: String
+    public var description: String
 
     /// True, if the chat is a public supergroup or channel, i.e. it has a username or it is a location-based supergroup
-    public let isPublic: Bool
+    public var isPublic: Bool
 
     /// Number of members in the chat
-    public let memberCount: Int
+    public var memberCount: Int
 
     /// User identifiers of some chat members that may be known to the current user
-    public let memberUserIds: [Int64]
+    public var memberUserIds: [Int64]
 
     /// Chat photo; may be null
-    public let photo: ChatPhotoInfo?
+    public var photo: ChatPhotoInfo?
 
     /// Title of the chat
-    public let title: String
+    public var title: String
 
     /// Type of the chat
-    public let type: ChatType
+    public var type: ChatType
 
 
     public init(

@@ -75,7 +75,7 @@ public enum ChatType: Codable, Equatable, Hashable {
 public struct ChatTypePrivate: Codable, Equatable, Hashable {
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(userId: Int64) {
@@ -87,7 +87,7 @@ public struct ChatTypePrivate: Codable, Equatable, Hashable {
 public struct ChatTypeBasicGroup: Codable, Equatable, Hashable {
 
     /// Basic group identifier
-    public let basicGroupId: Int64
+    public var basicGroupId: Int64
 
 
     public init(basicGroupId: Int64) {
@@ -99,10 +99,10 @@ public struct ChatTypeBasicGroup: Codable, Equatable, Hashable {
 public struct ChatTypeSupergroup: Codable, Equatable, Hashable {
 
     /// True, if the supergroup is a channel
-    public let isChannel: Bool
+    public var isChannel: Bool
 
     /// Supergroup or channel identifier
-    public let supergroupId: Int64
+    public var supergroupId: Int64
 
 
     public init(
@@ -118,10 +118,10 @@ public struct ChatTypeSupergroup: Codable, Equatable, Hashable {
 public struct ChatTypeSecret: Codable, Equatable, Hashable {
 
     /// Secret chat identifier
-    public let secretChatId: Int
+    public var secretChatId: Int
 
     /// User identifier of the secret chat peer
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

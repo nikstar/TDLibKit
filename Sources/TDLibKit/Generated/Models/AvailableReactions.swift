@@ -14,16 +14,16 @@ import Foundation
 public struct AvailableReactions: Codable, Equatable, Hashable {
 
     /// True, if custom emoji reactions could be added by Telegram Premium subscribers
-    public let allowCustomEmoji: Bool
+    public var allowCustomEmoji: Bool
 
     /// List of popular reactions
-    public let popularReactions: [AvailableReaction]
+    public var popularReactions: [AvailableReaction]
 
     /// List of recently used reactions
-    public let recentReactions: [AvailableReaction]
+    public var recentReactions: [AvailableReaction]
 
     /// List of reactions to be shown at the top
-    public let topReactions: [AvailableReaction]
+    public var topReactions: [AvailableReaction]
 
 
     public init(

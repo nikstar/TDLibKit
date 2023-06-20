@@ -14,10 +14,10 @@ import Foundation
 public struct GetInternalLink: Codable, Equatable, Hashable {
 
     /// Pass true to create an HTTPS link (only available for some link types); pass false to create a tg: link
-    public let isHttp: Bool?
+    public var isHttp: Bool?
 
     /// Expected type of the link
-    public let type: InternalLinkType?
+    public var type: InternalLinkType?
 
 
     public init(

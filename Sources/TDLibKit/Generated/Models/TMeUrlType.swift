@@ -75,7 +75,7 @@ public enum TMeUrlType: Codable, Equatable, Hashable {
 public struct TMeUrlTypeUser: Codable, Equatable, Hashable {
 
     /// Identifier of the user
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(userId: Int64) {
@@ -87,7 +87,7 @@ public struct TMeUrlTypeUser: Codable, Equatable, Hashable {
 public struct TMeUrlTypeSupergroup: Codable, Equatable, Hashable {
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64
+    public var supergroupId: Int64
 
 
     public init(supergroupId: Int64) {
@@ -99,7 +99,7 @@ public struct TMeUrlTypeSupergroup: Codable, Equatable, Hashable {
 public struct TMeUrlTypeChatInvite: Codable, Equatable, Hashable {
 
     /// Information about the chat invite link
-    public let info: ChatInviteLinkInfo
+    public var info: ChatInviteLinkInfo
 
 
     public init(info: ChatInviteLinkInfo) {
@@ -111,7 +111,7 @@ public struct TMeUrlTypeChatInvite: Codable, Equatable, Hashable {
 public struct TMeUrlTypeStickerSet: Codable, Equatable, Hashable {
 
     /// Identifier of the sticker set
-    public let stickerSetId: TdInt64
+    public var stickerSetId: TdInt64
 
 
     public init(stickerSetId: TdInt64) {

@@ -14,13 +14,13 @@ import Foundation
 public struct StopPoll: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the poll belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message containing the poll
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// The new message reply markup; pass null if none; for bots only
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

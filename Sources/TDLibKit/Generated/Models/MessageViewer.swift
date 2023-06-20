@@ -14,10 +14,10 @@ import Foundation
 public struct MessageViewer: Codable, Equatable, Hashable {
 
     /// User identifier of the viewer
-    public let userId: Int64
+    public var userId: Int64
 
     /// Approximate point in time (Unix timestamp) when the message was viewed
-    public let viewDate: Int
+    public var viewDate: Int
 
 
     public init(

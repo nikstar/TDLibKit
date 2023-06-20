@@ -14,7 +14,7 @@ import Foundation
 public struct GetLocalizationTargetInfo: Codable, Equatable, Hashable {
 
     /// Pass true to get only locally available information without sending network requests
-    public let onlyLocal: Bool?
+    public var onlyLocal: Bool?
 
 
     public init(onlyLocal: Bool?) {

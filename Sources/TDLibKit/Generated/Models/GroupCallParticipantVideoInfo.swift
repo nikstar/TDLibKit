@@ -14,13 +14,13 @@ import Foundation
 public struct GroupCallParticipantVideoInfo: Codable, Equatable, Hashable {
 
     /// Video channel endpoint identifier
-    public let endpointId: String
+    public var endpointId: String
 
     /// True, if the video is paused. This flag needs to be ignored, if new video frames are received
-    public let isPaused: Bool
+    public var isPaused: Bool
 
     /// List of synchronization source groups of the video
-    public let sourceGroups: [GroupCallVideoSourceGroup]
+    public var sourceGroups: [GroupCallVideoSourceGroup]
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SearchWebApp: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Short name of the Web App
-    public let webAppShortName: String?
+    public var webAppShortName: String?
 
 
     public init(

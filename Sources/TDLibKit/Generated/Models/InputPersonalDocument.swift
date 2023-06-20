@@ -14,10 +14,10 @@ import Foundation
 public struct InputPersonalDocument: Codable, Equatable, Hashable {
 
     /// List of files containing the pages of the document
-    public let files: [InputFile]
+    public var files: [InputFile]
 
     /// List of files containing a certified English translation of the document
-    public let translation: [InputFile]
+    public var translation: [InputFile]
 
 
     public init(

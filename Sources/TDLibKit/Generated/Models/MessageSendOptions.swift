@@ -14,22 +14,22 @@ import Foundation
 public struct MessageSendOptions: Codable, Equatable, Hashable {
 
     /// Pass true to disable notification for the message
-    public let disableNotification: Bool
+    public var disableNotification: Bool
 
     /// Pass true if the message is sent from the background
-    public let fromBackground: Bool
+    public var fromBackground: Bool
 
     /// Pass true if the content of the message must be protected from forwarding and saving; for bots only
-    public let protectContent: Bool
+    public var protectContent: Bool
 
     /// Message scheduling state; pass null to send message immediately. Messages sent to a secret chat, live location messages and self-destructing messages can't be scheduled
-    public let schedulingState: MessageSchedulingState?
+    public var schedulingState: MessageSchedulingState?
 
     /// Non-persistent identifier, which will be returned back in messageSendingStatePending object and can be used to match sent messages and corresponding updateNewMessage updates
-    public let sendingId: Int
+    public var sendingId: Int
 
     /// Pass true if the user explicitly chosen a sticker or a custom emoji from an installed sticker set; applicable only to sendMessage and sendMessageAlbum
-    public let updateOrderOfInstalledStickerSets: Bool
+    public var updateOrderOfInstalledStickerSets: Bool
 
 
     public init(

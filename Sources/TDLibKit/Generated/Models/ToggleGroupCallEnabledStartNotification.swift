@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleGroupCallEnabledStartNotification: Codable, Equatable, Hashable {
 
     /// New value of the enabled_start_notification setting
-    public let enabledStartNotification: Bool?
+    public var enabledStartNotification: Bool?
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
 
     public init(

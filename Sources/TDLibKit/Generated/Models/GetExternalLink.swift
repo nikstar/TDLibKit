@@ -14,10 +14,10 @@ import Foundation
 public struct GetExternalLink: Codable, Equatable, Hashable {
 
     /// Pass true if the current user allowed the bot, returned in getExternalLinkInfo, to send them messages
-    public let allowWriteAccess: Bool?
+    public var allowWriteAccess: Bool?
 
     /// The HTTP link
-    public let link: String?
+    public var link: String?
 
 
     public init(

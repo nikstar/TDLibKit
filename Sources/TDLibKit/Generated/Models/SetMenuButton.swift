@@ -14,10 +14,10 @@ import Foundation
 public struct SetMenuButton: Codable, Equatable, Hashable {
 
     /// New menu button
-    public let menuButton: BotMenuButton?
+    public var menuButton: BotMenuButton?
 
     /// Identifier of the user or 0 to set menu button for all users
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

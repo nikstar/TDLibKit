@@ -14,10 +14,10 @@ import Foundation
 public struct SetVideoChatDefaultParticipant: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Default group call participant identifier to join the video chats
-    public let defaultParticipantId: MessageSender?
+    public var defaultParticipantId: MessageSender?
 
 
     public init(

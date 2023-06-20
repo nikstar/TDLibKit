@@ -14,7 +14,7 @@ import Foundation
 public struct GetStickerSet: Codable, Equatable, Hashable {
 
     /// Identifier of the sticker set
-    public let setId: TdInt64?
+    public var setId: TdInt64?
 
 
     public init(setId: TdInt64?) {

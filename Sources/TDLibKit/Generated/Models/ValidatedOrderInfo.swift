@@ -14,10 +14,10 @@ import Foundation
 public struct ValidatedOrderInfo: Codable, Equatable, Hashable {
 
     /// Temporary identifier of the order information
-    public let orderInfoId: String
+    public var orderInfoId: String
 
     /// Available shipping options
-    public let shippingOptions: [ShippingOption]
+    public var shippingOptions: [ShippingOption]
 
 
     public init(

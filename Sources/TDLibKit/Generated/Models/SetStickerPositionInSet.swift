@@ -14,10 +14,10 @@ import Foundation
 public struct SetStickerPositionInSet: Codable, Equatable, Hashable {
 
     /// New position of the sticker in the set, 0-based
-    public let position: Int?
+    public var position: Int?
 
     /// Sticker
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(

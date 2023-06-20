@@ -14,25 +14,25 @@ import Foundation
 public struct SendInlineQueryResultMessage: Codable, Equatable, Hashable {
 
     /// Target chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to hide the bot, via which the message is sent. Can be used only for bots getOption("animation_search_bot_username"), getOption("photo_search_bot_username"), and getOption("venue_search_bot_username")
-    public let hideViaBot: Bool?
+    public var hideViaBot: Bool?
 
     /// If not 0, a message thread identifier in which the message will be sent
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// Options to be used to send the message; pass null to use default options
-    public let options: MessageSendOptions?
+    public var options: MessageSendOptions?
 
     /// Identifier of the inline query
-    public let queryId: TdInt64?
+    public var queryId: TdInt64?
 
     /// Identifier of a replied message; 0 if none
-    public let replyToMessageId: Int64?
+    public var replyToMessageId: Int64?
 
     /// Identifier of the inline result
-    public let resultId: String?
+    public var resultId: String?
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct GetLoginUrlInfo: Codable, Equatable, Hashable {
 
     /// Button identifier
-    public let buttonId: Int64?
+    public var buttonId: Int64?
 
     /// Chat identifier of the message with the button
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message identifier of the message with the button
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

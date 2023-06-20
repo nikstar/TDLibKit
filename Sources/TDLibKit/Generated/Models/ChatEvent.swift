@@ -14,16 +14,16 @@ import Foundation
 public struct ChatEvent: Codable, Equatable, Hashable, Identifiable {
 
     /// The action
-    public let action: ChatEventAction
+    public var action: ChatEventAction
 
     /// Point in time (Unix timestamp) when the event happened
-    public let date: Int
+    public var date: Int
 
     /// Chat event identifier
     public let id: TdInt64
 
     /// Identifier of the user or chat who performed the action
-    public let memberId: MessageSender
+    public var memberId: MessageSender
 
 
     public init(

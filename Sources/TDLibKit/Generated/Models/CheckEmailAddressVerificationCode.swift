@@ -14,7 +14,7 @@ import Foundation
 public struct CheckEmailAddressVerificationCode: Codable, Equatable, Hashable {
 
     /// Verification code to check
-    public let code: String?
+    public var code: String?
 
 
     public init(code: String?) {

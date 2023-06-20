@@ -14,10 +14,10 @@ import Foundation
 public struct GetPaymentForm: Codable, Equatable, Hashable {
 
     /// The invoice
-    public let inputInvoice: InputInvoice?
+    public var inputInvoice: InputInvoice?
 
     /// Preferred payment form theme; pass null to use the default theme
-    public let theme: ThemeParameters?
+    public var theme: ThemeParameters?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct GroupCallRecentSpeaker: Codable, Equatable, Hashable {
 
     /// True, is the user has spoken recently
-    public let isSpeaking: Bool
+    public var isSpeaking: Bool
 
     /// Group call participant identifier
-    public let participantId: MessageSender
+    public var participantId: MessageSender
 
 
     public init(

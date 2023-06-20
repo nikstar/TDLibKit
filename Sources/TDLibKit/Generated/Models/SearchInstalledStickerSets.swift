@@ -14,13 +14,13 @@ import Foundation
 public struct SearchInstalledStickerSets: Codable, Equatable, Hashable {
 
     /// The maximum number of sticker sets to return
-    public let limit: Int?
+    public var limit: Int?
 
     /// Query to search for
-    public let query: String?
+    public var query: String?
 
     /// Type of the sticker sets to search for
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(

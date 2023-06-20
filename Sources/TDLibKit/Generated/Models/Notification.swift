@@ -14,16 +14,16 @@ import Foundation
 public struct Notification: Codable, Equatable, Hashable, Identifiable {
 
     /// Notification date
-    public let date: Int
+    public var date: Int
 
     /// Unique persistent identifier of this notification
     public let id: Int
 
     /// True, if the notification was explicitly sent without sound
-    public let isSilent: Bool
+    public var isSilent: Bool
 
     /// Notification type
-    public let type: NotificationType
+    public var type: NotificationType
 
 
     public init(

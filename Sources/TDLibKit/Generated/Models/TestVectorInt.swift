@@ -14,7 +14,7 @@ import Foundation
 public struct TestVectorInt: Codable, Equatable, Hashable {
 
     /// Vector of numbers
-    public let value: [Int]
+    public var value: [Int]
 
 
     public init(value: [Int]) {

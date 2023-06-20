@@ -14,7 +14,7 @@ import Foundation
 public struct CheckAuthenticationPassword: Codable, Equatable, Hashable {
 
     /// The 2-step verification password to check
-    public let password: String?
+    public var password: String?
 
 
     public init(password: String?) {

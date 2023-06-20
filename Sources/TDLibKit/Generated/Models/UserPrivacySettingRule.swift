@@ -107,7 +107,7 @@ public enum UserPrivacySettingRule: Codable, Equatable, Hashable {
 public struct UserPrivacySettingRuleAllowUsers: Codable, Equatable, Hashable {
 
     /// The user identifiers, total number of users in all rules must not exceed 1000
-    public let userIds: [Int64]
+    public var userIds: [Int64]
 
 
     public init(userIds: [Int64]) {
@@ -119,7 +119,7 @@ public struct UserPrivacySettingRuleAllowUsers: Codable, Equatable, Hashable {
 public struct UserPrivacySettingRuleAllowChatMembers: Codable, Equatable, Hashable {
 
     /// The chat identifiers, total number of chats in all rules must not exceed 20
-    public let chatIds: [Int64]
+    public var chatIds: [Int64]
 
 
     public init(chatIds: [Int64]) {
@@ -131,7 +131,7 @@ public struct UserPrivacySettingRuleAllowChatMembers: Codable, Equatable, Hashab
 public struct UserPrivacySettingRuleRestrictUsers: Codable, Equatable, Hashable {
 
     /// The user identifiers, total number of users in all rules must not exceed 1000
-    public let userIds: [Int64]
+    public var userIds: [Int64]
 
 
     public init(userIds: [Int64]) {
@@ -143,7 +143,7 @@ public struct UserPrivacySettingRuleRestrictUsers: Codable, Equatable, Hashable 
 public struct UserPrivacySettingRuleRestrictChatMembers: Codable, Equatable, Hashable {
 
     /// The chat identifiers, total number of chats in all rules must not exceed 20
-    public let chatIds: [Int64]
+    public var chatIds: [Int64]
 
 
     public init(chatIds: [Int64]) {

@@ -125,7 +125,7 @@ public enum InputPassportElementErrorSource: Codable, Equatable, Hashable {
 public struct InputPassportElementErrorSourceUnspecified: Codable, Equatable, Hashable {
 
     /// Current hash of the entire element
-    public let elementHash: Data
+    public var elementHash: Data
 
 
     public init(elementHash: Data) {
@@ -137,10 +137,10 @@ public struct InputPassportElementErrorSourceUnspecified: Codable, Equatable, Ha
 public struct InputPassportElementErrorSourceDataField: Codable, Equatable, Hashable {
 
     /// Current data hash
-    public let dataHash: Data
+    public var dataHash: Data
 
     /// Field name
-    public let fieldName: String
+    public var fieldName: String
 
 
     public init(
@@ -156,7 +156,7 @@ public struct InputPassportElementErrorSourceDataField: Codable, Equatable, Hash
 public struct InputPassportElementErrorSourceFrontSide: Codable, Equatable, Hashable {
 
     /// Current hash of the file containing the front side
-    public let fileHash: Data
+    public var fileHash: Data
 
 
     public init(fileHash: Data) {
@@ -168,7 +168,7 @@ public struct InputPassportElementErrorSourceFrontSide: Codable, Equatable, Hash
 public struct InputPassportElementErrorSourceReverseSide: Codable, Equatable, Hashable {
 
     /// Current hash of the file containing the reverse side
-    public let fileHash: Data
+    public var fileHash: Data
 
 
     public init(fileHash: Data) {
@@ -180,7 +180,7 @@ public struct InputPassportElementErrorSourceReverseSide: Codable, Equatable, Ha
 public struct InputPassportElementErrorSourceSelfie: Codable, Equatable, Hashable {
 
     /// Current hash of the file containing the selfie
-    public let fileHash: Data
+    public var fileHash: Data
 
 
     public init(fileHash: Data) {
@@ -192,7 +192,7 @@ public struct InputPassportElementErrorSourceSelfie: Codable, Equatable, Hashabl
 public struct InputPassportElementErrorSourceTranslationFile: Codable, Equatable, Hashable {
 
     /// Current hash of the file containing the translation
-    public let fileHash: Data
+    public var fileHash: Data
 
 
     public init(fileHash: Data) {
@@ -204,7 +204,7 @@ public struct InputPassportElementErrorSourceTranslationFile: Codable, Equatable
 public struct InputPassportElementErrorSourceTranslationFiles: Codable, Equatable, Hashable {
 
     /// Current hashes of all files with the translation
-    public let fileHashes: [Data]
+    public var fileHashes: [Data]
 
 
     public init(fileHashes: [Data]) {
@@ -216,7 +216,7 @@ public struct InputPassportElementErrorSourceTranslationFiles: Codable, Equatabl
 public struct InputPassportElementErrorSourceFile: Codable, Equatable, Hashable {
 
     /// Current hash of the file which has the error
-    public let fileHash: Data
+    public var fileHash: Data
 
 
     public init(fileHash: Data) {
@@ -228,7 +228,7 @@ public struct InputPassportElementErrorSourceFile: Codable, Equatable, Hashable 
 public struct InputPassportElementErrorSourceFiles: Codable, Equatable, Hashable {
 
     /// Current hashes of all attached files
-    public let fileHashes: [Data]
+    public var fileHashes: [Data]
 
 
     public init(fileHashes: [Data]) {

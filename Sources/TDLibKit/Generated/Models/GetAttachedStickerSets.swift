@@ -14,7 +14,7 @@ import Foundation
 public struct GetAttachedStickerSets: Codable, Equatable, Hashable {
 
     /// File identifier
-    public let fileId: Int?
+    public var fileId: Int?
 
 
     public init(fileId: Int?) {

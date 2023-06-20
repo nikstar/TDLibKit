@@ -14,10 +14,10 @@ import Foundation
 public struct PaymentOption: Codable, Equatable, Hashable {
 
     /// Title for the payment option
-    public let title: String
+    public var title: String
 
     /// Payment form URL to be opened in a web view
-    public let url: String
+    public var url: String
 
 
     public init(

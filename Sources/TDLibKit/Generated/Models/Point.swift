@@ -14,10 +14,10 @@ import Foundation
 public struct Point: Codable, Equatable, Hashable {
 
     /// The point's first coordinate
-    public let x: Double
+    public var x: Double
 
     /// The point's second coordinate
-    public let y: Double
+    public var y: Double
 
 
     public init(

@@ -17,16 +17,16 @@ public struct Call: Codable, Equatable, Hashable, Identifiable {
     public let id: Int
 
     /// True, if the call is outgoing
-    public let isOutgoing: Bool
+    public var isOutgoing: Bool
 
     /// True, if the call is a video call
-    public let isVideo: Bool
+    public var isVideo: Bool
 
     /// Call state
-    public let state: CallState
+    public var state: CallState
 
     /// Peer user identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

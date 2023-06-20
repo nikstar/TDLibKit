@@ -14,7 +14,7 @@ import Foundation
 public struct UserPrivacySettingRules: Codable, Equatable, Hashable {
 
     /// A list of rules
-    public let rules: [UserPrivacySettingRule]
+    public var rules: [UserPrivacySettingRule]
 
 
     public init(rules: [UserPrivacySettingRule]) {

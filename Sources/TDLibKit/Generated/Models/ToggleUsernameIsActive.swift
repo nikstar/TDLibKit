@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleUsernameIsActive: Codable, Equatable, Hashable {
 
     /// Pass true to activate the username; pass false to disable it
-    public let isActive: Bool?
+    public var isActive: Bool?
 
     /// The username to change
-    public let username: String?
+    public var username: String?
 
 
     public init(

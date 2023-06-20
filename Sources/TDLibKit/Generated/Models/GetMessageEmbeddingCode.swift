@@ -14,13 +14,13 @@ import Foundation
 public struct GetMessageEmbeddingCode: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the message belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to return an HTML code for embedding of the whole media album
-    public let forAlbum: Bool?
+    public var forAlbum: Bool?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

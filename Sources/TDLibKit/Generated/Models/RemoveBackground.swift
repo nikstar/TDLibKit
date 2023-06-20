@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveBackground: Codable, Equatable, Hashable {
 
     /// The background identifier
-    public let backgroundId: TdInt64?
+    public var backgroundId: TdInt64?
 
 
     public init(backgroundId: TdInt64?) {

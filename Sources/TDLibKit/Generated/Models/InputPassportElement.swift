@@ -165,7 +165,7 @@ public enum InputPassportElement: Codable, Equatable, Hashable {
 public struct InputPassportElementPersonalDetails: Codable, Equatable, Hashable {
 
     /// Personal details of the user
-    public let personalDetails: PersonalDetails
+    public var personalDetails: PersonalDetails
 
 
     public init(personalDetails: PersonalDetails) {
@@ -177,7 +177,7 @@ public struct InputPassportElementPersonalDetails: Codable, Equatable, Hashable 
 public struct InputPassportElementPassport: Codable, Equatable, Hashable {
 
     /// The passport to be saved
-    public let passport: InputIdentityDocument
+    public var passport: InputIdentityDocument
 
 
     public init(passport: InputIdentityDocument) {
@@ -189,7 +189,7 @@ public struct InputPassportElementPassport: Codable, Equatable, Hashable {
 public struct InputPassportElementDriverLicense: Codable, Equatable, Hashable {
 
     /// The driver license to be saved
-    public let driverLicense: InputIdentityDocument
+    public var driverLicense: InputIdentityDocument
 
 
     public init(driverLicense: InputIdentityDocument) {
@@ -201,7 +201,7 @@ public struct InputPassportElementDriverLicense: Codable, Equatable, Hashable {
 public struct InputPassportElementIdentityCard: Codable, Equatable, Hashable {
 
     /// The identity card to be saved
-    public let identityCard: InputIdentityDocument
+    public var identityCard: InputIdentityDocument
 
 
     public init(identityCard: InputIdentityDocument) {
@@ -213,7 +213,7 @@ public struct InputPassportElementIdentityCard: Codable, Equatable, Hashable {
 public struct InputPassportElementInternalPassport: Codable, Equatable, Hashable {
 
     /// The internal passport to be saved
-    public let internalPassport: InputIdentityDocument
+    public var internalPassport: InputIdentityDocument
 
 
     public init(internalPassport: InputIdentityDocument) {
@@ -225,7 +225,7 @@ public struct InputPassportElementInternalPassport: Codable, Equatable, Hashable
 public struct InputPassportElementAddress: Codable, Equatable, Hashable {
 
     /// The address to be saved
-    public let address: Address
+    public var address: Address
 
 
     public init(address: Address) {
@@ -237,7 +237,7 @@ public struct InputPassportElementAddress: Codable, Equatable, Hashable {
 public struct InputPassportElementUtilityBill: Codable, Equatable, Hashable {
 
     /// The utility bill to be saved
-    public let utilityBill: InputPersonalDocument
+    public var utilityBill: InputPersonalDocument
 
 
     public init(utilityBill: InputPersonalDocument) {
@@ -249,7 +249,7 @@ public struct InputPassportElementUtilityBill: Codable, Equatable, Hashable {
 public struct InputPassportElementBankStatement: Codable, Equatable, Hashable {
 
     /// The bank statement to be saved
-    public let bankStatement: InputPersonalDocument
+    public var bankStatement: InputPersonalDocument
 
 
     public init(bankStatement: InputPersonalDocument) {
@@ -261,7 +261,7 @@ public struct InputPassportElementBankStatement: Codable, Equatable, Hashable {
 public struct InputPassportElementRentalAgreement: Codable, Equatable, Hashable {
 
     /// The rental agreement to be saved
-    public let rentalAgreement: InputPersonalDocument
+    public var rentalAgreement: InputPersonalDocument
 
 
     public init(rentalAgreement: InputPersonalDocument) {
@@ -273,7 +273,7 @@ public struct InputPassportElementRentalAgreement: Codable, Equatable, Hashable 
 public struct InputPassportElementPassportRegistration: Codable, Equatable, Hashable {
 
     /// The passport registration page to be saved
-    public let passportRegistration: InputPersonalDocument
+    public var passportRegistration: InputPersonalDocument
 
 
     public init(passportRegistration: InputPersonalDocument) {
@@ -285,7 +285,7 @@ public struct InputPassportElementPassportRegistration: Codable, Equatable, Hash
 public struct InputPassportElementTemporaryRegistration: Codable, Equatable, Hashable {
 
     /// The temporary registration document to be saved
-    public let temporaryRegistration: InputPersonalDocument
+    public var temporaryRegistration: InputPersonalDocument
 
 
     public init(temporaryRegistration: InputPersonalDocument) {
@@ -297,7 +297,7 @@ public struct InputPassportElementTemporaryRegistration: Codable, Equatable, Has
 public struct InputPassportElementPhoneNumber: Codable, Equatable, Hashable {
 
     /// The phone number to be saved
-    public let phoneNumber: String
+    public var phoneNumber: String
 
 
     public init(phoneNumber: String) {
@@ -309,7 +309,7 @@ public struct InputPassportElementPhoneNumber: Codable, Equatable, Hashable {
 public struct InputPassportElementEmailAddress: Codable, Equatable, Hashable {
 
     /// The email address to be saved
-    public let emailAddress: String
+    public var emailAddress: String
 
 
     public init(emailAddress: String) {

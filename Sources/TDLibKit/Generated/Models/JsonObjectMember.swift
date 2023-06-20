@@ -14,10 +14,10 @@ import Foundation
 public struct JsonObjectMember: Codable, Equatable, Hashable {
 
     /// Member's key
-    public let key: String
+    public var key: String
 
     /// Member's value
-    public let value: JsonValue
+    public var value: JsonValue
 
 
     public init(

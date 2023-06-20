@@ -14,13 +14,13 @@ import Foundation
 public struct UploadStickerFile: Codable, Equatable, Hashable {
 
     /// File file to upload; must fit in a 512x512 square. For WEBP stickers the file must be in WEBP or PNG format, which will be converted to WEBP server-side.//-See https://core.telegram.org/animated_stickers#technical-requirements for technical requirements
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
     /// Sticker format
-    public let stickerFormat: StickerFormat?
+    public var stickerFormat: StickerFormat?
 
     /// Sticker file owner; ignored for regular users
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

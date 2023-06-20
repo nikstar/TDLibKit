@@ -14,10 +14,10 @@ import Foundation
 public struct RemoveFileFromDownloads: Codable, Equatable, Hashable {
 
     /// Pass true to delete the file from the TDLib file cache
-    public let deleteFromCache: Bool?
+    public var deleteFromCache: Bool?
 
     /// Identifier of the downloaded file
-    public let fileId: Int?
+    public var fileId: Int?
 
 
     public init(

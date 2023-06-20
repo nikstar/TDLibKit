@@ -14,13 +14,13 @@ import Foundation
 public struct SendBotStartMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Identifier of the target chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// A hidden parameter sent to the bot for deep linking purposes (https://core.telegram.org/bots#deep-linking)
-    public let parameter: String?
+    public var parameter: String?
 
 
     public init(

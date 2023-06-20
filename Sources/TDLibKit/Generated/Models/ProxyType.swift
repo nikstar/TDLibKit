@@ -65,10 +65,10 @@ public enum ProxyType: Codable, Equatable, Hashable {
 public struct ProxyTypeSocks5: Codable, Equatable, Hashable {
 
     /// Password for logging in; may be empty
-    public let password: String
+    public var password: String
 
     /// Username for logging in; may be empty
-    public let username: String
+    public var username: String
 
 
     public init(
@@ -84,13 +84,13 @@ public struct ProxyTypeSocks5: Codable, Equatable, Hashable {
 public struct ProxyTypeHttp: Codable, Equatable, Hashable {
 
     /// Pass true if the proxy supports only HTTP requests and doesn't support transparent TCP connections via HTTP CONNECT method
-    public let httpOnly: Bool
+    public var httpOnly: Bool
 
     /// Password for logging in; may be empty
-    public let password: String
+    public var password: String
 
     /// Username for logging in; may be empty
-    public let username: String
+    public var username: String
 
 
     public init(
@@ -108,7 +108,7 @@ public struct ProxyTypeHttp: Codable, Equatable, Hashable {
 public struct ProxyTypeMtproto: Codable, Equatable, Hashable {
 
     /// The proxy's secret in hexadecimal encoding
-    public let secret: String
+    public var secret: String
 
 
     public init(secret: String) {

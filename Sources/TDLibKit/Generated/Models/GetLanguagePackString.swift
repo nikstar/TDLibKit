@@ -14,16 +14,16 @@ import Foundation
 public struct GetLanguagePackString: Codable, Equatable, Hashable {
 
     /// Language pack key of the string to be returned
-    public let key: String?
+    public var key: String?
 
     /// Path to the language pack database in which strings are stored
-    public let languagePackDatabasePath: String?
+    public var languagePackDatabasePath: String?
 
     /// Language pack identifier
-    public let languagePackId: String?
+    public var languagePackId: String?
 
     /// Localization target to which the language pack belongs
-    public let localizationTarget: String?
+    public var localizationTarget: String?
 
 
     public init(

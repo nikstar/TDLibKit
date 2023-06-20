@@ -14,10 +14,10 @@ import Foundation
 public struct GetPassportElement: Codable, Equatable, Hashable {
 
     /// The 2-step verification password of the current user
-    public let password: String?
+    public var password: String?
 
     /// Telegram Passport element type
-    public let type: PassportElementType?
+    public var type: PassportElementType?
 
 
     public init(

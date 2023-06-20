@@ -14,7 +14,7 @@ import Foundation
 public struct ChatAdministrators: Codable, Equatable, Hashable {
 
     /// A list of chat administrators
-    public let administrators: [ChatAdministrator]
+    public var administrators: [ChatAdministrator]
 
 
     public init(administrators: [ChatAdministrator]) {

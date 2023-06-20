@@ -14,10 +14,10 @@ import Foundation
 public struct AnswerCustomQuery: Codable, Equatable, Hashable {
 
     /// Identifier of a custom query
-    public let customQueryId: TdInt64?
+    public var customQueryId: TdInt64?
 
     /// JSON-serialized answer to the query
-    public let data: String?
+    public var data: String?
 
 
     public init(

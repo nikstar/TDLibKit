@@ -14,10 +14,10 @@ import Foundation
 public struct SetGroupCallTitle: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// New group call title; 1-64 characters
-    public let title: String?
+    public var title: String?
 
 
     public init(

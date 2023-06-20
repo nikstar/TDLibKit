@@ -14,7 +14,7 @@ import Foundation
 public struct TMeUrls: Codable, Equatable, Hashable {
 
     /// List of URLs
-    public let urls: [TMeUrl]
+    public var urls: [TMeUrl]
 
 
     public init(urls: [TMeUrl]) {

@@ -75,19 +75,19 @@ public enum MessageExtendedMedia: Codable, Equatable, Hashable {
 public struct MessageExtendedMediaPreview: Codable, Equatable, Hashable {
 
     /// Media caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// Media duration; 0 if unknown
-    public let duration: Int
+    public var duration: Int
 
     /// Media height; 0 if unknown
-    public let height: Int
+    public var height: Int
 
     /// Media minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// Media width; 0 if unknown
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -109,10 +109,10 @@ public struct MessageExtendedMediaPreview: Codable, Equatable, Hashable {
 public struct MessageExtendedMediaPhoto: Codable, Equatable, Hashable {
 
     /// Photo caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// The photo
-    public let photo: Photo
+    public var photo: Photo
 
 
     public init(
@@ -128,10 +128,10 @@ public struct MessageExtendedMediaPhoto: Codable, Equatable, Hashable {
 public struct MessageExtendedMediaVideo: Codable, Equatable, Hashable {
 
     /// Photo caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// The video
-    public let video: Video
+    public var video: Video
 
 
     public init(
@@ -147,7 +147,7 @@ public struct MessageExtendedMediaVideo: Codable, Equatable, Hashable {
 public struct MessageExtendedMediaUnsupported: Codable, Equatable, Hashable {
 
     /// Media caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
 
     public init(caption: FormattedText) {

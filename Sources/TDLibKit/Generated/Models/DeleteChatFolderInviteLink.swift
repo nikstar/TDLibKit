@@ -14,10 +14,10 @@ import Foundation
 public struct DeleteChatFolderInviteLink: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
     /// Invite link to be deleted
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(

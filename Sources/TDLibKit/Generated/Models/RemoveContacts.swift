@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveContacts: Codable, Equatable, Hashable {
 
     /// Identifiers of users to be deleted
-    public let userIds: [Int64]?
+    public var userIds: [Int64]?
 
 
     public init(userIds: [Int64]?) {

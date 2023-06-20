@@ -14,13 +14,13 @@ import Foundation
 public struct ProcessChatJoinRequest: Codable, Equatable, Hashable {
 
     /// Pass true to approve the request; pass false to decline it
-    public let approve: Bool?
+    public var approve: Bool?
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the user that sent the request
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

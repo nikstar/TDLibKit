@@ -14,25 +14,25 @@ import Foundation
 public struct PasswordState: Codable, Equatable, Hashable {
 
     /// True, if some Telegram Passport elements were saved
-    public let hasPassportData: Bool
+    public var hasPassportData: Bool
 
     /// True, if a 2-step verification password is set
-    public let hasPassword: Bool
+    public var hasPassword: Bool
 
     /// True, if a recovery email is set
-    public let hasRecoveryEmailAddress: Bool
+    public var hasRecoveryEmailAddress: Bool
 
     /// Pattern of the email address set up for logging in
-    public let loginEmailAddressPattern: String
+    public var loginEmailAddressPattern: String
 
     /// Hint for the password; may be empty
-    public let passwordHint: String
+    public var passwordHint: String
 
     /// If not 0, point in time (Unix timestamp) after which the 2-step verification password can be reset immediately using resetPassword
-    public let pendingResetDate: Int
+    public var pendingResetDate: Int
 
     /// Information about the recovery email address to which the confirmation email was sent; may be null
-    public let recoveryEmailAddressCodeInfo: EmailAddressAuthenticationCodeInfo?
+    public var recoveryEmailAddressCodeInfo: EmailAddressAuthenticationCodeInfo?
 
 
     public init(

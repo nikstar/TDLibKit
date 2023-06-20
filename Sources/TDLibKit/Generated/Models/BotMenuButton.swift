@@ -14,10 +14,10 @@ import Foundation
 public struct BotMenuButton: Codable, Equatable, Hashable {
 
     /// Text of the button
-    public let text: String
+    public var text: String
 
     /// URL to be passed to openWebApp
-    public let url: String
+    public var url: String
 
 
     public init(

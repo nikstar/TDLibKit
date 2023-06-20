@@ -14,22 +14,22 @@ import Foundation
 public struct SendPaymentForm: Codable, Equatable, Hashable {
 
     /// The credentials chosen by user for payment
-    public let credentials: InputCredentials?
+    public var credentials: InputCredentials?
 
     /// The invoice
-    public let inputInvoice: InputInvoice?
+    public var inputInvoice: InputInvoice?
 
     /// Identifier returned by validateOrderInfo, or an empty string
-    public let orderInfoId: String?
+    public var orderInfoId: String?
 
     /// Payment form identifier returned by getPaymentForm
-    public let paymentFormId: TdInt64?
+    public var paymentFormId: TdInt64?
 
     /// Identifier of a chosen shipping option, if applicable
-    public let shippingOptionId: String?
+    public var shippingOptionId: String?
 
     /// Chosen by the user amount of tip in the smallest units of the currency
-    public let tipAmount: Int64?
+    public var tipAmount: Int64?
 
 
     public init(

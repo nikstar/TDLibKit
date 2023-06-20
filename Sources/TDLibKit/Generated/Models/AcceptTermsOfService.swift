@@ -14,7 +14,7 @@ import Foundation
 public struct AcceptTermsOfService: Codable, Equatable, Hashable {
 
     /// Terms of service identifier
-    public let termsOfServiceId: String?
+    public var termsOfServiceId: String?
 
 
     public init(termsOfServiceId: String?) {

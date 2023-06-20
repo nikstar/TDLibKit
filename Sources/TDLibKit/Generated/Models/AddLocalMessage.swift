@@ -14,19 +14,19 @@ import Foundation
 public struct AddLocalMessage: Codable, Equatable, Hashable {
 
     /// Target chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to disable notification for the message
-    public let disableNotification: Bool?
+    public var disableNotification: Bool?
 
     /// The content of the message to be added
-    public let inputMessageContent: InputMessageContent?
+    public var inputMessageContent: InputMessageContent?
 
     /// Identifier of the replied message; 0 if none
-    public let replyToMessageId: Int64?
+    public var replyToMessageId: Int64?
 
     /// Identifier of the sender of the message
-    public let senderId: MessageSender?
+    public var senderId: MessageSender?
 
 
     public init(

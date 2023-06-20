@@ -14,16 +14,16 @@ import Foundation
 public struct AuthenticationCodeInfo: Codable, Equatable, Hashable {
 
     /// The way the next code will be sent to the user; may be null
-    public let nextType: AuthenticationCodeType?
+    public var nextType: AuthenticationCodeType?
 
     /// A phone number that is being authenticated
-    public let phoneNumber: String
+    public var phoneNumber: String
 
     /// Timeout before the code can be re-sent, in seconds
-    public let timeout: Int
+    public var timeout: Int
 
     /// The way the code was sent to the user
-    public let type: AuthenticationCodeType
+    public var type: AuthenticationCodeType
 
 
     public init(

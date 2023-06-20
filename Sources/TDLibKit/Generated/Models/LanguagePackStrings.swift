@@ -14,7 +14,7 @@ import Foundation
 public struct LanguagePackStrings: Codable, Equatable, Hashable {
 
     /// A list of language pack strings
-    public let strings: [LanguagePackString]
+    public var strings: [LanguagePackString]
 
 
     public init(strings: [LanguagePackString]) {

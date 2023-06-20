@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupHasHiddenMembers: Codable, Equatable, Hashable {
 
     /// New value of has_hidden_members
-    public let hasHiddenMembers: Bool?
+    public var hasHiddenMembers: Bool?
 
     /// Identifier of the supergroup
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

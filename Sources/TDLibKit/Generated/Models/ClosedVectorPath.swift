@@ -14,7 +14,7 @@ import Foundation
 public struct ClosedVectorPath: Codable, Equatable, Hashable {
 
     /// List of vector path commands
-    public let commands: [VectorPathCommand]
+    public var commands: [VectorPathCommand]
 
 
     public init(commands: [VectorPathCommand]) {

@@ -14,16 +14,16 @@ import Foundation
 public struct SendCallRating: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int?
+    public var callId: Int?
 
     /// An optional user comment if the rating is less than 5
-    public let comment: String?
+    public var comment: String?
 
     /// List of the exact types of problems with the call, specified by the user
-    public let problems: [CallProblem]?
+    public var problems: [CallProblem]?
 
     /// Call rating; 1-5
-    public let rating: Int?
+    public var rating: Int?
 
 
     public init(

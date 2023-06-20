@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSupergroupSignMessages: Codable, Equatable, Hashable {
 
     /// New value of sign_messages
-    public let signMessages: Bool?
+    public var signMessages: Bool?
 
     /// Identifier of the channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

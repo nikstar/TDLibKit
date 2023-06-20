@@ -14,13 +14,13 @@ import Foundation
 public struct PremiumState: Codable, Equatable, Hashable {
 
     /// The list of available promotion animations for Premium features
-    public let animations: [PremiumFeaturePromotionAnimation]
+    public var animations: [PremiumFeaturePromotionAnimation]
 
     /// The list of available options for buying Telegram Premium
-    public let paymentOptions: [PremiumStatePaymentOption]
+    public var paymentOptions: [PremiumStatePaymentOption]
 
     /// Text description of the state of the current Premium subscription; may be empty if the current user has no Telegram Premium subscription
-    public let state: FormattedText
+    public var state: FormattedText
 
 
     public init(

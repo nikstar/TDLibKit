@@ -14,10 +14,10 @@ import Foundation
 public struct SetBotProfilePhoto: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Profile photo to set; pass null to delete the chat photo
-    public let photo: InputChatPhoto?
+    public var photo: InputChatPhoto?
 
 
     public init(

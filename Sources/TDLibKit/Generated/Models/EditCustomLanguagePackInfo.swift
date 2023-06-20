@@ -14,7 +14,7 @@ import Foundation
 public struct EditCustomLanguagePackInfo: Codable, Equatable, Hashable {
 
     /// New information about the custom local language pack
-    public let info: LanguagePackInfo?
+    public var info: LanguagePackInfo?
 
 
     public init(info: LanguagePackInfo?) {

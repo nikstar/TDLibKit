@@ -14,7 +14,7 @@ import Foundation
 public struct SentWebAppMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the sent inline message, if known
-    public let inlineMessageId: String
+    public var inlineMessageId: String
 
 
     public init(inlineMessageId: String) {

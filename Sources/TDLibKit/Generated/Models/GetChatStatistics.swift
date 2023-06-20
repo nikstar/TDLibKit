@@ -14,10 +14,10 @@ import Foundation
 public struct GetChatStatistics: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true if a dark theme is used by the application
-    public let isDark: Bool?
+    public var isDark: Bool?
 
 
     public init(

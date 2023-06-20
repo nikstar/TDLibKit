@@ -14,13 +14,13 @@ import Foundation
 public struct TermsOfService: Codable, Equatable, Hashable {
 
     /// The minimum age of a user to be able to accept the terms; 0 if age isn't restricted
-    public let minUserAge: Int
+    public var minUserAge: Int
 
     /// True, if a blocking popup with terms of service must be shown to the user
-    public let showPopup: Bool
+    public var showPopup: Bool
 
     /// Text of the terms of service
-    public let text: FormattedText
+    public var text: FormattedText
 
 
     public init(

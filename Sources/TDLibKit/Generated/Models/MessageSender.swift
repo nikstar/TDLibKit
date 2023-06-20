@@ -55,7 +55,7 @@ public enum MessageSender: Codable, Equatable, Hashable {
 public struct MessageSenderUser: Codable, Equatable, Hashable {
 
     /// Identifier of the user that sent the message
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(userId: Int64) {
@@ -67,7 +67,7 @@ public struct MessageSenderUser: Codable, Equatable, Hashable {
 public struct MessageSenderChat: Codable, Equatable, Hashable {
 
     /// Identifier of the chat that sent the message
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(chatId: Int64) {

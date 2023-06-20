@@ -14,10 +14,10 @@ import Foundation
 public struct SendCallSignalingData: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int?
+    public var callId: Int?
 
     /// The data
-    public let data: Data?
+    public var data: Data?
 
 
     public init(

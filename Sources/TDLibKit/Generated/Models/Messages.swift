@@ -14,10 +14,10 @@ import Foundation
 public struct Messages: Codable, Equatable, Hashable {
 
     /// List of messages; messages may be null
-    public let messages: [Message]?
+    public var messages: [Message]?
 
     /// Approximate total number of messages found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

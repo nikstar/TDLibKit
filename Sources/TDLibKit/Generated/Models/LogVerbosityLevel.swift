@@ -14,7 +14,7 @@ import Foundation
 public struct LogVerbosityLevel: Codable, Equatable, Hashable {
 
     /// Log verbosity level
-    public let verbosityLevel: Int
+    public var verbosityLevel: Int
 
 
     public init(verbosityLevel: Int) {

@@ -63,7 +63,7 @@ public enum MessageFileType: Codable, Equatable, Hashable {
 public struct MessageFileTypePrivate: Codable, Equatable, Hashable {
 
     /// Name of the other party; may be empty if unrecognized
-    public let name: String
+    public var name: String
 
 
     public init(name: String) {
@@ -75,7 +75,7 @@ public struct MessageFileTypePrivate: Codable, Equatable, Hashable {
 public struct MessageFileTypeGroup: Codable, Equatable, Hashable {
 
     /// Title of the group chat; may be empty if unrecognized
-    public let title: String
+    public var title: String
 
 
     public init(title: String) {

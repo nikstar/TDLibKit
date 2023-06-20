@@ -14,13 +14,13 @@ import Foundation
 public struct SearchStickers: Codable, Equatable, Hashable {
 
     /// Space-separated list of emoji to search for; must be non-empty
-    public let emojis: String?
+    public var emojis: String?
 
     /// The maximum number of stickers to be returned; 0-100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Type of the stickers to return
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(

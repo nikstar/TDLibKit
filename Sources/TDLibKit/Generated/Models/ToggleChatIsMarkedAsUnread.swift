@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleChatIsMarkedAsUnread: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New value of is_marked_as_unread
-    public let isMarkedAsUnread: Bool?
+    public var isMarkedAsUnread: Bool?
 
 
     public init(

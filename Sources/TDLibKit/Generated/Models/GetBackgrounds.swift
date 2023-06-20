@@ -14,7 +14,7 @@ import Foundation
 public struct GetBackgrounds: Codable, Equatable, Hashable {
 
     /// Pass true to order returned backgrounds for a dark theme
-    public let forDarkTheme: Bool?
+    public var forDarkTheme: Bool?
 
 
     public init(forDarkTheme: Bool?) {

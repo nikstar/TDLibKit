@@ -14,7 +14,7 @@ import Foundation
 public struct CancelPreliminaryUploadFile: Codable, Equatable, Hashable {
 
     /// Identifier of the file to stop uploading
-    public let fileId: Int?
+    public var fileId: Int?
 
 
     public init(fileId: Int?) {

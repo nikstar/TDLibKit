@@ -55,7 +55,7 @@ public enum ReactionType: Codable, Equatable, Hashable {
 public struct ReactionTypeEmoji: Codable, Equatable, Hashable {
 
     /// Text representation of the reaction
-    public let emoji: String
+    public var emoji: String
 
 
     public init(emoji: String) {
@@ -67,7 +67,7 @@ public struct ReactionTypeEmoji: Codable, Equatable, Hashable {
 public struct ReactionTypeCustomEmoji: Codable, Equatable, Hashable {
 
     /// Unique identifier of the custom emoji
-    public let customEmojiId: TdInt64
+    public var customEmojiId: TdInt64
 
 
     public init(customEmojiId: TdInt64) {

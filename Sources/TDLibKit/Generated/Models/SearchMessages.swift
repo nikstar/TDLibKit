@@ -14,25 +14,25 @@ import Foundation
 public struct SearchMessages: Codable, Equatable, Hashable {
 
     /// Chat list in which to search messages; pass null to search in all chats regardless of their chat list. Only Main and Archive chat lists are supported
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
     /// Additional filter for messages to search; pass null to search for all messages. Filters searchMessagesFilterMention, searchMessagesFilterUnreadMention, searchMessagesFilterUnreadReaction, searchMessagesFilterFailedToSend, and searchMessagesFilterPinned are unsupported in this function
-    public let filter: SearchMessagesFilter?
+    public var filter: SearchMessagesFilter?
 
     /// The maximum number of messages to be returned; up to 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-    public let limit: Int?
+    public var limit: Int?
 
     /// If not 0, the maximum date of the messages to return
-    public let maxDate: Int?
+    public var maxDate: Int?
 
     /// If not 0, the minimum date of the messages to return
-    public let minDate: Int?
+    public var minDate: Int?
 
     /// Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-    public let offset: String?
+    public var offset: String?
 
     /// Query to search for
-    public let query: String?
+    public var query: String?
 
 
     public init(

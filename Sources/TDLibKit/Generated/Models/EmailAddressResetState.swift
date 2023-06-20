@@ -55,7 +55,7 @@ public enum EmailAddressResetState: Codable, Equatable, Hashable {
 public struct EmailAddressResetStateAvailable: Codable, Equatable, Hashable {
 
     /// Time required to wait before the email address can be reset; 0 if the user is subscribed to Telegram Premium
-    public let waitPeriod: Int
+    public var waitPeriod: Int
 
 
     public init(waitPeriod: Int) {
@@ -67,7 +67,7 @@ public struct EmailAddressResetStateAvailable: Codable, Equatable, Hashable {
 public struct EmailAddressResetStatePending: Codable, Equatable, Hashable {
 
     /// Left time before the email address will be reset, in seconds. updateAuthorizationState is not sent when this field changes
-    public let resetIn: Int
+    public var resetIn: Int
 
 
     public init(resetIn: Int) {

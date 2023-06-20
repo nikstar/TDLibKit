@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatClientData: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New value of client_data
-    public let clientData: String?
+    public var clientData: String?
 
 
     public init(

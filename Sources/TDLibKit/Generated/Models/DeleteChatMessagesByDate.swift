@@ -14,16 +14,16 @@ import Foundation
 public struct DeleteChatMessagesByDate: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum date of the messages to delete
-    public let maxDate: Int?
+    public var maxDate: Int?
 
     /// The minimum date of the messages to delete
-    public let minDate: Int?
+    public var minDate: Int?
 
     /// Pass true to delete chat messages for all users; private chats only
-    public let revoke: Bool?
+    public var revoke: Bool?
 
 
     public init(

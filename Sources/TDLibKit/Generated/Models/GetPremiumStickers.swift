@@ -14,7 +14,7 @@ import Foundation
 public struct GetPremiumStickers: Codable, Equatable, Hashable {
 
     /// The maximum number of stickers to be returned; 0-100
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(limit: Int?) {

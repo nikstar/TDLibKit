@@ -14,7 +14,7 @@ import Foundation
 public struct JoinChatByInviteLink: Codable, Equatable, Hashable {
 
     /// Invite link to use
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(inviteLink: String?) {

@@ -14,10 +14,10 @@ import Foundation
 public struct ChatMessageSender: Codable, Equatable, Hashable {
 
     /// True, if Telegram Premium is needed to use the message sender
-    public let needsPremium: Bool
+    public var needsPremium: Bool
 
     /// Available message senders
-    public let sender: MessageSender
+    public var sender: MessageSender
 
 
     public init(

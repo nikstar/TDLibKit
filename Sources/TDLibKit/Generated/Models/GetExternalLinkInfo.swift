@@ -14,7 +14,7 @@ import Foundation
 public struct GetExternalLinkInfo: Codable, Equatable, Hashable {
 
     /// The link
-    public let link: String?
+    public var link: String?
 
 
     public init(link: String?) {

@@ -14,7 +14,7 @@ import Foundation
 public struct SetAuthenticationEmailAddress: Codable, Equatable, Hashable {
 
     /// The email address of the user
-    public let emailAddress: String?
+    public var emailAddress: String?
 
 
     public init(emailAddress: String?) {

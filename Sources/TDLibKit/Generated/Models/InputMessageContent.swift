@@ -205,13 +205,13 @@ public indirect enum InputMessageContent: Codable, Equatable, Hashable {
 public struct InputMessageText: Codable, Equatable, Hashable {
 
     /// True, if a chat message draft must be deleted
-    public let clearDraft: Bool
+    public var clearDraft: Bool
 
     /// True, if rich web page previews for URLs in the message text must be disabled
-    public let disableWebPagePreview: Bool
+    public var disableWebPagePreview: Bool
 
     /// Formatted text to be sent; 1-getOption("message_text_length_max") characters. Only Bold, Italic, Underline, Strikethrough, Spoiler, CustomEmoji, Code, Pre, PreCode, TextUrl and MentionName entities are allowed to be specified manually
-    public let text: FormattedText
+    public var text: FormattedText
 
 
     public init(
@@ -229,28 +229,28 @@ public struct InputMessageText: Codable, Equatable, Hashable {
 public struct InputMessageAnimation: Codable, Equatable, Hashable {
 
     /// File identifiers of the stickers added to the animation, if applicable
-    public let addedStickerFileIds: [Int]
+    public var addedStickerFileIds: [Int]
 
     /// Animation file to be sent
-    public let animation: InputFile
+    public var animation: InputFile
 
     /// Animation caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// Duration of the animation, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// True, if the animation preview must be covered by a spoiler animation; not supported in secret chats
-    public let hasSpoiler: Bool
+    public var hasSpoiler: Bool
 
     /// Height of the animation; may be replaced by the server
-    public let height: Int
+    public var height: Int
 
     /// Animation thumbnail; pass null to skip thumbnail uploading
-    public let thumbnail: InputThumbnail?
+    public var thumbnail: InputThumbnail?
 
     /// Width of the animation; may be replaced by the server
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -278,22 +278,22 @@ public struct InputMessageAnimation: Codable, Equatable, Hashable {
 public struct InputMessageAudio: Codable, Equatable, Hashable {
 
     /// Thumbnail of the cover for the album; pass null to skip thumbnail uploading
-    public let albumCoverThumbnail: InputThumbnail?
+    public var albumCoverThumbnail: InputThumbnail?
 
     /// Audio file to be sent
-    public let audio: InputFile
+    public var audio: InputFile
 
     /// Audio caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// Duration of the audio, in seconds; may be replaced by the server
-    public let duration: Int
+    public var duration: Int
 
     /// Performer of the audio; 0-64 characters, may be replaced by the server
-    public let performer: String
+    public var performer: String
 
     /// Title of the audio; 0-64 characters; may be replaced by the server
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -317,16 +317,16 @@ public struct InputMessageAudio: Codable, Equatable, Hashable {
 public struct InputMessageDocument: Codable, Equatable, Hashable {
 
     /// Document caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// If true, automatic file type detection will be disabled and the document will always be sent as file. Always true for files sent to secret chats
-    public let disableContentTypeDetection: Bool
+    public var disableContentTypeDetection: Bool
 
     /// Document to be sent
-    public let document: InputFile
+    public var document: InputFile
 
     /// Document thumbnail; pass null to skip thumbnail uploading
-    public let thumbnail: InputThumbnail?
+    public var thumbnail: InputThumbnail?
 
 
     public init(
@@ -346,28 +346,28 @@ public struct InputMessageDocument: Codable, Equatable, Hashable {
 public struct InputMessagePhoto: Codable, Equatable, Hashable {
 
     /// File identifiers of the stickers added to the photo, if applicable
-    public let addedStickerFileIds: [Int]
+    public var addedStickerFileIds: [Int]
 
     /// Photo caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// True, if the photo preview must be covered by a spoiler animation; not supported in secret chats
-    public let hasSpoiler: Bool
+    public var hasSpoiler: Bool
 
     /// Photo height
-    public let height: Int
+    public var height: Int
 
     /// Photo to send. The photo must be at most 10 MB in size. The photo's width and height must not exceed 10000 in total. Width and height ratio must be at most 20
-    public let photo: InputFile
+    public var photo: InputFile
 
     /// Photo self-destruct time, in seconds (0-60). A non-zero self-destruct time can be specified only in private chats
-    public let selfDestructTime: Int
+    public var selfDestructTime: Int
 
     /// Photo thumbnail to be sent; pass null to skip thumbnail uploading. The thumbnail is sent to the other party only in secret chats
-    public let thumbnail: InputThumbnail?
+    public var thumbnail: InputThumbnail?
 
     /// Photo width
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -395,19 +395,19 @@ public struct InputMessagePhoto: Codable, Equatable, Hashable {
 public struct InputMessageSticker: Codable, Equatable, Hashable {
 
     /// Emoji used to choose the sticker
-    public let emoji: String
+    public var emoji: String
 
     /// Sticker height
-    public let height: Int
+    public var height: Int
 
     /// Sticker to be sent
-    public let sticker: InputFile
+    public var sticker: InputFile
 
     /// Sticker thumbnail; pass null to skip thumbnail uploading
-    public let thumbnail: InputThumbnail?
+    public var thumbnail: InputThumbnail?
 
     /// Sticker width
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -429,34 +429,34 @@ public struct InputMessageSticker: Codable, Equatable, Hashable {
 public struct InputMessageVideo: Codable, Equatable, Hashable {
 
     /// File identifiers of the stickers added to the video, if applicable
-    public let addedStickerFileIds: [Int]
+    public var addedStickerFileIds: [Int]
 
     /// Video caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// Duration of the video, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// True, if the video preview must be covered by a spoiler animation; not supported in secret chats
-    public let hasSpoiler: Bool
+    public var hasSpoiler: Bool
 
     /// Video height
-    public let height: Int
+    public var height: Int
 
     /// Video self-destruct time, in seconds (0-60). A non-zero self-destruct time can be specified only in private chats
-    public let selfDestructTime: Int
+    public var selfDestructTime: Int
 
     /// True, if the video is supposed to be streamed
-    public let supportsStreaming: Bool
+    public var supportsStreaming: Bool
 
     /// Video thumbnail; pass null to skip thumbnail uploading
-    public let thumbnail: InputThumbnail?
+    public var thumbnail: InputThumbnail?
 
     /// Video to be sent
-    public let video: InputFile
+    public var video: InputFile
 
     /// Video width
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -488,16 +488,16 @@ public struct InputMessageVideo: Codable, Equatable, Hashable {
 public struct InputMessageVideoNote: Codable, Equatable, Hashable {
 
     /// Duration of the video, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// Video width and height; must be positive and not greater than 640
-    public let length: Int
+    public var length: Int
 
     /// Video thumbnail; pass null to skip thumbnail uploading
-    public let thumbnail: InputThumbnail?
+    public var thumbnail: InputThumbnail?
 
     /// Video note to be sent
-    public let videoNote: InputFile
+    public var videoNote: InputFile
 
 
     public init(
@@ -517,16 +517,16 @@ public struct InputMessageVideoNote: Codable, Equatable, Hashable {
 public struct InputMessageVoiceNote: Codable, Equatable, Hashable {
 
     /// Voice note caption; pass null to use an empty caption; 0-getOption("message_caption_length_max") characters
-    public let caption: FormattedText?
+    public var caption: FormattedText?
 
     /// Duration of the voice note, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// Voice note to be sent
-    public let voiceNote: InputFile
+    public var voiceNote: InputFile
 
     /// Waveform representation of the voice note in 5-bit format
-    public let waveform: Data
+    public var waveform: Data
 
 
     public init(
@@ -546,16 +546,16 @@ public struct InputMessageVoiceNote: Codable, Equatable, Hashable {
 public struct InputMessageLocation: Codable, Equatable, Hashable {
 
     /// For live locations, a direction in which the location moves, in degrees; 1-360. Pass 0 if unknown
-    public let heading: Int
+    public var heading: Int
 
     /// Period for which the location can be updated, in seconds; must be between 60 and 86400 for a live location and 0 otherwise
-    public let livePeriod: Int
+    public var livePeriod: Int
 
     /// Location to be sent
-    public let location: Location
+    public var location: Location
 
     /// For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). Pass 0 if the notification is disabled. Can't be enabled in channels and Saved Messages
-    public let proximityAlertRadius: Int
+    public var proximityAlertRadius: Int
 
 
     public init(
@@ -575,7 +575,7 @@ public struct InputMessageLocation: Codable, Equatable, Hashable {
 public struct InputMessageVenue: Codable, Equatable, Hashable {
 
     /// Venue to send
-    public let venue: Venue
+    public var venue: Venue
 
 
     public init(venue: Venue) {
@@ -587,7 +587,7 @@ public struct InputMessageVenue: Codable, Equatable, Hashable {
 public struct InputMessageContact: Codable, Equatable, Hashable {
 
     /// Contact to send
-    public let contact: Contact
+    public var contact: Contact
 
 
     public init(contact: Contact) {
@@ -599,10 +599,10 @@ public struct InputMessageContact: Codable, Equatable, Hashable {
 public struct InputMessageDice: Codable, Equatable, Hashable {
 
     /// True, if the chat message draft must be deleted
-    public let clearDraft: Bool
+    public var clearDraft: Bool
 
     /// Emoji on which the dice throw animation is based
-    public let emoji: String
+    public var emoji: String
 
 
     public init(
@@ -618,10 +618,10 @@ public struct InputMessageDice: Codable, Equatable, Hashable {
 public struct InputMessageGame: Codable, Equatable, Hashable {
 
     /// User identifier of the bot that owns the game
-    public let botUserId: Int64
+    public var botUserId: Int64
 
     /// Short name of the game
-    public let gameShortName: String
+    public var gameShortName: String
 
 
     public init(
@@ -636,40 +636,40 @@ public struct InputMessageGame: Codable, Equatable, Hashable {
 /// A message with an invoice; can be used only by bots
 public struct InputMessageInvoice: Codable, Equatable, Hashable {
 
-    public let description: String
+    public var description: String
 
     /// The content of extended media attached to the invoice. The content of the message to be sent. Must be one of the following types: inputMessagePhoto, inputMessageVideo
-    public let extendedMediaContent: InputMessageContent
+    public var extendedMediaContent: InputMessageContent
 
     /// Invoice
-    public let invoice: Invoice
+    public var invoice: Invoice
 
     /// The invoice payload
-    public let payload: Data
+    public var payload: Data
 
     /// Product photo height
-    public let photoHeight: Int
+    public var photoHeight: Int
 
     /// Product photo size
-    public let photoSize: Int
+    public var photoSize: Int
 
     /// Product photo URL; optional
-    public let photoUrl: String
+    public var photoUrl: String
 
     /// Product photo width
-    public let photoWidth: Int
+    public var photoWidth: Int
 
     /// JSON-encoded data about the invoice, which will be shared with the payment provider
-    public let providerData: String
+    public var providerData: String
 
     /// Payment provider token
-    public let providerToken: String
+    public var providerToken: String
 
     /// Unique invoice bot deep link parameter for the generation of this invoice. If empty, it would be possible to pay directly from forwards of the invoice message
-    public let startParameter: String
+    public var startParameter: String
 
     /// Product title; 1-32 characters
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -705,25 +705,25 @@ public struct InputMessageInvoice: Codable, Equatable, Hashable {
 public struct InputMessagePoll: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the poll will automatically be closed; for bots only
-    public let closeDate: Int
+    public var closeDate: Int
 
     /// True, if the poll voters are anonymous. Non-anonymous polls can't be sent or forwarded to channels
-    public let isAnonymous: Bool
+    public var isAnonymous: Bool
 
     /// True, if the poll needs to be sent already closed; for bots only
-    public let isClosed: Bool
+    public var isClosed: Bool
 
     /// Amount of time the poll will be active after creation, in seconds; for bots only
-    public let openPeriod: Int
+    public var openPeriod: Int
 
     /// List of poll answer options, 2-10 strings 1-100 characters each
-    public let options: [String]
+    public var options: [String]
 
     /// Poll question; 1-255 characters (up to 300 characters for bots)
-    public let question: String
+    public var question: String
 
     /// Type of the poll
-    public let type: PollType
+    public var type: PollType
 
 
     public init(
@@ -749,16 +749,16 @@ public struct InputMessagePoll: Codable, Equatable, Hashable {
 public struct InputMessageForwarded: Codable, Equatable, Hashable {
 
     /// Options to be used to copy content of the message without reference to the original sender; pass null to forward the message as usual
-    public let copyOptions: MessageCopyOptions?
+    public var copyOptions: MessageCopyOptions?
 
     /// Identifier for the chat this forwarded message came from
-    public let fromChatId: Int64
+    public var fromChatId: Int64
 
     /// True, if a game message is being shared from a launched game; applies only to game messages
-    public let inGameShare: Bool
+    public var inGameShare: Bool
 
     /// Identifier of the message to forward
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(

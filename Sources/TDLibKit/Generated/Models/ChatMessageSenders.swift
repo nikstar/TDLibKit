@@ -14,7 +14,7 @@ import Foundation
 public struct ChatMessageSenders: Codable, Equatable, Hashable {
 
     /// List of available message senders
-    public let senders: [ChatMessageSender]
+    public var senders: [ChatMessageSender]
 
 
     public init(senders: [ChatMessageSender]) {

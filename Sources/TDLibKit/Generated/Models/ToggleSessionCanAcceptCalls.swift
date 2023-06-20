@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSessionCanAcceptCalls: Codable, Equatable, Hashable {
 
     /// Pass true to allow accepting incoming calls by the session; pass false otherwise
-    public let canAcceptCalls: Bool?
+    public var canAcceptCalls: Bool?
 
     /// Session identifier
-    public let sessionId: TdInt64?
+    public var sessionId: TdInt64?
 
 
     public init(

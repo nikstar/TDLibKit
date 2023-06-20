@@ -14,7 +14,7 @@ import Foundation
 public struct TextEntities: Codable, Equatable, Hashable {
 
     /// List of text entities
-    public let entities: [TextEntity]
+    public var entities: [TextEntity]
 
 
     public init(entities: [TextEntity]) {

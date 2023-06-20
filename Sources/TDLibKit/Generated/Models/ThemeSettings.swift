@@ -14,19 +14,19 @@ import Foundation
 public struct ThemeSettings: Codable, Equatable, Hashable {
 
     /// Theme accent color in ARGB format
-    public let accentColor: Int
+    public var accentColor: Int
 
     /// If true, the freeform gradient fill needs to be animated on every sent message
-    public let animateOutgoingMessageFill: Bool
+    public var animateOutgoingMessageFill: Bool
 
     /// The background to be used in chats; may be null
-    public let background: Background?
+    public var background: Background?
 
     /// Accent color of outgoing messages in ARGB format
-    public let outgoingMessageAccentColor: Int
+    public var outgoingMessageAccentColor: Int
 
     /// The fill to be used as a background for outgoing messages
-    public let outgoingMessageFill: BackgroundFill
+    public var outgoingMessageFill: BackgroundFill
 
 
     public init(

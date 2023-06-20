@@ -14,7 +14,7 @@ import Foundation
 public struct RecommendedChatFolders: Codable, Equatable, Hashable {
 
     /// List of recommended chat folders
-    public let chatFolders: [RecommendedChatFolder]
+    public var chatFolders: [RecommendedChatFolder]
 
 
     public init(chatFolders: [RecommendedChatFolder]) {

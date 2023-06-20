@@ -14,13 +14,13 @@ import Foundation
 public struct StorageStatisticsByFileType: Codable, Equatable, Hashable {
 
     /// Total number of files
-    public let count: Int
+    public var count: Int
 
     /// File type
-    public let fileType: FileType
+    public var fileType: FileType
 
     /// Total size of the files, in bytes
-    public let size: Int64
+    public var size: Int64
 
 
     public init(

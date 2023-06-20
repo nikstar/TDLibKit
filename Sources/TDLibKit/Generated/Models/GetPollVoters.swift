@@ -14,19 +14,19 @@ import Foundation
 public struct GetPollVoters: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the poll belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum number of users to be returned; must be positive and can't be greater than 50. For optimal performance, the number of returned users is chosen by TDLib and can be smaller than the specified limit, even if the end of the voter list has not been reached
-    public let limit: Int?
+    public var limit: Int?
 
     /// Identifier of the message containing the poll
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Number of users to skip in the result; must be non-negative
-    public let offset: Int?
+    public var offset: Int?
 
     /// 0-based identifier of the answer option
-    public let optionId: Int?
+    public var optionId: Int?
 
 
     public init(

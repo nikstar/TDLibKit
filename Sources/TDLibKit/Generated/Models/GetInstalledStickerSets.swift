@@ -14,7 +14,7 @@ import Foundation
 public struct GetInstalledStickerSets: Codable, Equatable, Hashable {
 
     /// Type of the sticker sets to return
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(stickerType: StickerType?) {

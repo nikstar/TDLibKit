@@ -154,22 +154,22 @@ public enum InlineQueryResult: Codable, Equatable, Hashable {
 /// Represents a link to an article or web page
 public struct InlineQueryResultArticle: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// True, if the URL must be not shown
-    public let hideUrl: Bool
+    public var hideUrl: Bool
 
     /// Unique identifier of the query result
     public let id: String
 
     /// Result thumbnail in JPEG format; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// Title of the result
-    public let title: String
+    public var title: String
 
     /// URL of the result, if it exists
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -193,13 +193,13 @@ public struct InlineQueryResultArticle: Codable, Equatable, Hashable, Identifiab
 public struct InlineQueryResultContact: Codable, Equatable, Hashable, Identifiable {
 
     /// A user contact
-    public let contact: Contact
+    public var contact: Contact
 
     /// Unique identifier of the query result
     public let id: String
 
     /// Result thumbnail in JPEG format; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
 
     public init(
@@ -220,13 +220,13 @@ public struct InlineQueryResultLocation: Codable, Equatable, Hashable, Identifia
     public let id: String
 
     /// Location result
-    public let location: Location
+    public var location: Location
 
     /// Result thumbnail in JPEG format; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// Title of the result
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -249,10 +249,10 @@ public struct InlineQueryResultVenue: Codable, Equatable, Hashable, Identifiable
     public let id: String
 
     /// Result thumbnail in JPEG format; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// Venue result
-    public let venue: Venue
+    public var venue: Venue
 
 
     public init(
@@ -270,7 +270,7 @@ public struct InlineQueryResultVenue: Codable, Equatable, Hashable, Identifiable
 public struct InlineQueryResultGame: Codable, Equatable, Hashable, Identifiable {
 
     /// Game result
-    public let game: Game
+    public var game: Game
 
     /// Unique identifier of the query result
     public let id: String
@@ -289,13 +289,13 @@ public struct InlineQueryResultGame: Codable, Equatable, Hashable, Identifiable 
 public struct InlineQueryResultAnimation: Codable, Equatable, Hashable, Identifiable {
 
     /// Animation file
-    public let animation: Animation
+    public var animation: Animation
 
     /// Unique identifier of the query result
     public let id: String
 
     /// Animation title
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -313,7 +313,7 @@ public struct InlineQueryResultAnimation: Codable, Equatable, Hashable, Identifi
 public struct InlineQueryResultAudio: Codable, Equatable, Hashable, Identifiable {
 
     /// Audio file
-    public let audio: Audio
+    public var audio: Audio
 
     /// Unique identifier of the query result
     public let id: String
@@ -331,16 +331,16 @@ public struct InlineQueryResultAudio: Codable, Equatable, Hashable, Identifiable
 /// Represents a document
 public struct InlineQueryResultDocument: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// Document
-    public let document: Document
+    public var document: Document
 
     /// Unique identifier of the query result
     public let id: String
 
     /// Document title
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -359,16 +359,16 @@ public struct InlineQueryResultDocument: Codable, Equatable, Hashable, Identifia
 /// Represents a photo
 public struct InlineQueryResultPhoto: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// Photo
-    public let photo: Photo
+    public var photo: Photo
 
     /// Title of the result, if known
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -391,7 +391,7 @@ public struct InlineQueryResultSticker: Codable, Equatable, Hashable, Identifiab
     public let id: String
 
     /// Sticker
-    public let sticker: Sticker
+    public var sticker: Sticker
 
 
     public init(
@@ -406,16 +406,16 @@ public struct InlineQueryResultSticker: Codable, Equatable, Hashable, Identifiab
 /// Represents a video
 public struct InlineQueryResultVideo: Codable, Equatable, Hashable, Identifiable {
 
-    public let description: String
+    public var description: String
 
     /// Unique identifier of the query result
     public let id: String
 
     /// Title of the video
-    public let title: String
+    public var title: String
 
     /// Video
-    public let video: Video
+    public var video: Video
 
 
     public init(
@@ -438,10 +438,10 @@ public struct InlineQueryResultVoiceNote: Codable, Equatable, Hashable, Identifi
     public let id: String
 
     /// Title of the voice note
-    public let title: String
+    public var title: String
 
     /// Voice note
-    public let voiceNote: VoiceNote
+    public var voiceNote: VoiceNote
 
 
     public init(

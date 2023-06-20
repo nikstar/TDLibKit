@@ -14,16 +14,16 @@ import Foundation
 public struct GetMessagePublicForwards: Codable, Equatable, Hashable {
 
     /// Chat identifier of the message
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum number of messages to be returned; must be positive and can't be greater than 100. For optimal performance, the number of returned messages is chosen by TDLib and can be smaller than the specified limit
-    public let limit: Int?
+    public var limit: Int?
 
     /// Message identifier
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-    public let offset: String?
+    public var offset: String?
 
 
     public init(

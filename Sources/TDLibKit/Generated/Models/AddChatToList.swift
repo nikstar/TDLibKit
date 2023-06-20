@@ -14,10 +14,10 @@ import Foundation
 public struct AddChatToList: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The chat list. Use getChatListsToAddChat to get suitable chat lists
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
 
     public init(

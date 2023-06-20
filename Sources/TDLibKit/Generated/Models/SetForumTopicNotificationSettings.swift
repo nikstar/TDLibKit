@@ -14,13 +14,13 @@ import Foundation
 public struct SetForumTopicNotificationSettings: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message thread identifier of the forum topic
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// New notification settings for the forum topic. If the topic is muted for more than 366 days, it is considered to be muted forever
-    public let notificationSettings: ChatNotificationSettings?
+    public var notificationSettings: ChatNotificationSettings?
 
 
     public init(

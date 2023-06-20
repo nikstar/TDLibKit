@@ -14,13 +14,13 @@ import Foundation
 public struct ScopeAutosaveSettings: Codable, Equatable, Hashable {
 
     /// True, if photo autosave is enabled
-    public let autosavePhotos: Bool
+    public var autosavePhotos: Bool
 
     /// True, if video autosave is enabled
-    public let autosaveVideos: Bool
+    public var autosaveVideos: Bool
 
     /// The maximum size of a video file to be autosaved, in bytes; 512 KB - 4000 MB
-    public let maxVideoFileSize: Int64
+    public var maxVideoFileSize: Int64
 
 
     public init(

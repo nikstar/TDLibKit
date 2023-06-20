@@ -14,10 +14,10 @@ import Foundation
 public struct FinishFileGeneration: Codable, Equatable, Hashable {
 
     /// If passed, the file generation has failed and must be terminated; pass null if the file generation succeeded
-    public let error: Error?
+    public var error: Error?
 
     /// The identifier of the generation process
-    public let generationId: TdInt64?
+    public var generationId: TdInt64?
 
 
     public init(

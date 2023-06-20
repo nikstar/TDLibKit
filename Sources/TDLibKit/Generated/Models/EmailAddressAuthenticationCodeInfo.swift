@@ -14,10 +14,10 @@ import Foundation
 public struct EmailAddressAuthenticationCodeInfo: Codable, Equatable, Hashable {
 
     /// Pattern of the email address to which an authentication code was sent
-    public let emailAddressPattern: String
+    public var emailAddressPattern: String
 
     /// Length of the code; 0 if unknown
-    public let length: Int
+    public var length: Int
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct EmojiStatuses: Codable, Equatable, Hashable {
 
     /// The list of emoji statuses
-    public let emojiStatuses: [EmojiStatus]
+    public var emojiStatuses: [EmojiStatus]
 
 
     public init(emojiStatuses: [EmojiStatus]) {

@@ -14,16 +14,16 @@ import Foundation
 public struct PremiumStatePaymentOption: Codable, Equatable, Hashable {
 
     /// True, if this is the currently used Telegram Premium subscription option
-    public let isCurrent: Bool
+    public var isCurrent: Bool
 
     /// True, if the payment option can be used to upgrade the existing Telegram Premium subscription
-    public let isUpgrade: Bool
+    public var isUpgrade: Bool
 
     /// Identifier of the last in-store transaction for the currently used option
-    public let lastTransactionId: String
+    public var lastTransactionId: String
 
     /// Information about the payment option
-    public let paymentOption: PremiumPaymentOption
+    public var paymentOption: PremiumPaymentOption
 
 
     public init(

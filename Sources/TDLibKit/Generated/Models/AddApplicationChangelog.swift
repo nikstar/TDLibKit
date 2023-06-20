@@ -14,7 +14,7 @@ import Foundation
 public struct AddApplicationChangelog: Codable, Equatable, Hashable {
 
     /// The previous application version
-    public let previousApplicationVersion: String?
+    public var previousApplicationVersion: String?
 
 
     public init(previousApplicationVersion: String?) {

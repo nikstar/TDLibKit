@@ -143,10 +143,10 @@ public enum AuthorizationState: Codable, Equatable, Hashable {
 public struct AuthorizationStateWaitEmailAddress: Codable, Equatable, Hashable {
 
     /// True, if authorization through Apple ID is allowed
-    public let allowAppleId: Bool
+    public var allowAppleId: Bool
 
     /// True, if authorization through Google ID is allowed
-    public let allowGoogleId: Bool
+    public var allowGoogleId: Bool
 
 
     public init(
@@ -162,16 +162,16 @@ public struct AuthorizationStateWaitEmailAddress: Codable, Equatable, Hashable {
 public struct AuthorizationStateWaitEmailCode: Codable, Equatable, Hashable {
 
     /// True, if authorization through Apple ID is allowed
-    public let allowAppleId: Bool
+    public var allowAppleId: Bool
 
     /// True, if authorization through Google ID is allowed
-    public let allowGoogleId: Bool
+    public var allowGoogleId: Bool
 
     /// Information about the sent authentication code
-    public let codeInfo: EmailAddressAuthenticationCodeInfo
+    public var codeInfo: EmailAddressAuthenticationCodeInfo
 
     /// Reset state of the email address; may be null if the email address can't be reset
-    public let emailAddressResetState: EmailAddressResetState?
+    public var emailAddressResetState: EmailAddressResetState?
 
 
     public init(
@@ -191,7 +191,7 @@ public struct AuthorizationStateWaitEmailCode: Codable, Equatable, Hashable {
 public struct AuthorizationStateWaitCode: Codable, Equatable, Hashable {
 
     /// Information about the authorization code that was sent
-    public let codeInfo: AuthenticationCodeInfo
+    public var codeInfo: AuthenticationCodeInfo
 
 
     public init(codeInfo: AuthenticationCodeInfo) {
@@ -203,7 +203,7 @@ public struct AuthorizationStateWaitCode: Codable, Equatable, Hashable {
 public struct AuthorizationStateWaitOtherDeviceConfirmation: Codable, Equatable, Hashable {
 
     /// A tg:// URL for the QR code. The link will be updated frequently
-    public let link: String
+    public var link: String
 
 
     public init(link: String) {
@@ -215,7 +215,7 @@ public struct AuthorizationStateWaitOtherDeviceConfirmation: Codable, Equatable,
 public struct AuthorizationStateWaitRegistration: Codable, Equatable, Hashable {
 
     /// Telegram terms of service
-    public let termsOfService: TermsOfService
+    public var termsOfService: TermsOfService
 
 
     public init(termsOfService: TermsOfService) {
@@ -227,16 +227,16 @@ public struct AuthorizationStateWaitRegistration: Codable, Equatable, Hashable {
 public struct AuthorizationStateWaitPassword: Codable, Equatable, Hashable {
 
     /// True, if some Telegram Passport elements were saved
-    public let hasPassportData: Bool
+    public var hasPassportData: Bool
 
     /// True, if a recovery email address has been set up
-    public let hasRecoveryEmailAddress: Bool
+    public var hasRecoveryEmailAddress: Bool
 
     /// Hint for the password; may be empty
-    public let passwordHint: String
+    public var passwordHint: String
 
     /// Pattern of the email address to which the recovery email was sent; empty until a recovery email has been sent
-    public let recoveryEmailAddressPattern: String
+    public var recoveryEmailAddressPattern: String
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct GetSuggestedFileName: Codable, Equatable, Hashable {
 
     /// Directory in which the file is supposed to be saved
-    public let directory: String?
+    public var directory: String?
 
     /// Identifier of the file
-    public let fileId: Int?
+    public var fileId: Int?
 
 
     public init(

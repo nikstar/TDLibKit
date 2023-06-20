@@ -14,13 +14,13 @@ import Foundation
 public struct ChatInviteLinkCount: Codable, Equatable, Hashable {
 
     /// Number of active invite links
-    public let inviteLinkCount: Int
+    public var inviteLinkCount: Int
 
     /// Number of revoked invite links
-    public let revokedInviteLinkCount: Int
+    public var revokedInviteLinkCount: Int
 
     /// Administrator's user identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

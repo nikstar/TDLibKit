@@ -14,13 +14,13 @@ import Foundation
 public struct SetCommands: Codable, Equatable, Hashable {
 
     /// List of the bot's commands
-    public let commands: [BotCommand]?
+    public var commands: [BotCommand]?
 
     /// A two-letter ISO 639-1 language code. If empty, the commands will be applied to all users from the given scope, for which language there are no dedicated commands
-    public let languageCode: String?
+    public var languageCode: String?
 
     /// The scope to which the commands are relevant; pass null to change commands in the default bot command scope
-    public let scope: BotCommandScope?
+    public var scope: BotCommandScope?
 
 
     public init(

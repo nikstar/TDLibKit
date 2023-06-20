@@ -14,19 +14,19 @@ import Foundation
 public struct PhotoSize: Codable, Equatable, Hashable {
 
     /// Image height
-    public let height: Int
+    public var height: Int
 
     /// Information about the image file
-    public let photo: File
+    public var photo: File
 
     /// Sizes of progressive JPEG file prefixes, which can be used to preliminarily show the image; in bytes
-    public let progressiveSizes: [Int]
+    public var progressiveSizes: [Int]
 
     /// Image type (see https://core.telegram.org/constructor/photoSize)
-    public let type: String
+    public var type: String
 
     /// Image width
-    public let width: Int
+    public var width: Int
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct GetPaymentReceipt: Codable, Equatable, Hashable {
 
     /// Chat identifier of the messagePaymentSuccessful message
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message identifier
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

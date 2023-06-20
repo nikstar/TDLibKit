@@ -65,7 +65,7 @@ public enum BackgroundFill: Codable, Equatable, Hashable {
 public struct BackgroundFillSolid: Codable, Equatable, Hashable {
 
     /// A color of the background in the RGB24 format
-    public let color: Int
+    public var color: Int
 
 
     public init(color: Int) {
@@ -77,13 +77,13 @@ public struct BackgroundFillSolid: Codable, Equatable, Hashable {
 public struct BackgroundFillGradient: Codable, Equatable, Hashable {
 
     /// A bottom color of the background in the RGB24 format
-    public let bottomColor: Int
+    public var bottomColor: Int
 
     /// Clockwise rotation angle of the gradient, in degrees; 0-359. Must always be divisible by 45
-    public let rotationAngle: Int
+    public var rotationAngle: Int
 
     /// A top color of the background in the RGB24 format
-    public let topColor: Int
+    public var topColor: Int
 
 
     public init(
@@ -101,7 +101,7 @@ public struct BackgroundFillGradient: Codable, Equatable, Hashable {
 public struct BackgroundFillFreeformGradient: Codable, Equatable, Hashable {
 
     /// A list of 3 or 4 colors of the freeform gradients in the RGB24 format
-    public let colors: [Int]
+    public var colors: [Int]
 
 
     public init(colors: [Int]) {

@@ -73,7 +73,7 @@ public enum PremiumSource: Codable, Equatable, Hashable {
 public struct PremiumSourceLimitExceeded: Codable, Equatable, Hashable {
 
     /// Type of the exceeded limit
-    public let limitType: PremiumLimitType
+    public var limitType: PremiumLimitType
 
 
     public init(limitType: PremiumLimitType) {
@@ -85,7 +85,7 @@ public struct PremiumSourceLimitExceeded: Codable, Equatable, Hashable {
 public struct PremiumSourceFeature: Codable, Equatable, Hashable {
 
     /// The used feature
-    public let feature: PremiumFeature
+    public var feature: PremiumFeature
 
 
     public init(feature: PremiumFeature) {
@@ -97,7 +97,7 @@ public struct PremiumSourceFeature: Codable, Equatable, Hashable {
 public struct PremiumSourceLink: Codable, Equatable, Hashable {
 
     /// The referrer from the link
-    public let referrer: String
+    public var referrer: String
 
 
     public init(referrer: String) {

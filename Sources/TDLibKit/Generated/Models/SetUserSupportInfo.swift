@@ -14,10 +14,10 @@ import Foundation
 public struct SetUserSupportInfo: Codable, Equatable, Hashable {
 
     /// New information message
-    public let message: FormattedText?
+    public var message: FormattedText?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

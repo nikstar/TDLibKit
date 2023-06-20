@@ -14,7 +14,7 @@ import Foundation
 public struct GetUserFullInfo: Codable, Equatable, Hashable {
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(userId: Int64?) {

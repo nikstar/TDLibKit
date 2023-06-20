@@ -65,7 +65,7 @@ public enum StickerFullType: Codable, Equatable, Hashable {
 public struct StickerFullTypeRegular: Codable, Equatable, Hashable {
 
     /// Premium animation of the sticker; may be null. If present, only Telegram Premium users can use the sticker
-    public let premiumAnimation: File?
+    public var premiumAnimation: File?
 
 
     public init(premiumAnimation: File?) {
@@ -77,7 +77,7 @@ public struct StickerFullTypeRegular: Codable, Equatable, Hashable {
 public struct StickerFullTypeMask: Codable, Equatable, Hashable {
 
     /// Position where the mask is placed; may be null
-    public let maskPosition: MaskPosition?
+    public var maskPosition: MaskPosition?
 
 
     public init(maskPosition: MaskPosition?) {
@@ -89,10 +89,10 @@ public struct StickerFullTypeMask: Codable, Equatable, Hashable {
 public struct StickerFullTypeCustomEmoji: Codable, Equatable, Hashable {
 
     /// Identifier of the custom emoji
-    public let customEmojiId: TdInt64
+    public var customEmojiId: TdInt64
 
     /// True, if the sticker must be repainted to a text color in messages, the color of the Telegram Premium badge in emoji status, white color on chat photos, or another appropriate color in other places
-    public let needsRepainting: Bool
+    public var needsRepainting: Bool
 
 
     public init(

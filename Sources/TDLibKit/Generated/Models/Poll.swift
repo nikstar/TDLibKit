@@ -14,34 +14,34 @@ import Foundation
 public struct Poll: Codable, Equatable, Hashable, Identifiable {
 
     /// Point in time (Unix timestamp) when the poll will automatically be closed
-    public let closeDate: Int
+    public var closeDate: Int
 
     /// Unique poll identifier
     public let id: TdInt64
 
     /// True, if the poll is anonymous
-    public let isAnonymous: Bool
+    public var isAnonymous: Bool
 
     /// True, if the poll is closed
-    public let isClosed: Bool
+    public var isClosed: Bool
 
     /// Amount of time the poll will be active after creation, in seconds
-    public let openPeriod: Int
+    public var openPeriod: Int
 
     /// List of poll answer options
-    public let options: [PollOption]
+    public var options: [PollOption]
 
     /// Poll question; 1-300 characters
-    public let question: String
+    public var question: String
 
     /// User identifiers of recent voters, if the poll is non-anonymous
-    public let recentVoterUserIds: [Int64]
+    public var recentVoterUserIds: [Int64]
 
     /// Total number of voters, participating in the poll
-    public let totalVoterCount: Int
+    public var totalVoterCount: Int
 
     /// Type of the poll
-    public let type: PollType
+    public var type: PollType
 
 
     public init(

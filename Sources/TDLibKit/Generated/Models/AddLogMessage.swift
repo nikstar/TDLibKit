@@ -14,10 +14,10 @@ import Foundation
 public struct AddLogMessage: Codable, Equatable, Hashable {
 
     /// Text of a message to log
-    public let text: String?
+    public var text: String?
 
     /// The minimum verbosity level needed for the message to be logged; 0-1023
-    public let verbosityLevel: Int?
+    public var verbosityLevel: Int?
 
 
     public init(

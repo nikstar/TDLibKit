@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleMessageSenderIsBlocked: Codable, Equatable, Hashable {
 
     /// New value of is_blocked
-    public let isBlocked: Bool?
+    public var isBlocked: Bool?
 
     /// Identifier of a message sender to block/unblock
-    public let senderId: MessageSender?
+    public var senderId: MessageSender?
 
 
     public init(

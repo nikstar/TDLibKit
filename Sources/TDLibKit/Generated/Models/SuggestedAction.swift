@@ -103,7 +103,7 @@ public enum SuggestedAction: Codable, Equatable, Hashable {
 public struct SuggestedActionConvertToBroadcastGroup: Codable, Equatable, Hashable {
 
     /// Supergroup identifier
-    public let supergroupId: Int64
+    public var supergroupId: Int64
 
 
     public init(supergroupId: Int64) {
@@ -115,7 +115,7 @@ public struct SuggestedActionConvertToBroadcastGroup: Codable, Equatable, Hashab
 public struct SuggestedActionSetPassword: Codable, Equatable, Hashable {
 
     /// The number of days to pass between consecutive authorizations if the user declines to set password; if 0, then the user is advised to set the password for security reasons
-    public let authorizationDelay: Int
+    public var authorizationDelay: Int
 
 
     public init(authorizationDelay: Int) {

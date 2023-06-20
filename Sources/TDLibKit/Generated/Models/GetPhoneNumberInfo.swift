@@ -14,7 +14,7 @@ import Foundation
 public struct GetPhoneNumberInfo: Codable, Equatable, Hashable {
 
     /// The phone number prefix
-    public let phoneNumberPrefix: String?
+    public var phoneNumberPrefix: String?
 
 
     public init(phoneNumberPrefix: String?) {

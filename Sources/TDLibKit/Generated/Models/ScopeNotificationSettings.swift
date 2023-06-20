@@ -14,19 +14,19 @@ import Foundation
 public struct ScopeNotificationSettings: Codable, Equatable, Hashable {
 
     /// True, if notifications for messages with mentions will be created as for an ordinary unread message
-    public let disableMentionNotifications: Bool
+    public var disableMentionNotifications: Bool
 
     /// True, if notifications for incoming pinned messages will be created as for an ordinary unread message
-    public let disablePinnedMessageNotifications: Bool
+    public var disablePinnedMessageNotifications: Bool
 
     /// Time left before notifications will be unmuted, in seconds
-    public let muteFor: Int
+    public var muteFor: Int
 
     /// True, if message content must be displayed in notifications
-    public let showPreview: Bool
+    public var showPreview: Bool
 
     /// Identifier of the notification sound to be played; 0 if sound is disabled
-    public let soundId: TdInt64
+    public var soundId: TdInt64
 
 
     public init(

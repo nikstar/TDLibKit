@@ -14,10 +14,10 @@ import Foundation
 public struct ChatBackground: Codable, Equatable, Hashable {
 
     /// The background
-    public let background: Background
+    public var background: Background
 
     /// Dimming of the background in dark themes, as a percentage; 0-100
-    public let darkThemeDimming: Int
+    public var darkThemeDimming: Int
 
 
     public init(

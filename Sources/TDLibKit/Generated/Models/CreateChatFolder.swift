@@ -14,7 +14,7 @@ import Foundation
 public struct CreateChatFolder: Codable, Equatable, Hashable {
 
     /// The new chat folder
-    public let folder: ChatFolder?
+    public var folder: ChatFolder?
 
 
     public init(folder: ChatFolder?) {

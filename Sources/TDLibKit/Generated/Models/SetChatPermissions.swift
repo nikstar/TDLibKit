@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatPermissions: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New non-administrator members permissions in the chat
-    public let permissions: ChatPermissions?
+    public var permissions: ChatPermissions?
 
 
     public init(

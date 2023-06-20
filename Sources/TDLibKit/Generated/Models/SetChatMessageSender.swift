@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatMessageSender: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New message sender for the chat
-    public let messageSenderId: MessageSender?
+    public var messageSenderId: MessageSender?
 
 
     public init(

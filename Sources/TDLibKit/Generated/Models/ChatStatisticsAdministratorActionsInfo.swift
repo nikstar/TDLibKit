@@ -14,16 +14,16 @@ import Foundation
 public struct ChatStatisticsAdministratorActionsInfo: Codable, Equatable, Hashable {
 
     /// Number of users banned by the administrator
-    public let bannedUserCount: Int
+    public var bannedUserCount: Int
 
     /// Number of messages deleted by the administrator
-    public let deletedMessageCount: Int
+    public var deletedMessageCount: Int
 
     /// Number of users restricted by the administrator
-    public let restrictedUserCount: Int
+    public var restrictedUserCount: Int
 
     /// Administrator user identifier
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(

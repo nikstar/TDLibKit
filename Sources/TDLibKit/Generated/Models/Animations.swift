@@ -14,7 +14,7 @@ import Foundation
 public struct Animations: Codable, Equatable, Hashable {
 
     /// List of animations
-    public let animations: [Animation]
+    public var animations: [Animation]
 
 
     public init(animations: [Animation]) {

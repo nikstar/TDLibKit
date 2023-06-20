@@ -14,10 +14,10 @@ import Foundation
 public struct SetUserPrivacySettingRules: Codable, Equatable, Hashable {
 
     /// The new privacy rules
-    public let rules: UserPrivacySettingRules?
+    public var rules: UserPrivacySettingRules?
 
     /// The privacy setting
-    public let setting: UserPrivacySetting?
+    public var setting: UserPrivacySetting?
 
 
     public init(

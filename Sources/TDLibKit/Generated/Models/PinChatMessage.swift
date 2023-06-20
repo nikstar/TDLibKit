@@ -14,16 +14,16 @@ import Foundation
 public struct PinChatMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to disable notification about the pinned message. Notifications are always disabled in channels and private chats
-    public let disableNotification: Bool?
+    public var disableNotification: Bool?
 
     /// Identifier of the new pinned message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Pass true to pin the message only for self; private chats only
-    public let onlyForSelf: Bool?
+    public var onlyForSelf: Bool?
 
 
     public init(

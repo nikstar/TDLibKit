@@ -14,10 +14,10 @@ import Foundation
 public struct UserLink: Codable, Equatable, Hashable {
 
     /// Left time for which the link is valid, in seconds; 0 if the link is a public username link
-    public let expiresIn: Int
+    public var expiresIn: Int
 
     /// The URL
-    public let url: String
+    public var url: String
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct GetChatFolderDefaultIconName: Codable, Equatable, Hashable {
 
     /// Chat folder
-    public let folder: ChatFolder?
+    public var folder: ChatFolder?
 
 
     public init(folder: ChatFolder?) {

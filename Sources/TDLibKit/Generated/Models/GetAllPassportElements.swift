@@ -14,7 +14,7 @@ import Foundation
 public struct GetAllPassportElements: Codable, Equatable, Hashable {
 
     /// The 2-step verification password of the current user
-    public let password: String?
+    public var password: String?
 
 
     public init(password: String?) {

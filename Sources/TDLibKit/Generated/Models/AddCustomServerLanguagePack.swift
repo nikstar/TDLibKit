@@ -14,7 +14,7 @@ import Foundation
 public struct AddCustomServerLanguagePack: Codable, Equatable, Hashable {
 
     /// Identifier of a language pack to be added
-    public let languagePackId: String?
+    public var languagePackId: String?
 
 
     public init(languagePackId: String?) {

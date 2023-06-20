@@ -14,10 +14,10 @@ import Foundation
 public struct UnpinAllMessageThreadMessages: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Message thread identifier in which messages will be unpinned
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

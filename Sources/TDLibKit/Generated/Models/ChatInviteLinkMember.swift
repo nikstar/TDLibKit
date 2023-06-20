@@ -14,16 +14,16 @@ import Foundation
 public struct ChatInviteLinkMember: Codable, Equatable, Hashable {
 
     /// User identifier of the chat administrator, approved user join request
-    public let approverUserId: Int64
+    public var approverUserId: Int64
 
     /// Point in time (Unix timestamp) when the user joined the chat
-    public let joinedChatDate: Int
+    public var joinedChatDate: Int
 
     /// User identifier
-    public let userId: Int64
+    public var userId: Int64
 
     /// True, if the user has joined the chat using an invite link for a chat folder
-    public let viaChatFolderInviteLink: Bool
+    public var viaChatFolderInviteLink: Bool
 
 
     public init(

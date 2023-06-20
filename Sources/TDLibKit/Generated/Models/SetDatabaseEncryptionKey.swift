@@ -14,7 +14,7 @@ import Foundation
 public struct SetDatabaseEncryptionKey: Codable, Equatable, Hashable {
 
     /// New encryption key
-    public let newEncryptionKey: Data?
+    public var newEncryptionKey: Data?
 
 
     public init(newEncryptionKey: Data?) {

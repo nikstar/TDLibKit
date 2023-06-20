@@ -14,10 +14,10 @@ import Foundation
 public struct DeleteChatReplyMarkup: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The message identifier of the used keyboard
-    public let messageId: Int64?
+    public var messageId: Int64?
 
 
     public init(

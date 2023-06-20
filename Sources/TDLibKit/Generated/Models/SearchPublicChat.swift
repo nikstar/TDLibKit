@@ -14,7 +14,7 @@ import Foundation
 public struct SearchPublicChat: Codable, Equatable, Hashable {
 
     /// Username to be resolved
-    public let username: String?
+    public var username: String?
 
 
     public init(username: String?) {

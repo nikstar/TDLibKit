@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleChatIsTranslatable: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New value of is_translatable
-    public let isTranslatable: Bool?
+    public var isTranslatable: Bool?
 
 
     public init(

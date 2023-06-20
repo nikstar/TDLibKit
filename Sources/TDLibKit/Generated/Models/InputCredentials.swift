@@ -75,7 +75,7 @@ public enum InputCredentials: Codable, Equatable, Hashable {
 public struct InputCredentialsSaved: Codable, Equatable, Hashable {
 
     /// Identifier of the saved credentials
-    public let savedCredentialsId: String
+    public var savedCredentialsId: String
 
 
     public init(savedCredentialsId: String) {
@@ -87,10 +87,10 @@ public struct InputCredentialsSaved: Codable, Equatable, Hashable {
 public struct InputCredentialsNew: Codable, Equatable, Hashable {
 
     /// True, if the credential identifier can be saved on the server side
-    public let allowSave: Bool
+    public var allowSave: Bool
 
     /// JSON-encoded data with the credential identifier from the payment provider
-    public let data: String
+    public var data: String
 
 
     public init(
@@ -106,7 +106,7 @@ public struct InputCredentialsNew: Codable, Equatable, Hashable {
 public struct InputCredentialsApplePay: Codable, Equatable, Hashable {
 
     /// JSON-encoded data with the credential identifier
-    public let data: String
+    public var data: String
 
 
     public init(data: String) {
@@ -118,7 +118,7 @@ public struct InputCredentialsApplePay: Codable, Equatable, Hashable {
 public struct InputCredentialsGooglePay: Codable, Equatable, Hashable {
 
     /// JSON-encoded data with the credential identifier
-    public let data: String
+    public var data: String
 
 
     public init(data: String) {

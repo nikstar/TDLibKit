@@ -14,7 +14,7 @@ import Foundation
 public struct SetDefaultChannelAdministratorRights: Codable, Equatable, Hashable {
 
     /// Default administrator rights for adding the bot to channels; may be null
-    public let defaultChannelAdministratorRights: ChatAdministratorRights?
+    public var defaultChannelAdministratorRights: ChatAdministratorRights?
 
 
     public init(defaultChannelAdministratorRights: ChatAdministratorRights?) {

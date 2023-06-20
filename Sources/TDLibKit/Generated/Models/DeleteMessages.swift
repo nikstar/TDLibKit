@@ -14,13 +14,13 @@ import Foundation
 public struct DeleteMessages: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifiers of the messages to be deleted
-    public let messageIds: [Int64]?
+    public var messageIds: [Int64]?
 
     /// Pass true to delete messages for all chat members. Always true for supergroups, channels and secret chats
-    public let revoke: Bool?
+    public var revoke: Bool?
 
 
     public init(

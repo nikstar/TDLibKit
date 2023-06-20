@@ -14,13 +14,13 @@ import Foundation
 public struct VideoChat: Codable, Equatable, Hashable {
 
     /// Default group call participant identifier to join the video chat; may be null
-    public let defaultParticipantId: MessageSender?
+    public var defaultParticipantId: MessageSender?
 
     /// Group call identifier of an active video chat; 0 if none. Full information about the video chat can be received through the method getGroupCall
-    public let groupCallId: Int
+    public var groupCallId: Int
 
     /// True, if the video chat has participants
-    public let hasParticipants: Bool
+    public var hasParticipants: Bool
 
 
     public init(

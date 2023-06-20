@@ -14,7 +14,7 @@ import Foundation
 public struct GetScopeNotificationSettings: Codable, Equatable, Hashable {
 
     /// Types of chats for which to return the notification settings information
-    public let scope: NotificationSettingsScope?
+    public var scope: NotificationSettingsScope?
 
 
     public init(scope: NotificationSettingsScope?) {

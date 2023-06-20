@@ -14,10 +14,10 @@ import Foundation
 public struct SetAuthenticationPhoneNumber: Codable, Equatable, Hashable {
 
     /// The phone number of the user, in international format
-    public let phoneNumber: String?
+    public var phoneNumber: String?
 
     /// Settings for the authentication of the user's phone number; pass null to use default settings
-    public let settings: PhoneNumberAuthenticationSettings?
+    public var settings: PhoneNumberAuthenticationSettings?
 
 
     public init(

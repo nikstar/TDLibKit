@@ -14,10 +14,10 @@ import Foundation
 public struct SetBotUpdatesStatus: Codable, Equatable, Hashable {
 
     /// The last error message
-    public let errorMessage: String?
+    public var errorMessage: String?
 
     /// The number of pending updates
-    public let pendingUpdateCount: Int?
+    public var pendingUpdateCount: Int?
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct ChatStatisticsMessageInteractionInfo: Codable, Equatable, Hashable {
 
     /// Number of times the message was forwarded
-    public let forwardCount: Int
+    public var forwardCount: Int
 
     /// Message identifier
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// Number of times the message was viewed
-    public let viewCount: Int
+    public var viewCount: Int
 
 
     public init(

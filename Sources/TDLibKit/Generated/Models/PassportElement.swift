@@ -165,7 +165,7 @@ public enum PassportElement: Codable, Equatable, Hashable {
 public struct PassportElementPersonalDetails: Codable, Equatable, Hashable {
 
     /// Personal details of the user
-    public let personalDetails: PersonalDetails
+    public var personalDetails: PersonalDetails
 
 
     public init(personalDetails: PersonalDetails) {
@@ -177,7 +177,7 @@ public struct PassportElementPersonalDetails: Codable, Equatable, Hashable {
 public struct PassportElementPassport: Codable, Equatable, Hashable {
 
     /// Passport
-    public let passport: IdentityDocument
+    public var passport: IdentityDocument
 
 
     public init(passport: IdentityDocument) {
@@ -189,7 +189,7 @@ public struct PassportElementPassport: Codable, Equatable, Hashable {
 public struct PassportElementDriverLicense: Codable, Equatable, Hashable {
 
     /// Driver license
-    public let driverLicense: IdentityDocument
+    public var driverLicense: IdentityDocument
 
 
     public init(driverLicense: IdentityDocument) {
@@ -201,7 +201,7 @@ public struct PassportElementDriverLicense: Codable, Equatable, Hashable {
 public struct PassportElementIdentityCard: Codable, Equatable, Hashable {
 
     /// Identity card
-    public let identityCard: IdentityDocument
+    public var identityCard: IdentityDocument
 
 
     public init(identityCard: IdentityDocument) {
@@ -213,7 +213,7 @@ public struct PassportElementIdentityCard: Codable, Equatable, Hashable {
 public struct PassportElementInternalPassport: Codable, Equatable, Hashable {
 
     /// Internal passport
-    public let internalPassport: IdentityDocument
+    public var internalPassport: IdentityDocument
 
 
     public init(internalPassport: IdentityDocument) {
@@ -225,7 +225,7 @@ public struct PassportElementInternalPassport: Codable, Equatable, Hashable {
 public struct PassportElementAddress: Codable, Equatable, Hashable {
 
     /// Address
-    public let address: Address
+    public var address: Address
 
 
     public init(address: Address) {
@@ -237,7 +237,7 @@ public struct PassportElementAddress: Codable, Equatable, Hashable {
 public struct PassportElementUtilityBill: Codable, Equatable, Hashable {
 
     /// Utility bill
-    public let utilityBill: PersonalDocument
+    public var utilityBill: PersonalDocument
 
 
     public init(utilityBill: PersonalDocument) {
@@ -249,7 +249,7 @@ public struct PassportElementUtilityBill: Codable, Equatable, Hashable {
 public struct PassportElementBankStatement: Codable, Equatable, Hashable {
 
     /// Bank statement
-    public let bankStatement: PersonalDocument
+    public var bankStatement: PersonalDocument
 
 
     public init(bankStatement: PersonalDocument) {
@@ -261,7 +261,7 @@ public struct PassportElementBankStatement: Codable, Equatable, Hashable {
 public struct PassportElementRentalAgreement: Codable, Equatable, Hashable {
 
     /// Rental agreement
-    public let rentalAgreement: PersonalDocument
+    public var rentalAgreement: PersonalDocument
 
 
     public init(rentalAgreement: PersonalDocument) {
@@ -273,7 +273,7 @@ public struct PassportElementRentalAgreement: Codable, Equatable, Hashable {
 public struct PassportElementPassportRegistration: Codable, Equatable, Hashable {
 
     /// Passport registration pages
-    public let passportRegistration: PersonalDocument
+    public var passportRegistration: PersonalDocument
 
 
     public init(passportRegistration: PersonalDocument) {
@@ -285,7 +285,7 @@ public struct PassportElementPassportRegistration: Codable, Equatable, Hashable 
 public struct PassportElementTemporaryRegistration: Codable, Equatable, Hashable {
 
     /// Temporary registration
-    public let temporaryRegistration: PersonalDocument
+    public var temporaryRegistration: PersonalDocument
 
 
     public init(temporaryRegistration: PersonalDocument) {
@@ -297,7 +297,7 @@ public struct PassportElementTemporaryRegistration: Codable, Equatable, Hashable
 public struct PassportElementPhoneNumber: Codable, Equatable, Hashable {
 
     /// Phone number
-    public let phoneNumber: String
+    public var phoneNumber: String
 
 
     public init(phoneNumber: String) {
@@ -309,7 +309,7 @@ public struct PassportElementPhoneNumber: Codable, Equatable, Hashable {
 public struct PassportElementEmailAddress: Codable, Equatable, Hashable {
 
     /// Email address
-    public let emailAddress: String
+    public var emailAddress: String
 
 
     public init(emailAddress: String) {

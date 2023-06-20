@@ -14,7 +14,7 @@ import Foundation
 public struct LogTags: Codable, Equatable, Hashable {
 
     /// List of log tags
-    public let tags: [String]
+    public var tags: [String]
 
 
     public init(tags: [String]) {

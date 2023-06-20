@@ -14,13 +14,13 @@ import Foundation
 public struct GetChatMessageCalendar: Codable, Equatable, Hashable {
 
     /// Identifier of the chat in which to return information about messages
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Filter for message content. Filters searchMessagesFilterEmpty, searchMessagesFilterMention, searchMessagesFilterUnreadMention, and searchMessagesFilterUnreadReaction are unsupported in this function
-    public let filter: SearchMessagesFilter?
+    public var filter: SearchMessagesFilter?
 
     /// The message identifier from which to return information about messages; use 0 to get results from the last message
-    public let fromMessageId: Int64?
+    public var fromMessageId: Int64?
 
 
     public init(

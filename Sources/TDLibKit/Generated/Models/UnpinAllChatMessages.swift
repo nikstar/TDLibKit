@@ -14,7 +14,7 @@ import Foundation
 public struct UnpinAllChatMessages: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
 
     public init(chatId: Int64?) {

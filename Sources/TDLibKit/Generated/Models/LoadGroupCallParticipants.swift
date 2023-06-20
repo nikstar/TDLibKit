@@ -14,10 +14,10 @@ import Foundation
 public struct LoadGroupCallParticipants: Codable, Equatable, Hashable {
 
     /// Group call identifier. The group call must be previously received through getGroupCall and must be joined or being joined
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// The maximum number of participants to load; up to 100
-    public let limit: Int?
+    public var limit: Int?
 
 
     public init(

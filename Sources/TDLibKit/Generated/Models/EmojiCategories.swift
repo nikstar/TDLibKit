@@ -14,7 +14,7 @@ import Foundation
 public struct EmojiCategories: Codable, Equatable, Hashable {
 
     /// List of categories
-    public let categories: [EmojiCategory]
+    public var categories: [EmojiCategory]
 
 
     public init(categories: [EmojiCategory]) {

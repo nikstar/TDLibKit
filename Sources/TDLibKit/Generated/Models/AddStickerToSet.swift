@@ -14,13 +14,13 @@ import Foundation
 public struct AddStickerToSet: Codable, Equatable, Hashable {
 
     /// Sticker set name
-    public let name: String?
+    public var name: String?
 
     /// Sticker to add to the set
-    public let sticker: InputSticker?
+    public var sticker: InputSticker?
 
     /// Sticker set owner
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct SharePhoneNumber: Codable, Equatable, Hashable {
 
     /// Identifier of the user with whom to share the phone number. The user must be a mutual contact
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(userId: Int64?) {

@@ -14,10 +14,10 @@ import Foundation
 public struct BankCardInfo: Codable, Equatable, Hashable {
 
     /// Actions that can be done with the bank card number
-    public let actions: [BankCardActionOpenUrl]
+    public var actions: [BankCardActionOpenUrl]
 
     /// Title of the bank card description
-    public let title: String
+    public var title: String
 
 
     public init(

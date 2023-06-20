@@ -14,10 +14,10 @@ import Foundation
 public struct ReportSupergroupSpam: Codable, Equatable, Hashable {
 
     /// Identifiers of messages to report
-    public let messageIds: [Int64]?
+    public var messageIds: [Int64]?
 
     /// Supergroup identifier
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

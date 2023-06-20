@@ -323,7 +323,7 @@ public indirect enum PageBlock: Codable, Equatable, Hashable {
 public struct PageBlockTitle: Codable, Equatable, Hashable {
 
     /// Title
-    public let title: RichText
+    public var title: RichText
 
 
     public init(title: RichText) {
@@ -335,7 +335,7 @@ public struct PageBlockTitle: Codable, Equatable, Hashable {
 public struct PageBlockSubtitle: Codable, Equatable, Hashable {
 
     /// Subtitle
-    public let subtitle: RichText
+    public var subtitle: RichText
 
 
     public init(subtitle: RichText) {
@@ -347,10 +347,10 @@ public struct PageBlockSubtitle: Codable, Equatable, Hashable {
 public struct PageBlockAuthorDate: Codable, Equatable, Hashable {
 
     /// Author
-    public let author: RichText
+    public var author: RichText
 
     /// Point in time (Unix timestamp) when the article was published; 0 if unknown
-    public let publishDate: Int
+    public var publishDate: Int
 
 
     public init(
@@ -366,7 +366,7 @@ public struct PageBlockAuthorDate: Codable, Equatable, Hashable {
 public struct PageBlockHeader: Codable, Equatable, Hashable {
 
     /// Header
-    public let header: RichText
+    public var header: RichText
 
 
     public init(header: RichText) {
@@ -378,7 +378,7 @@ public struct PageBlockHeader: Codable, Equatable, Hashable {
 public struct PageBlockSubheader: Codable, Equatable, Hashable {
 
     /// Subheader
-    public let subheader: RichText
+    public var subheader: RichText
 
 
     public init(subheader: RichText) {
@@ -390,7 +390,7 @@ public struct PageBlockSubheader: Codable, Equatable, Hashable {
 public struct PageBlockKicker: Codable, Equatable, Hashable {
 
     /// Kicker
-    public let kicker: RichText
+    public var kicker: RichText
 
 
     public init(kicker: RichText) {
@@ -402,7 +402,7 @@ public struct PageBlockKicker: Codable, Equatable, Hashable {
 public struct PageBlockParagraph: Codable, Equatable, Hashable {
 
     /// Paragraph text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(text: RichText) {
@@ -414,10 +414,10 @@ public struct PageBlockParagraph: Codable, Equatable, Hashable {
 public struct PageBlockPreformatted: Codable, Equatable, Hashable {
 
     /// Programming language for which the text needs to be formatted
-    public let language: String
+    public var language: String
 
     /// Paragraph text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(
@@ -433,7 +433,7 @@ public struct PageBlockPreformatted: Codable, Equatable, Hashable {
 public struct PageBlockFooter: Codable, Equatable, Hashable {
 
     /// Footer
-    public let footer: RichText
+    public var footer: RichText
 
 
     public init(footer: RichText) {
@@ -445,7 +445,7 @@ public struct PageBlockFooter: Codable, Equatable, Hashable {
 public struct PageBlockAnchor: Codable, Equatable, Hashable {
 
     /// Name of the anchor
-    public let name: String
+    public var name: String
 
 
     public init(name: String) {
@@ -457,7 +457,7 @@ public struct PageBlockAnchor: Codable, Equatable, Hashable {
 public struct PageBlockList: Codable, Equatable, Hashable {
 
     /// The items of the list
-    public let items: [PageBlockListItem]
+    public var items: [PageBlockListItem]
 
 
     public init(items: [PageBlockListItem]) {
@@ -469,10 +469,10 @@ public struct PageBlockList: Codable, Equatable, Hashable {
 public struct PageBlockBlockQuote: Codable, Equatable, Hashable {
 
     /// Quote credit
-    public let credit: RichText
+    public var credit: RichText
 
     /// Quote text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(
@@ -488,10 +488,10 @@ public struct PageBlockBlockQuote: Codable, Equatable, Hashable {
 public struct PageBlockPullQuote: Codable, Equatable, Hashable {
 
     /// Quote credit
-    public let credit: RichText
+    public var credit: RichText
 
     /// Quote text
-    public let text: RichText
+    public var text: RichText
 
 
     public init(
@@ -507,13 +507,13 @@ public struct PageBlockPullQuote: Codable, Equatable, Hashable {
 public struct PageBlockAnimation: Codable, Equatable, Hashable {
 
     /// Animation file; may be null
-    public let animation: Animation?
+    public var animation: Animation?
 
     /// Animation caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// True, if the animation must be played automatically
-    public let needAutoplay: Bool
+    public var needAutoplay: Bool
 
 
     public init(
@@ -531,10 +531,10 @@ public struct PageBlockAnimation: Codable, Equatable, Hashable {
 public struct PageBlockAudio: Codable, Equatable, Hashable {
 
     /// Audio file; may be null
-    public let audio: Audio?
+    public var audio: Audio?
 
     /// Audio file caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
 
     public init(
@@ -550,13 +550,13 @@ public struct PageBlockAudio: Codable, Equatable, Hashable {
 public struct PageBlockPhoto: Codable, Equatable, Hashable {
 
     /// Photo caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Photo file; may be null
-    public let photo: Photo?
+    public var photo: Photo?
 
     /// URL that needs to be opened when the photo is clicked
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -574,16 +574,16 @@ public struct PageBlockPhoto: Codable, Equatable, Hashable {
 public struct PageBlockVideo: Codable, Equatable, Hashable {
 
     /// Video caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// True, if the video must be looped
-    public let isLooped: Bool
+    public var isLooped: Bool
 
     /// True, if the video must be played automatically
-    public let needAutoplay: Bool
+    public var needAutoplay: Bool
 
     /// Video file; may be null
-    public let video: Video?
+    public var video: Video?
 
 
     public init(
@@ -603,10 +603,10 @@ public struct PageBlockVideo: Codable, Equatable, Hashable {
 public struct PageBlockVoiceNote: Codable, Equatable, Hashable {
 
     /// Voice note caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Voice note; may be null
-    public let voiceNote: VoiceNote?
+    public var voiceNote: VoiceNote?
 
 
     public init(
@@ -622,7 +622,7 @@ public struct PageBlockVoiceNote: Codable, Equatable, Hashable {
 public struct PageBlockCover: Codable, Equatable, Hashable {
 
     /// Cover
-    public let cover: PageBlock
+    public var cover: PageBlock
 
 
     public init(cover: PageBlock) {
@@ -634,28 +634,28 @@ public struct PageBlockCover: Codable, Equatable, Hashable {
 public struct PageBlockEmbedded: Codable, Equatable, Hashable {
 
     /// True, if scrolling needs to be allowed
-    public let allowScrolling: Bool
+    public var allowScrolling: Bool
 
     /// Block caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Block height; 0 if unknown
-    public let height: Int
+    public var height: Int
 
     /// HTML-markup of the embedded page
-    public let html: String
+    public var html: String
 
     /// True, if the block must be full width
-    public let isFullWidth: Bool
+    public var isFullWidth: Bool
 
     /// Poster photo, if available; may be null
-    public let posterPhoto: Photo?
+    public var posterPhoto: Photo?
 
     /// Web page URL, if available
-    public let url: String
+    public var url: String
 
     /// Block width; 0 if unknown
-    public let width: Int
+    public var width: Int
 
 
     public init(
@@ -683,22 +683,22 @@ public struct PageBlockEmbedded: Codable, Equatable, Hashable {
 public struct PageBlockEmbeddedPost: Codable, Equatable, Hashable {
 
     /// Post author
-    public let author: String
+    public var author: String
 
     /// Post author photo; may be null
-    public let authorPhoto: Photo?
+    public var authorPhoto: Photo?
 
     /// Post caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Point in time (Unix timestamp) when the post was created; 0 if unknown
-    public let date: Int
+    public var date: Int
 
     /// Post content
-    public let pageBlocks: [PageBlock]
+    public var pageBlocks: [PageBlock]
 
     /// Web page URL
-    public let url: String
+    public var url: String
 
 
     public init(
@@ -722,10 +722,10 @@ public struct PageBlockEmbeddedPost: Codable, Equatable, Hashable {
 public struct PageBlockCollage: Codable, Equatable, Hashable {
 
     /// Block caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Collage item contents
-    public let pageBlocks: [PageBlock]
+    public var pageBlocks: [PageBlock]
 
 
     public init(
@@ -741,10 +741,10 @@ public struct PageBlockCollage: Codable, Equatable, Hashable {
 public struct PageBlockSlideshow: Codable, Equatable, Hashable {
 
     /// Block caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Slideshow item contents
-    public let pageBlocks: [PageBlock]
+    public var pageBlocks: [PageBlock]
 
 
     public init(
@@ -760,13 +760,13 @@ public struct PageBlockSlideshow: Codable, Equatable, Hashable {
 public struct PageBlockChatLink: Codable, Equatable, Hashable {
 
     /// Chat photo; may be null
-    public let photo: ChatPhotoInfo?
+    public var photo: ChatPhotoInfo?
 
     /// Chat title
-    public let title: String
+    public var title: String
 
     /// Chat username by which all other information about the chat can be resolved
-    public let username: String
+    public var username: String
 
 
     public init(
@@ -784,16 +784,16 @@ public struct PageBlockChatLink: Codable, Equatable, Hashable {
 public struct PageBlockTable: Codable, Equatable, Hashable {
 
     /// Table caption
-    public let caption: RichText
+    public var caption: RichText
 
     /// Table cells
-    public let cells: [[PageBlockTableCell]]
+    public var cells: [[PageBlockTableCell]]
 
     /// True, if the table is bordered
-    public let isBordered: Bool
+    public var isBordered: Bool
 
     /// True, if the table is striped
-    public let isStriped: Bool
+    public var isStriped: Bool
 
 
     public init(
@@ -813,13 +813,13 @@ public struct PageBlockTable: Codable, Equatable, Hashable {
 public struct PageBlockDetails: Codable, Equatable, Hashable {
 
     /// Always visible heading for the block
-    public let header: RichText
+    public var header: RichText
 
     /// True, if the block is open by default
-    public let isOpen: Bool
+    public var isOpen: Bool
 
     /// Block contents
-    public let pageBlocks: [PageBlock]
+    public var pageBlocks: [PageBlock]
 
 
     public init(
@@ -837,10 +837,10 @@ public struct PageBlockDetails: Codable, Equatable, Hashable {
 public struct PageBlockRelatedArticles: Codable, Equatable, Hashable {
 
     /// List of related articles
-    public let articles: [PageBlockRelatedArticle]
+    public var articles: [PageBlockRelatedArticle]
 
     /// Block header
-    public let header: RichText
+    public var header: RichText
 
 
     public init(
@@ -856,19 +856,19 @@ public struct PageBlockRelatedArticles: Codable, Equatable, Hashable {
 public struct PageBlockMap: Codable, Equatable, Hashable {
 
     /// Block caption
-    public let caption: PageBlockCaption
+    public var caption: PageBlockCaption
 
     /// Map height
-    public let height: Int
+    public var height: Int
 
     /// Location of the map center
-    public let location: Location
+    public var location: Location
 
     /// Map width
-    public let width: Int
+    public var width: Int
 
     /// Map zoom level
-    public let zoom: Int
+    public var zoom: Int
 
 
     public init(

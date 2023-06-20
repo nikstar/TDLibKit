@@ -17,16 +17,16 @@ public struct CallServer: Codable, Equatable, Hashable, Identifiable {
     public let id: TdInt64
 
     /// Server IPv4 address
-    public let ipAddress: String
+    public var ipAddress: String
 
     /// Server IPv6 address
-    public let ipv6Address: String
+    public var ipv6Address: String
 
     /// Server port number
-    public let port: Int
+    public var port: Int
 
     /// Server type
-    public let type: CallServerType
+    public var type: CallServerType
 
 
     public init(

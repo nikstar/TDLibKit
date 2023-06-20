@@ -14,13 +14,13 @@ import Foundation
 public struct SetBackground: Codable, Equatable, Hashable {
 
     /// The input background to use; pass null to create a new filled background or to remove the current background
-    public let background: InputBackground?
+    public var background: InputBackground?
 
     /// Pass true if the background is changed for a dark theme
-    public let forDarkTheme: Bool?
+    public var forDarkTheme: Bool?
 
     /// Background type; pass null to use the default type of the remote background or to remove the current background
-    public let type: BackgroundType?
+    public var type: BackgroundType?
 
 
     public init(

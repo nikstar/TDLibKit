@@ -14,19 +14,19 @@ import Foundation
 public struct EditProxy: Codable, Equatable, Hashable {
 
     /// Pass true to immediately enable the proxy
-    public let enable: Bool?
+    public var enable: Bool?
 
     /// Proxy server port
-    public let port: Int?
+    public var port: Int?
 
     /// Proxy identifier
-    public let proxyId: Int?
+    public var proxyId: Int?
 
     /// Proxy server IP address
-    public let server: String?
+    public var server: String?
 
     /// Proxy type
-    public let type: ProxyType?
+    public var type: ProxyType?
 
 
     public init(

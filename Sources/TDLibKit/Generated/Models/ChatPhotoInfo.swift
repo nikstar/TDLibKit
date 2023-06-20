@@ -14,19 +14,19 @@ import Foundation
 public struct ChatPhotoInfo: Codable, Equatable, Hashable {
 
     /// A big (640x640) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed
-    public let big: File
+    public var big: File
 
     /// True, if the photo has animated variant
-    public let hasAnimation: Bool
+    public var hasAnimation: Bool
 
     /// True, if the photo is visible only for the current user
-    public let isPersonal: Bool
+    public var isPersonal: Bool
 
     /// Chat photo minithumbnail; may be null
-    public let minithumbnail: Minithumbnail?
+    public var minithumbnail: Minithumbnail?
 
     /// A small (160x160) chat photo variant in JPEG format. The file can be downloaded only before the photo is changed
-    public let small: File
+    public var small: File
 
 
     public init(

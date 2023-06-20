@@ -14,10 +14,10 @@ import Foundation
 public struct SendCustomRequest: Codable, Equatable, Hashable {
 
     /// The method name
-    public let method: String?
+    public var method: String?
 
     /// JSON-serialized method parameters
-    public let parameters: String?
+    public var parameters: String?
 
 
     public init(

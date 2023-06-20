@@ -14,13 +14,13 @@ import Foundation
 public struct CreateCall: Codable, Equatable, Hashable {
 
     /// Pass true to create a video call
-    public let isVideo: Bool?
+    public var isVideo: Bool?
 
     /// The call protocols supported by the application
-    public let `protocol`: CallProtocol?
+    public var `protocol`: CallProtocol?
 
     /// Identifier of the user to be called
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

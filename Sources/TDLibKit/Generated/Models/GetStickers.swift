@@ -14,16 +14,16 @@ import Foundation
 public struct GetStickers: Codable, Equatable, Hashable {
 
     /// Chat identifier for which to return stickers. Available custom emoji stickers may be different for different chats
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum number of stickers to be returned
-    public let limit: Int?
+    public var limit: Int?
 
     /// Search query; a space-separated list of emoji or a keyword prefix. If empty, returns all known installed stickers
-    public let query: String?
+    public var query: String?
 
     /// Type of the stickers to return
-    public let stickerType: StickerType?
+    public var stickerType: StickerType?
 
 
     public init(

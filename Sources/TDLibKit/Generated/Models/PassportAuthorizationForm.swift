@@ -17,10 +17,10 @@ public struct PassportAuthorizationForm: Codable, Equatable, Hashable, Identifia
     public let id: Int
 
     /// URL for the privacy policy of the service; may be empty
-    public let privacyPolicyUrl: String
+    public var privacyPolicyUrl: String
 
     /// Telegram Passport elements that must be provided to complete the form
-    public let requiredElements: [PassportRequiredElement]
+    public var requiredElements: [PassportRequiredElement]
 
 
     public init(

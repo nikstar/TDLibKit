@@ -14,13 +14,13 @@ import Foundation
 public struct ChatFolderInviteLinkInfo: Codable, Equatable, Hashable {
 
     /// Identifiers of the chats from the link, which are added to the folder already
-    public let addedChatIds: [Int64]
+    public var addedChatIds: [Int64]
 
     /// Basic information about the chat folder; chat folder identifier will be 0 if the user didn't have the chat folder yet
-    public let chatFolderInfo: ChatFolderInfo
+    public var chatFolderInfo: ChatFolderInfo
 
     /// Identifiers of the chats from the link, which aren't added to the folder yet
-    public let missingChatIds: [Int64]
+    public var missingChatIds: [Int64]
 
 
     public init(

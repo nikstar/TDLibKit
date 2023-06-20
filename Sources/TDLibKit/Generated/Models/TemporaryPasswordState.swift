@@ -14,10 +14,10 @@ import Foundation
 public struct TemporaryPasswordState: Codable, Equatable, Hashable {
 
     /// True, if a temporary password is available
-    public let hasPassword: Bool
+    public var hasPassword: Bool
 
     /// Time left before the temporary password expires, in seconds
-    public let validFor: Int
+    public var validFor: Int
 
 
     public init(

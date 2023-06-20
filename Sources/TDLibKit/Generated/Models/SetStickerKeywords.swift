@@ -14,10 +14,10 @@ import Foundation
 public struct SetStickerKeywords: Codable, Equatable, Hashable {
 
     /// List of up to 20 keywords with total length up to 64 characters, which can be used to find the sticker
-    public let keywords: [String]?
+    public var keywords: [String]?
 
     /// Sticker
-    public let sticker: InputFile?
+    public var sticker: InputFile?
 
 
     public init(

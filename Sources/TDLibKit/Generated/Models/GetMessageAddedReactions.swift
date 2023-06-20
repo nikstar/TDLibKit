@@ -14,19 +14,19 @@ import Foundation
 public struct GetMessageAddedReactions: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which the message belongs
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum number of reactions to be returned; must be positive and can't be greater than 100
-    public let limit: Int?
+    public var limit: Int?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Offset of the first entry to return as received from the previous request; use empty string to get the first chunk of results
-    public let offset: String?
+    public var offset: String?
 
     /// Type of the reactions to return; pass null to return all added reactions
-    public let reactionType: ReactionType?
+    public var reactionType: ReactionType?
 
 
     public init(

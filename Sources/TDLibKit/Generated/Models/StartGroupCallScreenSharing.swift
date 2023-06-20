@@ -14,13 +14,13 @@ import Foundation
 public struct StartGroupCallScreenSharing: Codable, Equatable, Hashable {
 
     /// Screen sharing audio channel synchronization source identifier; received from tgcalls
-    public let audioSourceId: Int?
+    public var audioSourceId: Int?
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Group call join payload; received from tgcalls
-    public let payload: String?
+    public var payload: String?
 
 
     public init(

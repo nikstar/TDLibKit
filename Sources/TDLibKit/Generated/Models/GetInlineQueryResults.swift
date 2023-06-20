@@ -14,19 +14,19 @@ import Foundation
 public struct GetInlineQueryResults: Codable, Equatable, Hashable {
 
     /// Identifier of the target bot
-    public let botUserId: Int64?
+    public var botUserId: Int64?
 
     /// Identifier of the chat where the query was sent
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Offset of the first entry to return
-    public let offset: String?
+    public var offset: String?
 
     /// Text of the query
-    public let query: String?
+    public var query: String?
 
     /// Location of the user; pass null if unknown or the bot doesn't need user's location
-    public let userLocation: Location?
+    public var userLocation: Location?
 
 
     public init(

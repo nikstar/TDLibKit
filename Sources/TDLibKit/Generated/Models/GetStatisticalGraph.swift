@@ -14,13 +14,13 @@ import Foundation
 public struct GetStatisticalGraph: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The token for graph loading
-    public let token: String?
+    public var token: String?
 
     /// X-value for zoomed in graph or 0 otherwise
-    public let x: Int64?
+    public var x: Int64?
 
 
     public init(

@@ -14,16 +14,16 @@ import Foundation
 public struct MessageInteractionInfo: Codable, Equatable, Hashable {
 
     /// Number of times the message was forwarded
-    public let forwardCount: Int
+    public var forwardCount: Int
 
     /// The list of reactions added to the message
-    public let reactions: [MessageReaction]
+    public var reactions: [MessageReaction]
 
     /// Information about direct or indirect replies to the message; may be null. Currently, available only in channels with a discussion supergroup and discussion supergroups for messages, which are not replies itself
-    public let replyInfo: MessageReplyInfo?
+    public var replyInfo: MessageReplyInfo?
 
     /// Number of times the message was viewed
-    public let viewCount: Int
+    public var viewCount: Int
 
 
     public init(

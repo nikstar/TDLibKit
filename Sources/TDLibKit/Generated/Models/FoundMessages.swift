@@ -14,13 +14,13 @@ import Foundation
 public struct FoundMessages: Codable, Equatable, Hashable {
 
     /// List of messages
-    public let messages: [Message]
+    public var messages: [Message]
 
     /// The offset for the next request. If empty, there are no more results
-    public let nextOffset: String
+    public var nextOffset: String
 
     /// Approximate total number of messages found; -1 if unknown
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

@@ -14,19 +14,19 @@ import Foundation
 public struct ForumTopics: Codable, Equatable, Hashable {
 
     /// Offset date for the next getForumTopics request
-    public let nextOffsetDate: Int
+    public var nextOffsetDate: Int
 
     /// Offset message identifier for the next getForumTopics request
-    public let nextOffsetMessageId: Int64
+    public var nextOffsetMessageId: Int64
 
     /// Offset message thread identifier for the next getForumTopics request
-    public let nextOffsetMessageThreadId: Int64
+    public var nextOffsetMessageThreadId: Int64
 
     /// List of forum topics
-    public let topics: [ForumTopic]
+    public var topics: [ForumTopic]
 
     /// Approximate total number of forum topics found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

@@ -14,19 +14,19 @@ import Foundation
 public struct DiscardCall: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int?
+    public var callId: Int?
 
     /// Identifier of the connection used during the call
-    public let connectionId: TdInt64?
+    public var connectionId: TdInt64?
 
     /// The call duration, in seconds
-    public let duration: Int?
+    public var duration: Int?
 
     /// Pass true if the user was disconnected
-    public let isDisconnected: Bool?
+    public var isDisconnected: Bool?
 
     /// Pass true if the call was a video call
-    public let isVideo: Bool?
+    public var isVideo: Bool?
 
 
     public init(

@@ -14,16 +14,16 @@ import Foundation
 public struct EditChatFolderInviteLink: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
     /// New identifiers of chats to be accessible by the invite link. Use getChatsForChatFolderInviteLink to get suitable chats. Basic groups will be automatically converted to supergroups before link editing
-    public let chatIds: [Int64]?
+    public var chatIds: [Int64]?
 
     /// Invite link to be edited
-    public let inviteLink: String?
+    public var inviteLink: String?
 
     /// New name of the link; 0-32 characters
-    public let name: String?
+    public var name: String?
 
 
     public init(

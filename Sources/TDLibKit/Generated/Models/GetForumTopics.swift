@@ -14,22 +14,22 @@ import Foundation
 public struct GetForumTopics: Codable, Equatable, Hashable {
 
     /// Identifier of the forum chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The maximum number of forum topics to be returned; up to 100. For optimal performance, the number of returned forum topics is chosen by TDLib and can be smaller than the specified limit
-    public let limit: Int?
+    public var limit: Int?
 
     /// The date starting from which the results need to be fetched. Use 0 or any date in the future to get results from the last topic
-    public let offsetDate: Int?
+    public var offsetDate: Int?
 
     /// The message identifier of the last message in the last found topic, or 0 for the first request
-    public let offsetMessageId: Int64?
+    public var offsetMessageId: Int64?
 
     /// The message thread identifier of the last found topic, or 0 for the first request
-    public let offsetMessageThreadId: Int64?
+    public var offsetMessageThreadId: Int64?
 
     /// Query to search for in the forum topic's name
-    public let query: String?
+    public var query: String?
 
 
     public init(

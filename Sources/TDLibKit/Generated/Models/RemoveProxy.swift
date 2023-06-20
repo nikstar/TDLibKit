@@ -14,7 +14,7 @@ import Foundation
 public struct RemoveProxy: Codable, Equatable, Hashable {
 
     /// Proxy identifier
-    public let proxyId: Int?
+    public var proxyId: Int?
 
 
     public init(proxyId: Int?) {

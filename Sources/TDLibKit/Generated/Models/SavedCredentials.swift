@@ -17,7 +17,7 @@ public struct SavedCredentials: Codable, Equatable, Hashable, Identifiable {
     public let id: String
 
     /// Title of the saved credentials
-    public let title: String
+    public var title: String
 
 
     public init(

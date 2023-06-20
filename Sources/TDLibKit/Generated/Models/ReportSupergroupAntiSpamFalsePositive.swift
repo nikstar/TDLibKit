@@ -14,10 +14,10 @@ import Foundation
 public struct ReportSupergroupAntiSpamFalsePositive: Codable, Equatable, Hashable {
 
     /// Identifier of the erroneously deleted message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Supergroup identifier
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
 
     public init(

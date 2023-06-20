@@ -14,10 +14,10 @@ import Foundation
 public struct CreateBasicGroupChat: Codable, Equatable, Hashable {
 
     /// Basic group identifier
-    public let basicGroupId: Int64?
+    public var basicGroupId: Int64?
 
     /// Pass true to create the chat without a network request. In this case all information about the chat except its type, title and photo can be incorrect
-    public let force: Bool?
+    public var force: Bool?
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct GetCallbackQueryAnswer: Codable, Equatable, Hashable {
 
     /// Identifier of the chat with the message
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the message from which the query originated
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Query payload
-    public let payload: CallbackQueryPayload?
+    public var payload: CallbackQueryPayload?
 
 
     public init(

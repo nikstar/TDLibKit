@@ -14,10 +14,10 @@ import Foundation
 public struct Users: Codable, Equatable, Hashable {
 
     /// Approximate total number of users found
-    public let totalCount: Int
+    public var totalCount: Int
 
     /// A list of user identifiers
-    public let userIds: [Int64]
+    public var userIds: [Int64]
 
 
     public init(

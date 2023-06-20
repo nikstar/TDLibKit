@@ -14,10 +14,10 @@ import Foundation
 public struct ChatJoinRequests: Codable, Equatable, Hashable {
 
     /// List of the requests
-    public let requests: [ChatJoinRequest]
+    public var requests: [ChatJoinRequest]
 
     /// Approximate total number of requests found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

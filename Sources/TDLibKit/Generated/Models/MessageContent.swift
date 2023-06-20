@@ -629,10 +629,10 @@ public enum MessageContent: Codable, Equatable, Hashable {
 public struct MessageText: Codable, Equatable, Hashable {
 
     /// Text of the message
-    public let text: FormattedText
+    public var text: FormattedText
 
     /// A preview of the web page that's mentioned in the text; may be null
-    public let webPage: WebPage?
+    public var webPage: WebPage?
 
 
     public init(
@@ -648,16 +648,16 @@ public struct MessageText: Codable, Equatable, Hashable {
 public struct MessageAnimation: Codable, Equatable, Hashable {
 
     /// The animation description
-    public let animation: Animation
+    public var animation: Animation
 
     /// Animation caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// True, if the animation preview must be covered by a spoiler animation
-    public let hasSpoiler: Bool
+    public var hasSpoiler: Bool
 
     /// True, if the animation thumbnail must be blurred and the animation must be shown only while tapped
-    public let isSecret: Bool
+    public var isSecret: Bool
 
 
     public init(
@@ -677,10 +677,10 @@ public struct MessageAnimation: Codable, Equatable, Hashable {
 public struct MessageAudio: Codable, Equatable, Hashable {
 
     /// The audio description
-    public let audio: Audio
+    public var audio: Audio
 
     /// Audio caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
 
     public init(
@@ -696,10 +696,10 @@ public struct MessageAudio: Codable, Equatable, Hashable {
 public struct MessageDocument: Codable, Equatable, Hashable {
 
     /// Document caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// The document description
-    public let document: Document
+    public var document: Document
 
 
     public init(
@@ -715,16 +715,16 @@ public struct MessageDocument: Codable, Equatable, Hashable {
 public struct MessagePhoto: Codable, Equatable, Hashable {
 
     /// Photo caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// True, if the photo preview must be covered by a spoiler animation
-    public let hasSpoiler: Bool
+    public var hasSpoiler: Bool
 
     /// True, if the photo must be blurred and must be shown only while tapped
-    public let isSecret: Bool
+    public var isSecret: Bool
 
     /// The photo
-    public let photo: Photo
+    public var photo: Photo
 
 
     public init(
@@ -744,10 +744,10 @@ public struct MessagePhoto: Codable, Equatable, Hashable {
 public struct MessageSticker: Codable, Equatable, Hashable {
 
     /// True, if premium animation of the sticker must be played
-    public let isPremium: Bool
+    public var isPremium: Bool
 
     /// The sticker description
-    public let sticker: Sticker
+    public var sticker: Sticker
 
 
     public init(
@@ -763,16 +763,16 @@ public struct MessageSticker: Codable, Equatable, Hashable {
 public struct MessageVideo: Codable, Equatable, Hashable {
 
     /// Video caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// True, if the video preview must be covered by a spoiler animation
-    public let hasSpoiler: Bool
+    public var hasSpoiler: Bool
 
     /// True, if the video thumbnail must be blurred and the video must be shown only while tapped
-    public let isSecret: Bool
+    public var isSecret: Bool
 
     /// The video description
-    public let video: Video
+    public var video: Video
 
 
     public init(
@@ -792,13 +792,13 @@ public struct MessageVideo: Codable, Equatable, Hashable {
 public struct MessageVideoNote: Codable, Equatable, Hashable {
 
     /// True, if the video note thumbnail must be blurred and the video note must be shown only while tapped
-    public let isSecret: Bool
+    public var isSecret: Bool
 
     /// True, if at least one of the recipients has viewed the video note
-    public let isViewed: Bool
+    public var isViewed: Bool
 
     /// The video note description
-    public let videoNote: VideoNote
+    public var videoNote: VideoNote
 
 
     public init(
@@ -816,13 +816,13 @@ public struct MessageVideoNote: Codable, Equatable, Hashable {
 public struct MessageVoiceNote: Codable, Equatable, Hashable {
 
     /// Voice note caption
-    public let caption: FormattedText
+    public var caption: FormattedText
 
     /// True, if at least one of the recipients has listened to the voice note
-    public let isListened: Bool
+    public var isListened: Bool
 
     /// The voice note description
-    public let voiceNote: VoiceNote
+    public var voiceNote: VoiceNote
 
 
     public init(
@@ -840,19 +840,19 @@ public struct MessageVoiceNote: Codable, Equatable, Hashable {
 public struct MessageLocation: Codable, Equatable, Hashable {
 
     /// Left time for which the location can be updated, in seconds. updateMessageContent is not sent when this field changes
-    public let expiresIn: Int
+    public var expiresIn: Int
 
     /// For live locations, a direction in which the location moves, in degrees; 1-360. If 0 the direction is unknown
-    public let heading: Int
+    public var heading: Int
 
     /// Time relative to the message send date, for which the location can be updated, in seconds
-    public let livePeriod: Int
+    public var livePeriod: Int
 
     /// The location description
-    public let location: Location
+    public var location: Location
 
     /// For live locations, a maximum distance to another chat member for proximity alerts, in meters (0-100000). 0 if the notification is disabled. Available only to the message sender
-    public let proximityAlertRadius: Int
+    public var proximityAlertRadius: Int
 
 
     public init(
@@ -874,7 +874,7 @@ public struct MessageLocation: Codable, Equatable, Hashable {
 public struct MessageVenue: Codable, Equatable, Hashable {
 
     /// The venue description
-    public let venue: Venue
+    public var venue: Venue
 
 
     public init(venue: Venue) {
@@ -886,7 +886,7 @@ public struct MessageVenue: Codable, Equatable, Hashable {
 public struct MessageContact: Codable, Equatable, Hashable {
 
     /// The contact description
-    public let contact: Contact
+    public var contact: Contact
 
 
     public init(contact: Contact) {
@@ -898,10 +898,10 @@ public struct MessageContact: Codable, Equatable, Hashable {
 public struct MessageAnimatedEmoji: Codable, Equatable, Hashable {
 
     /// The animated emoji
-    public let animatedEmoji: AnimatedEmoji
+    public var animatedEmoji: AnimatedEmoji
 
     /// The corresponding emoji
-    public let emoji: String
+    public var emoji: String
 
 
     public init(
@@ -917,19 +917,19 @@ public struct MessageAnimatedEmoji: Codable, Equatable, Hashable {
 public struct MessageDice: Codable, Equatable, Hashable {
 
     /// Emoji on which the dice throw animation is based
-    public let emoji: String
+    public var emoji: String
 
     /// The animated stickers with the final dice animation; may be null if unknown. updateMessageContent will be sent when the sticker became known
-    public let finalState: DiceStickers?
+    public var finalState: DiceStickers?
 
     /// The animated stickers with the initial dice animation; may be null if unknown. updateMessageContent will be sent when the sticker became known
-    public let initialState: DiceStickers?
+    public var initialState: DiceStickers?
 
     /// Number of frame after which a success animation like a shower of confetti needs to be shown on updateMessageSendSucceeded
-    public let successAnimationFrameNumber: Int
+    public var successAnimationFrameNumber: Int
 
     /// The dice value. If the value is 0, the dice don't have final state yet
-    public let value: Int
+    public var value: Int
 
 
     public init(
@@ -951,7 +951,7 @@ public struct MessageDice: Codable, Equatable, Hashable {
 public struct MessageGame: Codable, Equatable, Hashable {
 
     /// The game description
-    public let game: Game
+    public var game: Game
 
 
     public init(game: Game) {
@@ -963,7 +963,7 @@ public struct MessageGame: Codable, Equatable, Hashable {
 public struct MessagePoll: Codable, Equatable, Hashable {
 
     /// The poll description
-    public let poll: Poll
+    public var poll: Poll
 
 
     public init(poll: Poll) {
@@ -975,33 +975,33 @@ public struct MessagePoll: Codable, Equatable, Hashable {
 public struct MessageInvoice: Codable, Equatable, Hashable {
 
     /// Currency for the product price
-    public let currency: String
+    public var currency: String
 
-    public let description: FormattedText
+    public var description: FormattedText
 
     /// Extended media attached to the invoice; may be null
-    public let extendedMedia: MessageExtendedMedia?
+    public var extendedMedia: MessageExtendedMedia?
 
     /// True, if the invoice is a test invoice
-    public let isTest: Bool
+    public var isTest: Bool
 
     /// True, if the shipping address must be specified
-    public let needShippingAddress: Bool
+    public var needShippingAddress: Bool
 
     /// Product photo; may be null
-    public let photo: Photo?
+    public var photo: Photo?
 
     /// The identifier of the message with the receipt, after the product has been purchased
-    public let receiptMessageId: Int64
+    public var receiptMessageId: Int64
 
     /// Unique invoice bot start_parameter to be passed to getInternalLink
-    public let startParameter: String
+    public var startParameter: String
 
     /// Product title
-    public let title: String
+    public var title: String
 
     /// Product total price in the smallest units of the currency
-    public let totalAmount: Int64
+    public var totalAmount: Int64
 
 
     public init(
@@ -1033,13 +1033,13 @@ public struct MessageInvoice: Codable, Equatable, Hashable {
 public struct MessageCall: Codable, Equatable, Hashable {
 
     /// Reason why the call was discarded
-    public let discardReason: CallDiscardReason
+    public var discardReason: CallDiscardReason
 
     /// Call duration, in seconds
-    public let duration: Int
+    public var duration: Int
 
     /// True, if the call was a video call
-    public let isVideo: Bool
+    public var isVideo: Bool
 
 
     public init(
@@ -1057,10 +1057,10 @@ public struct MessageCall: Codable, Equatable, Hashable {
 public struct MessageVideoChatScheduled: Codable, Equatable, Hashable {
 
     /// Identifier of the video chat. The video chat can be received through the method getGroupCall
-    public let groupCallId: Int
+    public var groupCallId: Int
 
     /// Point in time (Unix timestamp) when the group call is supposed to be started by an administrator
-    public let startDate: Int
+    public var startDate: Int
 
 
     public init(
@@ -1076,7 +1076,7 @@ public struct MessageVideoChatScheduled: Codable, Equatable, Hashable {
 public struct MessageVideoChatStarted: Codable, Equatable, Hashable {
 
     /// Identifier of the video chat. The video chat can be received through the method getGroupCall
-    public let groupCallId: Int
+    public var groupCallId: Int
 
 
     public init(groupCallId: Int) {
@@ -1088,7 +1088,7 @@ public struct MessageVideoChatStarted: Codable, Equatable, Hashable {
 public struct MessageVideoChatEnded: Codable, Equatable, Hashable {
 
     /// Call duration, in seconds
-    public let duration: Int
+    public var duration: Int
 
 
     public init(duration: Int) {
@@ -1100,10 +1100,10 @@ public struct MessageVideoChatEnded: Codable, Equatable, Hashable {
 public struct MessageInviteVideoChatParticipants: Codable, Equatable, Hashable {
 
     /// Identifier of the video chat. The video chat can be received through the method getGroupCall
-    public let groupCallId: Int
+    public var groupCallId: Int
 
     /// Invited user identifiers
-    public let userIds: [Int64]
+    public var userIds: [Int64]
 
 
     public init(
@@ -1119,10 +1119,10 @@ public struct MessageInviteVideoChatParticipants: Codable, Equatable, Hashable {
 public struct MessageBasicGroupChatCreate: Codable, Equatable, Hashable {
 
     /// User identifiers of members in the basic group
-    public let memberUserIds: [Int64]
+    public var memberUserIds: [Int64]
 
     /// Title of the basic group
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -1138,7 +1138,7 @@ public struct MessageBasicGroupChatCreate: Codable, Equatable, Hashable {
 public struct MessageSupergroupChatCreate: Codable, Equatable, Hashable {
 
     /// Title of the supergroup or channel
-    public let title: String
+    public var title: String
 
 
     public init(title: String) {
@@ -1150,7 +1150,7 @@ public struct MessageSupergroupChatCreate: Codable, Equatable, Hashable {
 public struct MessageChatChangeTitle: Codable, Equatable, Hashable {
 
     /// New chat title
-    public let title: String
+    public var title: String
 
 
     public init(title: String) {
@@ -1162,7 +1162,7 @@ public struct MessageChatChangeTitle: Codable, Equatable, Hashable {
 public struct MessageChatChangePhoto: Codable, Equatable, Hashable {
 
     /// New chat photo
-    public let photo: ChatPhoto
+    public var photo: ChatPhoto
 
 
     public init(photo: ChatPhoto) {
@@ -1174,7 +1174,7 @@ public struct MessageChatChangePhoto: Codable, Equatable, Hashable {
 public struct MessageChatAddMembers: Codable, Equatable, Hashable {
 
     /// User identifiers of the new members
-    public let memberUserIds: [Int64]
+    public var memberUserIds: [Int64]
 
 
     public init(memberUserIds: [Int64]) {
@@ -1186,7 +1186,7 @@ public struct MessageChatAddMembers: Codable, Equatable, Hashable {
 public struct MessageChatDeleteMember: Codable, Equatable, Hashable {
 
     /// User identifier of the deleted chat member
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(userId: Int64) {
@@ -1198,7 +1198,7 @@ public struct MessageChatDeleteMember: Codable, Equatable, Hashable {
 public struct MessageChatUpgradeTo: Codable, Equatable, Hashable {
 
     /// Identifier of the supergroup to which the basic group was upgraded
-    public let supergroupId: Int64
+    public var supergroupId: Int64
 
 
     public init(supergroupId: Int64) {
@@ -1210,10 +1210,10 @@ public struct MessageChatUpgradeTo: Codable, Equatable, Hashable {
 public struct MessageChatUpgradeFrom: Codable, Equatable, Hashable {
 
     /// The identifier of the original basic group
-    public let basicGroupId: Int64
+    public var basicGroupId: Int64
 
     /// Title of the newly created supergroup
-    public let title: String
+    public var title: String
 
 
     public init(
@@ -1229,7 +1229,7 @@ public struct MessageChatUpgradeFrom: Codable, Equatable, Hashable {
 public struct MessagePinMessage: Codable, Equatable, Hashable {
 
     /// Identifier of the pinned message, can be an identifier of a deleted message or 0
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(messageId: Int64) {
@@ -1241,10 +1241,10 @@ public struct MessagePinMessage: Codable, Equatable, Hashable {
 public struct MessageChatSetBackground: Codable, Equatable, Hashable {
 
     /// The new background
-    public let background: ChatBackground
+    public var background: ChatBackground
 
     /// Identifier of the message with a previously set same background; 0 if none. Can be an identifier of a deleted message
-    public let oldBackgroundMessageId: Int64
+    public var oldBackgroundMessageId: Int64
 
 
     public init(
@@ -1260,7 +1260,7 @@ public struct MessageChatSetBackground: Codable, Equatable, Hashable {
 public struct MessageChatSetTheme: Codable, Equatable, Hashable {
 
     /// If non-empty, name of a new theme, set for the chat. Otherwise, chat theme was reset to the default one
-    public let themeName: String
+    public var themeName: String
 
 
     public init(themeName: String) {
@@ -1272,10 +1272,10 @@ public struct MessageChatSetTheme: Codable, Equatable, Hashable {
 public struct MessageChatSetMessageAutoDeleteTime: Codable, Equatable, Hashable {
 
     /// If not 0, a user identifier, which default setting was automatically applied
-    public let fromUserId: Int64
+    public var fromUserId: Int64
 
     /// New value auto-delete or self-destruct time, in seconds; 0 if disabled
-    public let messageAutoDeleteTime: Int
+    public var messageAutoDeleteTime: Int
 
 
     public init(
@@ -1291,10 +1291,10 @@ public struct MessageChatSetMessageAutoDeleteTime: Codable, Equatable, Hashable 
 public struct MessageForumTopicCreated: Codable, Equatable, Hashable {
 
     /// Icon of the topic
-    public let icon: ForumTopicIcon
+    public var icon: ForumTopicIcon
 
     /// Name of the topic
-    public let name: String
+    public var name: String
 
 
     public init(
@@ -1310,13 +1310,13 @@ public struct MessageForumTopicCreated: Codable, Equatable, Hashable {
 public struct MessageForumTopicEdited: Codable, Equatable, Hashable {
 
     /// True, if icon's custom_emoji_id is changed
-    public let editIconCustomEmojiId: Bool
+    public var editIconCustomEmojiId: Bool
 
     /// New unique identifier of the custom emoji shown on the topic icon; 0 if none. Must be ignored if edit_icon_custom_emoji_id is false
-    public let iconCustomEmojiId: TdInt64
+    public var iconCustomEmojiId: TdInt64
 
     /// If non-empty, the new name of the topic
-    public let name: String
+    public var name: String
 
 
     public init(
@@ -1334,7 +1334,7 @@ public struct MessageForumTopicEdited: Codable, Equatable, Hashable {
 public struct MessageForumTopicIsClosedToggled: Codable, Equatable, Hashable {
 
     /// True, if the topic was closed; otherwise, the topic was reopened
-    public let isClosed: Bool
+    public var isClosed: Bool
 
 
     public init(isClosed: Bool) {
@@ -1346,7 +1346,7 @@ public struct MessageForumTopicIsClosedToggled: Codable, Equatable, Hashable {
 public struct MessageForumTopicIsHiddenToggled: Codable, Equatable, Hashable {
 
     /// True, if the topic was hidden; otherwise, the topic was unhidden
-    public let isHidden: Bool
+    public var isHidden: Bool
 
 
     public init(isHidden: Bool) {
@@ -1358,7 +1358,7 @@ public struct MessageForumTopicIsHiddenToggled: Codable, Equatable, Hashable {
 public struct MessageSuggestProfilePhoto: Codable, Equatable, Hashable {
 
     /// The suggested chat photo. Use the method setProfilePhoto with inputChatPhotoPrevious to apply the photo
-    public let photo: ChatPhoto
+    public var photo: ChatPhoto
 
 
     public init(photo: ChatPhoto) {
@@ -1370,7 +1370,7 @@ public struct MessageSuggestProfilePhoto: Codable, Equatable, Hashable {
 public struct MessageCustomServiceAction: Codable, Equatable, Hashable {
 
     /// Message text to be shown in the chat
-    public let text: String
+    public var text: String
 
 
     public init(text: String) {
@@ -1382,13 +1382,13 @@ public struct MessageCustomServiceAction: Codable, Equatable, Hashable {
 public struct MessageGameScore: Codable, Equatable, Hashable {
 
     /// Identifier of the game; may be different from the games presented in the message with the game
-    public let gameId: TdInt64
+    public var gameId: TdInt64
 
     /// Identifier of the message with the game, can be an identifier of a deleted message
-    public let gameMessageId: Int64
+    public var gameMessageId: Int64
 
     /// New score
-    public let score: Int
+    public var score: Int
 
 
     public init(
@@ -1406,25 +1406,25 @@ public struct MessageGameScore: Codable, Equatable, Hashable {
 public struct MessagePaymentSuccessful: Codable, Equatable, Hashable {
 
     /// Currency for the price of the product
-    public let currency: String
+    public var currency: String
 
     /// Identifier of the chat, containing the corresponding invoice message
-    public let invoiceChatId: Int64
+    public var invoiceChatId: Int64
 
     /// Identifier of the message with the corresponding invoice; can be 0 or an identifier of a deleted message
-    public let invoiceMessageId: Int64
+    public var invoiceMessageId: Int64
 
     /// Name of the invoice; may be empty if unknown
-    public let invoiceName: String
+    public var invoiceName: String
 
     /// True, if this is the first recurring payment
-    public let isFirstRecurring: Bool
+    public var isFirstRecurring: Bool
 
     /// True, if this is a recurring payment
-    public let isRecurring: Bool
+    public var isRecurring: Bool
 
     /// Total price for the product, in the smallest units of the currency
-    public let totalAmount: Int64
+    public var totalAmount: Int64
 
 
     public init(
@@ -1450,31 +1450,31 @@ public struct MessagePaymentSuccessful: Codable, Equatable, Hashable {
 public struct MessagePaymentSuccessfulBot: Codable, Equatable, Hashable {
 
     /// Currency for price of the product
-    public let currency: String
+    public var currency: String
 
     /// Invoice payload
-    public let invoicePayload: Data
+    public var invoicePayload: Data
 
     /// True, if this is the first recurring payment
-    public let isFirstRecurring: Bool
+    public var isFirstRecurring: Bool
 
     /// True, if this is a recurring payment
-    public let isRecurring: Bool
+    public var isRecurring: Bool
 
     /// Information about the order; may be null
-    public let orderInfo: OrderInfo?
+    public var orderInfo: OrderInfo?
 
     /// Provider payment identifier
-    public let providerPaymentChargeId: String
+    public var providerPaymentChargeId: String
 
     /// Identifier of the shipping option chosen by the user; may be empty if not applicable
-    public let shippingOptionId: String
+    public var shippingOptionId: String
 
     /// Telegram payment identifier
-    public let telegramPaymentChargeId: String
+    public var telegramPaymentChargeId: String
 
     /// Total price for the product, in the smallest units of the currency
-    public let totalAmount: Int64
+    public var totalAmount: Int64
 
 
     public init(
@@ -1504,25 +1504,25 @@ public struct MessagePaymentSuccessfulBot: Codable, Equatable, Hashable {
 public struct MessageGiftedPremium: Codable, Equatable, Hashable {
 
     /// The paid amount, in the smallest units of the currency
-    public let amount: Int64
+    public var amount: Int64
 
     /// Cryptocurrency used to pay for the gift; may be empty if none
-    public let cryptocurrency: String
+    public var cryptocurrency: String
 
     /// The paid amount, in the smallest units of the cryptocurrency
-    public let cryptocurrencyAmount: TdInt64
+    public var cryptocurrencyAmount: TdInt64
 
     /// Currency for the paid amount
-    public let currency: String
+    public var currency: String
 
     /// The identifier of a user that gifted Telegram Premium; 0 if the gift was anonymous
-    public let gifterUserId: Int64
+    public var gifterUserId: Int64
 
     /// Number of month the Telegram Premium subscription will be active
-    public let monthCount: Int
+    public var monthCount: Int
 
     /// A sticker to be shown in the message; may be null if unknown
-    public let sticker: Sticker?
+    public var sticker: Sticker?
 
 
     public init(
@@ -1548,10 +1548,10 @@ public struct MessageGiftedPremium: Codable, Equatable, Hashable {
 public struct MessageUserShared: Codable, Equatable, Hashable {
 
     /// Identifier of the keyboard button with the request
-    public let buttonId: Int
+    public var buttonId: Int
 
     /// Identifier of the shared user
-    public let userId: Int64
+    public var userId: Int64
 
 
     public init(
@@ -1567,10 +1567,10 @@ public struct MessageUserShared: Codable, Equatable, Hashable {
 public struct MessageChatShared: Codable, Equatable, Hashable {
 
     /// Identifier of the keyboard button with the request
-    public let buttonId: Int
+    public var buttonId: Int
 
     /// Identifier of the shared chat
-    public let chatId: Int64
+    public var chatId: Int64
 
 
     public init(
@@ -1586,7 +1586,7 @@ public struct MessageChatShared: Codable, Equatable, Hashable {
 public struct MessageWebsiteConnected: Codable, Equatable, Hashable {
 
     /// Domain name of the connected website
-    public let domainName: String
+    public var domainName: String
 
 
     public init(domainName: String) {
@@ -1598,7 +1598,7 @@ public struct MessageWebsiteConnected: Codable, Equatable, Hashable {
 public struct MessageBotWriteAccessAllowed: Codable, Equatable, Hashable {
 
     /// Information about the Web App, which requested the access; may be null if none or the Web App was opened from the attachment menu
-    public let webApp: WebApp?
+    public var webApp: WebApp?
 
 
     public init(webApp: WebApp?) {
@@ -1610,7 +1610,7 @@ public struct MessageBotWriteAccessAllowed: Codable, Equatable, Hashable {
 public struct MessageWebAppDataSent: Codable, Equatable, Hashable {
 
     /// Text of the keyboardButtonTypeWebApp button, which opened the Web App
-    public let buttonText: String
+    public var buttonText: String
 
 
     public init(buttonText: String) {
@@ -1622,10 +1622,10 @@ public struct MessageWebAppDataSent: Codable, Equatable, Hashable {
 public struct MessageWebAppDataReceived: Codable, Equatable, Hashable {
 
     /// Text of the keyboardButtonTypeWebApp button, which opened the Web App
-    public let buttonText: String
+    public var buttonText: String
 
     /// The data
-    public let data: String
+    public var data: String
 
 
     public init(
@@ -1641,7 +1641,7 @@ public struct MessageWebAppDataReceived: Codable, Equatable, Hashable {
 public struct MessagePassportDataSent: Codable, Equatable, Hashable {
 
     /// List of Telegram Passport element types sent
-    public let types: [PassportElementType]
+    public var types: [PassportElementType]
 
 
     public init(types: [PassportElementType]) {
@@ -1653,10 +1653,10 @@ public struct MessagePassportDataSent: Codable, Equatable, Hashable {
 public struct MessagePassportDataReceived: Codable, Equatable, Hashable {
 
     /// Encrypted data credentials
-    public let credentials: EncryptedCredentials
+    public var credentials: EncryptedCredentials
 
     /// List of received Telegram Passport elements
-    public let elements: [EncryptedPassportElement]
+    public var elements: [EncryptedPassportElement]
 
 
     public init(
@@ -1672,13 +1672,13 @@ public struct MessagePassportDataReceived: Codable, Equatable, Hashable {
 public struct MessageProximityAlertTriggered: Codable, Equatable, Hashable {
 
     /// The distance between the users
-    public let distance: Int
+    public var distance: Int
 
     /// The identifier of a user or chat that triggered the proximity alert
-    public let travelerId: MessageSender
+    public var travelerId: MessageSender
 
     /// The identifier of a user or chat that subscribed for the proximity alert
-    public let watcherId: MessageSender
+    public var watcherId: MessageSender
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatNotificationSettings: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New notification settings for the chat. If the chat is muted for more than 366 days, it is considered to be muted forever
-    public let notificationSettings: ChatNotificationSettings?
+    public var notificationSettings: ChatNotificationSettings?
 
 
     public init(

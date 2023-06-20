@@ -14,10 +14,10 @@ import Foundation
 public struct ChatLocation: Codable, Equatable, Hashable {
 
     /// Location address; 1-64 characters, as defined by the chat owner
-    public let address: String
+    public var address: String
 
     /// The location
-    public let location: Location
+    public var location: Location
 
 
     public init(

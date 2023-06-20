@@ -14,10 +14,10 @@ import Foundation
 public struct DeepLinkInfo: Codable, Equatable, Hashable {
 
     /// True, if the user must be asked to update the application
-    public let needUpdateApplication: Bool
+    public var needUpdateApplication: Bool
 
     /// Text to be shown to the user
-    public let text: FormattedText
+    public var text: FormattedText
 
 
     public init(

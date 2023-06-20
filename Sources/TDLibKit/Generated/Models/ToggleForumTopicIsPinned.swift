@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleForumTopicIsPinned: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to pin the topic; pass false to unpin it
-    public let isPinned: Bool?
+    public var isPinned: Bool?
 
     /// Message thread identifier of the forum topic
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

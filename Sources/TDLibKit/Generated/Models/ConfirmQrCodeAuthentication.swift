@@ -14,7 +14,7 @@ import Foundation
 public struct ConfirmQrCodeAuthentication: Codable, Equatable, Hashable {
 
     /// A link from a QR code. The link must be scanned by the in-app camera
-    public let link: String?
+    public var link: String?
 
 
     public init(link: String?) {

@@ -14,19 +14,19 @@ import Foundation
 public struct TestProxy: Codable, Equatable, Hashable {
 
     /// Identifier of a datacenter with which to test connection
-    public let dcId: Int?
+    public var dcId: Int?
 
     /// Proxy server port
-    public let port: Int?
+    public var port: Int?
 
     /// Proxy server IP address
-    public let server: String?
+    public var server: String?
 
     /// The maximum overall timeout for the request
-    public let timeout: Double?
+    public var timeout: Double?
 
     /// Proxy type
-    public let type: ProxyType?
+    public var type: ProxyType?
 
 
     public init(

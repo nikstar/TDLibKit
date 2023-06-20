@@ -14,10 +14,10 @@ import Foundation
 public struct SetAutosaveSettings: Codable, Equatable, Hashable {
 
     /// Autosave settings scope
-    public let scope: AutosaveSettingsScope?
+    public var scope: AutosaveSettingsScope?
 
     /// New autosave settings for the scope; pass null to set autosave settings to default
-    public let settings: ScopeAutosaveSettings?
+    public var settings: ScopeAutosaveSettings?
 
 
     public init(

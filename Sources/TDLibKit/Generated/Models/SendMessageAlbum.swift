@@ -14,22 +14,22 @@ import Foundation
 public struct SendMessageAlbum: Codable, Equatable, Hashable {
 
     /// Target chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Contents of messages to be sent. At most 10 messages can be added to an album
-    public let inputMessageContents: [InputMessageContent]?
+    public var inputMessageContents: [InputMessageContent]?
 
     /// If not 0, a message thread identifier in which the messages will be sent
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// Pass true to get fake messages instead of actually sending them
-    public let onlyPreview: Bool?
+    public var onlyPreview: Bool?
 
     /// Options to be used to send the messages; pass null to use default options
-    public let options: MessageSendOptions?
+    public var options: MessageSendOptions?
 
     /// Identifier of a replied message; 0 if none
-    public let replyToMessageId: Int64?
+    public var replyToMessageId: Int64?
 
 
     public init(

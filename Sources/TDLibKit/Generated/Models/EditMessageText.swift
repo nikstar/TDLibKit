@@ -14,16 +14,16 @@ import Foundation
 public struct EditMessageText: Codable, Equatable, Hashable {
 
     /// The chat the message belongs to
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// New text content of the message. Must be of type inputMessageText
-    public let inputMessageContent: InputMessageContent?
+    public var inputMessageContent: InputMessageContent?
 
     /// Identifier of the message
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// The new message reply markup; pass null if none; for bots only
-    public let replyMarkup: ReplyMarkup?
+    public var replyMarkup: ReplyMarkup?
 
 
     public init(

@@ -14,7 +14,7 @@ import Foundation
 public struct SetDefaultReactionType: Codable, Equatable, Hashable {
 
     /// New type of the default reaction
-    public let reactionType: ReactionType?
+    public var reactionType: ReactionType?
 
 
     public init(reactionType: ReactionType?) {

@@ -14,7 +14,7 @@ import Foundation
 public struct SetLogStream: Codable, Equatable, Hashable {
 
     /// New log stream
-    public let logStream: LogStream?
+    public var logStream: LogStream?
 
 
     public init(logStream: LogStream?) {

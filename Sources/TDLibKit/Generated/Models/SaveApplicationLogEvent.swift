@@ -14,13 +14,13 @@ import Foundation
 public struct SaveApplicationLogEvent: Codable, Equatable, Hashable {
 
     /// Optional chat identifier, associated with the event
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The log event data
-    public let data: JsonValue?
+    public var data: JsonValue?
 
     /// Event type
-    public let type: String?
+    public var type: String?
 
 
     public init(

@@ -14,34 +14,34 @@ import Foundation
 public struct ForumTopic: Codable, Equatable, Hashable {
 
     /// A draft of a message in the topic; may be null
-    public let draftMessage: DraftMessage?
+    public var draftMessage: DraftMessage?
 
     /// Basic information about the topic
-    public let info: ForumTopicInfo
+    public var info: ForumTopicInfo
 
     /// True, if the topic is pinned in the topic list
-    public let isPinned: Bool
+    public var isPinned: Bool
 
     /// Last message in the topic; may be null if unknown
-    public let lastMessage: Message?
+    public var lastMessage: Message?
 
     /// Identifier of the last read incoming message
-    public let lastReadInboxMessageId: Int64
+    public var lastReadInboxMessageId: Int64
 
     /// Identifier of the last read outgoing message
-    public let lastReadOutboxMessageId: Int64
+    public var lastReadOutboxMessageId: Int64
 
     /// Notification settings for the topic
-    public let notificationSettings: ChatNotificationSettings
+    public var notificationSettings: ChatNotificationSettings
 
     /// Number of unread messages in the topic
-    public let unreadCount: Int
+    public var unreadCount: Int
 
     /// Number of unread messages with a mention/reply in the topic
-    public let unreadMentionCount: Int
+    public var unreadMentionCount: Int
 
     /// Number of messages with unread reactions in the topic
-    public let unreadReactionCount: Int
+    public var unreadReactionCount: Int
 
 
     public init(

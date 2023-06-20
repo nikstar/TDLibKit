@@ -14,7 +14,7 @@ import Foundation
 public struct GetCreatedPublicChats: Codable, Equatable, Hashable {
 
     /// Type of the public chats to return
-    public let type: PublicChatType?
+    public var type: PublicChatType?
 
 
     public init(type: PublicChatType?) {

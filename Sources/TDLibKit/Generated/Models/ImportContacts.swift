@@ -14,7 +14,7 @@ import Foundation
 public struct ImportContacts: Codable, Equatable, Hashable {
 
     /// The list of contacts to import or edit; contacts' vCard are ignored and are not imported
-    public let contacts: [Contact]?
+    public var contacts: [Contact]?
 
 
     public init(contacts: [Contact]?) {

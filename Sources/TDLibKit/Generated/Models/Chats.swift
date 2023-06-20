@@ -14,10 +14,10 @@ import Foundation
 public struct Chats: Codable, Equatable, Hashable {
 
     /// List of chat identifiers
-    public let chatIds: [Int64]
+    public var chatIds: [Int64]
 
     /// Approximate total number of chats found
-    public let totalCount: Int
+    public var totalCount: Int
 
 
     public init(

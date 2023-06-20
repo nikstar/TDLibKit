@@ -14,10 +14,10 @@ import Foundation
 public struct BankCardActionOpenUrl: Codable, Equatable, Hashable {
 
     /// Action text
-    public let text: String
+    public var text: String
 
     /// The URL to be opened
-    public let url: String
+    public var url: String
 
 
     public init(

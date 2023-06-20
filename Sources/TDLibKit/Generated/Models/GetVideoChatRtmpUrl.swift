@@ -14,7 +14,7 @@ import Foundation
 public struct GetVideoChatRtmpUrl: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
 
     public init(chatId: Int64?) {

@@ -14,10 +14,10 @@ import Foundation
 public struct SetProfilePhoto: Codable, Equatable, Hashable {
 
     /// Pass true to set a public photo, which will be visible even the main photo is hidden by privacy settings
-    public let isPublic: Bool?
+    public var isPublic: Bool?
 
     /// Profile photo to set
-    public let photo: InputChatPhoto?
+    public var photo: InputChatPhoto?
 
 
     public init(

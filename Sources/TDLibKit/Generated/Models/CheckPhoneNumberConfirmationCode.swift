@@ -14,7 +14,7 @@ import Foundation
 public struct CheckPhoneNumberConfirmationCode: Codable, Equatable, Hashable {
 
     /// Confirmation code to check
-    public let code: String?
+    public var code: String?
 
 
     public init(code: String?) {

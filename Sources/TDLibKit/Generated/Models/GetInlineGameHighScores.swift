@@ -14,10 +14,10 @@ import Foundation
 public struct GetInlineGameHighScores: Codable, Equatable, Hashable {
 
     /// Inline message identifier
-    public let inlineMessageId: String?
+    public var inlineMessageId: String?
 
     /// User identifier
-    public let userId: Int64?
+    public var userId: Int64?
 
 
     public init(

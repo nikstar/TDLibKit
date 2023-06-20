@@ -14,34 +14,34 @@ import Foundation
 public struct ChatNotificationSettings: Codable, Equatable, Hashable {
 
     /// If true, notifications for messages with mentions will be created as for an ordinary unread message
-    public let disableMentionNotifications: Bool
+    public var disableMentionNotifications: Bool
 
     /// If true, notifications for incoming pinned messages will be created as for an ordinary unread message
-    public let disablePinnedMessageNotifications: Bool
+    public var disablePinnedMessageNotifications: Bool
 
     /// Time left before notifications will be unmuted, in seconds
-    public let muteFor: Int
+    public var muteFor: Int
 
     /// True, if message content must be displayed in notifications
-    public let showPreview: Bool
+    public var showPreview: Bool
 
     /// Identifier of the notification sound to be played; 0 if sound is disabled
-    public let soundId: TdInt64
+    public var soundId: TdInt64
 
     /// If true, disable_mention_notifications is ignored and the value for the relevant type of chat or the forum chat is used instead
-    public let useDefaultDisableMentionNotifications: Bool
+    public var useDefaultDisableMentionNotifications: Bool
 
     /// If true, disable_pinned_message_notifications is ignored and the value for the relevant type of chat or the forum chat is used instead
-    public let useDefaultDisablePinnedMessageNotifications: Bool
+    public var useDefaultDisablePinnedMessageNotifications: Bool
 
     /// If true, mute_for is ignored and the value for the relevant type of chat or the forum chat is used instead
-    public let useDefaultMuteFor: Bool
+    public var useDefaultMuteFor: Bool
 
     /// If true, show_preview is ignored and the value for the relevant type of chat or the forum chat is used instead
-    public let useDefaultShowPreview: Bool
+    public var useDefaultShowPreview: Bool
 
     /// If true, the value for the relevant type of chat or the forum chat is used instead of sound_id
-    public let useDefaultSound: Bool
+    public var useDefaultSound: Bool
 
 
     public init(

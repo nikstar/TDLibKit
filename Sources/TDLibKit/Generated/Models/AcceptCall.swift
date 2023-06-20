@@ -14,10 +14,10 @@ import Foundation
 public struct AcceptCall: Codable, Equatable, Hashable {
 
     /// Call identifier
-    public let callId: Int?
+    public var callId: Int?
 
     /// The call protocols supported by the application
-    public let `protocol`: CallProtocol?
+    public var `protocol`: CallProtocol?
 
 
     public init(

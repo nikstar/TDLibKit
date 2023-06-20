@@ -14,10 +14,10 @@ import Foundation
 public struct ToggleSessionCanAcceptSecretChats: Codable, Equatable, Hashable {
 
     /// Pass true to allow accepting secret chats by the session; pass false otherwise
-    public let canAcceptSecretChats: Bool?
+    public var canAcceptSecretChats: Bool?
 
     /// Session identifier
-    public let sessionId: TdInt64?
+    public var sessionId: TdInt64?
 
 
     public init(

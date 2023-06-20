@@ -14,16 +14,16 @@ import Foundation
 public struct AddFileToDownloads: Codable, Equatable, Hashable {
 
     /// Chat identifier of the message with the file
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the file to download
-    public let fileId: Int?
+    public var fileId: Int?
 
     /// Message identifier
-    public let messageId: Int64?
+    public var messageId: Int64?
 
     /// Priority of the download (1-32). The higher the priority, the earlier the file will be downloaded. If the priorities of two files are equal, then the last one for which downloadFile/addFileToDownloads was called will be downloaded first
-    public let priority: Int?
+    public var priority: Int?
 
 
     public init(

@@ -14,21 +14,21 @@ import Foundation
 public struct PageBlockRelatedArticle: Codable, Equatable, Hashable {
 
     /// Article author; may be empty
-    public let author: String
+    public var author: String
 
-    public let description: String
+    public var description: String
 
     /// Article photo; may be null
-    public let photo: Photo?
+    public var photo: Photo?
 
     /// Point in time (Unix timestamp) when the article was published; 0 if unknown
-    public let publishDate: Int
+    public var publishDate: Int
 
     /// Article title; may be empty
-    public let title: String
+    public var title: String
 
     /// Related article URL
-    public let url: String
+    public var url: String
 
 
     public init(

@@ -14,13 +14,13 @@ import Foundation
 public struct GetChatMessageCount: Codable, Equatable, Hashable {
 
     /// Identifier of the chat in which to count messages
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Filter for message content; searchMessagesFilterEmpty is unsupported in this function
-    public let filter: SearchMessagesFilter?
+    public var filter: SearchMessagesFilter?
 
     /// Pass true to get the number of messages without sending network requests, or -1 if the number of messages is unknown locally
-    public let returnLocal: Bool?
+    public var returnLocal: Bool?
 
 
     public init(

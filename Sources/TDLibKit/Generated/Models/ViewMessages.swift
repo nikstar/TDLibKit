@@ -14,16 +14,16 @@ import Foundation
 public struct ViewMessages: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to mark as read the specified messages even the chat is closed
-    public let forceRead: Bool?
+    public var forceRead: Bool?
 
     /// The identifiers of the messages being viewed
-    public let messageIds: [Int64]?
+    public var messageIds: [Int64]?
 
     /// Source of the message view; pass null to guess the source based on chat open state
-    public let source: MessageSource?
+    public var source: MessageSource?
 
 
     public init(

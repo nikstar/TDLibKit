@@ -14,10 +14,10 @@ import Foundation
 public struct GetChatInviteLink: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Invite link to get
-    public let inviteLink: String?
+    public var inviteLink: String?
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct PaymentResult: Codable, Equatable, Hashable {
 
     /// True, if the payment request was successful; otherwise, the verification_url will be non-empty
-    public let success: Bool
+    public var success: Bool
 
     /// URL for additional payment credentials verification
-    public let verificationUrl: String
+    public var verificationUrl: String
 
 
     public init(

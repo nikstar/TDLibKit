@@ -14,7 +14,7 @@ import Foundation
 public struct DisconnectWebsite: Codable, Equatable, Hashable {
 
     /// Website identifier
-    public let websiteId: TdInt64?
+    public var websiteId: TdInt64?
 
 
     public init(websiteId: TdInt64?) {

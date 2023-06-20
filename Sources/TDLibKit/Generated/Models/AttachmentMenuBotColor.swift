@@ -14,10 +14,10 @@ import Foundation
 public struct AttachmentMenuBotColor: Codable, Equatable, Hashable {
 
     /// Color in the RGB24 format for dark themes
-    public let darkColor: Int
+    public var darkColor: Int
 
     /// Color in the RGB24 format for light themes
-    public let lightColor: Int
+    public var lightColor: Int
 
 
     public init(

@@ -14,36 +14,36 @@ import Foundation
 public struct PaymentReceipt: Codable, Equatable, Hashable {
 
     /// Title of the saved credentials chosen by the buyer
-    public let credentialsTitle: String
+    public var credentialsTitle: String
 
     /// Point in time (Unix timestamp) when the payment was made
-    public let date: Int
+    public var date: Int
 
-    public let description: FormattedText
+    public var description: FormattedText
 
     /// Information about the invoice
-    public let invoice: Invoice
+    public var invoice: Invoice
 
     /// Order information; may be null
-    public let orderInfo: OrderInfo?
+    public var orderInfo: OrderInfo?
 
     /// User identifier of the payment provider bot
-    public let paymentProviderUserId: Int64
+    public var paymentProviderUserId: Int64
 
     /// Product photo; may be null
-    public let photo: Photo?
+    public var photo: Photo?
 
     /// User identifier of the seller bot
-    public let sellerBotUserId: Int64
+    public var sellerBotUserId: Int64
 
     /// Chosen shipping option; may be null
-    public let shippingOption: ShippingOption?
+    public var shippingOption: ShippingOption?
 
     /// The amount of tip chosen by the buyer in the smallest units of the currency
-    public let tipAmount: Int64
+    public var tipAmount: Int64
 
     /// Product title
-    public let title: String
+    public var title: String
 
 
     public init(

@@ -14,10 +14,10 @@ import Foundation
 public struct SetPinnedChats: Codable, Equatable, Hashable {
 
     /// The new list of pinned chats
-    public let chatIds: [Int64]?
+    public var chatIds: [Int64]?
 
     /// Chat list in which to change the order of pinned chats
-    public let chatList: ChatList?
+    public var chatList: ChatList?
 
 
     public init(

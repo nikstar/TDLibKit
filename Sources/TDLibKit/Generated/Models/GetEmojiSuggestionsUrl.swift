@@ -14,7 +14,7 @@ import Foundation
 public struct GetEmojiSuggestionsUrl: Codable, Equatable, Hashable {
 
     /// Language code for which the emoji replacements will be suggested
-    public let languageCode: String?
+    public var languageCode: String?
 
 
     public init(languageCode: String?) {

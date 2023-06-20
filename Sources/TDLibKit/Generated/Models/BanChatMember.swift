@@ -14,16 +14,16 @@ import Foundation
 public struct BanChatMember: Codable, Equatable, Hashable {
 
     /// Point in time (Unix timestamp) when the user will be unbanned; 0 if never. If the user is banned for more than 366 days or for less than 30 seconds from the current time, the user is considered to be banned forever. Ignored in basic groups and if a chat is banned
-    public let bannedUntilDate: Int?
+    public var bannedUntilDate: Int?
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Member identifier
-    public let memberId: MessageSender?
+    public var memberId: MessageSender?
 
     /// Pass true to delete all messages in the chat for the user that is being removed. Always true for supergroups and channels
-    public let revokeMessages: Bool?
+    public var revokeMessages: Bool?
 
 
     public init(

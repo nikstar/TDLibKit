@@ -14,16 +14,16 @@ import Foundation
 public struct SearchChatMembers: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// The type of users to search for; pass null to search among all chat members
-    public let filter: ChatMembersFilter?
+    public var filter: ChatMembersFilter?
 
     /// The maximum number of users to be returned; up to 200
-    public let limit: Int?
+    public var limit: Int?
 
     /// Query to search for
-    public let query: String?
+    public var query: String?
 
 
     public init(

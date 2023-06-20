@@ -14,27 +14,27 @@ import Foundation
 public struct BasicGroupFullInfo: Codable, Equatable, Hashable {
 
     /// List of commands of bots in the group
-    public let botCommands: [BotCommands]
+    public var botCommands: [BotCommands]
 
     /// True, if non-administrators and non-bots can be hidden in responses to getSupergroupMembers and searchChatMembers for non-administrators after upgrading the basic group to a supergroup
-    public let canHideMembers: Bool
+    public var canHideMembers: Bool
 
     /// True, if aggressive anti-spam checks can be enabled or disabled in the supergroup after upgrading the basic group to a supergroup
-    public let canToggleAggressiveAntiSpam: Bool
+    public var canToggleAggressiveAntiSpam: Bool
 
     /// User identifier of the creator of the group; 0 if unknown
-    public let creatorUserId: Int64
+    public var creatorUserId: Int64
 
-    public let description: String
+    public var description: String
 
     /// Primary invite link for this group; may be null. For chat administrators with can_invite_users right only. Updated only after the basic group is opened
-    public let inviteLink: ChatInviteLink?
+    public var inviteLink: ChatInviteLink?
 
     /// Group members
-    public let members: [ChatMember]
+    public var members: [ChatMember]
 
     /// Chat photo; may be null if empty or unknown. If non-null, then it is the same photo as in chat.photo
-    public let photo: ChatPhoto?
+    public var photo: ChatPhoto?
 
 
     public init(

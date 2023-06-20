@@ -14,13 +14,13 @@ import Foundation
 public struct UnreadReaction: Codable, Equatable, Hashable {
 
     /// True, if the reaction was added with a big animation
-    public let isBig: Bool
+    public var isBig: Bool
 
     /// Identifier of the sender, added the reaction
-    public let senderId: MessageSender
+    public var senderId: MessageSender
 
     /// Type of the reaction
-    public let type: ReactionType
+    public var type: ReactionType
 
 
     public init(

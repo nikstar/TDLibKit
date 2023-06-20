@@ -14,10 +14,10 @@ import Foundation
 public struct SetChatAvailableReactions: Codable, Equatable, Hashable {
 
     /// Reactions available in the chat. All emoji reactions must be active
-    public let availableReactions: ChatAvailableReactions?
+    public var availableReactions: ChatAvailableReactions?
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
 
     public init(

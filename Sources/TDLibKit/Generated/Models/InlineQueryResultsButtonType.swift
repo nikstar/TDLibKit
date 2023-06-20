@@ -55,7 +55,7 @@ public enum InlineQueryResultsButtonType: Codable, Equatable, Hashable {
 public struct InlineQueryResultsButtonTypeStartBot: Codable, Equatable, Hashable {
 
     /// The parameter for the bot start message
-    public let parameter: String
+    public var parameter: String
 
 
     public init(parameter: String) {
@@ -67,7 +67,7 @@ public struct InlineQueryResultsButtonTypeStartBot: Codable, Equatable, Hashable
 public struct InlineQueryResultsButtonTypeWebApp: Codable, Equatable, Hashable {
 
     /// An HTTP URL to pass to getWebAppUrl
-    public let url: String
+    public var url: String
 
 
     public init(url: String) {

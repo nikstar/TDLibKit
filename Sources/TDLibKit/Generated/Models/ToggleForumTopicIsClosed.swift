@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleForumTopicIsClosed: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Pass true to close the topic; pass false to reopen it
-    public let isClosed: Bool?
+    public var isClosed: Bool?
 
     /// Message thread identifier of the forum topic
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
 
     public init(

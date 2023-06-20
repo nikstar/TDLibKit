@@ -65,10 +65,10 @@ public enum BackgroundType: Codable, Equatable, Hashable {
 public struct BackgroundTypeWallpaper: Codable, Equatable, Hashable {
 
     /// True, if the wallpaper must be downscaled to fit in 450x450 square and then box-blurred with radius 12
-    public let isBlurred: Bool
+    public var isBlurred: Bool
 
     /// True, if the background needs to be slightly moved when device is tilted
-    public let isMoving: Bool
+    public var isMoving: Bool
 
 
     public init(
@@ -84,16 +84,16 @@ public struct BackgroundTypeWallpaper: Codable, Equatable, Hashable {
 public struct BackgroundTypePattern: Codable, Equatable, Hashable {
 
     /// Fill of the background
-    public let fill: BackgroundFill
+    public var fill: BackgroundFill
 
     /// Intensity of the pattern when it is shown above the filled background; 0-100.
-    public let intensity: Int
+    public var intensity: Int
 
     /// True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only
-    public let isInverted: Bool
+    public var isInverted: Bool
 
     /// True, if the background needs to be slightly moved when device is tilted
-    public let isMoving: Bool
+    public var isMoving: Bool
 
 
     public init(
@@ -113,7 +113,7 @@ public struct BackgroundTypePattern: Codable, Equatable, Hashable {
 public struct BackgroundTypeFill: Codable, Equatable, Hashable {
 
     /// The background fill
-    public let fill: BackgroundFill
+    public var fill: BackgroundFill
 
 
     public init(fill: BackgroundFill) {

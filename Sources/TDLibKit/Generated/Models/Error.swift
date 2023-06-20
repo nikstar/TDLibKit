@@ -14,10 +14,10 @@ import Foundation
 public struct Error: Codable, Equatable, Hashable, Swift.Error {
 
     /// Error code; subject to future changes. If the error code is 406, the error message must not be processed in any way and must not be displayed to the user
-    public let code: Int
+    public var code: Int
 
     /// Error message; subject to future changes
-    public let message: String
+    public var message: String
 
 
     public init(

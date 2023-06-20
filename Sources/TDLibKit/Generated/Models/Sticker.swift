@@ -14,34 +14,34 @@ import Foundation
 public struct Sticker: Codable, Equatable, Hashable, Identifiable {
 
     /// Emoji corresponding to the sticker
-    public let emoji: String
+    public var emoji: String
 
     /// Sticker format
-    public let format: StickerFormat
+    public var format: StickerFormat
 
     /// Sticker's full type
-    public let fullType: StickerFullType
+    public var fullType: StickerFullType
 
     /// Sticker height; as defined by the sender
-    public let height: Int
+    public var height: Int
 
     /// Unique sticker identifier within the set; 0 if none
     public let id: TdInt64
 
     /// Sticker's outline represented as a list of closed vector paths; may be empty. The coordinate system origin is in the upper-left corner
-    public let outline: [ClosedVectorPath]
+    public var outline: [ClosedVectorPath]
 
     /// Identifier of the sticker set to which the sticker belongs; 0 if none
-    public let setId: TdInt64
+    public var setId: TdInt64
 
     /// File containing the sticker
-    public let sticker: File
+    public var sticker: File
 
     /// Sticker thumbnail in WEBP or JPEG format; may be null
-    public let thumbnail: Thumbnail?
+    public var thumbnail: Thumbnail?
 
     /// Sticker width; as defined by the sender
-    public let width: Int
+    public var width: Int
 
 
     public init(

@@ -65,7 +65,7 @@ public enum InputBackground: Codable, Equatable, Hashable {
 public struct InputBackgroundLocal: Codable, Equatable, Hashable {
 
     /// Background file to use. Only inputFileLocal and inputFileGenerated are supported. The file must be in JPEG format for wallpapers and in PNG format for patterns
-    public let background: InputFile
+    public var background: InputFile
 
 
     public init(background: InputFile) {
@@ -77,7 +77,7 @@ public struct InputBackgroundLocal: Codable, Equatable, Hashable {
 public struct InputBackgroundRemote: Codable, Equatable, Hashable {
 
     /// The background identifier
-    public let backgroundId: TdInt64
+    public var backgroundId: TdInt64
 
 
     public init(backgroundId: TdInt64) {
@@ -89,7 +89,7 @@ public struct InputBackgroundRemote: Codable, Equatable, Hashable {
 public struct InputBackgroundPrevious: Codable, Equatable, Hashable {
 
     /// Identifier of the message with the background
-    public let messageId: Int64
+    public var messageId: Int64
 
 
     public init(messageId: Int64) {

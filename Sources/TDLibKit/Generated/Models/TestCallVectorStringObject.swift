@@ -14,7 +14,7 @@ import Foundation
 public struct TestCallVectorStringObject: Codable, Equatable, Hashable {
 
     /// Vector of objects to return
-    public let x: [TestString]?
+    public var x: [TestString]?
 
 
     public init(x: [TestString]?) {

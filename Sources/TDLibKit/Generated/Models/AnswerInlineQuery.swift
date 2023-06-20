@@ -14,22 +14,22 @@ import Foundation
 public struct AnswerInlineQuery: Codable, Equatable, Hashable {
 
     /// Button to be shown above inline query results; pass null if none
-    public let button: InlineQueryResultsButton?
+    public var button: InlineQueryResultsButton?
 
     /// Allowed time to cache the results of the query, in seconds
-    public let cacheTime: Int?
+    public var cacheTime: Int?
 
     /// Identifier of the inline query
-    public let inlineQueryId: TdInt64?
+    public var inlineQueryId: TdInt64?
 
     /// Pass true if results may be cached and returned only for the user that sent the query. By default, results may be returned to any user who sends the same query
-    public let isPersonal: Bool?
+    public var isPersonal: Bool?
 
     /// Offset for the next inline query; pass an empty string if there are no more results
-    public let nextOffset: String?
+    public var nextOffset: String?
 
     /// The results of the query
-    public let results: [InputInlineQueryResult]?
+    public var results: [InputInlineQueryResult]?
 
 
     public init(

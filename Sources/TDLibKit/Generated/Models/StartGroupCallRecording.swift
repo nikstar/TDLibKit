@@ -14,16 +14,16 @@ import Foundation
 public struct StartGroupCallRecording: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
     /// Pass true to record a video file instead of an audio file
-    public let recordVideo: Bool?
+    public var recordVideo: Bool?
 
     /// Group call recording title; 0-64 characters
-    public let title: String?
+    public var title: String?
 
     /// Pass true to use portrait orientation for video instead of landscape one
-    public let usePortraitOrientation: Bool?
+    public var usePortraitOrientation: Bool?
 
 
     public init(

@@ -14,31 +14,31 @@ import Foundation
 public struct SponsoredMessage: Codable, Equatable, Hashable {
 
     /// If non-empty, additional information about the sponsored message to be shown along with the message
-    public let additionalInfo: String
+    public var additionalInfo: String
 
     /// Content of the message. Currently, can be only of the type messageText
-    public let content: MessageContent
+    public var content: MessageContent
 
     /// True, if the message needs to be labeled as "recommended" instead of "sponsored"
-    public let isRecommended: Bool
+    public var isRecommended: Bool
 
     /// An internal link to be opened when the sponsored message is clicked; may be null if the sponsor chat needs to be opened instead
-    public let link: InternalLinkType?
+    public var link: InternalLinkType?
 
     /// Message identifier; unique for the chat to which the sponsored message belongs among both ordinary and sponsored messages
-    public let messageId: Int64
+    public var messageId: Int64
 
     /// True, if the sponsor's chat photo must be shown
-    public let showChatPhoto: Bool
+    public var showChatPhoto: Bool
 
     /// Sponsor chat identifier; 0 if the sponsor chat is accessible through an invite link
-    public let sponsorChatId: Int64
+    public var sponsorChatId: Int64
 
     /// Information about the sponsor chat; may be null unless sponsor_chat_id == 0
-    public let sponsorChatInfo: ChatInviteLinkInfo?
+    public var sponsorChatInfo: ChatInviteLinkInfo?
 
     /// If non-empty, information about the sponsor to be shown along with the message
-    public let sponsorInfo: String
+    public var sponsorInfo: String
 
 
     public init(

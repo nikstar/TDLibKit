@@ -14,13 +14,13 @@ import Foundation
 public struct StatisticalValue: Codable, Equatable, Hashable {
 
     /// The growth rate of the value, as a percentage
-    public let growthRatePercentage: Double
+    public var growthRatePercentage: Double
 
     /// The value for the previous day
-    public let previousValue: Double
+    public var previousValue: Double
 
     /// The current value
-    public let value: Double
+    public var value: Double
 
 
     public init(

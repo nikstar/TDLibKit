@@ -14,7 +14,7 @@ import Foundation
 public struct ClearAllDraftMessages: Codable, Equatable, Hashable {
 
     /// Pass true to keep local message drafts in secret chats
-    public let excludeSecretChats: Bool?
+    public var excludeSecretChats: Bool?
 
 
     public init(excludeSecretChats: Bool?) {

@@ -14,7 +14,7 @@ import Foundation
 public struct EndGroupCall: Codable, Equatable, Hashable {
 
     /// Group call identifier
-    public let groupCallId: Int?
+    public var groupCallId: Int?
 
 
     public init(groupCallId: Int?) {

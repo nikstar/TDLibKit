@@ -14,28 +14,28 @@ import Foundation
 public struct ForwardMessages: Codable, Equatable, Hashable {
 
     /// Identifier of the chat to which to forward messages
-    public let chatId: Int64?
+    public var chatId: Int64?
 
     /// Identifier of the chat from which to forward messages
-    public let fromChatId: Int64?
+    public var fromChatId: Int64?
 
     /// Identifiers of the messages to forward. Message identifiers must be in a strictly increasing order. At most 100 messages can be forwarded simultaneously
-    public let messageIds: [Int64]?
+    public var messageIds: [Int64]?
 
     /// If not 0, a message thread identifier in which the message will be sent; for forum threads only
-    public let messageThreadId: Int64?
+    public var messageThreadId: Int64?
 
     /// Pass true to get fake messages instead of actually forwarding them
-    public let onlyPreview: Bool?
+    public var onlyPreview: Bool?
 
     /// Options to be used to send the messages; pass null to use default options
-    public let options: MessageSendOptions?
+    public var options: MessageSendOptions?
 
     /// Pass true to remove media captions of message copies. Ignored if send_copy is false
-    public let removeCaption: Bool?
+    public var removeCaption: Bool?
 
     /// Pass true to copy content of the messages without reference to the original sender. Always true if the messages are forwarded to a secret chat or are local
-    public let sendCopy: Bool?
+    public var sendCopy: Bool?
 
 
     public init(

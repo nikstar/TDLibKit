@@ -14,10 +14,10 @@ import Foundation
 public struct PassportElementsWithErrors: Codable, Equatable, Hashable {
 
     /// Telegram Passport elements
-    public let elements: [PassportElement]
+    public var elements: [PassportElement]
 
     /// Errors in the elements that are already available
-    public let errors: [PassportElementError]
+    public var errors: [PassportElementError]
 
 
     public init(

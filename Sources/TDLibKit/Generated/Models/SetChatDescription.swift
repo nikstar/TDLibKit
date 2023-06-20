@@ -14,9 +14,9 @@ import Foundation
 public struct SetChatDescription: Codable, Equatable, Hashable {
 
     /// Identifier of the chat
-    public let chatId: Int64?
+    public var chatId: Int64?
 
-    public let description: String?
+    public var description: String?
 
 
     public init(

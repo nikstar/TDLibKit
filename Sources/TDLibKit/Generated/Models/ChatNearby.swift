@@ -14,10 +14,10 @@ import Foundation
 public struct ChatNearby: Codable, Equatable, Hashable {
 
     /// Chat identifier
-    public let chatId: Int64
+    public var chatId: Int64
 
     /// Distance to the chat location, in meters
-    public let distance: Int
+    public var distance: Int
 
 
     public init(

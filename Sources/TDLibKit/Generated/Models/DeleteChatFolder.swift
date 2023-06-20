@@ -14,10 +14,10 @@ import Foundation
 public struct DeleteChatFolder: Codable, Equatable, Hashable {
 
     /// Chat folder identifier
-    public let chatFolderId: Int?
+    public var chatFolderId: Int?
 
     /// Identifiers of the chats to leave. The chats must be pinned or always included in the folder
-    public let leaveChatIds: [Int64]?
+    public var leaveChatIds: [Int64]?
 
 
     public init(

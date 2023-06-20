@@ -14,13 +14,13 @@ import Foundation
 public struct ToggleSupergroupUsernameIsActive: Codable, Equatable, Hashable {
 
     /// Pass true to activate the username; pass false to disable it
-    public let isActive: Bool?
+    public var isActive: Bool?
 
     /// Identifier of the supergroup or channel
-    public let supergroupId: Int64?
+    public var supergroupId: Int64?
 
     /// The username to change
-    public let username: String?
+    public var username: String?
 
 
     public init(

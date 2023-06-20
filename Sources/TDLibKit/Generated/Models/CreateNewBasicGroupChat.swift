@@ -14,13 +14,13 @@ import Foundation
 public struct CreateNewBasicGroupChat: Codable, Equatable, Hashable {
 
     /// Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren't deleted automatically
-    public let messageAutoDeleteTime: Int?
+    public var messageAutoDeleteTime: Int?
 
     /// Title of the new basic group; 1-128 characters
-    public let title: String?
+    public var title: String?
 
     /// Identifiers of users to be added to the basic group; may be empty to create a basic group without other members
-    public let userIds: [Int64]?
+    public var userIds: [Int64]?
 
 
     public init(

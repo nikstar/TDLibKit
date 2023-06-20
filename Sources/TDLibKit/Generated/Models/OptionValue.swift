@@ -73,7 +73,7 @@ public enum OptionValue: Codable, Equatable, Hashable {
 public struct OptionValueBoolean: Codable, Equatable, Hashable {
 
     /// The value of the option
-    public let value: Bool
+    public var value: Bool
 
 
     public init(value: Bool) {
@@ -85,7 +85,7 @@ public struct OptionValueBoolean: Codable, Equatable, Hashable {
 public struct OptionValueInteger: Codable, Equatable, Hashable {
 
     /// The value of the option
-    public let value: TdInt64
+    public var value: TdInt64
 
 
     public init(value: TdInt64) {
@@ -97,7 +97,7 @@ public struct OptionValueInteger: Codable, Equatable, Hashable {
 public struct OptionValueString: Codable, Equatable, Hashable {
 
     /// The value of the option
-    public let value: String
+    public var value: String
 
 
     public init(value: String) {
