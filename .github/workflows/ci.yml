@@ -30,7 +30,7 @@ jobs:
           latest: true
           throwing: true
         env:
-          GITHUB_TOKEN:  ${{ secrets.GH_RELEASES_TOKEN }}
+          GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set TDLibFramework version
         if: github.ref == 'refs/heads/main'
